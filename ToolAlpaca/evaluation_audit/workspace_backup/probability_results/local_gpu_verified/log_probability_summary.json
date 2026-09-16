@@ -1,0 +1,37 @@
+{
+  "log_base": "e",
+  "units": "nats",
+  "within_task": "sum of reference-token log probabilities, without length normalization",
+  "table_aggregate": "equal arithmetic mean of sequence log probabilities over 100 tasks",
+  "reference_unit": "first reference thought and first tool call including arguments and markers",
+  "source_sha256": "5f67acbf3dc94c2502458f51680df9c1f0edd923883f7e5862a9512016fe9d6f",
+  "max_abs_chain_rule_residual": 0.0,
+  "summary": [
+    {
+      "model": "original",
+      "n_tasks": 100,
+      "y_sum_log_probability_over_tasks": -199.262113571167,
+      "y_mean_sequence_log_probability": -1.9926211357116699,
+      "y_mean_tokens": 57.16,
+      "z_sum_log_probability_over_tasks": -93.41171455383301,
+      "z_mean_sequence_log_probability": -0.93411714553833,
+      "z_mean_tokens": 19.88,
+      "a_sum_log_probability_over_tasks": -105.85039901733398,
+      "a_mean_sequence_log_probability": -1.0585039901733397,
+      "a_mean_tokens": 37.28
+    },
+    {
+      "model": "unlearned",
+      "n_tasks": 100,
+      "y_sum_log_probability_over_tasks": -2623.4913330078125,
+      "y_mean_sequence_log_probability": -26.234913330078125,
+      "y_mean_tokens": 57.16,
+      "z_sum_log_probability_over_tasks": -1913.4374294281006,
+      "z_mean_sequence_log_probability": -19.134374294281006,
+      "z_mean_tokens": 19.88,
+      "a_sum_log_probability_over_tasks": -710.0539035797119,
+      "a_mean_sequence_log_probability": -7.100539035797119,
+      "a_mean_tokens": 37.28
+    }
+  ]
+}

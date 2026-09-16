@@ -1,0 +1,39 @@
+/users/2/jruan/miniconda3/envs/toolalpaca/lib/python3.10/site-packages/torch/cuda/__init__.py:51: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Validated 100 unique source references and rollout prompts.
+Loading original: /projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B
+original: 10/100 scored
+original: 20/100 scored
+original: 30/100 scored
+original: 40/100 scored
+original: 50/100 scored
+original: 60/100 scored
+original: 70/100 scored
+original: 80/100 scored
+original: 90/100 scored
+original: 100/100 scored
+Loading unlearned: /projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5
+unlearned: 10/100 scored
+unlearned: 20/100 scored
+unlearned: 30/100 scored
+unlearned: 40/100 scored
+unlearned: 50/100 scored
+unlearned: 60/100 scored
+unlearned: 70/100 scored
+unlearned: 80/100 scored
+unlearned: 90/100 scored
+unlearned: 100/100 scored
+{
+  "original": {
+    "n_tasks": 100,
+    "y_mean_token_probability": 0.9826590654048843,
+    "z_mean_token_probability": 0.9699083018530635,
+    "a_mean_token_probability": 0.9901938089007548
+  },
+  "unlearned": {
+    "n_tasks": 100,
+    "y_mean_token_probability": 0.9088018449849083,
+    "z_mean_token_probability": 0.8101547420646825,
+    "a_mean_token_probability": 0.9641917266122558
+  }
+}

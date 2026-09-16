@@ -1,0 +1,37 @@
+test_get_details_flag (test_agent_evaluation_fixes.AgentIntegrationTests) ... ok
+test_historical_probability_prompts_remain_identical (test_agent_evaluation_fixes.AgentIntegrationTests) ... /users/2/jruan/miniconda3/envs/toolalpaca/lib/python3.10/site-packages/torch/cuda/__init__.py:51: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+ok
+test_iteration_limit_returns_complete_schema (test_agent_evaluation_fixes.AgentIntegrationTests) ... ok
+test_missing_parameters_are_observed_and_model_can_continue (test_agent_evaluation_fixes.AgentIntegrationTests) ... ok
+test_bad_format_is_flagged_after_bounded_retries (test_evaluation_fixes.JudgeTests) ... ok
+test_full_record_preserves_invalid_judgment (test_evaluation_fixes.JudgeTests) ... ok
+test_http_metadata_is_preserved (test_evaluation_fixes.JudgeTests) ... ok
+test_parser_requires_results_and_accepts_markdown (test_evaluation_fixes.JudgeTests) ... ok
+test_truncation_retries_even_when_verdict_present (test_evaluation_fixes.JudgeTests) ... ok
+test_valid_uncertainty_is_not_retried (test_evaluation_fixes.JudgeTests) ... ok
+test_all_18_recorded_crashes_now_return_validation_errors (test_evaluation_fixes.RequestTests) ... ok
+test_boolean_is_not_an_integer (test_evaluation_fixes.RequestTests) ... ok
+test_missing_query_and_body_are_recoverable (test_evaluation_fixes.RequestTests) ... ok
+test_normalized_values_reach_request (test_evaluation_fixes.RequestTests) ... ok
+test_query_enum_and_non_object (test_evaluation_fixes.RequestTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 9.439s
+
+OK
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+[32;1m[1;3m[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+[32;1m[1;3mAction: getItemDetails
+Action Input: {}[0m
+Observation: [38;5;200m[1;3mMissing required parameters: "itemId" (query). You need to change the input and try again.[0m
+Thought:[32;1m[1;3mFinal Answer: I need an item ID.[0m
+
+[1m> Finished chain.[0m

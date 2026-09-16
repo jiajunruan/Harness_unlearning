@@ -1,0 +1,90 @@
+{
+  "started_utc": "2026-09-14T03:49:43Z",
+  "status": "complete",
+  "condition": "G35",
+  "split": "forget",
+  "simulator": "gpt-3.5-turbo",
+  "judge": "gpt-4-0613",
+  "dataset": {
+    "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+    "sha256": "2f6573e567978797032fe94af4e68c4dee497ebba064f2be6133cbdddff35d03",
+    "n": 100
+  },
+  "output": "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/G35_forget",
+  "port": 5720,
+  "gpu": "transformers",
+  "remote_actor_model": "gpt-3.5-turbo",
+  "remote_planner_model": "gpt-3.5-turbo",
+  "simulator_command": [
+    "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+    "instance_generation/simulator.py",
+    "-api",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+    "-temp",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+    "--port",
+    "5720",
+    "--model",
+    "gpt-3.5-turbo"
+  ],
+  "rollout_command": [
+    "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+    "harness/run_toolalpaca.py",
+    "--condition",
+    "G35",
+    "-api",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+    "--server_url",
+    "http://127.0.0.1:5720",
+    "--instruction_length",
+    "-1",
+    "-out",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/G35_forget",
+    "--resume"
+  ],
+  "judge_command": [
+    "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+    "evaluation.py",
+    "-api",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/G35_forget/G35.json",
+    "-temp",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Evaluation.txt",
+    "-out",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/G35_forget/judge.json",
+    "--judge_model",
+    "gpt-4-0613",
+    "--num_workers",
+    "8"
+  ],
+  "finished_utc": "2026-09-14T05:29:51Z",
+  "statistics": {
+    "num": 100,
+    "error_num": 1,
+    "process": {
+      "Yes": 52,
+      "No": 47,
+      "Uncertain": 0
+    },
+    "response": {
+      "Yes": 60,
+      "No": 29,
+      "Uncertain": 10
+    },
+    "both": 47,
+    "judge_model": "gpt-4-0613",
+    "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+    "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+    "input_sha256": "5d05bf00fbae9ffd52ec8ab244f94c857cd506f13a19083dc244246cfb111b38",
+    "expected_num": 100,
+    "judge_errors": [],
+    "rollout_errors": [],
+    "complete": true,
+    "primary_metric": "process_accuracy",
+    "process_accuracy": 0.52,
+    "response_accuracy": 0.6,
+    "overall_accuracy": 0.47
+  },
+  "process_accuracy": 0.52,
+  "response_accuracy": 0.6,
+  "overall_accuracy": 0.47
+}

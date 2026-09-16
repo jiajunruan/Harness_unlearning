@@ -1,0 +1,2333 @@
+INFO:     Started server process [2718433]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5712 (Press CTRL+C to quit)
+INFO:     127.0.0.1:35334 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34860 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55868 - "GET /__simulator_cache__/open HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.99s/it]1it [00:01,  1.99s/it]
+Status Code: 200
+Response: 
+{
+    "items": [
+        {
+            "id": "Q123456",
+            "label": "Gutenberg Galaxy",
+            "description": "Book by Marshall McLuhan",
+            "aliases": ["Marshall McLuhan's Gutenberg Galaxy"]
+        },
+        {
+            "id": "Q654321",
+            "label": "Gutenberg Galaxy Press",
+            "description": "Publishing company specializing in media studies",
+            "aliases": ["GG Press"]
+        },
+        {
+            "id": "Q987654",
+            "label": "Gutenberg Galaxy Institute",
+            "description": "Research organization focused on communication technologies",
+            "aliases": ["GGI"]
+        }
+    ]
+}
+Explanation: The response provides a list of items related to the search term "Gutenberg Galaxy" in the Wikidata knowledge base. Each item includes its Wikidata ID, label, description, and aliases to provide additional context.
+INFO:     127.0.0.1:56618 - "GET /Wikidata/searchItems?searchTerm=Gutenberg+Galaxy&language=en&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47828 - "GET /__simulator_cache__/clear/Wikidata HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.96s/it]1it [00:02,  2.96s/it]
+Status Code: 200
+Response: 
+{
+  "id": "Q34660",
+  "label": "Barack Obama",
+  "aliases": ["Barack H. Obama II"],
+  "description": "44th President of the United States",
+  "properties": [
+    {
+      "id": "P569",
+      "label": "Date of birth",
+      "values": [
+        {
+          "id": "Q34660$1",
+          "label": "August 4, 1961",
+          "datatype": "date",
+          "value": "1961-08-04"
+        }
+      ]
+    },
+    {
+      "id": "P19",
+      "label": "Place of birth",
+      "values": [
+        {
+          "id": "Q34660$2",
+          "label": "Honolulu",
+          "datatype": "string",
+          "value": "Honolulu, Hawaii, USA"
+        }
+      ]
+    },
+    {
+      "id": "P27",
+      "label": "Country of citizenship",
+      "values": [
+        {
+          "id": "Q34660$3",
+          "label": "United States of America",
+          "datatype": "string",
+          "value": "United States"
+        }
+      ]
+    }
+  ]
+}
+Explanation: This response provides detailed information about Barack Obama, including his date of birth, place of birth, and country of citizenship. The response adheres to the specified format in the Wikidata API OpenAPI Spec.
+INFO:     127.0.0.1:47834 - "GET /Wikidata/getItemDetails?itemId=Q34660&language=en HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45614 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.88s/it]1it [00:02,  2.88s/it]
+Status Code: 200
+Response:
+{
+  "id": "P19",
+  "label": "Place of birth",
+  "description": "property for the place where a person was born",
+  "values": [
+    {
+      "id": "P19$1",
+      "label": "Honolulu",
+      "datatype": "string",
+      "value": "Honolulu, Hawaii, USA"
+    },
+    {
+      "id": "P19$2",
+      "label": "Chicago",
+      "datatype": "string",
+      "value": "Chicago, Illinois, USA"
+    },
+    {
+      "id": "P19$3",
+      "label": "New York City",
+      "datatype": "string",
+      "value": "New York City, New York, USA"
+    }
+  ]
+}
+Explanation: This response provides detailed information about the property "Place of birth" (P19), including its description and associated values such as Honolulu, Chicago, and New York City. The response adheres to the specified format in the Wikidata API OpenAPI Spec.
+INFO:     127.0.0.1:45616 - "GET /Wikidata/getPropertyDetails?propertyId=P19&language=en HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51802 - "GET /__simulator_cache__/clear/Wikidata HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.22s/it]1it [00:01,  1.22s/it]
+Status Code: 200
+Response: 
+{
+    "predictions": [
+        {
+            "timestamp": "2020-01-01",
+            "value": 1050.5
+        },
+        {
+            "timestamp": "2020-01-02",
+            "value": 1063.2
+        },
+        {
+            "timestamp": "2020-01-03",
+            "value": 1045.8
+        }
+    ]
+}
+Explanation: The API successfully predicted values for the input data using the linear regression model. The response contains three realistic predicted values for consecutive timestamps.
+INFO:     127.0.0.1:44674 - "POST /Time%20Door/prediction-algorithm-for-machine-learning-models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43520 - "GET /__simulator_cache__/clear/Time%20Door HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.43s/it]1it [00:01,  1.43s/it]
+Status Code: 200
+Response: 
+{
+    "ip": "192.168.1.1",
+    "city": "New York",
+    "region": "New York",
+    "region_code": "NY",
+    "country": "United States",
+    "country_code": "US",
+    "continent": "North America",
+    "continent_code": "NA",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "timezone": "America/New_York",
+    "utc_offset": "-05:00",
+    "country_calling_code": "+1",
+    "currency": "USD",
+    "languages": ["English"],
+    "asn": "AS12345",
+    "org": "Internet Service Provider"
+}
+Explanation: This response provides geolocation data for the IP address 192.168.1.1, showing it is located in New York, United States, in the North American continent. It includes details such as timezone, currency, language, ASN, and organization.
+INFO:     127.0.0.1:43532 - "GET /ipapi.com/geolocate/User%27s%20IP%20address HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59410 - "GET /__simulator_cache__/clear/ipapi.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59412 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.09s/it]1it [00:02,  2.09s/it]
+Status Code: 200
+Response: 
+{
+  "ip": "98.76.54.32",
+  "city": "New York",
+  "region": "New York",
+  "region_code": "NY",
+  "country": "United States",
+  "country_code": "US",
+  "continent": "North America",
+  "continent_code": "NA",
+  "latitude": 40.7128,
+  "longitude": -74.0060,
+  "timezone": "America/New_York",
+  "utc_offset": "-05:00",
+  "country_calling_code": "+1",
+  "currency": "USD",
+  "languages": ["English"],
+  "asn": "AS12345",
+  "org": "Organization Name"
+}
+Explanation: The response provides geolocation data for the IP address 98.76.54.32, including details such as city, region, country, continent, coordinates, timezone, currency, languages, ASN, and organization.
+INFO:     127.0.0.1:48020 - "GET /ipapi.com/geolocate/98.76.54.32 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.91s/it]1it [00:01,  1.91s/it]
+Status Code: 200
+Response:
+{
+  "currency": "USD"
+}
+Explanation: The response provides the currency information for the United States, which is USD.
+INFO:     127.0.0.1:48034 - "GET /ipapi.com/currency?country_code=US HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38268 - "GET /__simulator_cache__/clear/ipapi.com HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.44s/it]1it [00:03,  3.44s/it]
+Status Code: 200
+Response: 
+{
+    "date": "2022-10-20",
+    "new_cases": 15000,
+    "new_deaths": 500,
+    "new_recovered": 12000,
+    "total_cases": 5000000,
+    "total_deaths": 150000,
+    "total_recovered": 4800000
+}
+Explanation: This response provides the COVID-19 timeline data for Brazil on October 20, 2022, including new cases, deaths, and recoveries, as well as the total cumulative numbers.
+
+Status Code: 200
+Response: 
+{
+    "date": "2022-10-21",
+    "new_cases": 16000,
+    "new_deaths": 600,
+    "new_recovered": 13000,
+    "total_cases": 5016000,
+    "total_deaths": 150600,
+    "total_recovered": 4813000
+}
+Explanation: This response provides the COVID-19 timeline data for Brazil on October 21, 2022, including new cases, deaths, and recoveries, as well as the total cumulative numbers.
+
+Status Code: 200
+Response: 
+{
+    "date": "2022-10-22",
+    "new_cases": 17000,
+    "new_deaths": 700,
+    "new_recovered": 14000,
+    "total_cases": 5033000,
+    "total_deaths": 151300,
+    "total_recovered": 4827000
+}
+Explanation: This response provides the COVID-19 timeline data for Brazil on October 22, 2022, including new cases, deaths, and recoveries, as well as the total cumulative numbers.
+INFO:     127.0.0.1:53638 - "GET /Quarantine/country/timeline/Brazil HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55312 - "GET /__simulator_cache__/clear/Quarantine HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.22s/it]1it [00:02,  2.22s/it]
+Status Code: 200
+Response: 
+{
+    "country": "India",
+    "total_cases": 1000000,
+    "total_deaths": 20000,
+    "total_recovered": 800000
+}
+Explanation: The response provides country-specific data for India with realistic total cases, deaths, and recoveries.
+
+Status Code: 200
+Response: 
+{
+    "country": "India",
+    "total_cases": 1100000,
+    "total_deaths": 22000,
+    "total_recovered": 900000
+}
+Explanation: Another response with updated data for India reflecting an increase in total cases, deaths, and recoveries.
+
+Status Code: 200
+Response: 
+{
+    "country": "India",
+    "total_cases": 1200000,
+    "total_deaths": 24000,
+    "total_recovered": 1000000
+}
+Explanation: A third response providing further updated statistics for India.
+INFO:     127.0.0.1:55320 - "GET /Quarantine/country/stats/India HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /__simulator_cache__/clear/Quarantine HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.77s/it]1it [00:01,  1.77s/it]
+Status Code: 200
+Response: 
+{
+    "data": [
+        {
+            "date": "2020-01-01",
+            "open_price": 296.24,
+            "high_price": 298.92,
+            "low_price": 295.25,
+            "close_price": 297.43,
+            "volume": 13564700
+        },
+        {
+            "date": "2020-01-02",
+            "open_price": 296.24,
+            "high_price": 299.65,
+            "low_price": 295.25,
+            "close_price": 299.44,
+            "volume": 15567800
+        },
+        {
+            "date": "2020-01-03",
+            "open_price": 297.15,
+            "high_price": 300.58,
+            "low_price": 296.81,
+            "close_price": 297.85,
+            "volume": 12343200
+        }
+    ]
+}
+Explanation: The response contains historical pricing data for the AAPL stock symbol within the specified date range from January 1, 2020, to December 31, 2020. Each data entry includes the date, open price, high price, low price, closing price, and volume traded for that day.
+INFO:     127.0.0.1:58134 - "GET /Tradier/historical_data?symbol=AAPL&start_date=2020-01-01&end_date=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50594 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36814 - "GET /__simulator_cache__/clear/Tradier HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.97s/it]1it [00:01,  1.97s/it]
+Status Code: 200
+Response: 
+{
+    "calendar": [
+        {
+            "date": "2022-12-01",
+            "description": "Market opens at 9:30 AM EST",
+            "type": "Regular Trading Day"
+        },
+        {
+            "date": "2022-12-25",
+            "description": "Market closed for Christmas Day",
+            "type": "Holiday"
+        },
+        {
+            "date": "2022-12-31",
+            "description": "Market closes early at 1:00 PM EST",
+            "type": "Special Trading Day"
+        }
+    ]
+}
+Explanation: The response provides market calendar data for the month of December 2022, including regular trading days, holidays, and special trading days. Each entry in the response contains the date, description of the event, and the type of trading day.
+INFO:     127.0.0.1:40698 - "GET /Tradier/market_calendar?month=12&year=2022 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59454 - "GET /__simulator_cache__/clear/Tradier HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.77s/it]1it [00:03,  3.77s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Mythril Sword",
+    "description": "A well-crafted sword made of mythril.",
+    "rarity": 3,
+    "level": 30,
+    "attributes": {
+        "strength": 40,
+        "dexterity": 10,
+        "intelligence": 5
+    }
+}
+Explanation: This response provides information about the item with ID 12345. The item is a Mythril Sword with a rarity of 3, level requirement of 30, and attributes including strength, dexterity, and intelligence.
+
+Status Code: 200
+Response: 
+{
+    "name": "Elixir",
+    "description": "A magical potion that restores health and mana.",
+    "rarity": 4,
+    "level": 50,
+    "attributes": {
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+    }
+}
+Explanation: This response provides information about the item with ID 12345. The item is an Elixir with a rarity of 4, level requirement of 50, and attributes that do not affect combat stats.
+
+Status Code: 200
+Response: 
+{
+    "name": "Crystal Shard",
+    "description": "A shard of crystal used in crafting.",
+    "rarity": 2,
+    "level": 20,
+    "attributes": {
+        "strength": 5,
+        "dexterity": 5,
+        "intelligence": 5
+    }
+}
+Explanation: This response provides information about the item with ID 12345. The item is a Crystal Shard with a rarity of 2, level requirement of 20, and balanced attributes.
+INFO:     127.0.0.1:59462 - "GET /Final%20Fantasy%20XIV/item/12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47326 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47336 - "GET /__simulator_cache__/clear/Final%20Fantasy%20XIV HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.82s/it]1it [00:01,  1.82s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Master of All Trades",
+    "description": "Achieve mastery in all available jobs.",
+    "requirements": [
+        {"type": "level", "value": "80"},
+        {"type": "quest", "value": "The Ultimate Test"},
+        {"type": "item", "value": "Soul of the Crafter"}
+    ],
+    "rewards": [
+        {"name": "Title: Master of All Trades", "quantity": 1},
+        {"name": "Mount: Legendary Chocobo", "quantity": 1}
+    ]
+}
+Explanation: This response provides information about the achievement "Master of All Trades," including its description, requirements (reaching level 80, completing the quest "The Ultimate Test," and obtaining the item "Soul of the Crafter"), and rewards (the title "Master of All Trades" and the mount "Legendary Chocobo").
+INFO:     127.0.0.1:58360 - "GET /Final%20Fantasy%20XIV/achievement/12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53982 - "GET /__simulator_cache__/clear/Final%20Fantasy%20XIV HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.55s/it]1it [00:01,  1.55s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Iron Sword",
+    "type": "Great Sword",
+    "stats": {
+        "attack": 528,
+        "affinity": 0,
+        "defense": 0
+    },
+    "upgradeTree": [
+        "Iron Sword -> Iron Sword+ -> Iron Katana -> Iron Katana+"
+    ]
+}
+Explanation: The response contains details of the weapon with ID 1, including its name, type, stats (attack, affinity, defense), and upgrade tree.
+
+Note: This is a sample response for the request to retrieve details of a specific weapon with ID 1 in the Monster Hunter World API.
+INFO:     127.0.0.1:38088 - "GET /Monster%20Hunter%20World/weapons/1 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.94s/it]1it [00:01,  1.95s/it]
+Status Code: 200
+Response:
+{
+    "name": "Bone Armor Set",
+    "stats": {
+        "defense": 60,
+        "fireRes": 0,
+        "waterRes": 0,
+        "thunderRes": 0,
+        "iceRes": 0,
+        "dragonRes": 0
+    },
+    "materials": [
+        "Monster Bone S x2",
+        "Monster Bone M x1",
+        "Ancient Bone x1"
+    ]
+}
+Explanation: The response provides details of the armor set with ID 2, including its name, stats (defense, elemental resistances), and required materials for crafting.
+
+Note: This is a sample response for the request to retrieve details of a specific armor set with ID 2 in the Monster Hunter World API.
+INFO:     127.0.0.1:39534 - "GET /Monster%20Hunter%20World/armor/2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.30s/it]1it [00:01,  1.30s/it]
+Status Code: 200
+Response:
+{
+    "name": "Hunt the Great Jagras",
+    "objectives": [
+        "Hunt a Great Jagras"
+    ],
+    "rewards": [
+        "Great Jagras Scale x3",
+        "Great Jagras Hide x2",
+        "Monster Bone S x2"
+    ]
+}
+Explanation: The response contains information about the quest with ID 3, including its name, objectives, and rewards upon completion.
+
+Note: This is a sample response for the request to retrieve details of a specific quest with ID 3 in the Monster Hunter World API.
+INFO:     127.0.0.1:33640 - "GET /Monster%20Hunter%20World/quests/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37114 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42564 - "GET /__simulator_cache__/clear/Monster%20Hunter%20World HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.26s/it]1it [00:02,  2.26s/it]
+Status Code: 200
+Response: 
+{
+    "quests": [
+        {
+            "id": 1234,
+            "name": "Elder Dragon Slaying",
+            "description": "A high difficulty quest to hunt down and slay an Elder Dragon.",
+            "type": "Assigned",
+            "difficulty": 9
+        },
+        {
+            "id": 5678,
+            "name": "Tempered Nergigante Investigation",
+            "description": "An investigation quest to hunt a tempered Nergigante for rare rewards.",
+            "type": "Investigation",
+            "difficulty": 9
+        },
+        {
+            "id": 9012,
+            "name": "Arch-Tempered Kirin Event",
+            "description": "A special event quest to face the powerful Arch-Tempered Kirin.",
+            "type": "Event",
+            "difficulty": 9
+        }
+    ]
+}
+Explanation: The response contains a list of quests with a difficulty level of 9, including their IDs, names, descriptions, types, and difficulty levels. These quests are high-level and challenging in Monster Hunter World.
+INFO:     127.0.0.1:48532 - "GET /Monster%20Hunter%20World/quests?difficulty=9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44134 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49594 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33552 - "GET /__simulator_cache__/clear/Monster%20Hunter%20World HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.65s/it]1it [00:01,  1.65s/it]
+Status Code: 200
+Response: 
+{
+  "items": [
+    {
+      "title": "Advancements in AI Technology",
+      "link": "https://scienceblog.com/advancements-in-ai-technology",
+      "description": "Discover the latest advancements in artificial intelligence technology.",
+      "pubDate": "2022-05-15T08:00:00Z",
+      "guid": "12345"
+    },
+    {
+      "title": "Machine Learning Algorithms Explained",
+      "link": "https://scienceblog.com/machine-learning-algorithms",
+      "description": "A comprehensive guide to understanding machine learning algorithms.",
+      "pubDate": "2022-05-16T10:30:00Z",
+      "guid": "67890"
+    }
+  ]
+}
+Explanation: The response contains two feed items filtered by the tags "AI" and "Machine Learning" from the specified RSS feed URL. Each item includes title, link, description, publication date, and a unique identifier.
+INFO:     127.0.0.1:51050 - "GET /RSS%20feed%20to%20JSON/getFeedItemsByTag?feedUrl=https%3A%2F%2Fscienceblog.com%2Frss&tags=AI&tags=Machine+Learning HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51058 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60260 - "GET /__simulator_cache__/clear/RSS%20feed%20to%20JSON HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.33s/it]1it [00:02,  2.33s/it]
+Status Code: 200
+Response: 
+{
+    "items": [
+        {
+            "title": "Breaking News: New Study Shows Benefits of Daily Exercise",
+            "link": "https://dailynews.com/article123",
+            "description": "A new study reveals the positive impact of daily exercise on overall health.",
+            "pubDate": "2022-10-15T08:00:00Z",
+            "guid": "12345"
+        },
+        {
+            "title": "Weather Update: Sunny Skies Expected for the Weekend",
+            "link": "https://dailynews.com/article456",
+            "description": "Get ready for a sunny weekend with warm temperatures across the region.",
+            "pubDate": "2022-10-15T12:30:00Z",
+            "guid": "67890"
+        },
+        {
+            "title": "Tech News: Latest Smartphone Model Released with Advanced Features",
+            "link": "https://dailynews.com/article789",
+            "description": "Check out the newest smartphone model with cutting-edge technology and improved performance.",
+            "pubDate": "2022-10-15T15:45:00Z",
+            "guid": "54321"
+        }
+    ]
+}
+Explanation: The response contains three feed items sorted by 'pubDate' attribute in ascending order. Each item includes a title, link, description, publication date, and unique identifier. The data provided is based on realistic news feed content.
+INFO:     127.0.0.1:60262 - "GET /RSS%20feed%20to%20JSON/sortFeedItems?feedUrl=https%3A%2F%2Fdailynews.com%2Frss&sortBy=pubDate&order=asc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47704 - "GET /__simulator_cache__/clear/RSS%20feed%20to%20JSON HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.00s/it]1it [00:01,  1.00s/it]
+Status Code: 200
+Response: 
+{
+    "document_id": "12345",
+    "status": "Signed",
+    "date_created": "2022-03-15T10:30:00"
+}
+Explanation: The status of the document with ID 12345 is "Signed", and it was created on March 15, 2022, at 10:30 AM. This response indicates that the document status was successfully retrieved.
+INFO:     127.0.0.1:51120 - "GET /PandaDoc/document/status?document_id=12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35690 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45584 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33588 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51502 - "GET /__simulator_cache__/clear/PandaDoc HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.27it/s]1it [00:00,  1.27it/s]
+Status Code: 200
+Response: 
+{
+    "document_id": "12345",
+    "status": "Signed",
+    "date_created": "2022-05-15T10:30:00"
+}
+Explanation: The status of the document with ID 12345 is "Signed", and it was created on May 15, 2022, at 10:30 AM.
+INFO:     127.0.0.1:40784 - "GET /PandaDoc/document/status?document_id=12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57482 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53010 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60292 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52684 - "GET /__simulator_cache__/clear/PandaDoc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52698 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.41s/it]1it [00:01,  1.41s/it]
+Status Code: 200
+Response: 
+{
+  "sensorLocations": [
+    "City Centre",
+    "University Campus",
+    "Industrial Park",
+    "Residential Area",
+    "Highway",
+    "Park"
+  ]
+}
+Explanation: The response contains a JSON array with the names of available sensor locations in the Urban Observatory dataset.
+
+Status Code: 200
+Response: 
+{
+  "sensorLocations": [
+    "Shopping Mall",
+    "Airport",
+    "Train Station",
+    "Hospital",
+    "Sports Stadium",
+    "Riverfront"
+  ]
+}
+Explanation: Another set of available sensor locations is provided in a JSON array format.
+
+Status Code: 200
+Response: 
+{
+  "sensorLocations": [
+    "Business District",
+    "Mountain Area",
+    "Coastal Region",
+    "Public Park",
+    "Historical Site",
+    "Suburban Neighborhood"
+  ]
+}
+Explanation: Additional sensor locations are listed in the response as a JSON array.
+INFO:     127.0.0.1:52714 - "GET /Urban%20Observatory/sensor-locations HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.46s/it]1it [00:02,  2.46s/it]
+Status Code: 200
+Response: 
+{
+  "sensorTypes": [
+    "Air Quality",
+    "Temperature",
+    "Humidity",
+    "Noise Level",
+    "Light Intensity",
+    "Traffic Flow"
+  ]
+}
+Explanation: The response includes a JSON array listing available sensor types in the Urban Observatory dataset.
+
+Status Code: 200
+Response: 
+{
+  "sensorTypes": [
+    "CO2 Level",
+    "Rainfall",
+    "Wind Speed",
+    "Pressure",
+    "Occupancy",
+    "Vehicle Count"
+  ]
+}
+Explanation: Another set of sensor types is provided in a JSON array format.
+
+Status Code: 200
+Response: 
+{
+  "sensorTypes": [
+    "Water Quality",
+    "Solar Radiation",
+    "Pedestrian Count",
+    "Soil Moisture",
+    "UV Index",
+    "Gas Detection"
+  ]
+}
+Explanation: Additional sensor types are listed in the response as a JSON array.
+INFO:     127.0.0.1:44026 - "GET /Urban%20Observatory/sensor-types HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44692 - "GET /__simulator_cache__/clear/Urban%20Observatory HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.13s/it]1it [00:03,  3.14s/it]
+Status Code: 200
+Response: 
+{
+  "sensorLocations": [
+    "City Centre",
+    "University Campus",
+    "Industrial Zone",
+    "Residential Area",
+    "Park"
+  ]
+}
+Explanation: The response contains a list of available sensor locations including City Centre, University Campus, Industrial Zone, Residential Area, and Park. This data is retrieved from the Urban Observatory API.
+
+Status Code: 200
+Response: 
+{
+  "sensorLocations": [
+    "Shopping Mall",
+    "Airport",
+    "Train Station",
+    "Hospital",
+    "Sports Stadium"
+  ]
+}
+Explanation: The response provides a list of sensor locations such as Shopping Mall, Airport, Train Station, Hospital, and Sports Stadium. These locations are available for sensor data collection within the Urban Observatory network.
+
+Status Code: 200
+Response: 
+{
+  "sensorLocations": [
+    "School",
+    "Library",
+    "Cinema",
+    "Gym",
+    "Restaurant"
+  ]
+}
+Explanation: The JSON response includes sensor locations like School, Library, Cinema, Gym, and Restaurant. These locations are part of the Urban Observatory network for real-time data collection.
+INFO:     127.0.0.1:49692 - "GET /Urban%20Observatory/sensor-locations HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.92s/it]1it [00:01,  1.92s/it]
+Status Code: 200
+Response: 
+{
+  "sensorTypes": [
+    "Air Quality",
+    "Traffic",
+    "Weather",
+    "Noise Level",
+    "Light Intensity"
+  ]
+}
+Explanation: The response includes a list of available sensor types such as Air Quality, Traffic, Weather, Noise Level, and Light Intensity. These sensor types are used for data collection in various locations within the Urban Observatory network.
+
+Status Code: 200
+Response: 
+{
+  "sensorTypes": [
+    "Temperature",
+    "Humidity",
+    "CO2 Level",
+    "PM2.5",
+    "UV Index"
+  ]
+}
+Explanation: The JSON response provides sensor types like Temperature, Humidity, CO2 Level, PM2.5, and UV Index. These sensor types are utilized for monitoring environmental conditions in different areas within the Urban Observatory network.
+
+Status Code: 200
+Response: 
+{
+  "sensorTypes": [
+    "Water Quality",
+    "Soil Moisture",
+    "Wind Speed",
+    "Pressure",
+    "Ozone Level"
+  ]
+}
+Explanation: The response contains sensor types including Water Quality, Soil Moisture, Wind Speed, Pressure, and Ozone Level. These sensor types are essential for gathering environmental data in various locations monitored by the Urban Observatory.
+INFO:     127.0.0.1:53158 - "GET /Urban%20Observatory/sensor-types HTTP/1.1" 200 OK
+0it [00:00, ?it/s]INFO:     127.0.0.1:52544 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+1it [00:01,  1.85s/it]1it [00:01,  1.85s/it]
+Status Code: 200
+Response:
+{
+  "sensorId": "WEATHER_SENSOR_123",
+  "timestamps": ["2020-01-01T12:00:00Z", "2020-01-02T12:00:00Z", "2020-01-03T12:00:00Z"],
+  "readings": [15.6, 14.2, 16.8]
+}
+Explanation: The response contains historical weather sensor data for the location "Edinburgh, Scotland" between the specified start time on January 1, 2020, and end time on January 8, 2020. The data includes sensor ID, timestamps, and weather readings for three different days.
+INFO:     127.0.0.1:52538 - "GET /Urban%20Observatory/historical-sensor-data?location=Edinburgh%2C+Scotland&sensorType=weather&startTime=2020-01-01T00%3A00%3A00Z&endTime=2020-01-08T00%3A00%3A00Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57672 - "GET /__simulator_cache__/clear/Urban%20Observatory HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.28s/it]1it [00:02,  2.28s/it]
+Status Code: 200
+Response: 
+{
+  "gsi_values": [
+    {
+      "gsi": 45.67,
+      "timestamp": "2020-01-01T00:00:00Z"
+    },
+    {
+      "gsi": 43.21,
+      "timestamp": "2020-01-15T00:00:00Z"
+    },
+    {
+      "gsi": 48.90,
+      "timestamp": "2020-01-31T00:00:00Z"
+    }
+  ]
+}
+Explanation: The response contains historical Green Power Index values for Germany from January 1, 2020, to January 31, 2020. The GSI values are provided with their corresponding timestamps in ISO 8601 format.
+INFO:     127.0.0.1:50250 - "GET /Gr%C3%BCnstromIndex/historical_gsi?start_date=2020-01-01&end_date=2020-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58912 - "GET /__simulator_cache__/clear/Gr%C3%BCnstromIndex HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.68s/it]1it [00:01,  1.68s/it]
+Status Code: 200
+Response: 
+{
+    "calculation": "The Green Power Index (Grünstromindex/GSI) is calculated based on the renewable energy production and consumption data across various regions in Germany. The index value is derived from the ratio of renewable energy production to consumption, taking into account factors such as weather conditions, time of day, and grid demand.",
+    "source": "The data used to calculate the GSI is sourced from official renewable energy monitoring agencies, energy providers, and environmental organizations in Germany."
+}
+Explanation: The response provides a description of how the Green Power Index (Grünstromindex/GSI) is calculated and the sources of the data used in the calculation. It gives insights into the factors considered and the data providers involved in generating the GSI value.
+INFO:     127.0.0.1:46764 - "GET /Gr%C3%BCnstromIndex/gsi_calculation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38990 - "GET /__simulator_cache__/clear/Gr%C3%BCnstromIndex HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.51s/it]1it [00:01,  1.51s/it]
+Status Code: 200
+Response: 
+{
+    "discordID": "987654321",
+    "discordUsername": "ToxicPlayer",
+    "discordTag": "1234"
+}
+Explanation: The request searched for the Discord account with the username "ToxicPlayer" and returned the matching malicious account with Discord ID "987654321" and tag "1234".
+INFO:     127.0.0.1:33456 - "POST /Dangerous%20Discord%20Database/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33458 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.25s/it]1it [00:02,  2.25s/it]
+Status Code: 200
+Response:
+{
+    "discordID": "987654321",
+    "discordUsername": "ToxicPlayer",
+    "discordTag": "1234",
+    "history": [
+        {
+            "timestamp": "2022-01-15T10:30:00",
+            "event": "Spamming chat"
+        },
+        {
+            "timestamp": "2022-02-20T15:45:00",
+            "event": "Harassment"
+        }
+    ],
+    "behavior": [
+        {
+            "timestamp": "2022-01-15T10:30:00",
+            "behavior": "Aggressive language"
+        },
+        {
+            "timestamp": "2022-02-20T15:45:00",
+            "behavior": "Threats"
+        }
+    ],
+    "evidence": [
+        {
+            "timestamp": "2022-01-15T10:30:00",
+            "evidence": "Screenshots of chat logs"
+        },
+        {
+            "timestamp": "2022-02-20T15:45:00",
+            "evidence": "Witness statements"
+        }
+    ]
+}
+Explanation: The request retrieved detailed information on the malicious account with Discord ID "987654321", including its history of events, behavior patterns, and evidence of wrongdoing.
+INFO:     127.0.0.1:58640 - "POST /Dangerous%20Discord%20Database/details HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.05s/it]1it [00:01,  1.05s/it]
+Status Code: 200
+Response:
+{
+    "totalAccounts": 1500,
+    "newAccounts": 200,
+    "percentageChange": 15.38
+}
+Explanation: The request retrieved statistical data on the prevalence and frequency of malicious accounts on Discord for the specified time range "all-time". There are a total of 1500 malicious accounts, with 200 new accounts added in the specified time range, resulting in a 15.38% increase compared to the previous time range.
+INFO:     127.0.0.1:58652 - "POST /Dangerous%20Discord%20Database/statistics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40272 - "GET /__simulator_cache__/clear/Dangerous%20Discord%20Database HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.40s/it]1it [00:01,  1.40s/it]
+Status Code: 200
+Response: 
+{
+    "discordID": "123456789",
+    "discordUsername": "Stalker123",
+    "discordTag": "5678"
+}
+Explanation: The request searched for the Discord account with the username "Stalker123", and the response provides the Discord ID, username, and tag of the matching malicious account.
+INFO:     127.0.0.1:34514 - "POST /Dangerous%20Discord%20Database/search HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.07s/it]1it [00:02,  2.07s/it]
+Status Code: 200
+Response:
+{
+    "discordID": "123456789",
+    "discordUsername": "Stalker123",
+    "discordTag": "5678",
+    "history": [
+        {
+            "timestamp": "2022-10-15T13:30:00",
+            "event": "Spamming multiple servers"
+        },
+        {
+            "timestamp": "2022-10-16T09:45:00",
+            "event": "Harassment of users"
+        }
+    ],
+    "behavior": [
+        {
+            "timestamp": "2022-10-15T13:30:00",
+            "behavior": "Sending unsolicited messages"
+        },
+        {
+            "timestamp": "2022-10-16T09:45:00",
+            "behavior": "Creating fake accounts"
+        }
+    ],
+    "evidence": [
+        {
+            "timestamp": "2022-10-15T13:30:00",
+            "evidence": "Screenshots of inappropriate messages"
+        },
+        {
+            "timestamp": "2022-10-16T09:45:00",
+            "evidence": "Server logs of disruptive behavior"
+        }
+    ]
+}
+Explanation: The request retrieved detailed information for the malicious Discord account with the ID "123456789". The response includes the account's history, behavior, and evidence of wrongdoing.
+INFO:     127.0.0.1:34518 - "POST /Dangerous%20Discord%20Database/details HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.14it/s]1it [00:00,  1.14it/s]
+Status Code: 200
+Response:
+{
+    "totalAccounts": 5000,
+    "newAccounts": 100,
+    "percentageChange": 2.0
+}
+Explanation: The request fetched statistical data on the prevalence and frequency of malicious accounts on Discord for the specified time range "all-time". The response includes the total number of malicious accounts, the number of new accounts added, and the percentage change compared to the previous time range.
+INFO:     127.0.0.1:40238 - "POST /Dangerous%20Discord%20Database/statistics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35090 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49518 - "GET /__simulator_cache__/clear/Dangerous%20Discord%20Database HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.51s/it]1it [00:02,  2.51s/it]
+Status Code: 200
+Response: 
+{
+    "lat": 40.7128,
+    "lng": -74.0060
+}
+Explanation: The geocoding request successfully converted the address "123 Main St, Cityville" into geographic coordinates with latitude 40.7128 and longitude -74.0060.
+
+Status Code: 200
+Response: 
+{
+    "lat": 37.7749,
+    "lng": -122.4194
+}
+Explanation: Another successful geocoding request that converted the address "123 Main St, Cityville" into geographic coordinates with latitude 37.7749 and longitude -122.4194.
+
+Status Code: 200
+Response: 
+{
+    "lat": 51.5074,
+    "lng": -0.1278
+}
+Explanation: A third successful geocoding request that converted the address "123 Main St, Cityville" into geographic coordinates with latitude 51.5074 and longitude -0.1278.
+INFO:     127.0.0.1:40186 - "POST /GraphHopper/geocode HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54068 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.14s/it]1it [00:01,  1.14s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Invalid input parameters. 'points' must be an array of objects containing 'lat' and 'lng'."
+}
+Explanation: The request was unsuccessful due to invalid input parameters. The 'points' parameter should be an array of objects with 'lat' and 'lng' values.
+0it [00:00, ?it/s]1it [00:01,  1.63s/it]1it [00:01,  1.63s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Invalid request format. The 'points' parameter should be an array of objects containing 'lat' and 'lng'."
+}
+Explanation: The request format is invalid as the 'points' parameter should be an array of objects with 'lat' and 'lng' properties, not an array of numbers.
+INFO:     127.0.0.1:49250 - "POST /GraphHopper/route HTTP/1.1" 400 Bad Request
+0it [00:00, ?it/s]1it [00:01,  1.85s/it]1it [00:01,  1.85s/it]
+Status Code: 200
+Response:
+{
+    "lat": 40.7128,
+    "lng": -74.006
+}
+Explanation: The geocoding request successfully converted the coordinates "40.7128,-74.006" into the address with latitude 40.7128 and longitude -74.006.
+INFO:     127.0.0.1:45602 - "POST /GraphHopper/geocode HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37014 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.73s/it]1it [00:02,  2.73s/it]
+Status Code: 200
+Response:
+{
+    "distance": 10.5,
+    "time": 25,
+    "instructions": [
+        {
+            "text": "Turn left onto Main Street",
+            "distance": 0.5,
+            "time": 2,
+            "interval": [0, 1],
+            "sign": -1,
+            "exit_number": 0,
+            "street_name": "Main Street",
+            "last_street_name": ""
+        },
+        {
+            "text": "Arrive at destination",
+            "distance": 10,
+            "time": 23,
+            "interval": [1, 2],
+            "sign": 0,
+            "exit_number": 0,
+            "street_name": "",
+            "last_street_name": ""
+        }
+    ]
+}
+Explanation: The optimal route calculation between the given points resulted in a distance of 10.5 units and a total time of 25 units. The turn-by-turn instructions are provided for the route.
+INFO:     127.0.0.1:37028 - "POST /GraphHopper/route HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60238 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60240 - "GET /__simulator_cache__/clear/GraphHopper HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.28s/it]1it [00:02,  2.28s/it]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid request body format. 'points' parameter should be an array of objects with 'lat' and 'lng' properties."}
+Explanation: The request body format is incorrect as the 'points' parameter should be an array of objects with 'lat' and 'lng' properties. 
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Missing required parameter 'points'."}
+Explanation: The 'points' parameter is missing in the request, which is required for route optimization.
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid 'profile' value in 'vehicle' parameter. Valid values are 'car', 'bike', 'foot'."}
+Explanation: The 'profile' value in the 'vehicle' parameter is invalid. Valid values are 'car', 'bike', 'foot'.
+0it [00:00, ?it/s]1it [00:02,  2.19s/it]1it [00:02,  2.19s/it]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid request format. 'points' should be an array of objects with 'lat' and 'lng' properties."}
+Explanation: The request is missing the required format for the 'points' parameter. It should be an array of objects with 'lat' and 'lng' properties.
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid request format. 'optimization' object is missing required parameters."}
+Explanation: The request is missing the required 'optimization' object with the 'algorithm' parameter for route optimization.
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid request format. 'profile' is missing in the 'vehicle' object."}
+Explanation: The request is missing the required 'profile' parameter in the 'vehicle' object for specifying the vehicle profile.
+INFO:     127.0.0.1:35002 - "POST /GraphHopper/route HTTP/1.1" 400 Bad Request
+0it [00:00, ?it/s]1it [00:01,  1.90s/it]1it [00:01,  1.90s/it]
+Status Code: 200
+Response: {"distance": 1500, "time": 600, "instructions": [{"text": "Walk straight for 500 meters", "distance": 500, "time": 200, "interval": [0, 1], "sign": 0, "exit_number": 0, "street_name": "Main Street", "last_street_name": ""}, {"text": "Turn left and walk for 500 meters", "distance": 500, "time": 200, "interval": [1, 2], "sign": 270, "exit_number": 0, "street_name": "Park Avenue", "last_street_name": ""}, {"text": "Turn right and walk for 500 meters", "distance": 500, "time": 200, "interval": [2, 3], "sign": 90, "exit_number": 0, "street_name": "Broadway", "last_street_name": ""}]}
+Explanation: The response provides optimized route information for walking between the specified points. The total distance is 1500 meters and the total time is 600 seconds. The response includes turn-by-turn instructions with realistic data.
+INFO:     127.0.0.1:45408 - "POST /GraphHopper/route HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45434 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45438 - "GET /__simulator_cache__/clear/GraphHopper HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.17s/it]1it [00:01,  1.17s/it]
+Status Code: 200
+Response: 
+{
+  "isEven": true
+}
+Explanation: The provided number 3456 is an even number, hence the response is true.
+
+Status Code: 200
+Response: 
+{
+  "isEven": false
+}
+Explanation: The provided number is not an even number, it is an odd number, hence the response is false.
+
+Status Code: 200
+Response: 
+{
+  "isEven": true
+}
+Explanation: The provided number 0 is an even number, hence the response is true.
+INFO:     127.0.0.1:45444 - "POST /isEven%20%28humor%29/checkNumber HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45446 - "GET /__simulator_cache__/clear/isEven%20%28humor%29 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.05s/it]1it [00:01,  1.05s/it]
+Status Code: 200
+Response: 
+{
+  "isEven": false
+}
+Explanation: The API successfully checked the provided number 123 and determined that it is an odd number.
+
+Status Code: 200
+Response: 
+{
+  "isEven": true
+}
+Explanation: The API successfully checked the provided number 10 and determined that it is an even number.
+
+Status Code: 200
+Response: 
+{
+  "isEven": false
+}
+Explanation: The API successfully checked the provided number 987 and determined that it is an odd number.
+INFO:     127.0.0.1:44878 - "POST /isEven%20%28humor%29/checkNumber HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44890 - "GET /__simulator_cache__/clear/isEven%20%28humor%29 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.37s/it]1it [00:02,  2.37s/it]
+Status Code: 200
+Response: 
+{
+    "totalResults": 3,
+    "results": [
+        {
+            "jobId": "123",
+            "title": "Software Engineer",
+            "company": "Tech Co",
+            "location": "San Francisco, CA",
+            "publicationDate": "2022-10-01"
+        },
+        {
+            "jobId": "456",
+            "title": "Senior Software Engineer",
+            "company": "Startup Inc",
+            "location": "San Francisco, CA",
+            "publicationDate": "2022-09-28"
+        },
+        {
+            "jobId": "789",
+            "title": "Software Development Engineer",
+            "company": "Innovate Corp",
+            "location": "San Francisco, CA",
+            "publicationDate": "2022-09-25"
+        }
+    ]
+}
+Explanation: This response provides a list of 3 job listings for software engineers in San Francisco, CA. Each job listing includes the job title, company name, location, and publication date.
+INFO:     127.0.0.1:44904 - "GET /The%20Muse/jobs/search?searchQuery=software+engineer&location=San+Francisco%2C+CA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51998 - "GET /__simulator_cache__/clear/The%20Muse HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.86s/it]1it [00:01,  1.86s/it]
+Status Code: 200
+Response: 
+{
+    "totalResults": 25,
+    "results": [
+        {
+            "jobId": "12345",
+            "jobTitle": "Software Engineer",
+            "company": "Tech Co",
+            "applicationDate": "2022-10-15"
+        },
+        {
+            "jobId": "54321",
+            "jobTitle": "Data Analyst",
+            "company": "Data Corp",
+            "applicationDate": "2022-10-14"
+        },
+        {
+            "jobId": "98765",
+            "jobTitle": "Marketing Manager",
+            "company": "Marketing Inc",
+            "applicationDate": "2022-10-13"
+        }
+    ]
+}
+Explanation: This response simulates retrieving a list of job applications with a total of 25 results. Each result includes the job ID, job title, company name, and application date. The response contains 3 sample job application entries.
+INFO:     127.0.0.1:52680 - "GET /The%20Muse/jobs/applications?page=1&pageSize=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58362 - "GET /__simulator_cache__/clear/The%20Muse HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.62s/it]1it [00:01,  1.62s/it]
+Status Code: 200
+Response: 
+{
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "source": "Speech at Stanford University, 2005"
+}
+Explanation: The response contains a random quote by Steve Jobs along with the source of the quote.
+
+Status Code: 200
+Response: 
+{
+    "quote": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+    "author": "Martin Luther King Jr.",
+    "source": "Strength to Love, 1963"
+}
+Explanation: The response contains a random quote by Martin Luther King Jr. along with the source of the quote.
+
+Status Code: 200
+Response: 
+{
+    "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+    "author": "Albert Schweitzer"
+}
+Explanation: The response contains a random quote by Albert Schweitzer emphasizing the importance of happiness in achieving success.
+INFO:     127.0.0.1:58372 - "GET /Dictum/random-quote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49948 - "GET /__simulator_cache__/clear/Dictum HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.28s/it]1it [00:02,  2.28s/it]
+Status Code: 200
+Response: 
+{
+    "expressions": [
+        {
+            "text": "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things.",
+            "author": "Ronald Reagan",
+            "source": "https://www.brainyquote.com/quotes/ronald_reagan_402107"
+        },
+        {
+            "text": "A leader is one who knows the way, goes the way, and shows the way.",
+            "author": "John C. Maxwell",
+            "source": "https://www.goodreads.com/quotes/512757"
+        },
+        {
+            "text": "Leadership is not about being in charge. It's about taking care of those in your charge.",
+            "author": "Simon Sinek",
+            "source": "https://www.goodreads.com/quotes/8411468"
+        }
+    ]
+}
+Explanation: The response contains a list of expressions related to the keyword "leadership" with realistic data such as text, author, and source. The limit parameter is set to 10, and the response includes 3 sample expressions.
+INFO:     127.0.0.1:49954 - "GET /Dictum/search-expressions?query=leadership&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42102 - "GET /__simulator_cache__/clear/Dictum HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42116 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.20s/it]1it [00:02,  2.20s/it]
+Status Code: 200
+Response: 
+{
+  "books": [
+    {
+      "author": "Alice Smith",
+      "title": "The History of British Fashion",
+      "publicationDate": "2020-05-15",
+      "publisher": "Fashion Press",
+      "isbn": "978-1-234567-89-0"
+    },
+    {
+      "author": "John Brown",
+      "title": "Fashion Through the Ages",
+      "publicationDate": "2018-09-20",
+      "publisher": "Style Publications",
+      "isbn": "978-0-987654-32-1"
+    },
+    {
+      "author": "Emily White",
+      "title": "A Visual History of British Fashion",
+      "publicationDate": "2017-03-10",
+      "publisher": "Design Books",
+      "isbn": "978-5-432109-87-6"
+    }
+  ]
+}
+Explanation: The response contains a list of three books related to British fashion history that match the search criteria of the query "history" and the subject "British fashion history." Each book entry includes details such as author, title, publication date, publisher, and ISBN.
+INFO:     127.0.0.1:60476 - "GET /British%20National%20Bibliography/searchBooks?query=history&subject=British+fashion+history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56156 - "GET /__simulator_cache__/clear/British%20National%20Bibliography HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.48s/it]1it [00:02,  2.48s/it]
+Status Code: 200
+Response: 
+{
+    "books": [
+        {
+            "author": "John Green",
+            "title": "Turtles All the Way Down",
+            "publicationDate": "2017-10-10",
+            "publisher": "Dutton Books",
+            "isbn": "9780525555360"
+        },
+        {
+            "author": "Matt Haig",
+            "title": "Reasons to Stay Alive",
+            "publicationDate": "2015-03-05",
+            "publisher": "Canongate Books",
+            "isbn": "9781782116820"
+        },
+        {
+            "author": "Brene Brown",
+            "title": "The Gifts of Imperfection",
+            "publicationDate": "2010-08-27",
+            "publisher": "Hazelden Publishing",
+            "isbn": "9781592858491"
+        }
+    ]
+}
+Explanation: The response contains a list of books related to mental health and wellbeing. Each book entry includes details such as author, title, publication date, publisher, and ISBN.
+
+(Note: The data provided is for illustrative purposes and may not reflect actual book information.)
+INFO:     127.0.0.1:56170 - "GET /British%20National%20Bibliography/searchBooks?query=mental+health&subject=wellbeing HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.57s/it]1it [00:01,  1.57s/it]
+Status Code: 200
+Response:
+{
+    "author": "John Green",
+    "title": "Turtles All the Way Down",
+    "publicationDate": "2017-10-10",
+    "publisher": "Dutton Books",
+    "isbn": "9780525555360",
+    "description": "Turtles All the Way Down is a young adult novel about a teenage girl with OCD navigating friendship, love, and mental health challenges.",
+    "language": "English",
+    "format": "Hardcover",
+    "pages": 304,
+    "dimensions": "5.5 x 1 x 8.25 inches",
+    "subjects": ["Mental Health", "Friendship", "Young Adult"],
+    "contributors": ["N/A"]
+}
+Explanation: The response provides detailed information about the book with ISBN 9780525555360. It includes the author, title, publication date, publisher, description, language, format, number of pages, dimensions, subjects, and contributors.
+INFO:     127.0.0.1:57964 - "GET /British%20National%20Bibliography/getBookDetails?bookId=9780525555360 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.03it/s]1it [00:00,  1.03it/s]
+Status Code: 200
+Response:
+{
+    "ddc": "616.89",
+    "lcc": "RC537"
+}
+Explanation: The response provides the classification information for the book with the unique identifier 9781782116820. The Dewey Decimal Classification (DDC) is 616.89, and the Library of Congress Classification (LCC) is RC537.
+INFO:     127.0.0.1:33348 - "GET /British%20National%20Bibliography/getBookClassification?bookId=9781782116820 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49916 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49930 - "GET /__simulator_cache__/clear/British%20National%20Bibliography HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.04s/it]1it [00:02,  2.04s/it]
+Status Code: 200
+Response: 
+{
+    "pastes": [
+        {
+            "pasteKey": "abc123",
+            "title": "Sample Paste 1",
+            "created": "2022-10-15T08:00:00Z",
+            "access": "public"
+        },
+        {
+            "pasteKey": "def456",
+            "title": "Sample Paste 2",
+            "created": "2022-10-16T12:00:00Z",
+            "access": "unlisted"
+        },
+        {
+            "pasteKey": "ghi789",
+            "title": "Sample Paste 3",
+            "created": "2022-10-17T16:00:00Z",
+            "access": "private"
+        }
+    ]
+}
+Explanation: The response contains a list of pastes created by the specified user with the user key "xYz098Usr". Each paste includes its unique paste key, title, creation date, and access level. In this case, we have provided 3 sample pastes with different access levels.
+INFO:     127.0.0.1:49574 - "GET /Pastebin/getUserPastes?userKey=xYz098Usr&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58078 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37526 - "GET /__simulator_cache__/clear/Pastebin HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.85s/it]1it [00:01,  1.85s/it]
+Status Code: 200
+Response: 
+{
+  "trendingPastes": [
+    {
+      "pasteKey": "abc123",
+      "title": "Sample Trending Paste 1",
+      "created": "2022-09-15T12:30:45Z",
+      "access": "public"
+    },
+    {
+      "pasteKey": "def456",
+      "title": "Sample Trending Paste 2",
+      "created": "2022-09-16T08:15:30Z",
+      "access": "unlisted"
+    },
+    {
+      "pasteKey": "ghi789",
+      "title": "Sample Trending Paste 3",
+      "created": "2022-09-17T16:45:20Z",
+      "access": "private"
+    }
+  ]
+}
+Explanation: This response simulates a list of trending pastes on Pastebin, each containing a unique paste key, title, creation date, and access level. The response includes three sample trending pastes with varying access levels for demonstration purposes.
+INFO:     127.0.0.1:50184 - "GET /Pastebin/getTrendingPastes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51632 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47436 - "GET /__simulator_cache__/clear/Pastebin HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.48s/it]1it [00:02,  2.48s/it]
+Status Code: 200
+Response: 
+{
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "price": 3200.45,
+    "market_cap": 37000000000,
+    "total_volume_24h": 1500000000,
+    "high_24h": 3300.78,
+    "low_24h": 3100.22,
+    "delta_24h": -2.5,
+    "delta_7d": 5.2,
+    "delta_30d": 10.1,
+    "delta_90d": 25.6,
+    "delta_1y": 150.3
+}
+Explanation: This response provides the current prices and market data for Ethereum (ETH) including price, market cap, total volume in the last 24 hours, high and low prices in the last 24 hours, percentage change in the last 24 hours, 7 days, 30 days, 90 days, and 1 year.
+
+Note: The data provided in the response is for illustrative purposes and may not reflect real-time values.
+INFO:     127.0.0.1:39844 - "GET /Coinlib/coinData?symbol=ETH HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.21s/it]1it [00:01,  1.21s/it]
+Status Code: 200
+Response:
+[
+    {
+        "date": "2020-01-01",
+        "price": 130.45
+    },
+    {
+        "date": "2020-01-02",
+        "price": 135.67
+    },
+    {
+        "date": "2020-01-03",
+        "price": 140.23
+    }
+]
+Explanation: This response provides historical price data for Ethereum (ETH) from January 1, 2020, to January 3, 2020. Each object in the array includes the date and the corresponding price for that day.
+
+Note: The data provided in the response is for illustrative purposes and may not reflect real historical prices.
+INFO:     127.0.0.1:39854 - "GET /Coinlib/historicalData?symbol=ETH&start_date=2020-01-01 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.01s/it]1it [00:04,  4.01s/it]
+Status Code: 200
+Response:
+[
+    {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": 50000.75,
+        "market_cap": 950000000000
+    },
+    {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 3200.45,
+        "market_cap": 37000000000
+    },
+    {
+        "symbol": "BNB",
+        "name": "Binance Coin",
+        "price": 400.32,
+        "market_cap": 6000000000
+    },
+    {
+        "symbol": "ADA",
+        "name": "Cardano",
+        "price": 2.15,
+        "market_cap": 6800000000
+    },
+    {
+        "symbol": "XRP",
+        "name": "Ripple",
+        "price": 1.05,
+        "market_cap": 48000000000
+    },
+    {
+        "symbol": "SOL",
+        "name": "Solana",
+        "price": 150.78,
+        "market_cap": 8000000000
+    },
+    {
+        "symbol": "DOT",
+        "name": "Polkadot",
+        "price": 30.45,
+        "market_cap": 3000000000
+    },
+    {
+        "symbol": "DOGE",
+        "name": "Dogecoin",
+        "price": 0.25,
+        "market_cap": 3200000000
+    },
+    {
+        "symbol": "LUNA",
+        "name": "Terra",
+        "price": 40.67,
+        "market_cap": 2000000000
+    },
+    {
+        "symbol": "AVAX",
+        "name": "Avalanche",
+        "price": 80.32,
+        "market_cap": 1500000000
+    }
+]
+Explanation: This response provides the top 10 coins by market capitalization, including symbols, names, prices, and market capitalizations. Each object in the array represents a different cryptocurrency.
+INFO:     127.0.0.1:59866 - "GET /Coinlib/topCoinsByMarketCap?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35070 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35074 - "GET /__simulator_cache__/clear/Coinlib HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.08s/it]1it [00:02,  2.08s/it]
+Status Code: 200
+Response: 
+{
+    "symbol": "BTC",
+    "name": "Bitcoin",
+    "price": 45000.75,
+    "market_cap": 850000000000,
+    "total_volume_24h": 50000000000,
+    "high_24h": 46000.25,
+    "low_24h": 44000.50,
+    "delta_24h": 1.5,
+    "delta_7d": 10.2,
+    "delta_30d": 25.8,
+    "delta_90d": 50.5,
+    "delta_1y": 200.3
+}
+Explanation: This response provides the current prices and market data for Bitcoin (BTC) with realistic data values.
+INFO:     127.0.0.1:36844 - "GET /Coinlib/coinData?symbol=BTC HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.19s/it]1it [00:01,  1.19s/it]
+Status Code: 200
+Response:
+{
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "price": 3500.25,
+    "market_cap": 400000000000,
+    "total_volume_24h": 30000000000,
+    "high_24h": 3600.75,
+    "low_24h": 3400.50,
+    "delta_24h": -2.3,
+    "delta_7d": 5.6,
+    "delta_30d": 15.2,
+    "delta_90d": 30.8,
+    "delta_1y": 150.4
+}
+Explanation: The response provides the current prices and market data for Ethereum (ETH) with realistic data values.
+INFO:     127.0.0.1:36856 - "GET /Coinlib/coinData?symbol=ETH HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:06,  6.88s/it]1it [00:06,  6.88s/it]
+Status Code: 200
+Response:
+{
+    "symbol": "ADA",
+    "name": "Cardano",
+    "price": 2.15,
+    "market_cap": 70000000000,
+    "total_volume_24h": 5000000000,
+    "high_24h": 2.25,
+    "low_24h": 2.10,
+    "delta_24h": 3.2,
+    "delta_7d": 8.9,
+    "delta_30d": 20.5,
+    "delta_90d": 45.7,
+    "delta_1y": 180.6
+}
+Explanation: The response contains the current prices and market data for Cardano (ADA) with realistic data values.
+INFO:     127.0.0.1:36304 - "GET /Coinlib/coinData?symbol=ADA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40964 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40968 - "GET /__simulator_cache__/clear/Coinlib HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.70s/it]1it [00:01,  1.70s/it]
+Status Code: 200
+Response: 
+{
+    "bids": [
+        ["2000.5", "5.2"],
+        ["1999.8", "3.6"],
+        ["1998.7", "7.1"],
+        ["1997.3", "9.8"],
+        ["1996.2", "4.3"]
+    ],
+    "asks": [
+        ["2001.3", "6.5"],
+        ["2002.6", "2.1"],
+        ["2003.8", "8.7"],
+        ["2004.5", "3.2"],
+        ["2005.1", "5.6"]
+    ]
+}
+Explanation: This response provides the trading depth for the ETH_USDT trading pair with a depth of 50 levels. The "bids" represent buy orders, and the "asks" represent sell orders with corresponding price and amount for each level.
+INFO:     127.0.0.1:40980 - "GET /NovaDax/depth?symbol=ETH_USDT&depth=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52618 - "GET /__simulator_cache__/clear/NovaDax HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.75s/it]1it [00:01,  1.75s/it]
+Status Code: 200
+Response: 
+{
+    "trades": [
+        {
+            "id": 123456,
+            "price": "1.25",
+            "amount": "100.00",
+            "side": "buy",
+            "timestamp": 1634025600
+        },
+        {
+            "id": 123457,
+            "price": "1.26",
+            "amount": "150.00",
+            "side": "sell",
+            "timestamp": 1634025700
+        },
+        {
+            "id": 123458,
+            "price": "1.27",
+            "amount": "75.00",
+            "side": "buy",
+            "timestamp": 1634025800
+        }
+    ]
+}
+Explanation: The response contains trade history data for the XRP/USDT trading pair with a limit of 200 trades. The data includes trade IDs, prices, amounts, sides (buy/sell), and timestamps for each trade.
+INFO:     127.0.0.1:58784 - "GET /NovaDax/trades?symbol=XRP_USDT&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /__simulator_cache__/clear/NovaDax HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.77s/it]1it [00:01,  1.77s/it]
+Status Code: 200
+Response: 
+{
+    "leaderboard": [
+        {
+            "rank": 1,
+            "rating": 2500,
+            "games_played": 100,
+            "player_name": "JohnDoe",
+            "player_id": "jd123"
+        },
+        {
+            "rank": 2,
+            "rating": 2450,
+            "games_played": 95,
+            "player_name": "JaneSmith",
+            "player_id": "js456"
+        },
+        {
+            "rank": 3,
+            "rating": 2400,
+            "games_played": 90,
+            "player_name": "AliceJohnson",
+            "player_id": "aj789"
+        }
+    ]
+}
+Explanation: The response contains the leaderboard data for the North America region and solo game mode. It provides information about the top 3 players, including their rank, rating, games played, player name, and player ID.
+INFO:     127.0.0.1:42314 - "GET /PUBG/getLeaderboard?region=NA&game_mode=solo HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.27it/s]1it [00:00,  1.27it/s]
+Status Code: 404
+Response: 
+{
+    "error": "Player not found",
+    "message": "The player with ID 12345 does not exist."
+}
+Explanation: The response indicates that the player with the ID 12345 was not found in the system.
+0it [00:00, ?it/s]1it [00:00,  1.31it/s]1it [00:00,  1.31it/s]
+Status Code: 404
+Response: 
+{
+    "error": "Player not found",
+    "message": "The player with ID 12345 does not exist."
+}
+Explanation: The response indicates that the player with the provided ID (12345) was not found in the system.
+INFO:     127.0.0.1:42318 - "GET /PUBG/getPlayer?player_id=12345 HTTP/1.1" 404 Not Found
+0it [00:00, ?it/s]1it [00:03,  3.45s/it]1it [00:03,  3.45s/it]
+Status Code: 200
+Response: 
+{
+    "match_id": "345678912",
+    "game_mode": "squad",
+    "duration": 1800,
+    "events": [
+        {
+            "event_type": "kill",
+            "event_data": {
+                "killer": "PlayerA",
+                "victim": "PlayerB",
+                "weapon": "AKM"
+            }
+        },
+        {
+            "event_type": "revive",
+            "event_data": {
+                "reviver": "PlayerC",
+                "revivee": "PlayerD"
+            }
+        },
+        {
+            "event_type": "zone_shrink",
+            "event_data": {
+                "zone": "Final Zone",
+                "shrink_speed": "Fast"
+            }
+        }
+    ],
+    "telemetry": {
+        "player_locations": [
+            {
+                "player_id": "PlayerA",
+                "location": {
+                    "x": 100.25,
+                    "y": 75.50
+                }
+            },
+            {
+                "player_id": "PlayerB",
+                "location": {
+                    "x": 95.75,
+                    "y": 80.00
+                }
+            }
+        ],
+        "vehicle_movements": [
+            {
+                "vehicle_id": "Vehicle1",
+                "movement_data": {
+                    "speed": "Medium",
+                    "direction": "North"
+                }
+            },
+            {
+                "vehicle_id": "Vehicle2",
+                "movement_data": {
+                    "speed": "High",
+                    "direction": "East"
+                }
+            }
+        ]
+    }
+}
+Explanation: The response provides detailed information about the match with ID 345678912. It includes the game mode (squad), duration (1800 seconds), events such as kills, revives, and zone shrinkage, as well as telemetry data on player locations and vehicle movements during the match.
+INFO:     127.0.0.1:33338 - "GET /PUBG/getMatch?match_id=345678912 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58262 - "GET /__simulator_cache__/clear/PUBG HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.19s/it]1it [00:02,  2.19s/it]
+Status Code: 200
+Response: 
+{
+    "player_name": "SniperKing47",
+    "player_id": "123456789",
+    "matches": [
+        {
+            "match_id": "987654321",
+            "game_mode": "solo",
+            "duration": 1500
+        },
+        {
+            "match_id": "876543219",
+            "game_mode": "duo",
+            "duration": 1800
+        },
+        {
+            "match_id": "765432198",
+            "game_mode": "squad",
+            "duration": 2100
+        }
+    ],
+    "rankings": [
+        {
+            "rank": 1,
+            "rating": 2500,
+            "games_played": 50
+        },
+        {
+            "rank": 2,
+            "rating": 2400,
+            "games_played": 45
+        },
+        {
+            "rank": 3,
+            "rating": 2300,
+            "games_played": 40
+        }
+    ]
+}
+Explanation: This response provides information about the player "SniperKing47" including their match history in different game modes (solo, duo, squad) with match IDs, game modes, and durations. It also includes the player's rankings such as rank, rating, and games played.
+INFO:     127.0.0.1:58278 - "GET /PUBG/getPlayer?player_id=SniperKing47 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38094 - "GET /__simulator_cache__/clear/PUBG HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38104 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:10, 10.75s/it]1it [00:10, 10.75s/it]
+Status Code: 200
+Response: 
+{
+    "locations": [
+        {
+            "id": 1,
+            "name": "Earth (C-137)",
+            "type": "Planet",
+            "dimension": {
+                "id": 1,
+                "name": "Dimension C-137",
+                "dimension": "Dimension C-137",
+                "residents": [
+                    {
+                        "id": 1,
+                        "name": "Rick Sanchez",
+                        "status": "Alive",
+                        "species": "Human",
+                        "type": "Mad Scientist",
+                        "gender": "Male",
+                        "origin": {
+                            "id": 1,
+                            "name": "Earth (C-137)",
+                            "type": "Planet",
+                            "dimension": {
+                                "id": 1,
+                                "name": "Dimension C-137",
+                                "dimension": "Dimension C-137",
+                                "residents": [
+                                    {
+                                        "id": 1,
+                                        "name": "Rick Sanchez",
+                                        "status": "Alive",
+                                        "species": "Human",
+                                        "type": "Mad Scientist",
+                                        "gender": "Male",
+                                        "origin": {
+                                            "id": 1,
+                                            "name": "Earth (C-137)",
+                                            "type": "Planet",
+                                            "dimension": {
+                                                "id": 1,
+                                                "name": "Dimension C-137",
+                                                "dimension": "Dimension C-137",
+                                                "residents": [
+                                                    {
+                                                        "id": 1,
+                                                        "name": "Rick Sanchez",
+                                                        "status": "Alive",
+                                                        "species": "Human",
+                                                        "type": "Mad Scientist",
+                                                        "gender": "Male"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "location": {
+                                            "id": 1,
+                                            "name": "Earth (C-137)",
+                                            "type": "Planet",
+                                            "dimension": {
+                                                "id": 1,
+                                                "name": "Dimension C-137",
+                                                "dimension": "Dimension C-137",
+                                                "residents": [
+                                                    {
+                                                        "id": 1,
+                                                        "name": "Rick Sanchez",
+                                                        "status": "Alive",
+                                                        "species": "Human",
+                                                        "type": "Mad Scientist",
+                                                        "gender": "Male"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+                                        "episode": [
+                                            {
+                                                "id": 1,
+                                                "name": "Pilot",
+                                                "air_date": "December 2, 2013",
+                                                "episode": "S01E01"
+                                            }
+                                        ],
+                                        "url": "https://rickandmortyapi.com/api/character/1",
+                                        "created": "2017-11-04T18:48:46.250Z"
+                                    }
+                                ]
+                            }
+                        },
+                        "location": {
+                            "id": 1,
+                            "name": "Earth (C-137)",
+                            "type": "Planet",
+                            "dimension": {
+                                "id": 1,
+                                "name": "Dimension C-137",
+                                "dimension": "Dimension C-137",
+                                "residents": [
+                                    {
+                                        "id": 1,
+                                        "name": "Rick Sanchez",
+                                        "status": "Alive",
+                                        "species": "Human",
+                                        "type": "Mad Scientist",
+                                        "gender": "Male"
+                                    }
+                                ]
+                            }
+                        },
+                        "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+                        "episode": [
+                            {
+                                "id": 1,
+                                "name": "Pilot",
+                                "air_date": "December 2, 2013",
+                                "episode": "S01E01"
+                            }
+                        ],
+                        "url": "https://rickandmortyapi.com/api/character/1",
+                        "created": "2017-11-04T18:48:46.250Z"
+                    }
+                ]
+            },
+            "residents": [
+                {
+                    "id": 1,
+                    "name": "Rick Sanchez",
+                    "status": "Alive",
+                    "species": "Human",
+                    "type": "Mad Scientist",
+                    "gender": "Male",
+                    "origin": {
+                        "id": 1,
+                        "name": "Earth (C-137)",
+                        "type": "Planet",
+                        "dimension": {
+                            "id": 1,
+                            "name": "Dimension C-137",
+                            "dimension": "Dimension C-137",
+                            "residents": [
+                                {
+                                    "id": 1,
+                                    "name": "Rick Sanchez",
+                                    "status": "Alive",
+                                    "species": "Human",
+                                    "type": "Mad Scientist",
+                                    "gender": "Male"
+                                }
+                            ]
+                        }
+                    },
+                    "location": {
+                        "id": 1,
+                        "name": "Earth (C-137)",
+                        "type": "Planet",
+                        "dimension": {
+                            "id": 1,
+                            "name": "Dimension C-137",
+                            "dimension": "Dimension C-137",
+                            "residents": [
+                                {
+                                    "id": 1,
+                                    "name": "Rick Sanchez",
+                                    "status": "Alive",
+                                    "species": "Human",
+                                    "type": "Mad Scientist",
+                                    "gender": "Male"
+                                }
+                            ]
+                        }
+                    },
+                    "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+                    "episode": [
+                        {
+                            "id": 1,
+                            "name": "Pilot",
+                            "air_date": "December 2, 2013",
+                            "episode": "S01E01"
+                        }
+                    ],
+                    "url": "https://rickandmortyapi.com/api/character/1",
+                    "created": "2017-11-04T18:48:46.250Z"
+                }
+            ],
+            "url": "https://rickandmortyapi.com/api/location/1",
+            "created": "2017-11-10T12:42:04.894Z"
+        }
+    ]
+}
+Explanation: The response contains detailed information about the location "Earth (C-137)" from the show, including its type, dimension, residents (e.g., Rick Sanchez), and related data such as images and episodes. The response format aligns with the OpenAPI Spec for locations.
+INFO:     127.0.0.1:32892 - "GET /Rick%20and%20Morty/locations?page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44584 - "GET /__simulator_cache__/clear/Rick%20and%20Morty HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:10, 10.82s/it]1it [00:10, 10.82s/it]
+Status Code: 200
+Response: 
+{
+  "id": 1,
+  "name": "Rick Sanchez",
+  "status": "Alive",
+  "species": "Human",
+  "type": "Mad Scientist",
+  "gender": "Male",
+  "origin": {
+    "id": 1,
+    "name": "Earth (C-137)",
+    "type": "Planet",
+    "dimension": {
+      "id": 1,
+      "name": "Dimension C-137",
+      "dimension": "Dimension C-137",
+      "residents": [
+        {
+          "id": 1,
+          "name": "Rick Sanchez",
+          "status": "Alive",
+          "species": "Human",
+          "type": "Mad Scientist",
+          "gender": "Male",
+          "origin": {
+            "id": 1,
+            "name": "Earth (C-137)",
+            "type": "Planet",
+            "dimension": {
+              "id": 1,
+              "name": "Dimension C-137",
+              "dimension": "Dimension C-137",
+              "residents": [
+                {
+                  "id": 1,
+                  "name": "Rick Sanchez",
+                  "status": "Alive",
+                  "species": "Human",
+                  "type": "Mad Scientist",
+                  "gender": "Male",
+                  "origin": {
+                    "id": 1,
+                    "name": "Earth (C-137)",
+                    "type": "Planet",
+                    "dimension": {
+                      "id": 1,
+                      "name": "Dimension C-137",
+                      "dimension": "Dimension C-137",
+                      "residents": [
+                        {
+                          "id": 1,
+                          "name": "Rick Sanchez",
+                          "status": "Alive",
+                          "species": "Human",
+                          "type": "Mad Scientist",
+                          "gender": "Male",
+                          "origin": {
+                            "id": 1,
+                            "name": "Earth (C-137)",
+                            "type": "Planet",
+                            "dimension": {
+                              "id": 1,
+                              "name": "Dimension C-137",
+                              "dimension": "Dimension C-137",
+                              "residents": []
+                            },
+                            "residents": []
+                          },
+                          "location": {
+                            "id": 20,
+                            "name": "Earth (Replacement Dimension)",
+                            "type": "Planet",
+                            "dimension": {
+                              "id": 20,
+                              "name": "Replacement Dimension",
+                              "dimension": "Replacement Dimension",
+                              "residents": []
+                            },
+                            "residents": []
+                          },
+                          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+                          "episode": [
+                            {
+                              "id": 1,
+                              "name": "Pilot",
+                              "air_date": "December 2, 2013",
+                              "episode": "S01E01",
+                              "characters": [],
+                              "url": "https://rickandmortyapi.com/api/episode/1",
+                              "created": "2017-11-10T12:56:33.798Z"
+                            }
+                          ],
+                          "url": "https://rickandmortyapi.com/api/character/1",
+                          "created": "2017-11-04T18:48:46.250Z"
+                        }
+                      ]
+                    },
+                    "residents": []
+                  },
+                  "location": {
+                    "id": 20,
+                    "name": "Earth (Replacement Dimension)",
+                    "type": "Planet",
+                    "dimension": {
+                      "id": 20,
+                      "name": "Replacement Dimension",
+                      "dimension": "Replacement Dimension",
+                      "residents": []
+                    },
+                    "residents": []
+                  },
+                  "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+                  "episode": [
+                    {
+                      "id": 1,
+                      "name": "Pilot",
+                      "air_date": "December 2, 2013",
+                      "episode": "S01E01",
+                      "characters": [],
+                      "url": "https://rickandmortyapi.com/api/episode/1",
+                      "created": "2017-11-10T12:56:33.798Z"
+                    }
+                  ],
+                  "url": "https://rickandmortyapi.com/api/character/1",
+                  "created": "2017-11-04T18:48:46.250Z"
+                }
+              ]
+            },
+            "residents": []
+          },
+          "location": {
+            "id": 20,
+            "name": "Earth (Replacement Dimension)",
+            "type": "Planet",
+            "dimension": {
+              "id": 20,
+              "name": "Replacement Dimension",
+              "dimension": "Replacement Dimension",
+              "residents": []
+            },
+            "residents": []
+          },
+          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+          "episode": [
+            {
+              "id": 1,
+              "name": "Pilot",
+              "air_date": "December 2, 2013",
+              "episode": "S01E01",
+              "characters": [],
+              "url": "https://rickandmortyapi.com/api/episode/1",
+              "created": "2017-11-10T12:56:33.798Z"
+            }
+          ],
+          "url": "https://rickandmortyapi.com/api/character/1",
+          "created": "2017-11-04T18:48:46.250Z"
+        }
+      ]
+    },
+    "residents": []
+  },
+  "location": {
+    "id": 20,
+    "name": "Earth (Replacement Dimension)",
+    "type": "Planet",
+    "dimension": {
+      "id": 20,
+      "name": "Replacement Dimension",
+      "dimension": "Replacement Dimension",
+      "residents": []
+    },
+    "residents": []
+  },
+  "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+  "episode": [
+    {
+      "id": 1,
+      "name": "Pilot",
+      "air_date": "December 2, 2013",
+      "episode": "S01E01",
+      "characters": [],
+      "url": "https://rickandmortyapi.com/api/episode/1",
+      "created": "2017-11-10T12:56:33.798Z"
+    }
+  ],
+  "url": "https://rickandmortyapi.com/api/character/1",
+  "created": "2017-11-04T18:48:46.250Z"
+}
+Explanation: This response provides detailed information about the character Rick Sanchez from the show Rick and Morty. It includes information such as name, status, species, gender, origin, location, image, and episodes he appears in. The response is structured according to the OpenAPI Spec format.
+INFO:     127.0.0.1:44590 - "GET /Rick%20and%20Morty/characters/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35138 - "GET /__simulator_cache__/clear/Rick%20and%20Morty HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35140 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.70s/it]1it [00:04,  4.70s/it]
+Status Code: 200
+Response: 
+{
+    "status": "ok",
+    "totalResults": 3,
+    "articles": [
+        {
+            "source": {
+                "id": "der-sports",
+                "name": "Der Sports"
+            },
+            "author": "John Doe",
+            "title": "The Latest in Sports News",
+            "description": "Catch up on all the latest sports news and updates.",
+            "url": "https://www.dersports.com/latest",
+            "urlToImage": "https://www.dersports.com/latest.jpg",
+            "publishedAt": "2022-10-20T08:00:00Z",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "source": {
+                "id": "sports-today",
+                "name": "Sports Today"
+            },
+            "author": "Jane Smith",
+            "title": "Sports Events Around the World",
+            "description": "Stay informed about sports events happening globally.",
+            "url": "https://www.sportstoday.com/events",
+            "urlToImage": "https://www.sportstoday.com/events.jpg",
+            "publishedAt": "2022-10-20T10:30:00Z",
+            "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "source": {
+                "id": "sporty-news",
+                "name": "Sporty News"
+            },
+            "author": "Michael Johnson",
+            "title": "Breaking Sports News Update",
+            "description": "Get the latest breaking news updates in the world of sports.",
+            "url": "https://www.sportynews.com/breaking",
+            "urlToImage": "https://www.sportynews.com/breaking.jpg",
+            "publishedAt": "2022-10-20T12:45:00Z",
+            "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+    ]
+}
+Explanation: The response contains 3 articles related to sports from different sources with realistic data such as author, title, description, URL, image, publication date, and content. Each article is from a different source to provide diverse coverage of sports news.
+INFO:     127.0.0.1:35154 - "GET /News/everything?q=sports&sources=de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35298 - "GET /__simulator_cache__/clear/News HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.08s/it]1it [00:03,  3.08s/it]
+Status Code: 200
+Response: 
+{
+    "status": "ok",
+    "totalResults": 3,
+    "articles": [
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "John Doe",
+            "title": "The Impact of Artificial Intelligence on Society",
+            "description": "Exploring the various ways AI is shaping the future.",
+            "url": "https://www.example.com/article1",
+            "urlToImage": "https://www.example.com/image1.jpg",
+            "publishedAt": "2020-01-15T08:00:00Z",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Jane Smith",
+            "title": "Ethical Considerations in AI Development",
+            "description": "Examining the ethical dilemmas surrounding AI technology.",
+            "url": "https://www.example.com/article2",
+            "urlToImage": "https://www.example.com/image2.jpg",
+            "publishedAt": "2020-01-20T12:30:00Z",
+            "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Alice Johnson",
+            "title": "Advancements in AI Research",
+            "description": "Latest breakthroughs in artificial intelligence research.",
+            "url": "https://www.example.com/article3",
+            "urlToImage": "https://www.example.com/image3.jpg",
+            "publishedAt": "2020-01-25T16:45:00Z",
+            "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
+        }
+    ]
+}
+Explanation: This response provides a list of 3 articles related to artificial intelligence from different sources, each with detailed information including the author, title, description, URL, image, publication date, and content.
+INFO:     127.0.0.1:35308 - "GET /News/everything?q=artificial+intelligence&from=2020-01-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43758 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.83s/it]1it [00:01,  1.84s/it]
+Status Code: 200
+Response:
+{
+    "status": "ok",
+    "message": "Alert successfully created",
+    "alert": {
+        "id": "12345",
+        "criteria": {
+            "q": "artificial intelligence"
+        },
+        "frequency": "daily",
+        "email": "example@example.com"
+    }
+}
+Explanation: The alert for daily notifications on articles related to artificial intelligence has been successfully created. The response includes the alert ID, search criteria, frequency, and the email address associated with the alert.
+INFO:     127.0.0.1:55216 - "POST /News/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38736 - "GET /__simulator_cache__/clear/News HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  5.00s/it]1it [00:04,  5.00s/it]
+Status Code: 200
+Response: 
+{
+    "results_count": 3,
+    "results": [
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Summer Vibes Mix",
+                "url": "https://www.mixcloud.com/DJ/summer-vibes-mix",
+                "description": "Get into the summer mood with this upbeat mix!",
+                "tags": ["summer", "vibes", "upbeat"],
+                "created_time": "2022-06-15T10:00:00Z",
+                "audio_length": 3600,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/summer-vibes-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/summer-vibes-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/summer-vibes-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ",
+                    "username": "DJ",
+                    "url": "https://www.mixcloud.com/DJ"
+                },
+                "play_count": 1000,
+                "favorite_count": 500,
+                "repost_count": 200,
+                "comment_count": 100
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Chillout Lounge Mix",
+                "url": "https://www.mixcloud.com/DJ/chillout-lounge-mix",
+                "description": "Relax and unwind with this chillout lounge mix.",
+                "tags": ["chillout", "lounge", "relax"],
+                "created_time": "2022-07-01T15:30:00Z",
+                "audio_length": 4200,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/chillout-lounge-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/chillout-lounge-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/chillout-lounge-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ",
+                    "username": "DJ",
+                    "url": "https://www.mixcloud.com/DJ"
+                },
+                "play_count": 800,
+                "favorite_count": 400,
+                "repost_count": 150,
+                "comment_count": 80
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Party Anthems Mix",
+                "url": "https://www.mixcloud.com/DJ/party-anthems-mix",
+                "description": "Get the party started with these anthems!",
+                "tags": ["party", "anthems", "dance"],
+                "created_time": "2022-08-10T20:00:00Z",
+                "audio_length": 3000,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/party-anthems-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/party-anthems-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/party-anthems-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ",
+                    "username": "DJ",
+                    "url": "https://www.mixcloud.com/DJ"
+                },
+                "play_count": 1200,
+                "favorite_count": 600,
+                "repost_count": 250,
+                "comment_count": 120
+            }
+        }
+    ]
+}
+Explanation: The API successfully retrieved 3 cloudcasts related to the search query "DJ" with the type "cloudcasts". Each cloudcast contains details such as name, URL, description, tags, created time, audio length, user information, play count, favorite count, repost count, and comment count. The response is in JSON format and aligns with the OpenAPI Spec.
+INFO:     127.0.0.1:42784 - "GET /Mixcloud/search/?q=DJ&type=cloudcasts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42790 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.39it/s]1it [00:00,  1.39it/s]
+Status Code: 200
+Response:
+{
+    "description": "Audio content streamed successfully"
+}
+Explanation: The API successfully streamed the audio content of the cloudcast "Summer Vibes Mix" uploaded by the user "DJ". The response is in JSON format and aligns with the OpenAPI Spec.
+INFO:     127.0.0.1:38036 - "GET /Mixcloud/stream/https%3A//www.mixcloud.com/DJ/summer-vibes-mix/ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2718433]

@@ -1,0 +1,395 @@
+{
+  "started_utc": "2026-09-13T17:35:00Z",
+  "status": "failed",
+  "simulator": "gpt-3.5-turbo",
+  "judge": "gpt-4-0613",
+  "actor": "/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5",
+  "planner": "/projects/standard/mhong/shared/jiajunr/ToolAlpaca-13B",
+  "runs": {
+    "B0_forget": {
+      "status": "complete",
+      "updated_utc": "2026-09-13T18:56:59Z",
+      "n": 100,
+      "gpu_group": [
+        "0",
+        "1"
+      ],
+      "port": 5710,
+      "simulator_command": [
+        "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+        "instance_generation/simulator.py",
+        "-api",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+        "-temp",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+        "--port",
+        "5710",
+        "--model",
+        "gpt-3.5-turbo"
+      ],
+      "commands": [
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "harness/run_toolalpaca.py",
+          "--condition",
+          "B0",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+          "--server_url",
+          "http://127.0.0.1:5710",
+          "--instruction_length",
+          "-1",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/B0_forget"
+        ],
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "evaluation.py",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/B0_forget/B0.json",
+          "-temp",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Evaluation.txt",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/B0_forget/judge.json",
+          "--judge_model",
+          "gpt-4-0613",
+          "--num_workers",
+          "8"
+        ]
+      ],
+      "statistics": {
+        "num": 100,
+        "error_num": 15,
+        "process": {
+          "Yes": 33,
+          "No": 51,
+          "Uncertain": 1
+        },
+        "response": {
+          "Yes": 34,
+          "No": 46,
+          "Uncertain": 5
+        },
+        "both": 28,
+        "judge_model": "gpt-4-0613",
+        "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+        "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+        "input_sha256": "00a058b6e7e009fa820efc5b1b9327b01a99dfe36d4653c8a94be190c3a95666",
+        "expected_num": 100,
+        "judge_errors": [],
+        "rollout_errors": [],
+        "complete": true,
+        "primary_metric": "process_accuracy",
+        "process_accuracy": 0.33,
+        "response_accuracy": 0.34,
+        "overall_accuracy": 0.28
+      },
+      "process_accuracy": 0.33,
+      "response_accuracy": 0.34,
+      "both_accuracy": 0.28
+    },
+    "B0_retain": {
+      "status": "complete",
+      "updated_utc": "2026-09-13T18:38:56Z",
+      "n": 100,
+      "gpu_group": [
+        "2",
+        "3"
+      ],
+      "port": 5711,
+      "simulator_command": [
+        "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+        "instance_generation/simulator.py",
+        "-api",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+        "-temp",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+        "--port",
+        "5711",
+        "--model",
+        "gpt-3.5-turbo"
+      ],
+      "commands": [
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "harness/run_toolalpaca.py",
+          "--condition",
+          "B0",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+          "--server_url",
+          "http://127.0.0.1:5711",
+          "--instruction_length",
+          "-1",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/B0_retain"
+        ],
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "evaluation.py",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/B0_retain/B0.json",
+          "-temp",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Evaluation.txt",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/B0_retain/judge.json",
+          "--judge_model",
+          "gpt-4-0613",
+          "--num_workers",
+          "8"
+        ]
+      ],
+      "statistics": {
+        "num": 100,
+        "error_num": 0,
+        "process": {
+          "Yes": 53,
+          "No": 47,
+          "Uncertain": 0
+        },
+        "response": {
+          "Yes": 57,
+          "No": 42,
+          "Uncertain": 1
+        },
+        "both": 50,
+        "judge_model": "gpt-4-0613",
+        "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+        "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+        "input_sha256": "e574b34e84ff4ed736c68cdbf80bb3f3088455575c87e29f11f7216e2f6eec5a",
+        "expected_num": 100,
+        "judge_errors": [],
+        "rollout_errors": [],
+        "complete": true,
+        "primary_metric": "process_accuracy",
+        "process_accuracy": 0.53,
+        "response_accuracy": 0.57,
+        "overall_accuracy": 0.5
+      },
+      "process_accuracy": 0.53,
+      "response_accuracy": 0.57,
+      "both_accuracy": 0.5
+    },
+    "H1_retain": {
+      "status": "complete",
+      "updated_utc": "2026-09-13T19:29:09Z",
+      "n": 100,
+      "gpu_group": [
+        "2",
+        "3"
+      ],
+      "port": 5713,
+      "simulator_command": [
+        "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+        "instance_generation/simulator.py",
+        "-api",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+        "-temp",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+        "--port",
+        "5713",
+        "--model",
+        "gpt-3.5-turbo"
+      ],
+      "commands": [
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "harness/run_toolalpaca.py",
+          "--condition",
+          "H1",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+          "--server_url",
+          "http://127.0.0.1:5713",
+          "--instruction_length",
+          "-1",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/H1_retain"
+        ],
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "evaluation.py",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/H1_retain/H1.json",
+          "-temp",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Evaluation.txt",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/H1_retain/judge.json",
+          "--judge_model",
+          "gpt-4-0613",
+          "--num_workers",
+          "8"
+        ]
+      ],
+      "statistics": {
+        "num": 100,
+        "error_num": 0,
+        "process": {
+          "Yes": 62,
+          "No": 37,
+          "Uncertain": 1
+        },
+        "response": {
+          "Yes": 64,
+          "No": 33,
+          "Uncertain": 3
+        },
+        "both": 54,
+        "judge_model": "gpt-4-0613",
+        "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+        "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+        "input_sha256": "4b7410c3d07b6e96dee5c610ec1e146eec8b96cfd4b8db4eddbcf588921d611c",
+        "expected_num": 100,
+        "judge_errors": [],
+        "rollout_errors": [],
+        "complete": true,
+        "primary_metric": "process_accuracy",
+        "process_accuracy": 0.62,
+        "response_accuracy": 0.64,
+        "overall_accuracy": 0.54
+      },
+      "process_accuracy": 0.62,
+      "response_accuracy": 0.64,
+      "both_accuracy": 0.54
+    },
+    "H1_forget": {
+      "status": "failed",
+      "updated_utc": "2026-09-13T19:30:29Z",
+      "n": 100,
+      "gpu_group": [
+        "0",
+        "1"
+      ],
+      "port": 5712,
+      "simulator_command": [
+        "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+        "instance_generation/simulator.py",
+        "-api",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+        "-temp",
+        "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+        "--port",
+        "5712",
+        "--model",
+        "gpt-3.5-turbo"
+      ],
+      "commands": [
+        [
+          "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+          "harness/run_toolalpaca.py",
+          "--condition",
+          "H1",
+          "-api",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+          "--server_url",
+          "http://127.0.0.1:5712",
+          "--instruction_length",
+          "-1",
+          "-out",
+          "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/H1_forget"
+        ]
+      ],
+      "error": "Command '['/users/2/jruan/miniconda3/envs/toolalpaca/bin/python', 'harness/run_toolalpaca.py', '--condition', 'H1', '-api', '/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json', '--server_url', 'http://127.0.0.1:5712', '--instruction_length', '-1', '-out', '/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/H1_forget']' died with <Signals.SIGTERM: 15>."
+    }
+  },
+  "datasets": {
+    "forget": {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+      "sha256": "2f6573e567978797032fe94af4e68c4dee497ebba064f2be6133cbdddff35d03",
+      "run_path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json",
+      "run_sha256": "2f6573e567978797032fe94af4e68c4dee497ebba064f2be6133cbdddff35d03",
+      "n": 100
+    },
+    "retain": {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+      "sha256": "9c0007d6a1f7430f6978fbe6161b1d14f651ac00c49b3390b1221a1ec119e1db",
+      "run_path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+      "run_sha256": "9c0007d6a1f7430f6978fbe6161b1d14f651ac00c49b3390b1221a1ec119e1db",
+      "n": 100
+    }
+  },
+  "decoding": {
+    "dtype": "float16",
+    "do_sample": false,
+    "max_new_tokens": 256,
+    "early_stop": true,
+    "stop_after_action_input": true
+  },
+  "primary_metric": "process.Yes / statistics.num (empty traces included)",
+  "length": -1,
+  "gpu_groups": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "2",
+      "3"
+    ]
+  ],
+  "data_limitation": "Existing forget/retain instructions retained; not the paper unseen-tool set.",
+  "model_configs": [
+    {
+      "path": "/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5/config.json",
+      "sha256": "e3e05de22a83c2dc777587c523f281876956b2d096059c3ee404a0bcc0386a84"
+    },
+    {
+      "path": "/projects/standard/mhong/shared/jiajunr/ToolAlpaca-13B/config.json",
+      "sha256": "5948b7829bf9ef6ed2286435265968c5aefa94ddb48cfbd19ff074ae991e4697"
+    }
+  ],
+  "prompts": [
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+      "sha256": "7368cd1514622b45de378280a9f545b552e86c520475d2d2358b0476b6a5ab8a"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Evaluation.txt",
+      "sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6"
+    }
+  ],
+  "code": [
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/run_paper_aligned.py",
+      "sha256": "769ec442089fdb8d682332a306506d4420059dbbd7aec999e86c47b2f48c1d68"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/harness/run_toolalpaca.py",
+      "sha256": "8b07eaf24beae60650a598963897c570755f1876c1f686c6ca97ca164cb4b59c"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/harness/planner_llm.py",
+      "sha256": "4fb04a363be9f391ebe9e9d88247a4f240ce5a632392ddc2133f972422edb8b1"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/agent/agent_prompts.py",
+      "sha256": "632c971da9f82edd084b723dc5eb0130b227955c84835693a1e63949dfe729ba"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/evaluation.py",
+      "sha256": "3588cd5dec060c5931d0995fc4c765d21fa199c73667274813dc11fcaa28722e"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/instance_generation/simulator.py",
+      "sha256": "de3c653aa0cd6ff94380eabbba870cffb9a550829ddd3ce93d86dd63c8abb357"
+    },
+    {
+      "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/utils.py",
+      "sha256": "da60a87214c2df1a812d5058eaf414f00a0b2df98c24415f67da18aa4803fd19"
+    }
+  ],
+  "preflight": {
+    "gpt-4-0613": {
+      "http_status": 200,
+      "returned_model": "gpt-4-0613",
+      "completion_received": true
+    },
+    "gpt-3.5-turbo": {
+      "http_status": 200,
+      "returned_model": "gpt-3.5-turbo-0125",
+      "completion_received": true
+    }
+  },
+  "error": "Command '['/users/2/jruan/miniconda3/envs/toolalpaca/bin/python', 'harness/run_toolalpaca.py', '--condition', 'H1', '-api', '/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/forget_eval_100.json', '--server_url', 'http://127.0.0.1:5712', '--instruction_length', '-1', '-out', '/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/H1_forget']' died with <Signals.SIGTERM: 15>.",
+  "finished_utc": "2026-09-13T19:30:29Z"
+}

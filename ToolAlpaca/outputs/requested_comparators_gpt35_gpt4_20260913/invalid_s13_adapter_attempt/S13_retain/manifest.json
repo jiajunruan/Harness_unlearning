@@ -1,0 +1,89 @@
+{
+  "started_utc": "2026-09-14T03:53:07Z",
+  "status": "complete",
+  "condition": "S13",
+  "split": "retain",
+  "simulator": "gpt-3.5-turbo",
+  "judge": "gpt-4-0613",
+  "dataset": {
+    "path": "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+    "sha256": "9c0007d6a1f7430f6978fbe6161b1d14f651ac00c49b3390b1221a1ec119e1db",
+    "n": 100
+  },
+  "output": "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/S13_retain",
+  "port": 5723,
+  "gpu": "1",
+  "remote_actor_model": "gpt-3.5-turbo",
+  "remote_planner_model": "gpt-3.5-turbo",
+  "simulator_command": [
+    "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+    "instance_generation/simulator.py",
+    "-api",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+    "-temp",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Simulator.txt",
+    "--port",
+    "5723",
+    "--model",
+    "gpt-3.5-turbo"
+  ],
+  "rollout_command": [
+    "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+    "harness/run_toolalpaca.py",
+    "--condition",
+    "S13",
+    "-api",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/tool_unlearn/data/retain_eval_100.json",
+    "--server_url",
+    "http://127.0.0.1:5723",
+    "--instruction_length",
+    "-1",
+    "-out",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/S13_retain"
+  ],
+  "judge_command": [
+    "/users/2/jruan/miniconda3/envs/toolalpaca/bin/python",
+    "evaluation.py",
+    "-api",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/S13_retain/S13.json",
+    "-temp",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca_original/prompts/Evaluation.txt",
+    "-out",
+    "/users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/S13_retain/judge.json",
+    "--judge_model",
+    "gpt-4-0613",
+    "--num_workers",
+    "8"
+  ],
+  "finished_utc": "2026-09-14T03:54:10Z",
+  "statistics": {
+    "num": 100,
+    "error_num": 100,
+    "process": {
+      "Yes": 0,
+      "No": 0,
+      "Uncertain": 0
+    },
+    "response": {
+      "Yes": 0,
+      "No": 0,
+      "Uncertain": 0
+    },
+    "both": 0,
+    "judge_model": "gpt-4-0613",
+    "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+    "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+    "input_sha256": "55179d7c7a9be05b73913e46879772f70b2db70633ae767b7b47fb7a860b520c",
+    "expected_num": 100,
+    "judge_errors": [],
+    "rollout_errors": [],
+    "complete": true,
+    "primary_metric": "process_accuracy",
+    "process_accuracy": 0.0,
+    "response_accuracy": 0.0,
+    "overall_accuracy": 0.0
+  },
+  "process_accuracy": 0.0,
+  "response_accuracy": 0.0,
+  "overall_accuracy": 0.0
+}

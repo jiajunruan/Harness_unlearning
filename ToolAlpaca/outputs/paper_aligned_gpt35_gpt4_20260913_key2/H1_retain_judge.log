@@ -1,0 +1,15 @@
+[judge] 100 items to judge, 8 at a time
+[judge] 8/100
+[judge] 16/100
+[judge] 24/100
+[judge] 32/100
+[judge] 40/100
+[judge] 48/100
+[judge] 56/100
+[judge] 64/100
+[judge] 72/100
+[judge] 80/100
+[judge] 88/100
+[judge] 96/100
+[judge] 100/100
+[judge] done: process_accuracy=0.62 (62/100); overall_accuracy=0.54

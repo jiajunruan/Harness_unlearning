@@ -1,0 +1,134 @@
+{
+  "B0_forget": {
+    "n": 100,
+    "process_accuracy": 0.33,
+    "response_accuracy": 0.34,
+    "both_accuracy": 0.28,
+    "statistics": {
+      "num": 100,
+      "error_num": 15,
+      "process": {
+        "Yes": 33,
+        "No": 51,
+        "Uncertain": 1
+      },
+      "response": {
+        "Yes": 34,
+        "No": 46,
+        "Uncertain": 5
+      },
+      "both": 28,
+      "judge_model": "gpt-4-0613",
+      "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+      "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+      "input_sha256": "00a058b6e7e009fa820efc5b1b9327b01a99dfe36d4653c8a94be190c3a95666",
+      "expected_num": 100,
+      "judge_errors": [],
+      "rollout_errors": [],
+      "complete": true,
+      "primary_metric": "process_accuracy",
+      "process_accuracy": 0.33,
+      "response_accuracy": 0.34,
+      "overall_accuracy": 0.28
+    }
+  },
+  "B0_retain": {
+    "n": 100,
+    "process_accuracy": 0.53,
+    "response_accuracy": 0.57,
+    "both_accuracy": 0.5,
+    "statistics": {
+      "num": 100,
+      "error_num": 0,
+      "process": {
+        "Yes": 53,
+        "No": 47,
+        "Uncertain": 0
+      },
+      "response": {
+        "Yes": 57,
+        "No": 42,
+        "Uncertain": 1
+      },
+      "both": 50,
+      "judge_model": "gpt-4-0613",
+      "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+      "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+      "input_sha256": "e574b34e84ff4ed736c68cdbf80bb3f3088455575c87e29f11f7216e2f6eec5a",
+      "expected_num": 100,
+      "judge_errors": [],
+      "rollout_errors": [],
+      "complete": true,
+      "primary_metric": "process_accuracy",
+      "process_accuracy": 0.53,
+      "response_accuracy": 0.57,
+      "overall_accuracy": 0.5
+    }
+  },
+  "H1_retain": {
+    "n": 100,
+    "process_accuracy": 0.62,
+    "response_accuracy": 0.64,
+    "both_accuracy": 0.54,
+    "statistics": {
+      "num": 100,
+      "error_num": 0,
+      "process": {
+        "Yes": 62,
+        "No": 37,
+        "Uncertain": 1
+      },
+      "response": {
+        "Yes": 64,
+        "No": 33,
+        "Uncertain": 3
+      },
+      "both": 54,
+      "judge_model": "gpt-4-0613",
+      "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+      "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+      "input_sha256": "4b7410c3d07b6e96dee5c610ec1e146eec8b96cfd4b8db4eddbcf588921d611c",
+      "expected_num": 100,
+      "judge_errors": [],
+      "rollout_errors": [],
+      "complete": true,
+      "primary_metric": "process_accuracy",
+      "process_accuracy": 0.62,
+      "response_accuracy": 0.64,
+      "overall_accuracy": 0.54
+    }
+  },
+  "H1_forget": {
+    "n": 100,
+    "process_accuracy": 0.53,
+    "response_accuracy": 0.57,
+    "both_accuracy": 0.47,
+    "statistics": {
+      "num": 100,
+      "error_num": 0,
+      "process": {
+        "Yes": 53,
+        "No": 47,
+        "Uncertain": 0
+      },
+      "response": {
+        "Yes": 57,
+        "No": 40,
+        "Uncertain": 3
+      },
+      "both": 47,
+      "judge_model": "gpt-4-0613",
+      "evaluator_sha256": "a5fde439d988c9ed3085cf07d14b289e42773770518a8a430d817aeb9bccbb8e",
+      "template_sha256": "e23daa35664bcaaaf60799db54712bf81bb3a24bb43c43ee97886081b3c770a6",
+      "input_sha256": "fd1e2477e86efb8330e4fc67300d9f3a604d872c32a6166ffdda854830df8a50",
+      "expected_num": 100,
+      "judge_errors": [],
+      "rollout_errors": [],
+      "complete": true,
+      "primary_metric": "process_accuracy",
+      "process_accuracy": 0.53,
+      "response_accuracy": 0.57,
+      "overall_accuracy": 0.47
+    }
+  }
+}

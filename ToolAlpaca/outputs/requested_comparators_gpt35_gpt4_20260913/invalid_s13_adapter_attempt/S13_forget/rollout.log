@@ -1,0 +1,406 @@
+/users/2/jruan/miniconda3/envs/toolalpaca/lib/python3.10/site-packages/torch/cuda/__init__.py:51: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[harness] condition=S13 actor=13b mode=vanilla
+  0%|          | 0/51 [00:00<?, ?it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 10%|▉         | 5/51 [00:00<00:00, 47.41it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 22%|██▏       | 11/51 [00:00<00:00, 49.26it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 33%|███▎      | 17/51 [00:00<00:00, 50.28it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 45%|████▌     | 23/51 [00:00<00:00, 48.68it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 55%|█████▍    | 28/51 [00:00<00:00, 48.51it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 65%|██████▍   | 33/51 [00:00<00:00, 46.60it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 75%|███████▍  | 38/51 [00:00<00:00, 45.63it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 84%|████████▍ | 43/51 [00:00<00:00, 44.34it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+ 94%|█████████▍| 48/51 [00:01<00:00, 43.06it/s]The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)
+100%|██████████| 51/51 [00:01<00:00, 45.17it/s]
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+
+
+[1m> Entering new CustomAgentExecutor chain...[0m
+[harness] S13 done: 100 tasks, 100 failed, 0 planner steps leaked a call
+[harness] wrote /users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/S13_forget/S13.json and /users/2/jruan/Harness_unlearning/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/S13_forget/S13_trace.json

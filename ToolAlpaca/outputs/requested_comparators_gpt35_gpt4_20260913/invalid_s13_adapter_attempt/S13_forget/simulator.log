@@ -1,0 +1,115 @@
+INFO:     Started server process [1632850]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5722 (Press CTRL+C to quit)
+INFO:     Started server process [1635303]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5722 (Press CTRL+C to quit)
+INFO:     127.0.0.1:39048 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51630 - "GET /__simulator_cache__/open HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51644 - "GET /__simulator_cache__/clear/Wikidata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51652 - "GET /__simulator_cache__/clear/Wikidata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51662 - "GET /__simulator_cache__/clear/Time%20Door HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51664 - "GET /__simulator_cache__/clear/ipapi.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51674 - "GET /__simulator_cache__/clear/ipapi.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51686 - "GET /__simulator_cache__/clear/Quarantine HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51690 - "GET /__simulator_cache__/clear/Quarantine HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51694 - "GET /__simulator_cache__/clear/Tradier HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51696 - "GET /__simulator_cache__/clear/Tradier HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51698 - "GET /__simulator_cache__/clear/Final%20Fantasy%20XIV HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51712 - "GET /__simulator_cache__/clear/Final%20Fantasy%20XIV HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51728 - "GET /__simulator_cache__/clear/Monster%20Hunter%20World HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51744 - "GET /__simulator_cache__/clear/Monster%20Hunter%20World HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51750 - "GET /__simulator_cache__/clear/RSS%20feed%20to%20JSON HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51764 - "GET /__simulator_cache__/clear/RSS%20feed%20to%20JSON HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51768 - "GET /__simulator_cache__/clear/PandaDoc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51774 - "GET /__simulator_cache__/clear/PandaDoc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51784 - "GET /__simulator_cache__/clear/Urban%20Observatory HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51792 - "GET /__simulator_cache__/clear/Urban%20Observatory HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51808 - "GET /__simulator_cache__/clear/Gr%C3%BCnstromIndex HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51814 - "GET /__simulator_cache__/clear/Gr%C3%BCnstromIndex HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51830 - "GET /__simulator_cache__/clear/Dangerous%20Discord%20Database HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51840 - "GET /__simulator_cache__/clear/Dangerous%20Discord%20Database HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51846 - "GET /__simulator_cache__/clear/GraphHopper HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51850 - "GET /__simulator_cache__/clear/GraphHopper HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37592 - "GET /__simulator_cache__/clear/isEven%20%28humor%29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37598 - "GET /__simulator_cache__/clear/isEven%20%28humor%29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37604 - "GET /__simulator_cache__/clear/The%20Muse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37610 - "GET /__simulator_cache__/clear/The%20Muse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37620 - "GET /__simulator_cache__/clear/Dictum HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37634 - "GET /__simulator_cache__/clear/Dictum HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37642 - "GET /__simulator_cache__/clear/British%20National%20Bibliography HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37658 - "GET /__simulator_cache__/clear/British%20National%20Bibliography HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37674 - "GET /__simulator_cache__/clear/Pastebin HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37676 - "GET /__simulator_cache__/clear/Pastebin HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37682 - "GET /__simulator_cache__/clear/Coinlib HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37684 - "GET /__simulator_cache__/clear/Coinlib HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37700 - "GET /__simulator_cache__/clear/NovaDax HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37704 - "GET /__simulator_cache__/clear/NovaDax HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37714 - "GET /__simulator_cache__/clear/PUBG HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37718 - "GET /__simulator_cache__/clear/PUBG HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37726 - "GET /__simulator_cache__/clear/Rick%20and%20Morty HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37734 - "GET /__simulator_cache__/clear/Rick%20and%20Morty HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37740 - "GET /__simulator_cache__/clear/News HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37756 - "GET /__simulator_cache__/clear/News HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37758 - "GET /__simulator_cache__/clear/Mixcloud HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37764 - "GET /__simulator_cache__/clear/Mixcloud HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37766 - "GET /__simulator_cache__/clear/Agify.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37770 - "GET /__simulator_cache__/clear/Agify.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37784 - "GET /__simulator_cache__/clear/StackExchange__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37798 - "GET /__simulator_cache__/clear/StackExchange__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37806 - "GET /__simulator_cache__/clear/WakaTime HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37816 - "GET /__simulator_cache__/clear/WakaTime HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37824 - "GET /__simulator_cache__/clear/Movie%20Quote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37836 - "GET /__simulator_cache__/clear/Movie%20Quote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37848 - "GET /__simulator_cache__/clear/The%20Old%20Reader HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37852 - "GET /__simulator_cache__/clear/The%20Old%20Reader HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37856 - "GET /__simulator_cache__/clear/Doge-Meme HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37858 - "GET /__simulator_cache__/clear/Doge-Meme HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37870 - "GET /__simulator_cache__/clear/Czech%20Television HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37886 - "GET /__simulator_cache__/clear/Czech%20Television HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37890 - "GET /__simulator_cache__/clear/Geokeo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37900 - "GET /__simulator_cache__/clear/Geokeo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37914 - "GET /__simulator_cache__/clear/Catch%20The%20Show HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37918 - "GET /__simulator_cache__/clear/Catch%20The%20Show HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37932 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada__3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37946 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada__3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37952 - "GET /__simulator_cache__/clear/Google%20Books HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37968 - "GET /__simulator_cache__/clear/Google%20Books HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37982 - "GET /__simulator_cache__/clear/PhishStats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37990 - "GET /__simulator_cache__/clear/PhishStats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38002 - "GET /__simulator_cache__/clear/RuneScape HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38010 - "GET /__simulator_cache__/clear/RuneScape HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38014 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38020 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38036 - "GET /__simulator_cache__/clear/TransitLand HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38050 - "GET /__simulator_cache__/clear/TransitLand HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38064 - "GET /__simulator_cache__/clear/Giphy__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38080 - "GET /__simulator_cache__/clear/Giphy__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38082 - "GET /__simulator_cache__/clear/bng2latlong HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38094 - "GET /__simulator_cache__/clear/bng2latlong HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38108 - "GET /__simulator_cache__/clear/CO2%20Offset HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38118 - "GET /__simulator_cache__/clear/CO2%20Offset HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38120 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38134 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38146 - "GET /__simulator_cache__/clear/TheMealDB HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38158 - "GET /__simulator_cache__/clear/TheMealDB HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38174 - "GET /__simulator_cache__/clear/Nutritionix__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38186 - "GET /__simulator_cache__/clear/Nutritionix__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38196 - "GET /__simulator_cache__/clear/Forismatic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38198 - "GET /__simulator_cache__/clear/Forismatic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38204 - "GET /__simulator_cache__/clear/Google%20Safe%20Browsing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38218 - "GET /__simulator_cache__/clear/Google%20Safe%20Browsing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38230 - "GET /__simulator_cache__/clear/Noctua HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38246 - "GET /__simulator_cache__/clear/Noctua HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38260 - "GET /__simulator_cache__/clear/Giphy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38276 - "GET /__simulator_cache__/clear/Giphy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38290 - "GET /__simulator_cache__/clear/Yo%20Momma%20Jokes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38300 - "GET /__simulator_cache__/clear/Yo%20Momma%20Jokes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38316 - "GET /__simulator_cache__/clear/JSONbin.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38324 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1635303]

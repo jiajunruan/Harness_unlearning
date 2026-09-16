@@ -1,0 +1,3 @@
+model,n_tasks,y_sum_log_probability_over_tasks,y_mean_sequence_log_probability,y_mean_tokens,z_sum_log_probability_over_tasks,z_mean_sequence_log_probability,z_mean_tokens,a_sum_log_probability_over_tasks,a_mean_sequence_log_probability,a_mean_tokens
+original,100,-199.262113571167,-1.9926211357116699,57.16,-93.41171455383301,-0.93411714553833,19.88,-105.85039901733398,-1.0585039901733397,37.28
+unlearned,100,-2623.4913330078125,-26.234913330078125,57.16,-1913.4374294281006,-19.134374294281006,19.88,-710.0539035797119,-7.100539035797119,37.28

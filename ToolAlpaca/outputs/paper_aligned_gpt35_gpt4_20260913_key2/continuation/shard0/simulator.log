@@ -1,0 +1,1048 @@
+INFO:     Started server process [2756977]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5720 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59734 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45780 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43914 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41288 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40290 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52662 - "GET /__simulator_cache__/open HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:07,  7.13s/it]1it [00:07,  7.13s/it]
+Status Code: 200
+Response: 
+{
+    "results_count": 3,
+    "results": [
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Summer Vibes Mix",
+                "url": "https://www.mixcloud.com/DJ/summer-vibes-mix",
+                "description": "Enjoy the summer vibes with this mix of upbeat tracks.",
+                "tags": ["summer", "upbeat", "mix"],
+                "created_time": "2022-07-15T12:30:00Z",
+                "audio_length": 3600,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/summer-vibes-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/summer-vibes-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/summer-vibes-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ",
+                    "username": "DJ",
+                    "url": "https://www.mixcloud.com/DJ"
+                },
+                "play_count": 1000,
+                "favorite_count": 500,
+                "repost_count": 100,
+                "comment_count": 50
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Chillout Lounge Mix",
+                "url": "https://www.mixcloud.com/DJ/chillout-lounge-mix",
+                "description": "Relax and unwind with this chilled out lounge mix.",
+                "tags": ["chillout", "relaxing", "lounge"],
+                "created_time": "2022-08-20T18:45:00Z",
+                "audio_length": 4200,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/chillout-lounge-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/chillout-lounge-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/chillout-lounge-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ",
+                    "username": "DJ",
+                    "url": "https://www.mixcloud.com/DJ"
+                },
+                "play_count": 800,
+                "favorite_count": 400,
+                "repost_count": 80,
+                "comment_count": 40
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "EDM Party Mix",
+                "url": "https://www.mixcloud.com/DJ/edm-party-mix",
+                "description": "Get the party started with this high-energy EDM mix.",
+                "tags": ["EDM", "party", "high-energy"],
+                "created_time": "2022-09-10T20:00:00Z",
+                "audio_length": 3000,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/edm-party-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/edm-party-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/edm-party-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ",
+                    "username": "DJ",
+                    "url": "https://www.mixcloud.com/DJ"
+                },
+                "play_count": 1200,
+                "favorite_count": 600,
+                "repost_count": 120,
+                "comment_count": 60
+            }
+        }
+    ]
+}
+Explanation: The API response contains 3 cloudcasts matching the search query "DJ" with the type "cloudcasts". Each cloudcast includes details such as name, URL, description, tags, created time, audio length, pictures, user information, play count, favorite count, repost count, and comment count.
+INFO:     127.0.0.1:52668 - "GET /Mixcloud/search/?q=DJ&type=cloudcasts HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.05s/it]1it [00:01,  1.05s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Cloudcast not found"
+}
+Explanation: The requested cloudcast with the URL "https://www.mixcloud.com/DJ/summer-vibes-mix/" was not found in the Mixcloud library. The API responds with a 404 error indicating that the cloudcast was not found.
+0it [00:00, ?it/s]1it [00:00,  1.07it/s]1it [00:00,  1.07it/s]
+Status Code: 404
+Response: 
+{
+    "error": "Cloudcast not found"
+}
+Explanation: The requested cloudcast with the URL "https://www.mixcloud.com/DJ/summer-vibes-mix/" was not found in the Mixcloud database. The API returns a 404 error indicating that the cloudcast was not found.
+INFO:     127.0.0.1:33242 - "GET /Mixcloud/stream/https%3A//www.mixcloud.com/DJ/summer-vibes-mix/ HTTP/1.1" 404 Not Found
+0it [00:00, ?it/s]1it [00:01,  1.56s/it]1it [00:01,  1.56s/it]
+Status Code: 200
+Response: 
+{
+    "message": "Audio content streamed successfully"
+}
+Explanation: The API successfully streamed the audio content of the cloudcast "Chillout Lounge Mix" by DJ from Mixcloud. The response indicates that the audio content was streamed successfully.
+INFO:     127.0.0.1:38436 - "GET /Mixcloud/stream/https%3A//www.mixcloud.com/DJ/chillout-lounge-mix/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39954 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60916 - "GET /__simulator_cache__/clear/Mixcloud HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:05,  5.61s/it]1it [00:05,  5.61s/it]
+Status Code: 200
+Response: 
+{
+    "results_count": 3,
+    "results": [
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Chill Vibes Mix",
+                "url": "https://www.mixcloud.com/user/chill-vibes-mix",
+                "description": "Relaxing mix of chill music",
+                "tags": ["chill", "relaxing", "music"],
+                "created_time": "2022-01-15T08:00:00Z",
+                "audio_length": 3600,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/user/chill-vibes-mix/large.jpg",
+                    "medium": "https://www.mixcloud.com/user/chill-vibes-mix/medium.jpg",
+                    "small": "https://www.mixcloud.com/user/chill-vibes-mix/small.jpg"
+                },
+                "user": {
+                    "name": "Chill Vibes Mix",
+                    "username": "chill-vibes-mix",
+                    "url": "https://www.mixcloud.com/user/chill-vibes-mix"
+                },
+                "play_count": 1000,
+                "favorite_count": 500,
+                "repost_count": 200,
+                "comment_count": 100
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Morning Coffee Playlist",
+                "url": "https://www.mixcloud.com/user/morning-coffee",
+                "description": "Upbeat tunes to start your day",
+                "tags": ["morning", "coffee", "upbeat"],
+                "created_time": "2022-02-01T07:30:00Z",
+                "audio_length": 2700,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/user/morning-coffee/large.jpg",
+                    "medium": "https://www.mixcloud.com/user/morning-coffee/medium.jpg",
+                    "small": "https://www.mixcloud.com/user/morning-coffee/small.jpg"
+                },
+                "user": {
+                    "name": "Morning Coffee",
+                    "username": "morning-coffee",
+                    "url": "https://www.mixcloud.com/user/morning-coffee"
+                },
+                "play_count": 800,
+                "favorite_count": 400,
+                "repost_count": 150,
+                "comment_count": 80
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Late Night Jazz Session",
+                "url": "https://www.mixcloud.com/user/late-night-jazz",
+                "description": "Smooth jazz for a relaxing evening",
+                "tags": ["jazz", "smooth", "relaxing"],
+                "created_time": "2022-02-15T22:00:00Z",
+                "audio_length": 3300,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/user/late-night-jazz/large.jpg",
+                    "medium": "https://www.mixcloud.com/user/late-night-jazz/medium.jpg",
+                    "small": "https://www.mixcloud.com/user/late-night-jazz/small.jpg"
+                },
+                "user": {
+                    "name": "Late Night Jazz",
+                    "username": "late-night-jazz",
+                    "url": "https://www.mixcloud.com/user/late-night-jazz"
+                },
+                "play_count": 1200,
+                "favorite_count": 600,
+                "repost_count": 250,
+                "comment_count": 120
+            }
+        }
+    ]
+}
+Explanation: The response contains 3 search results for cloudcasts with realistic data such as name, description, tags, created time, play count, favorite count, repost count, and comment count. Each cloudcast includes details about the user who uploaded it and links to pictures.
+INFO:     127.0.0.1:60922 - "GET /Mixcloud/search/?q=cloudcasts&type=cloudcasts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52448 - "GET /__simulator_cache__/clear/Mixcloud HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.67s/it]1it [00:01,  1.67s/it]
+Status Code: 200
+Response: 
+{
+    "display_name": "JohnDoe",
+    "reputation": 10000,
+    "profile_image": "https://example.com/profile.jpg",
+    "badges": [
+        {
+            "name": "Gold Badge",
+            "badge_type": "gold",
+            "rank": "1"
+        },
+        {
+            "name": "Silver Badge",
+            "badge_type": "silver",
+            "rank": "2"
+        }
+    ]
+}
+Explanation: The response contains detailed information about the user with user_id 12345 on the StackOverflow site, including their display name, reputation, profile image, and badges they have earned.
+
+(Note: The response data is fictional and for illustrative purposes only)
+INFO:     127.0.0.1:52458 - "GET /StackExchange__2/get-user?user_id=12345&site=StackOverflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51860 - "GET /__simulator_cache__/clear/StackExchange__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]INFO:     127.0.0.1:51876 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+1it [00:01,  1.34s/it]1it [00:01,  1.34s/it]
+Status Code: 200
+Response: 
+{
+    "display_name": "JohnDoe",
+    "reputation": 1000,
+    "profile_image": "https://example.com/profile.jpg",
+    "badges": [
+        {
+            "name": "Gold badge",
+            "badge_type": "gold",
+            "rank": "1"
+        },
+        {
+            "name": "Silver badge",
+            "badge_type": "silver",
+            "rank": "2"
+        }
+    ]
+}
+Explanation: This response provides detailed information about the user with the ID 12345 on the StackOverflow site, including their display name, reputation, profile image, and badges they have earned.
+INFO:     127.0.0.1:51868 - "GET /StackExchange__2/get-user?user_id=12345&site=StackOverflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59768 - "GET /__simulator_cache__/clear/StackExchange__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.26s/it]1it [00:01,  1.26s/it]
+Status Code: 200
+Response: {"quote": "May the Force be with you."}
+Explanation: The API responded with a random movie quote "May the Force be with you."
+
+Status Code: 200
+Response: {"quote": "I'll be back."}
+Explanation: The API returned another random movie quote "I'll be back."
+
+Status Code: 200
+Response: {"quote": "Here's looking at you, kid."}
+Explanation: A third random movie quote "Here's looking at you, kid" was provided by the API.
+INFO:     127.0.0.1:59782 - "GET /Movie%20Quote/random/movie HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45004 - "GET /__simulator_cache__/clear/Movie%20Quote HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.79s/it]1it [00:01,  1.79s/it]
+Status Code: 200
+Response: 
+{
+  "quote": "I'm gonna make him an offer he can't refuse."
+}
+Explanation: The request is to filter quotes by the movie title "The Godfather", and the response contains a famous quote from the movie "The Godfather".
+
+Status Code: 200
+Response: 
+{
+  "quote": "May the Force be with you."
+}
+Explanation: The request is to filter quotes by the movie title "Star Wars", and the response contains a famous quote from the movie "Star Wars".
+
+Status Code: 404
+Response: 
+{
+  "error": "No quotes found for the given title."
+}
+Explanation: The request is to filter quotes by a movie title that does not have any quotes in the database, hence the error response is returned.
+INFO:     127.0.0.1:45016 - "GET /Movie%20Quote/filtered?title=The+Godfather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33960 - "GET /__simulator_cache__/clear/Movie%20Quote HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.65s/it]1it [00:01,  1.65s/it]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid postId format. PostId must be a string containing alphanumeric characters only."}
+Explanation: The request parameter "postId" must be a string containing alphanumeric characters only. The provided postId "abc123" contains non-alphanumeric characters, leading to a bad request error response.
+0it [00:00, ?it/s]1it [00:00,  1.16it/s]1it [00:00,  1.16it/s]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid postId format. Please provide a valid alphanumeric postId."}
+Explanation: The provided postId 'abc123' is not in the correct format. The postId should be alphanumeric. This error response informs the user to provide a valid postId for retrieving meme details.
+INFO:     127.0.0.1:33962 - "GET /Doge-Meme/meme-details?postId=abc123 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:33328 - "GET /__simulator_cache__/clear/Doge-Meme HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55660 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53294 - "GET /__simulator_cache__/clear/Doge-Meme HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.28s/it]1it [00:01,  1.28s/it]
+Status Code: 200
+Response: 
+{
+  "results": [
+    {
+      "address": "123 Main St, Anytown, USA",
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    {
+      "address": "456 Elm St, Anytown, USA",
+      "latitude": 40.7306,
+      "longitude": -73.9352
+    },
+    {
+      "address": "789 Oak St, Anytown, USA",
+      "latitude": 40.7123,
+      "longitude": -74.2145
+    }
+  ]
+}
+Explanation: The request successfully processed the batch geocoding of three addresses and returned their corresponding latitude and longitude coordinates. Each result contains the input address along with its latitude and longitude values.
+INFO:     127.0.0.1:40344 - "POST /Geokeo/batchGeocode HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42410 - "GET /__simulator_cache__/clear/Geokeo HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.93s/it]1it [00:01,  1.93s/it]
+Status Code: 200
+Response: 
+{
+    "latitude": 37.751,
+    "longitude": -97.822
+}
+Explanation: The input address "8.8.8.8" has been successfully geocoded to latitude 37.751 and longitude -97.822.
+
+Status Code: 200
+Response: 
+{
+    "latitude": 40.7128,
+    "longitude": -74.006
+}
+Explanation: The input address "8.8.8.8" has been successfully geocoded to latitude 40.7128 and longitude -74.006.
+
+Status Code: 200
+Response: 
+{
+    "latitude": 51.5074,
+    "longitude": -0.1278
+}
+Explanation: The input address "8.8.8.8" has been successfully geocoded to latitude 51.5074 and longitude -0.1278.
+INFO:     127.0.0.1:35512 - "POST /Geokeo/geocode HTTP/1.1" 200 OK
+0it [00:00, ?it/s]INFO:     127.0.0.1:49816 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+1it [00:01,  1.25s/it]1it [00:01,  1.25s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Missing request body"
+}
+Explanation: The request is missing the required request body for reverse geocoding. The API expects latitude and longitude coordinates in the request body, not as query parameters.
+0it [00:00, ?it/s]1it [00:01,  1.04s/it]1it [00:01,  1.04s/it]
+Status Code: 200
+Response:
+{
+    "address": "Mountain View, California, USA"
+}
+Explanation: The latitude coordinate 37.751 and longitude coordinate -97.822 have been successfully reverse geocoded to the physical address "Mountain View, California, USA".
+INFO:     127.0.0.1:35522 - "POST /Geokeo/reverseGeocode?latitude=37.751&longitude=-97.822 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49824 - "GET /__simulator_cache__/clear/Geokeo HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.06s/it]1it [00:03,  3.06s/it]
+Status Code: 200
+Response: 
+{
+    "stations": [
+        {
+            "id": 1234,
+            "name": "Waterfront Station",
+            "address": "601 W Cordova St, Vancouver, BC V6B 1G1",
+            "latitude": 49.2853,
+            "longitude": -123.1112,
+            "distance": 300
+        },
+        {
+            "id": 5678,
+            "name": "Granville Station",
+            "address": "840 Granville St, Vancouver, BC V6Z 1K3",
+            "latitude": 49.2812,
+            "longitude": -123.1217,
+            "distance": 400
+        },
+        {
+            "id": 9012,
+            "name": "Yaletown-Roundhouse Station",
+            "address": "1195 Mainland St, Vancouver, BC V6B 2T9",
+            "latitude": 49.2742,
+            "longitude": -123.1211,
+            "distance": 450
+        }
+    ]
+}
+Explanation: The response contains information about stations near the specified latitude and longitude within a 500-meter radius. Each station object includes an ID, name, address, latitude, longitude, and distance from the search location.
+INFO:     127.0.0.1:38984 - "GET /Transport%20for%20Vancouver%2C%20Canada__3/stations-or-stops?latitude=49.2827&longitude=-123.1207&radius=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45612 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37878 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56262 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada__3 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.46s/it]1it [00:02,  2.46s/it]
+Status Code: 200
+Response: 
+{
+    "stations": [
+        {
+            "id": 12345,
+            "name": "Waterfront Station",
+            "address": "601 W Cordova St, Vancouver, BC V6B 1G1",
+            "latitude": 49.2859,
+            "longitude": -123.1111,
+            "distance": 150
+        },
+        {
+            "id": 67890,
+            "name": "Granville Station",
+            "address": "840 Granville St, Vancouver, BC V6Z 1K3",
+            "latitude": 49.2803,
+            "longitude": -123.1218,
+            "distance": 180
+        },
+        {
+            "id": 24680,
+            "name": "Burrard Station",
+            "address": "635 Burrard St, Vancouver, BC V6C 2G7",
+            "latitude": 49.2852,
+            "longitude": -123.1196,
+            "distance": 190
+        }
+    ]
+}
+Explanation: The response contains an array of station objects near the provided latitude and longitude coordinates within a 200-meter radius. Each station object includes an ID, name, address, latitude, longitude, and distance from the search location.
+INFO:     127.0.0.1:48330 - "GET /Transport%20for%20Vancouver%2C%20Canada__3/stations-or-stops?latitude=49.2745&longitude=-123.1381&radius=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38568 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.50s/it]1it [00:01,  1.50s/it]
+Status Code: 200
+Response:
+{
+    "id": 67890,
+    "name": "Granville Station",
+    "address": "840 Granville St, Vancouver, BC V6Z 1K3",
+    "latitude": 49.2803,
+    "longitude": -123.1218,
+    "amenities": ["Restrooms", "Ticket Vending Machines", "Elevator", "Bike Parkade"],
+    "accessibility": ["Wheelchair Accessible", "Audio Tactile Information"],
+    "waitTimes": {
+        "bus": "5 minutes",
+        "train": "10 minutes",
+        "ferry": "N/A"
+    }
+}
+Explanation: The response provides detailed information about Granville Station, including its ID, name, address, latitude, longitude, amenities available at the station, accessibility features, and estimated wait times for bus, train, and ferry transit options.
+INFO:     127.0.0.1:40432 - "GET /Transport%20for%20Vancouver%2C%20Canada__3/stations-or-stops/67890 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38676 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59016 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada__3 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.76s/it]1it [00:01,  1.76s/it]
+Status Code: 200
+Response: 
+{
+  "results": [
+    {
+      "domain": "google.com",
+      "age": 23,
+      "ip": "172.217.11.78",
+      "phishing": false,
+      "submission": true
+    },
+    {
+      "domain": "google.com",
+      "age": 23,
+      "ip": "172.217.11.78",
+      "phishing": false,
+      "submission": true
+    },
+    {
+      "domain": "google.com",
+      "age": 23,
+      "ip": "172.217.11.78",
+      "phishing": false,
+      "submission": true
+    }
+  ]
+}
+Explanation: 
+This response provides information on the domain "google.com" with its age, IP address, phishing status (false), and submission status (true). The response contains 3 samples as requested.
+INFO:     127.0.0.1:59024 - "GET /PhishStats/phishing/search?domain=google.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59946 - "GET /__simulator_cache__/clear/PhishStats HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.85s/it]1it [00:01,  1.85s/it]
+Status Code: 200
+Response: 
+{
+  "domain": "facebook.com",
+  "age": 17,
+  "ip": "157.240.16.35",
+  "phishing": false,
+  "submission": true
+}
+Explanation: The response provides information about the domain "facebook.com", including its age of 17 years, IP address 157.240.16.35, phishing status as false, and submission status as true. This indicates that the domain is not flagged as a phishing site and has been submitted to the database.
+INFO:     127.0.0.1:59958 - "GET /PhishStats/phishing/domain/facebook.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59968 - "GET /__simulator_cache__/clear/PhishStats HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.06s/it]1it [00:02,  2.06s/it]
+Status Code: 200
+Response: 
+{
+  "routeNo": "9",
+  "routeName": "Broadway / Boundary",
+  "stopTimes": [
+    {
+      "stopCode": "1234",
+      "stopName": "Broadway-City Hall Station",
+      "arrivalTime": "08:00",
+      "departureTime": "08:05"
+    },
+    {
+      "stopCode": "5678",
+      "stopName": "Commercial-Broadway Station",
+      "arrivalTime": "08:15",
+      "departureTime": "08:20"
+    },
+    {
+      "stopCode": "9012",
+      "stopName": "Boundary Rd at Grandview Hwy",
+      "arrivalTime": "08:30",
+      "departureTime": "08:35"
+    }
+  ]
+}
+Explanation: This response provides the static schedule for route number 9 (Broadway / Boundary) with stop times at various locations along the route. Each stop includes the stop code, stop name, arrival time, and departure time.
+INFO:     127.0.0.1:39732 - "GET /Transport%20for%20Vancouver%2C%20Canada/schedules?routeNo=9 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.57s/it]1it [00:01,  1.57s/it]
+Status Code: 404
+Response:
+{
+  "error": "Route not found",
+  "message": "The requested route number '14' does not exist in the system."
+}
+Explanation: The response indicates that the route number '14' was not found in the system, resulting in a 404 error.
+0it [00:00, ?it/s]1it [00:00,  1.50it/s]1it [00:00,  1.50it/s]
+Status Code: 404
+Response: 
+{
+  "error": "Route not found",
+  "message": "The requested route number (14) does not exist."
+}
+Explanation: The response indicates that the route number 14 was not found in the system, resulting in a 404 error.
+INFO:     127.0.0.1:52630 - "GET /Transport%20for%20Vancouver%2C%20Canada/schedules?routeNo=14 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60468 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60470 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.42s/it]1it [00:01,  1.42s/it]
+Status Code: 200
+Response: 
+{
+    "stopCode": "12345",
+    "stopName": "Broadway-City Hall Station",
+    "routeNo": "99",
+    "routeName": "Commercial-Broadway / UBC (B-Line)",
+    "distance": 600.25
+}
+{
+    "stopCode": "67890",
+    "stopName": "Granville Station",
+    "routeNo": "10",
+    "routeName": "Granville / Downtown",
+    "distance": 750.89
+}
+{
+    "stopCode": "24680",
+    "stopName": "Waterfront Station",
+    "routeNo": "135",
+    "routeName": "Burrard Station / Simon Fraser University",
+    "distance": 550.75
+}
+Explanation: The response provides a list of nearby stops and routes based on the provided latitude, longitude, and search radius. Each entry includes stop code, stop name, route number, route name, and the distance from the given location.
+Extra data: line 8 column 1 (char 174)
+INFO:     127.0.0.1:36648 - "GET /Transport%20for%20Vancouver%2C%20Canada/locations?latitude=49.3045&longitude=-123.1508&radius=800 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43174 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.64s/it]1it [00:01,  1.64s/it]
+Status Code: 200
+Response: 
+{
+  "type": "gif",
+  "id": "abc123",
+  "url": "https://giphy.com/gifs/sunset-abc123",
+  "title": "Beautiful Sunset",
+  "rating": "g",
+  "images": {
+    "original": {
+      "url": "https://media.giphy.com/media/abc123/giphy.gif",
+      "width": 480,
+      "height": 270
+    },
+    "fixed_height": {
+      "url": "https://media.giphy.com/media/abc123/200.gif",
+      "width": 200,
+      "height": 113
+    },
+    "fixed_width": {
+      "url": "https://media.giphy.com/media/abc123/200w.gif",
+      "width": 200,
+      "height": 113
+    }
+  }
+}
+Explanation: This response contains information about a GIF related to the search query "sunset". The response includes the GIF's ID, URL, title, rating, and different versions of the GIF in various sizes and formats. The limit parameter is set to 1, so only one GIF is returned.
+INFO:     127.0.0.1:43188 - "GET /Giphy__2/search?q=sunset&limit=1 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.23s/it]1it [00:01,  1.23s/it]
+Status Code: 200
+Response:
+{
+  "message": "GIF sent successfully"
+}
+Explanation: The request to send a GIF with the specified details was successful, and the response confirms that the GIF was sent successfully to the recipient.
+INFO:     127.0.0.1:35492 - "POST /Giphy__2/gifs/send HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36794 - "GET /__simulator_cache__/clear/Giphy__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.99s/it]1it [00:01,  1.99s/it]
+Status Code: 200
+Response: 
+{
+  "type": "gif",
+  "id": "abc123",
+  "url": "https://giphy.com/gifs/abc123",
+  "title": "Happy Person",
+  "rating": "g",
+  "images": {
+    "original": {
+      "url": "https://media.giphy.com/media/abc123/giphy.gif",
+      "width": 480,
+      "height": 270
+    },
+    "fixed_height": {
+      "url": "https://media.giphy.com/media/abc123/200.gif",
+      "width": 200,
+      "height": 113
+    },
+    "fixed_width": {
+      "url": "https://media.giphy.com/media/abc123/200w.gif",
+      "width": 200,
+      "height": 113
+    }
+  }
+}
+Explanation: This response contains a GIF of a happy person with the specified search query and limit of 1 result. It provides the URL, title, rating, and image sizes for the GIF.
+INFO:     127.0.0.1:36796 - "GET /Giphy__2/search?q=person&limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36802 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57084 - "GET /__simulator_cache__/clear/Giphy__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.08it/s]1it [00:00,  1.08it/s]
+Status Code: 200
+Response: 
+{
+    "emissions": 2.5
+}
+Explanation: The calculated carbon emissions for a refrigerator in the electronics industry is 2.5 metric tons CO2 equivalent. This response adheres to the OpenAPI Spec format and provides realistic data based on the input parameters.
+INFO:     127.0.0.1:41486 - "POST /CO2%20Offset/calculateCarbonEmissions HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.66s/it]1it [00:02,  2.66s/it]
+Status Code: 200
+Response: 
+{
+    "projects": [
+        {
+            "projectId": 1,
+            "name": "Renewable Energy Project",
+            "description": "Generate electricity from renewable sources to offset carbon emissions.",
+            "industry": "electronics",
+            "location": "California",
+            "offsetPerUnitCost": 10.5
+        },
+        {
+            "projectId": 2,
+            "name": "Tree Planting Initiative",
+            "description": "Plant trees to absorb CO2 and reduce greenhouse gases.",
+            "industry": "electronics",
+            "location": "Oregon",
+            "offsetPerUnitCost": 5.2
+        },
+        {
+            "projectId": 3,
+            "name": "Waste Reduction Program",
+            "description": "Implement waste reduction strategies to minimize carbon footprint.",
+            "industry": "electronics",
+            "location": "New York",
+            "offsetPerUnitCost": 8.0
+        }
+    ]
+}
+Explanation: The response provides a list of carbon offset projects related to the electronics industry. Each project includes details such as project ID, name, description, industry, location, and offset per unit cost. This aligns with the OpenAPI Spec format and contains realistic data.
+INFO:     127.0.0.1:41492 - "GET /CO2%20Offset/listOffsetProjects?industry=electronics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47604 - "GET /__simulator_cache__/clear/CO2%20Offset HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.36s/it]1it [00:01,  1.36s/it]
+Status Code: 200
+Response: 
+{
+    "emissions": 4.5
+}
+Explanation: The calculated carbon emissions for the cultivation of 2000 flowers in the agriculture industry is 4.5 metric tons of CO2 equivalent.
+
+(Note: The response contains realistic data based on the provided input parameters.)
+INFO:     127.0.0.1:47610 - "POST /CO2%20Offset/calculateCarbonEmissions HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.87s/it]1it [00:01,  1.87s/it]
+Status Code: 200
+Response:
+{
+    "projects": [
+        {
+            "projectId": 1,
+            "name": "Tree Planting Initiative",
+            "description": "Plant trees to offset carbon emissions.",
+            "industry": "Agriculture",
+            "location": "Global",
+            "offsetPerUnitCost": 10.5
+        },
+        {
+            "projectId": 2,
+            "name": "Renewable Energy Project",
+            "description": "Invest in renewable energy sources for carbon offset.",
+            "industry": "Agriculture",
+            "location": "Global",
+            "offsetPerUnitCost": 15.2
+        },
+        {
+            "projectId": 3,
+            "name": "Methane Capture Project",
+            "description": "Capture methane emissions from agricultural activities.",
+            "industry": "Agriculture",
+            "location": "Global",
+            "offsetPerUnitCost": 8.9
+        }
+    ]
+}
+Explanation: The response includes a list of carbon offset projects related to the agriculture industry and located globally. Each project contains details such as project ID, name, description, industry, location, and offset per unit cost.
+
+(Note: The response provides realistic data based on the specified industry and location filters.)
+INFO:     127.0.0.1:41800 - "GET /CO2%20Offset/listOffsetProjects?industry=agriculture&location=global HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44598 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44610 - "GET /__simulator_cache__/clear/CO2%20Offset HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.04s/it]1it [00:02,  2.04s/it]
+Status Code: 200
+Response: 
+{
+  "meals": [
+    {
+      "idMeal": "52772",
+      "strMeal": "Vegetarian Chili",
+      "strCategory": "Vegetarian",
+      "strArea": "American",
+      "strInstructions": "Instructions for preparing Vegetarian Chili...",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/uuuspp1468263334.jpg",
+      "strIngredient1": "Kidney beans",
+      "strIngredient2": "Black beans",
+      "strIngredient3": "Chili powder",
+      "strIngredient4": "Tomatoes",
+      "strIngredient5": "Onions",
+      "strIngredient6": "Bell peppers",
+      "strIngredient7": "Corn",
+      "strIngredient8": "Garlic",
+      "strIngredient9": "Cumin",
+      "strIngredient10": "Salt",
+      "strMeasure1": "1 can",
+      "strMeasure2": "1 can",
+      "strMeasure3": "1 tbsp",
+      "strMeasure4": "2 cans",
+      "strMeasure5": "1",
+      "strMeasure6": "1",
+      "strMeasure7": "1 can",
+      "strMeasure8": "2 cloves",
+      "strMeasure9": "1 tbsp",
+      "strMeasure10": "to taste"
+    }
+  ]
+}
+Explanation: This response provides a vegetarian meal recommendation for Vegetarian Chili. It includes details such as ingredients, instructions, and an image of the meal.
+INFO:     127.0.0.1:33894 - "GET /TheMealDB/filter.php?i=vegetarian HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.02s/it]1it [00:01,  1.02s/it]
+Status Code: 400
+Response: 
+{
+  "error": "Bad Request",
+  "message": "Missing required parameter 'i' for searching by ingredient"
+}
+Explanation: The request is missing the required 'i' parameter for searching by ingredient. Please include the 'i' parameter with the name of the ingredient to search for.
+0it [00:00, ?it/s]1it [00:02,  2.32s/it]1it [00:02,  2.32s/it]
+Status Code: 200
+Response:
+{
+  "meals": [
+    {
+      "idMeal": "52893",
+      "strMeal": "Vegetarian Pasta Salad",
+      "strCategory": "Vegetarian",
+      "strArea": "Italian",
+      "strInstructions": "Instructions for preparing Vegetarian Pasta Salad...",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg",
+      "strIngredient1": "Pasta",
+      "strIngredient2": "Cherry tomatoes",
+      "strIngredient3": "Cucumbers",
+      "strIngredient4": "Red onion",
+      "strIngredient5": "Black olives",
+      "strIngredient6": "Feta cheese",
+      "strIngredient7": "Basil leaves",
+      "strIngredient8": "Olive oil",
+      "strIngredient9": "Lemon juice",
+      "strIngredient10": "Salt",
+      "strMeasure1": "200g",
+      "strMeasure2": "1 cup",
+      "strMeasure3": "1",
+      "strMeasure4": "1",
+      "strMeasure5": "1/2 cup",
+      "strMeasure6": "1/2 cup",
+      "strMeasure7": "to taste",
+      "strMeasure8": "2 tbsp",
+      "strMeasure9": "1 tbsp",
+      "strMeasure10": "to taste"
+    }
+  ]
+}
+Explanation: This response provides a vegetarian meal recommendation for Vegetarian Pasta Salad. It includes details such as ingredients, instructions, and an image of the meal.
+INFO:     127.0.0.1:39622 - "GET /TheMealDB/filter.php?i=vegetarian HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48726 - "GET /__simulator_cache__/clear/TheMealDB HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:05,  5.13s/it]1it [00:05,  5.13s/it]
+Status Code: 200
+Response: 
+{
+  "meals": [
+    {
+      "idMeal": "1",
+      "strMeal": "Vegan Lentil Soup",
+      "strCategory": "Soup",
+      "strArea": "International",
+      "strInstructions": "Instructions for preparing the Vegan Lentil Soup.",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/xyz.jpg",
+      "strIngredient1": "Lentils",
+      "strIngredient2": "Carrots",
+      "strIngredient3": "Celery",
+      "strIngredient4": "Onion",
+      "strIngredient5": "Garlic",
+      "strMeasure1": "1 cup",
+      "strMeasure2": "2",
+      "strMeasure3": "2 stalks",
+      "strMeasure4": "1",
+      "strMeasure5": "2 cloves"
+    },
+    {
+      "idMeal": "2",
+      "strMeal": "Vegan Chickpea Curry",
+      "strCategory": "Main Course",
+      "strArea": "Indian",
+      "strInstructions": "Instructions for preparing the Vegan Chickpea Curry.",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/abc.jpg",
+      "strIngredient1": "Chickpeas",
+      "strIngredient2": "Tomatoes",
+      "strIngredient3": "Coconut Milk",
+      "strIngredient4": "Spices",
+      "strMeasure1": "1 can",
+      "strMeasure2": "2",
+      "strMeasure3": "1 cup",
+      "strMeasure4": "To taste"
+    },
+    {
+      "idMeal": "3",
+      "strMeal": "Vegan Quinoa Salad",
+      "strCategory": "Salad",
+      "strArea": "Mediterranean",
+      "strInstructions": "Instructions for preparing the Vegan Quinoa Salad.",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/def.jpg",
+      "strIngredient1": "Quinoa",
+      "strIngredient2": "Cucumbers",
+      "strIngredient3": "Cherry Tomatoes",
+      "strIngredient4": "Red Onion",
+      "strIngredient5": "Lemon Juice",
+      "strMeasure1": "1 cup",
+      "strMeasure2": "1",
+      "strMeasure3": "1 cup",
+      "strMeasure4": "1/2",
+      "strMeasure5": "2 tbsp"
+    }
+  ]
+}
+Explanation: The response contains an array of vegan meal options, each with unique details such as ingredients, instructions, and images. The data is realistic and aligns with the specified format in the OpenAPI Spec.
+INFO:     127.0.0.1:48732 - "GET /TheMealDB/filter.php?i=vegan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44054 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51958 - "GET /__simulator_cache__/clear/TheMealDB HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.31s/it]1it [00:01,  1.31s/it]
+Status Code: 200
+Response: 
+{
+    "quotes": [
+        {
+            "quoteText": "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart.",
+            "quoteAuthor": "Helen Keller"
+        },
+        {
+            "quoteText": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
+            "quoteAuthor": "Lao Tzu"
+        },
+        {
+            "quoteText": "Love is composed of a single soul inhabiting two bodies.",
+            "quoteAuthor": "Aristotle"
+        }
+    ]
+}
+Explanation: The request successfully retrieved 3 quotes related to the search query "love" with a limit of 3. Each quote contains the text of the quote and the author. The response is in JSON format as per the OpenAPI Spec.
+INFO:     127.0.0.1:46720 - "GET /Forismatic/search?query=love&limit=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56238 - "GET /__simulator_cache__/clear/Forismatic HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.67s/it]1it [00:01,  1.67s/it]
+Status Code: 200
+Response: 
+{
+    "quotes": [
+        {
+            "quoteText": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+            "quoteAuthor": "Albert Schweitzer"
+        },
+        {
+            "quoteText": "Success is getting what you want. Happiness is wanting what you get.",
+            "quoteAuthor": "Dale Carnegie"
+        },
+        {
+            "quoteText": "Success is not the absence of failure; it's the persistence through failure.",
+            "quoteAuthor": "Aisha Tyler"
+        },
+        {
+            "quoteText": "Success is not in what you have, but who you are.",
+            "quoteAuthor": "Bo Bennett"
+        },
+        {
+            "quoteText": "The road to success and the road to failure are almost exactly the same.",
+            "quoteAuthor": "Colin R. Davis"
+        }
+    ]
+}
+Explanation: The request successfully retrieved 5 quotes related to the keyword "success" with their respective authors. Each quote provides inspirational insights on success and happiness.
+INFO:     127.0.0.1:56254 - "GET /Forismatic/search?query=success&limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42282 - "GET /__simulator_cache__/clear/Forismatic HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.94s/it]1it [00:01,  1.94s/it]
+Status Code: 200
+Response: 
+{
+    "historicalWeatherData": [
+        {
+            "date": "2020-01-01",
+            "temperature": 32,
+            "humidity": 75,
+            "precipitation": 0.1
+        },
+        {
+            "date": "2020-01-02",
+            "temperature": 30,
+            "humidity": 80,
+            "precipitation": 0.2
+        },
+        {
+            "date": "2020-01-03",
+            "temperature": 28,
+            "humidity": 85,
+            "precipitation": 0.3
+        }
+    ]
+}
+Explanation: The response contains historical weather data for New York City from January 1, 2020, to January 3, 2020. Each object includes the date, temperature in Fahrenheit, humidity percentage, and precipitation amount in inches.
+INFO:     127.0.0.1:56868 - "GET /Noctua/historicalWeatherData?location=New+York+City%2C+NY&startDate=2020-01-01&endDate=2020-01-07 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40724 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57238 - "GET /__simulator_cache__/clear/Noctua HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.03s/it]1it [00:02,  2.03s/it]
+Status Code: 200
+Response: 
+{
+    "historicalWeatherData": [
+        {
+            "date": "2018-06-15",
+            "temperature": 98.5,
+            "humidity": 20,
+            "precipitation": 0.0
+        },
+        {
+            "date": "2018-06-16",
+            "temperature": 99.2,
+            "humidity": 18,
+            "precipitation": 0.0
+        },
+        {
+            "date": "2018-06-17",
+            "temperature": 97.8,
+            "humidity": 22,
+            "precipitation": 0.0
+        }
+    ]
+}
+Explanation: The response contains historical weather data for the location "Phoenix, AZ" from June 15, 2018, to June 17, 2018. Each object in the array represents the weather data for a specific date, including temperature, humidity, and precipitation.
+INFO:     127.0.0.1:49292 - "GET /Noctua/historicalWeatherData?location=Phoenix%2C+AZ&startDate=2018-06-15&endDate=2018-06-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42006 - "GET /__simulator_cache__/clear/Noctua HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42016 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.33it/s]1it [00:00,  1.33it/s]
+Status Code: 200
+Response: 
+{
+  "joke": "Yo momma is so fat, when she goes camping, the bears hide their food."
+}
+Explanation: The response contains a randomly selected Yo Momma joke from the database.
+INFO:     127.0.0.1:42018 - "GET /Yo%20Momma%20Jokes/random HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.79s/it]1it [00:01,  1.79s/it]
+Status Code: 200
+Response:
+[
+  {
+    "id": 1,
+    "joke": "Yo momma is so lazy, she doesn't chase the ice cream truck, she waits for it to break down in front of her house."
+  },
+  {
+    "id": 2,
+    "joke": "Yo momma is so old, when she was in school, history was called current events."
+  },
+  {
+    "id": 3,
+    "joke": "Yo momma is so short, she poses for trophies."
+  }
+]
+Explanation: The response contains a list of all available Yo Momma jokes in the database with their respective IDs.
+INFO:     127.0.0.1:33852 - "GET /Yo%20Momma%20Jokes/jokes HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.12it/s]1it [00:00,  1.12it/s]
+Status Code: 200
+Response:
+{
+  "joke": "Yo Steve is so clumsy, he tripped over a wireless network."
+}
+Explanation: The response contains a custom Yo Momma joke with the name "Steve" inserted into the joke.
+INFO:     127.0.0.1:33856 - "GET /Yo%20Momma%20Jokes/custom?name=Steve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33330 - "GET /__simulator_cache__/clear/Yo%20Momma%20Jokes HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.39s/it]1it [00:01,  1.39s/it]
+Status Code: 200
+Response: 
+{
+    "joke": "Yo Momma is so kind, she makes Mr. Rogers look like an amateur."
+}
+Explanation: The API successfully processed the request to get a custom Yo Momma joke with the name "Samantha" inserted into the joke. The response contains a realistic joke with the custom name.
+INFO:     127.0.0.1:33346 - "GET /Yo%20Momma%20Jokes/custom?name=Samantha HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47556 - "GET /__simulator_cache__/clear/Yo%20Momma%20Jokes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47558 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2756977]

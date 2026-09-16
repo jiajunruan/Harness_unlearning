@@ -1,0 +1,3329 @@
+INFO:     Started server process [1661191]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5723 (Press CTRL+C to quit)
+INFO:     127.0.0.1:34710 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51734 - "GET /__simulator_cache__/open HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.25s/it]1it [00:02,  2.25s/it]
+Status Code: 200
+Response: 
+{
+    "logs": [
+        {
+            "logId": "123456789",
+            "content": "Error occurred in module X",
+            "tags": ["error", "module X"],
+            "timestamp": "2020-09-15T08:30:45Z"
+        },
+        {
+            "logId": "987654321",
+            "content": "Warning: Disk space low",
+            "tags": ["warning", "disk space"],
+            "timestamp": "2020-09-17T15:20:10Z"
+        },
+        {
+            "logId": "456789123",
+            "content": "Successful login by user123",
+            "tags": ["login", "success"],
+            "timestamp": "2020-09-19T10:05:30Z"
+        }
+    ],
+    "totalResults": 3
+}
+Explanation: The request successfully retrieved 3 log entries that match the specified date range and limit criteria. Each log entry contains a unique identifier, content, tags, and timestamp.
+INFO:     127.0.0.1:57644 - "GET /Logs.to/logs?startDate=2020-09-14T00%3A00%3A00Z&endDate=2020-09-20T23%3A59%3A59Z&limit=10&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57290 - "GET /__simulator_cache__/clear/Logs.to HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.11it/s]1it [00:00,  1.10it/s]
+Status Code: 200
+Response: 
+{
+    "logId": "abc123",
+    "status": "success"
+}
+Explanation: The log entry with the content "I just finished reading the book 'The Art of Learning'" and tags "books, learning" was successfully created with the unique identifier "abc123".
+INFO:     127.0.0.1:57292 - "POST /Logs.to/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49132 - "GET /__simulator_cache__/clear/Logs.to HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.85s/it]1it [00:03,  3.85s/it]
+Status Code: 200
+Response: 
+{
+    "domainName": "exampledomain.org",
+    "createDt": "2020-05-15",
+    "updateDt": "2021-08-20",
+    "expireDt": "2023-05-15",
+    "registrarName": "Example Registrar",
+    "registrantName": "John Doe",
+    "registrantEmail": "johndoe@example.com",
+    "registrantOrganization": "Example Organization",
+    "status": "active"
+}
+Explanation: The response contains details of a registered domain with the .org top-level domain. The domain is active, owned by John Doe from Example Organization, and registered with Example Registrar.
+
+Status Code: 200
+Response: 
+{
+    "domainName": "anotherdomain.org",
+    "createDt": "2019-10-10",
+    "updateDt": "2020-12-05",
+    "expireDt": "2022-10-10",
+    "registrarName": "Another Registrar",
+    "registrantName": "Jane Smith",
+    "registrantEmail": "janesmith@example.com",
+    "registrantOrganization": "Another Organization",
+    "status": "active"
+}
+Explanation: The response provides details of another registered domain with the .org top-level domain. The domain is active, owned by Jane Smith from Another Organization, and registered with Another Registrar.
+
+Status Code: 200
+Response: 
+{
+    "domainName": "testdomain.org",
+    "createDt": "2021-03-25",
+    "updateDt": "2022-06-30",
+    "expireDt": "2023-03-25",
+    "registrarName": "Test Registrar",
+    "registrantName": "Alice Johnson",
+    "registrantEmail": "alicejohnson@example.com",
+    "registrantOrganization": "Test Organization",
+    "status": "active"
+}
+Explanation: This response includes details of a test domain with the .org top-level domain. The domain is active, owned by Alice Johnson from Test Organization, and registered with Test Registrar.
+INFO:     127.0.0.1:49134 - "GET /Domainsdb.info__2/search?query=&tld=org HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49148 - "GET /__simulator_cache__/clear/Domainsdb.info__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.10s/it]1it [00:04,  4.10s/it]
+Status Code: 200
+Response: 
+{
+    "domainName": "music.com",
+    "createDt": "2000-05-15",
+    "updateDt": "2021-09-20",
+    "expireDt": "2023-05-15",
+    "registrarName": "GoDaddy",
+    "registrantName": "John Doe",
+    "registrantEmail": "john.doe@example.com",
+    "registrantOrganization": "Music Corp",
+    "status": "active"
+}
+Explanation: The response provides details of a registered domain name related to music, including creation date, update date, expiration date, registrar name, registrant information, and status. This is a sample result based on the search query for "music".
+
+Status Code: 200
+Response: 
+{
+    "domainName": "musicstore.net",
+    "createDt": "2005-10-28",
+    "updateDt": "2020-12-01",
+    "expireDt": "2022-10-28",
+    "registrarName": "Namecheap",
+    "registrantName": "Jane Smith",
+    "registrantEmail": "jane.smith@example.com",
+    "registrantOrganization": "Music Store Inc",
+    "status": "active"
+}
+Explanation: The response contains details of another registered domain name associated with music, showcasing creation date, update date, expiration date, registrar name, registrant information, and status. This is a sample result based on the search query for "music".
+
+Status Code: 200
+Response: 
+{
+    "domainName": "musicalbums.org",
+    "createDt": "2012-03-10",
+    "updateDt": "2021-11-05",
+    "expireDt": "2023-03-10",
+    "registrarName": "Google Domains",
+    "registrantName": "Alice Johnson",
+    "registrantEmail": "alice.johnson@example.com",
+    "registrantOrganization": "Music Albums Co",
+    "status": "active"
+}
+Explanation: This response provides details of a different registered domain name focusing on music albums, including relevant dates, registrar name, registrant details, and status. This is a sample result based on the search query for "music".
+INFO:     127.0.0.1:57072 - "GET /Domainsdb.info__2/search?query=music HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.16it/s]1it [00:00,  1.16it/s]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Missing required parameter: tld",
+    "status": 400
+}
+Explanation: The request is missing the required parameter "tld" for retrieving domain name statistics. The response indicates a bad request due to the absence of the necessary parameter. Please provide a valid top-level domain (TLD) to retrieve statistics.
+0it [00:00, ?it/s]1it [00:01,  1.38s/it]1it [00:01,  1.38s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Missing required parameter: tld",
+    "statusCode": 400
+}
+Explanation: The request is missing the required parameter "tld" for retrieving domain name statistics. The response indicates a bad request with an error message specifying the missing parameter. Please provide a valid "tld" parameter to retrieve domain statistics.
+INFO:     127.0.0.1:57086 - "GET /Domainsdb.info__2/stats?tld= HTTP/1.1" 400 Bad Request
+0it [00:00, ?it/s]1it [00:02,  2.55s/it]1it [00:02,  2.55s/it]
+Status Code: 200
+Response:
+{
+    "totalDomains": 2500,
+    "tldCount": 500,
+    "tldPercentage": 20.0,
+    "topCountries": [
+        {
+            "countryCode": "US",
+            "countryName": "United States",
+            "domainCount": 1200,
+            "domainPercentage": 48.0
+        },
+        {
+            "countryCode": "UK",
+            "countryName": "United Kingdom",
+            "domainCount": 500,
+            "domainPercentage": 20.0
+        },
+        {
+            "countryCode": "DE",
+            "countryName": "Germany",
+            "domainCount": 300,
+            "domainPercentage": 12.0
+        }
+    ]
+}
+Explanation: The response provides domain name statistics related to the "music" top-level domain (TLD). It includes the total number of domains, TLD count, percentage of domains with the specified TLD, and the distribution of domains across top countries associated with the "music" TLD. This is a sample result based on the provided TLD parameter.
+INFO:     127.0.0.1:54968 - "GET /Domainsdb.info__2/stats?tld=music HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33580 - "GET /__simulator_cache__/clear/Domainsdb.info__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.22it/s]1it [00:00,  1.22it/s]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid request parameters. 'width' must be greater than 0 and 'height' must be greater than 0."}
+Explanation: The request parameters 'width' and 'height' must be positive integers to resize the image. The provided values of 8 and 10 do not meet this requirement, hence the request is invalid.
+0it [00:00, ?it/s]1it [00:01,  1.57s/it]1it [00:01,  1.57s/it]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "The request body contains invalid parameters. The 'width' must be greater than 0 and the 'height' must be greater than 0."}
+Explanation: The request parameters 'width' and 'height' must have values greater than 0 to resize the image. The provided values do not meet this requirement, leading to a bad request error response.
+INFO:     127.0.0.1:33588 - "POST /CheetahO/resizeImage HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:48362 - "GET /__simulator_cache__/clear/CheetahO HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.05s/it]1it [00:01,  1.05s/it]
+Status Code: 200
+Response: 
+{
+    "resizedImageUrl": "https://example.com/resizedimage.png",
+    "originalDimensions": "1920 x 1080",
+    "resizedDimensions": "1024 x 576"
+}
+Explanation: The image at the provided URL was successfully resized to the specified width of 1024 pixels while maintaining the aspect ratio. The original dimensions of the image were 1920 x 1080, and the resized dimensions are 1024 x 576.
+INFO:     127.0.0.1:48368 - "POST /CheetahO/resizeImage HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.27s/it]1it [00:01,  1.27s/it]
+Status Code: 200
+Response: 
+{
+    "convertedImageUrl": "https://example.com/convertedimage.jpg",
+    "originalFormat": "png",
+    "convertedFormat": "jpg"
+}
+Explanation: The image at the provided URL was successfully converted from PNG format to JPG format. The original format of the image was PNG, and the converted format is JPG.
+INFO:     127.0.0.1:46766 - "POST /CheetahO/convertImageFormat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46768 - "GET /__simulator_cache__/clear/CheetahO HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.30s/it]1it [00:01,  1.30s/it]
+Status Code: 200
+Response: 
+{
+  "airlineCode": "BA",
+  "airlineName": "British Airways",
+  "logo": "https://example.com/british_airways_logo"
+}
+{
+  "airlineCode": "AC",
+  "airlineName": "Air Canada",
+  "logo": "https://example.com/air_canada_logo"
+}
+{
+  "airlineCode": "LH",
+  "airlineName": "Lufthansa",
+  "logo": "https://example.com/lufthansa_logo"
+}
+Explanation: The response provides a list of airlines matching the search query "London to Toronto" with a limit of 10 results. Each entry includes the airline code, name, and a link to the airline's logo.
+Extra data: line 6 column 1 (char 116)
+INFO:     127.0.0.1:47672 - "GET /apilayer%20aviationstack/searchairlines?query=London+to+Toronto&limit=10 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.31s/it]1it [00:02,  2.31s/it]
+Status Code: 200
+Response:
+[
+  {
+    "routeMap": "https://example.com/lhr_to_yyz_route_map",
+    "flightSchedule": "Flight 123: Departure - 2020-09-01 08:00, Arrival - 2020-09-01 12:00"
+  },
+  {
+    "routeMap": "https://example.com/lhr_to_yyz_route_map",
+    "flightSchedule": "Flight 456: Departure - 2020-09-01 14:00, Arrival - 2020-09-01 18:00"
+  },
+  {
+    "routeMap": "https://example.com/lhr_to_yyz_route_map",
+    "flightSchedule": "Flight 789: Departure - 2020-09-01 20:00, Arrival - 2020-09-02 00:00"
+  }
+]
+Explanation: The response provides a list of aviation routes between London Heathrow (LHR) and Toronto Pearson (YYZ) airports on the specified date (2020-09-01). Each entry includes a link to the route map and the flight schedule details.
+INFO:     127.0.0.1:47682 - "GET /apilayer%20aviationstack/aviationroutes?origin=LHR&destination=YYZ&date=2020-09-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46656 - "GET /__simulator_cache__/clear/apilayer%20aviationstack HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.18s/it]1it [00:02,  2.18s/it]
+Status Code: 200
+Response: 
+{
+    "flightNumber": "UA1500",
+    "departureTime": "2020-09-15T08:00:00",
+    "arrivalTime": "2020-09-15T10:30:00",
+    "delayStatus": "on-time",
+    "cancellationStatus": "not-cancelled"
+}
+Explanation: The response provides real-time flight status information for flight number UA1500 on September 15, 2020. The flight is scheduled to depart at 08:00 and arrive at 10:30, with an on-time status and not cancelled.
+
+Status Code: 200
+Response: 
+{
+    "flightNumber": "UA1500",
+    "departureTime": "2020-09-15T08:00:00",
+    "arrivalTime": "2020-09-15T10:30:00",
+    "delayStatus": "delayed",
+    "cancellationStatus": "not-cancelled"
+}
+Explanation: Another sample response for flight number UA1500 on September 15, 2020, showing a delayed status while not being cancelled.
+
+Status Code: 200
+Response: 
+{
+    "flightNumber": "UA1500",
+    "departureTime": "2020-09-15T08:00:00",
+    "arrivalTime": "2020-09-15T10:30:00",
+    "delayStatus": "cancelled",
+    "cancellationStatus": "cancelled"
+}
+Explanation: A third example response for flight number UA1500 on September 15, 2020, indicating a cancelled status for both delay and cancellation.
+INFO:     127.0.0.1:58806 - "GET /apilayer%20aviationstack/flightstatus?flightNumber=UA1500&date=2020-09-15 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.10s/it]1it [00:01,  1.10s/it]
+Status Code: 200
+Response: 
+{
+    "airportCode": "ORD",
+    "airportName": "O'Hare International Airport",
+    "location": {
+        "latitude": 41.9742,
+        "longitude": -87.9073
+    },
+    "weather": {
+        "temperature": 22,
+        "humidity": 70,
+        "windSpeed": 10
+    }
+}
+Explanation: The response provides information about O'Hare International Airport with the IATA code ORD. It includes the airport name, location coordinates (latitude and longitude), and current weather data such as temperature (22°C), humidity (70%), and wind speed (10 km/h).
+INFO:     127.0.0.1:58812 - "GET /apilayer%20aviationstack/airportinfo?airportCode=ORD HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.87s/it]1it [00:01,  1.87s/it]
+Status Code: 200
+Response: 
+{
+    "airportCode": "MIA",
+    "airportName": "Miami International Airport",
+    "location": {
+        "latitude": 25.7959,
+        "longitude": -80.287
+    },
+    "weather": {
+        "temperature": 28,
+        "humidity": 65,
+        "windSpeed": 15
+    }
+}
+Explanation: The response provides information about Miami International Airport with the IATA code MIA. It includes the airport name, location coordinates (latitude and longitude), and current weather data such as temperature (28°C), humidity (65%), and wind speed (15 km/h).
+INFO:     127.0.0.1:38606 - "GET /apilayer%20aviationstack/airportinfo?airportCode=MIA HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.11s/it]1it [00:01,  1.11s/it]
+Status Code: 200
+Response: 
+{
+    "airlineCode": "UA",
+    "airlineName": "United Airlines",
+    "logo": "https://example.com/united-airlines-logo.png"
+}
+Explanation: The response provides detailed information about United Airlines with the IATA code UA. It includes the airline name as "United Airlines" and a link to the airline's logo image.
+INFO:     127.0.0.1:38610 - "GET /apilayer%20aviationstack/airlineinfo?airlineCode=UA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58056 - "GET /__simulator_cache__/clear/apilayer%20aviationstack HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.22s/it]1it [00:03,  3.22s/it]
+Status Code: 200
+Response: 
+{
+    "pm25": 12.5,
+    "aqi": 42,
+    "pollutants": {
+        "ozone": 8.7,
+        "carbonMonoxide": 2.1
+    }
+}
+Explanation: The response contains air quality data for Los Angeles, California. The PM2.5 concentration is 12.5 micrograms per cubic meter, the Air Quality Index (AQI) value is 42, and the concentrations of ozone and carbon monoxide are 8.7 and 2.1 micrograms per cubic meter respectively. 
+
+Status Code: 200
+Response: 
+{
+    "pm25": 18.9,
+    "aqi": 55,
+    "pollutants": {
+        "ozone": 10.2,
+        "sulfurDioxide": 1.5
+    }
+}
+Explanation: The response contains air quality data for Los Angeles, California. The PM2.5 concentration is 18.9 micrograms per cubic meter, the Air Quality Index (AQI) value is 55, and the concentrations of ozone and sulfur dioxide are 10.2 and 1.5 micrograms per cubic meter respectively. 
+
+Status Code: 200
+Response: 
+{
+    "pm25": 9.8,
+    "aqi": 38,
+    "pollutants": {
+        "nitrogenDioxide": 2.3,
+        "particulateMatter": 1.8
+    }
+}
+Explanation: The response contains air quality data for Los Angeles, California. The PM2.5 concentration is 9.8 micrograms per cubic meter, the Air Quality Index (AQI) value is 38, and the concentrations of nitrogen dioxide and particulate matter are 2.3 and 1.8 micrograms per cubic meter respectively.
+INFO:     127.0.0.1:58070 - "GET /QWeather/airquality?location=Los+Angeles%2C+California HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51946 - "GET /__simulator_cache__/clear/QWeather HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.65s/it]1it [00:01,  1.65s/it]
+Status Code: 200
+Response: 
+{
+    "sunrise": "06:58",
+    "sunset": "18:22"
+}
+Explanation: The API successfully retrieved the sunrise and sunset times for Honolulu, Hawaii on December 25, 2021.
+
+Status Code: 200
+Response: 
+{
+    "sunrise": "07:00",
+    "sunset": "18:20"
+}
+Explanation: Another set of realistic sunrise and sunset times for Honolulu, Hawaii on December 25, 2021.
+
+Status Code: 200
+Response: 
+{
+    "sunrise": "06:55",
+    "sunset": "18:25"
+}
+Explanation: A different pair of sunrise and sunset times for Honolulu, Hawaii on December 25, 2021.
+INFO:     127.0.0.1:36644 - "GET /QWeather/sunrise-sunset?location=Honolulu%2C+Hawaii&date=2021-12-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36654 - "GET /__simulator_cache__/clear/QWeather HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.15s/it]1it [00:01,  1.15s/it]
+Status Code: 200
+Response: {"expression_tree": {"operator": "+", "left": "x", "right": {"operator": "*", "left": "y", "right": "z"}}
+Explanation: The provided mathematical expression "x + (y * z)" has been successfully parsed and the expression tree has been generated accordingly. The tree represents the structure of the expression with operators and operands.
+
+Note: The response contains a JSON object representing the expression tree as per the OpenAPI Spec.
+Expecting ',' delimiter: line 1 column 106 (char 105)
+INFO:     127.0.0.1:38620 - "POST /xMath/parseExpression HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55494 - "GET /__simulator_cache__/clear/xMath HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.78s/it]1it [00:01,  1.78s/it]
+Status Code: 200
+Response: {"expression": "2.0+3.0*1.0"}
+Explanation: The request specified to generate a random mathematical expression with 2 operands, 3 constants, and the operators ['+', '-', '*', '/']. The response contains a randomly generated expression "2.0+3.0*1.0".
+
+Status Code: 200
+Response: {"expression": "1.0-2.0*3.0"}
+Explanation: Another randomly generated expression with 2 operands, 3 constants, and the operators ['+', '-', '*', '/'] is "1.0-2.0*3.0".
+
+Status Code: 200
+Response: {"expression": "3.0/2.0-1.0"}
+Explanation: Yet another randomly generated expression with 2 operands, 3 constants, and the operators ['+', '-', '*', '/'] is "3.0/2.0-1.0".
+INFO:     127.0.0.1:55496 - "POST /xMath/generateExpression HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51006 - "GET /__simulator_cache__/clear/xMath HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.93s/it]1it [00:01,  1.93s/it]
+Status Code: 200
+Response: 
+{
+    "incidents": [
+        {
+            "location": "M4 Motorway",
+            "description": "Accident near Exit 7",
+            "status": "Active"
+        },
+        {
+            "location": "Pacific Highway",
+            "description": "Road works causing delays",
+            "status": "Ongoing"
+        },
+        {
+            "location": "Princes Highway",
+            "description": "Vehicle breakdown on shoulder",
+            "status": "Resolved"
+        }
+    ],
+    "closures": [
+        {
+            "road": "Great Western Highway",
+            "location": "Between Exit 12 and Exit 13",
+            "duration": "2 hours"
+        },
+        {
+            "road": "Hume Highway",
+            "location": "Near Exit 20",
+            "duration": "1 hour"
+        }
+    ],
+    "cameras": [
+        {
+            "location": "M5 Motorway",
+            "url": "https://trafficcam.example.com/m5"
+        },
+        {
+            "location": "Sydney Harbour Bridge",
+            "url": "https://trafficcam.example.com/sydney-harbour-bridge"
+        }
+    ]
+}
+Explanation: The response contains live traffic data for New South Wales, including incidents, road closures, and traffic cameras. Realistic data is provided for each category to simulate a live traffic update.
+INFO:     127.0.0.1:51016 - "GET /Open%20Government%2C%20New%20South%20Wales/traffic?type=live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35274 - "GET /__simulator_cache__/clear/Open%20Government%2C%20New%20South%20Wales HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.71s/it]1it [00:01,  1.71s/it]
+Status Code: 200
+Response: 
+{
+  "categories": [
+    {
+      "name": "Health",
+      "description": "Public services related to healthcare and medical facilities."
+    },
+    {
+      "name": "Education",
+      "description": "Public services related to schools, universities, and educational institutions."
+    },
+    {
+      "name": "Transport",
+      "description": "Public services related to transportation and infrastructure."
+    }
+  ]
+}
+Explanation: The response contains a list of public service categories along with their descriptions. This aligns with the OpenAPI Spec format for listing categories of services.
+INFO:     127.0.0.1:35276 - "GET /Open%20Government%2C%20New%20South%20Wales/services/categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56898 - "GET /__simulator_cache__/clear/Open%20Government%2C%20New%20South%20Wales HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.23s/it]1it [00:02,  2.23s/it]
+Status Code: 200
+Response: 
+{
+  "ip": "203.0.113.195",
+  "country": "United States",
+  "city": "New York"
+}
+Explanation: The request to retrieve the IP address, country, and city of the user making the request was successful. The response contains realistic data showing the user's IP address as 203.0.113.195, located in the United States, specifically in New York.
+
+Status Code: 200
+Response: 
+{
+  "ip": "198.51.100.42",
+  "country": "Canada",
+  "city": "Toronto"
+}
+Explanation: Another successful request to retrieve the IP address, country, and city of the user making the request. The response includes the user's IP address as 198.51.100.42, located in Canada's city of Toronto.
+
+Status Code: 200
+Response: 
+{
+  "ip": "192.0.2.16",
+  "country": "Australia",
+  "city": "Sydney"
+}
+Explanation: The third successful request to retrieve the IP address, country, and city of the user making the request. The response shows the user's IP address as 192.0.2.16, situated in Australia's city of Sydney.
+INFO:     127.0.0.1:56912 - "GET /ip-fast.com/getUserIpInfo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42836 - "GET /__simulator_cache__/clear/ip-fast.com HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.24s/it]1it [00:02,  2.24s/it]
+Status Code: 200
+Response: 
+{
+  "ip": "192.168.1.1",
+  "country": "United States",
+  "city": "New York"
+}
+Explanation: The request to retrieve the IP address, country, and city of the user making the request was successful. The response contains realistic data with the IP address located in the United States, specifically in New York.
+
+Status Code: 200
+Response: 
+{
+  "ip": "10.0.0.1",
+  "country": "Canada",
+  "city": "Toronto"
+}
+Explanation: Another successful request to retrieve the IP address, country, and city of the user. The response includes data for an IP address located in Canada, specifically in Toronto.
+
+Status Code: 200
+Response: 
+{
+  "ip": "172.16.0.1",
+  "country": "Australia",
+  "city": "Sydney"
+}
+Explanation: The third successful request to retrieve user IP information. The response provides data for an IP address situated in Australia, particularly in Sydney.
+INFO:     127.0.0.1:42838 - "GET /ip-fast.com/getUserIpInfo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42848 - "GET /__simulator_cache__/clear/ip-fast.com HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.95s/it]1it [00:01,  1.95s/it]
+Status Code: 200
+Response: 
+{
+    "feeds": [
+        {
+            "id": 1,
+            "title": "TechCrunch",
+            "feed_url": "https://feeds.feedburner.com/TechCrunch",
+            "site_url": "https://techcrunch.com",
+            "is_spark": false,
+            "last_updated_at": "2022-03-15T10:30:00Z"
+        },
+        {
+            "id": 2,
+            "title": "BBC News",
+            "feed_url": "http://feeds.bbci.co.uk/news/rss.xml",
+            "site_url": "https://www.bbc.com/news",
+            "is_spark": true,
+            "last_updated_at": "2022-03-15T09:45:00Z"
+        },
+        {
+            "id": 3,
+            "title": "The Verge",
+            "feed_url": "http://www.theverge.com/rss/index.xml",
+            "site_url": "https://www.theverge.com",
+            "is_spark": false,
+            "last_updated_at": "2022-03-15T11:15:00Z"
+        }
+    ]
+}
+Explanation: The response contains an array of JSON objects representing different feeds with their respective details such as ID, title, feed URL, site URL, whether it's a spark feed, and the last updated timestamp. This simulates retrieving all of a user's feeds from the Feedbin API.
+INFO:     127.0.0.1:55964 - "GET /Feedbin/feeds HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55974 - "GET /__simulator_cache__/clear/Feedbin HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.04s/it]1it [00:03,  3.04s/it]
+Status Code: 200
+Response: 
+{
+    "feeds": [
+        {
+            "id": 1,
+            "title": "TechCrunch",
+            "feed_url": "https://feeds.feedburner.com/TechCrunch",
+            "site_url": "https://techcrunch.com/",
+            "is_spark": false,
+            "last_updated_at": "2022-01-15T08:00:00Z"
+        },
+        {
+            "id": 2,
+            "title": "BBC News",
+            "feed_url": "http://feeds.bbci.co.uk/news/rss.xml",
+            "site_url": "https://www.bbc.com/news",
+            "is_spark": false,
+            "last_updated_at": "2022-01-15T09:30:00Z"
+        },
+        {
+            "id": 3,
+            "title": "National Geographic",
+            "feed_url": "https://www.nationalgeographic.com/feed/",
+            "site_url": "https://www.nationalgeographic.com/",
+            "is_spark": true,
+            "last_updated_at": "2022-01-15T10:45:00Z"
+        }
+    ]
+}
+Explanation: This response contains a list of feeds with their respective IDs, titles, feed URLs, site URLs, whether they are marked as spark, and the last updated timestamp. It provides realistic data about different feeds that a user can subscribe to.
+INFO:     127.0.0.1:48902 - "GET /Feedbin/feeds HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.40s/it]1it [00:04,  4.40s/it]
+Status Code: 200
+Response:
+[
+    {
+        "id": 1,
+        "title": "New Technology Trends in 2021",
+        "author": "TechGuru",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "url": "https://example.com/article1",
+        "feed_id": 1,
+        "published": "2021-11-15T08:00:00Z",
+        "created_at": "2021-11-15T09:00:00Z",
+        "updated_at": "2021-11-15T09:30:00Z"
+    },
+    {
+        "id": 2,
+        "title": "AI Advancements in the Tech Industry",
+        "author": "AIExpert",
+        "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "url": "https://example.com/article2",
+        "feed_id": 1,
+        "published": "2021-11-15T08:30:00Z",
+        "created_at": "2021-11-15T09:30:00Z",
+        "updated_at": "2021-11-15T10:00:00Z"
+    },
+    {
+        "id": 3,
+        "title": "The Future of Space Exploration",
+        "author": "SpaceEnthusiast",
+        "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
+        "url": "https://example.com/article3",
+        "feed_id": 1,
+        "published": "2021-11-15T09:00:00Z",
+        "created_at": "2021-11-15T10:00:00Z",
+        "updated_at": "2021-11-15T10:30:00Z"
+    }
+]
+Explanation: This response provides a list of entries from the specified feed with ID 1 and timestamp 2021-11-15T08:00:00Z. Each entry includes details such as ID, title, author, content, URL, feed ID, published timestamp, created timestamp, and updated timestamp. The data is realistic and represents different articles from the feed at the specified timestamp.
+INFO:     127.0.0.1:38472 - "GET /Feedbin/entries/1/2021-11-15T08%3A00%3A00Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42782 - "GET /__simulator_cache__/clear/Feedbin HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.14s/it]1it [00:01,  1.14s/it]
+Status Code: 405
+Response: {"error": "Method Not Allowed"}
+Explanation: The HTTP method used for the request is incorrect. The API endpoint /getShortUrlInfo only supports the POST method, not the GET method.
+
+Note: Please make sure to use the correct HTTP method (POST) for the /getShortUrlInfo endpoint.
+0it [00:00, ?it/s]1it [00:00,  1.05it/s]1it [00:00,  1.05it/s]
+Status Code: 405
+Response: {"error": "Method Not Allowed"}
+Explanation: The requested method is not allowed for the specified endpoint. The endpoint /getShortUrlInfo only supports the POST method, not the GET method.
+
+Note: Please ensure to use the correct HTTP method (POST) for the /getShortUrlInfo endpoint.
+INFO:     127.0.0.1:42788 - "POST /Shrtlnk/getShortUrlInfo?shortUrl=the+shortened+URL HTTP/1.1" 405 Method Not Allowed
+0it [00:00, ?it/s]1it [00:02,  2.20s/it]1it [00:02,  2.20s/it]
+Status Code: 200
+Response: {"links": [{"shortUrl": "https://shrtlnk.dev/abc123", "longUrl": "https://www.example.com", "creationDate": "2022-03-01T08:00:00Z", "accessCount": 25, "tags": ["example", "website"], "group": "marketing"}]}
+Explanation: The response contains an array of objects representing shortened URLs filtered by the provided tag and group. In this case, it returns one link with details such as short URL, long URL, creation date, access count, tags, and group.
+INFO:     127.0.0.1:44556 - "GET /Shrtlnk/manageLinksByTag?tag=the+tag+associated+with+the+shortened+URL&group=the+group+associated+with+the+shortened+URL&limit=1&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55460 - "GET /__simulator_cache__/clear/Shrtlnk HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.94s/it]1it [00:01,  1.94s/it]
+Status Code: 200
+Response: 
+{
+  "links": [
+    {
+      "shortUrl": "https://shrtlnk.dev/abc123",
+      "longUrl": "https://www.example.com/page1",
+      "creationDate": "2022-01-01",
+      "accessCount": 100,
+      "tags": ["example", "page"],
+      "group": "general"
+    },
+    {
+      "shortUrl": "https://shrtlnk.dev/def456",
+      "longUrl": "https://www.example.com/page2",
+      "creationDate": "2022-02-01",
+      "accessCount": 75,
+      "tags": ["example", "page"],
+      "group": "general"
+    },
+    {
+      "shortUrl": "https://shrtlnk.dev/ghi789",
+      "longUrl": "https://www.example.com/page3",
+      "creationDate": "2022-03-01",
+      "accessCount": 50,
+      "tags": ["example", "page"],
+      "group": "general"
+    }
+  ]
+}
+Explanation: The response contains an array of objects representing shortened URLs with various details such as short URL, long URL, creation date, access count, tags, and group. This response provides a sample of 3 shortened URLs with realistic data for the requested parameters.
+INFO:     127.0.0.1:55462 - "GET /Shrtlnk/manageLinksByTag?tag=&group=&limit=10&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42196 - "GET /__simulator_cache__/clear/Shrtlnk HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.23s/it]1it [00:01,  1.23s/it]
+Status Code: 400
+Response: {"error": "Invalid zip code provided."}
+Explanation: The provided zip code of the area is not valid. Please ensure the zip code is in the correct format and try again with a valid zip code.
+0it [00:00, ?it/s]1it [00:01,  1.44s/it]1it [00:01,  1.44s/it]
+Status Code: 200
+Response: 
+{
+  "AQI": 78,
+  "Category": "Moderate",
+  "Pollutants": [
+    {
+      "Name": "Ozone",
+      "Concentration": 0.045,
+      "Category": "Good"
+    },
+    {
+      "Name": "PM2.5",
+      "Concentration": 12.5,
+      "Category": "Moderate"
+    }
+  ]
+}
+Explanation: The API successfully retrieved real-time air quality measurements for the specified zip code area. The Air Quality Index (AQI) is 78, falling under the "Moderate" category. The pollutants Ozone and PM2.5 are present with their respective concentrations and categories.
+
+Note: This response contains realistic data based on air quality measurements.
+INFO:     127.0.0.1:42202 - "GET /EPA/air-quality/zip%20code%20of%20the%20area HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36302 - "GET /__simulator_cache__/clear/EPA HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.80s/it]1it [00:01,  1.80s/it]
+Status Code: 200
+Response: 
+{
+    "AQI": 65,
+    "Category": "Moderate",
+    "Pollutants": [
+        {
+            "Name": "Ozone",
+            "Concentration": 0.05,
+            "Category": "Good"
+        },
+        {
+            "Name": "PM2.5",
+            "Concentration": 12.3,
+            "Category": "Moderate"
+        },
+        {
+            "Name": "CO",
+            "Concentration": 0.8,
+            "Category": "Good"
+        }
+    ]
+}
+Explanation: The request successfully retrieved real-time air quality measurements for the specified zip code 12345. The Air Quality Index (AQI) is 65, falling under the category of Moderate. The pollutants Ozone, PM2.5, and CO have concentrations within acceptable levels.
+INFO:     127.0.0.1:36304 - "GET /EPA/air-quality/12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36740 - "GET /__simulator_cache__/clear/EPA HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.67s/it]1it [00:01,  1.67s/it]
+Status Code: 200
+Response: 
+{
+    "domains": [
+        {
+            "domainName": "topchoicegadgets.com",
+            "creationDate": "2018-09-20",
+            "expirationDate": "2023-09-20",
+            "registrarName": "GoDaddy"
+        },
+        {
+            "domainName": "bestgadgetdeals.com",
+            "creationDate": "2017-05-12",
+            "expirationDate": "2022-05-12",
+            "registrarName": "Namecheap"
+        },
+        {
+            "domainName": "gadgetheaven.com",
+            "creationDate": "2019-11-30",
+            "expirationDate": "2024-11-30",
+            "registrarName": "Google Domains"
+        }
+    ]
+}
+Explanation: The response contains a list of domain names matching the provided keyword "topchoicegadgets.com". Realistic creation dates, expiration dates, and registrar names are provided for each domain. Three sample domain entries are included in the response.
+INFO:     127.0.0.1:36746 - "GET /Domainsdb.info/search?keywords=topchoicegadgets.com HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.21s/it]1it [00:01,  1.21s/it]
+Status Code: 200
+Response:
+{
+    "domainName": "topchoicegadgets.com",
+    "creationDate": "2018-09-20",
+    "expirationDate": "2023-09-20",
+    "registrarName": "GoDaddy"
+}
+Explanation: The response provides registration details for the specified domain "topchoicegadgets.com". Realistic creation date, expiration date, and registrar name are included in the response.
+INFO:     127.0.0.1:56590 - "GET /Domainsdb.info/details?domain=topchoicegadgets.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36138 - "GET /__simulator_cache__/clear/Domainsdb.info HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.17s/it]1it [00:02,  2.17s/it]
+Status Code: 200
+Response: 
+{
+    "domains": [
+        {
+            "domainName": "cryptotrade.com",
+            "creationDate": "2015-08-20",
+            "expirationDate": "2023-08-20",
+            "registrarName": "GoDaddy"
+        },
+        {
+            "domainName": "cryptotraders.net",
+            "creationDate": "2017-04-12",
+            "expirationDate": "2022-04-12",
+            "registrarName": "Namecheap"
+        },
+        {
+            "domainName": "cryptotradingsolutions.org",
+            "creationDate": "2019-11-30",
+            "expirationDate": "2024-11-30",
+            "registrarName": "Google Domains"
+        }
+    ]
+}
+Explanation: The response contains a list of registered domain names matching the keywords "crypto trade". Each domain entry includes the domain name, creation date, expiration date, and registrar name. In this case, three sample domain entries are provided for pagination purposes with 7 results per page.
+INFO:     127.0.0.1:36150 - "GET /Domainsdb.info/search?keywords=crypto+trade&page=1&perPage=7 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.49s/it]1it [00:02,  2.49s/it]
+Status Code: 200
+Response: 
+{
+    "domains": [
+        {
+            "domainName": "cryptotradingplatforms.com",
+            "creationDate": "2016-09-05",
+            "expirationDate": "2023-09-05",
+            "registrarName": "NameSilo"
+        },
+        {
+            "domainName": "cryptotradeanalysis.net",
+            "creationDate": "2018-02-14",
+            "expirationDate": "2023-02-14",
+            "registrarName": "HostGator"
+        },
+        {
+            "domainName": "cryptotrademarketplace.org",
+            "creationDate": "2019-06-28",
+            "expirationDate": "2024-06-28",
+            "registrarName": "Bluehost"
+        }
+    ]
+}
+Explanation: The response contains a second page of registered domain names matching the keywords "crypto trade". Each domain entry includes the domain name, creation date, expiration date, and registrar name. In this case, three sample domain entries are provided with 7 results per page for pagination.
+INFO:     127.0.0.1:59100 - "GET /Domainsdb.info/search?keywords=crypto+trade&page=2&perPage=7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59748 - "GET /__simulator_cache__/clear/Domainsdb.info HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.06s/it]1it [00:02,  2.06s/it]
+Status Code: 200
+Response: 
+{
+    "headers": {
+        "host": "127.0.0.1:5723",
+        "user-agent": "python-requests/2.34.2",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "content-type": "application/json"
+    },
+    "url": "https://www.postman-echo.com/get?endpoint=https%3A%2F%2Fexample.com%2Fusers&queryParams=userId",
+    "args": {
+        "endpoint": "https://example.com/users",
+        "queryParams": "userId"
+    },
+    "data": "",
+    "json": null,
+    "files": {},
+    "form": {},
+    "origin": "123.456.789.10"
+}
+Explanation: The request to get data from the specified endpoint "https://example.com/users" with query parameter "userId" was successful. The response contains the headers, URL, arguments, and origin of the request.
+INFO:     127.0.0.1:59750 - "GET /Postman%20Echo/get?endpoint=https%3A%2F%2Fexample.com%2Fusers&queryParams=userId HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46142 - "GET /__simulator_cache__/clear/Postman%20Echo HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.80s/it]1it [00:01,  1.80s/it]
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid Content-Length header value in the request."}
+Explanation: The provided Content-Length header value is not valid, leading to a bad request error.
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Missing required parameter 'data' in the request body."}
+Explanation: The request is missing the required data parameter in the request body, resulting in a bad request error.
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid 'headers' parameter format. Must be key-value pairs."}
+Explanation: The 'headers' parameter provided in the query string does not follow the key-value pairs format, leading to a bad request error.
+0it [00:00, ?it/s]1it [00:01,  1.54s/it]1it [00:01,  1.54s/it]
+Status Code: 200
+Response: 
+{
+    "headers": {
+        "host": "127.0.0.1:5723",
+        "user-agent": "python-requests/2.34.2",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "content-length": "2"
+    },
+    "url": "https://www.postman-echo.com/patch?endpoint=%2Fapi%2Fusers%2F987&headers=Content-Type",
+    "args": {},
+    "data": "{}",
+    "json": {},
+    "files": {},
+    "form": {},
+    "origin": "123.456.789.10"
+}
+Explanation: This response simulates a PATCH request to the specified endpoint with the provided data. The headers and URL are echoed back in the response along with other expected fields. The data and JSON fields are empty as no actual data was sent in the request.
+INFO:     127.0.0.1:46158 - "PATCH /Postman%20Echo/patch?endpoint=%2Fapi%2Fusers%2F987&headers=Content-Type HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34858 - "GET /__simulator_cache__/clear/Postman%20Echo HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.49s/it]1it [00:01,  1.49s/it]
+Status Code: 200
+Response: 
+{
+    "status": "success",
+    "jobs": [
+        {
+            "name": "build",
+            "status": "completed"
+        },
+        {
+            "name": "test",
+            "status": "failed"
+        }
+    ]
+}
+Explanation: The response contains information about the workflow with ID "abcd1234" for the project "my-project". It shows the status of each job within the workflow, such as "build" completed and "test" failed.
+INFO:     127.0.0.1:53174 - "GET /CircleCI/project/my-project/workflow/abcd1234 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53178 - "GET /__simulator_cache__/clear/CircleCI HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.37s/it]1it [00:01,  1.37s/it]
+Status Code: 200
+Response: 
+{
+    "variables": [
+        {
+            "name": "DATABASE_URL",
+            "value": "postgres://username:password@host:5432/db_production"
+        },
+        {
+            "name": "API_KEY",
+            "value": "my_production_api_key"
+        },
+        {
+            "name": "SECRET_KEY",
+            "value": "my_production_secret_key"
+        }
+    ],
+    "url": "https://circleci.com/docs/api/v1-reference/project/my-project/environment/production"
+}
+Explanation: The response contains details about the production environment variables for the "my-project" project. It includes variables like DATABASE_URL, API_KEY, and SECRET_KEY along with their respective values. The URL provided is the reference link for more information about the production environment.
+INFO:     127.0.0.1:52960 - "GET /CircleCI/project/my-project/environment/production HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42270 - "GET /__simulator_cache__/clear/CircleCI HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.20s/it]1it [00:01,  1.20s/it]
+Status Code: 200
+Response: 
+{
+    "world": "Faerie",
+    "itemID": 3,
+    "prices": {
+        "NQ": {
+            "minPrice": 1500,
+            "maxPrice": 3000,
+            "averagePrice": 2200
+        },
+        "HQ": {
+            "minPrice": 5000,
+            "maxPrice": 8000,
+            "averagePrice": 6500
+        }
+    }
+}
+Explanation: The response contains the current market prices for item with ID 3 in the world Faerie. The prices are categorized into Normal Quality (NQ) and High Quality (HQ) with minimum, maximum, and average prices provided for each quality.
+INFO:     127.0.0.1:42282 - "GET /Universalis/getCurrentPrices?world=Faerie&itemID=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45262 - "GET /__simulator_cache__/clear/Universalis HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.47s/it]1it [00:02,  2.47s/it]
+Status Code: 200
+Response: 
+{
+    "world": "Siren",
+    "itemID": 99,
+    "prices": [
+        {
+            "timestamp": 1634016000,
+            "NQ": {
+                "minPrice": 5000,
+                "maxPrice": 7000,
+                "averagePrice": 6000
+            },
+            "HQ": {
+                "minPrice": 10000,
+                "maxPrice": 12000,
+                "averagePrice": 11000
+            }
+        },
+        {
+            "timestamp": 1633929600,
+            "NQ": {
+                "minPrice": 4500,
+                "maxPrice": 6500,
+                "averagePrice": 5500
+            },
+            "HQ": {
+                "minPrice": 9500,
+                "maxPrice": 11500,
+                "averagePrice": 10500
+            }
+        },
+        {
+            "timestamp": 1633843200,
+            "NQ": {
+                "minPrice": 4800,
+                "maxPrice": 6800,
+                "averagePrice": 5800
+            },
+            "HQ": {
+                "minPrice": 9800,
+                "maxPrice": 11800,
+                "averagePrice": 10800
+            }
+        }
+    ]
+}
+Explanation: The response contains historical market prices for itemID 99 on the world Siren for the past 14 days. Each entry includes the timestamp, minimum, maximum, and average prices for both Normal Quality (NQ) and High Quality (HQ) versions of the item.
+INFO:     127.0.0.1:59576 - "GET /Universalis/getHistoricalPrices?world=Siren&itemID=99&numDays=14 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60720 - "GET /__simulator_cache__/clear/Universalis HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.42s/it]1it [00:01,  1.42s/it]
+Status Code: 200
+Response: 
+{
+  "name": "Space Exploration Technologies Corp.",
+  "founder": "Elon Musk",
+  "founded": 2002,
+  "employees": 9000,
+  "vehicles": 4,
+  "launch_sites": 3,
+  "test_sites": 1,
+  "ceo": "Elon Musk",
+  "cto": "Elon Musk",
+  "coo": "Gwynne Shotwell",
+  "cto_propulsion": "Tom Mueller",
+  "valuation": 74000000000,
+  "headquarters": {
+    "address": "Rocket Road",
+    "city": "Hawthorne"
+  }
+}
+Explanation: The response contains information about SpaceX as a company, including its name, founder, founding year, number of employees, vehicles, launch sites, test sites, key executives, valuation, and headquarters address.
+INFO:     127.0.0.1:60736 - "GET /SpaceX/company HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58708 - "GET /__simulator_cache__/clear/SpaceX HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.99s/it]1it [00:02,  2.99s/it]
+Status Code: 200
+Response: 
+{
+    "id": "starlink-1",
+    "name": "Starlink 1",
+    "flight_number": 1,
+    "date_utc": "2019-11-11T14:56:00Z",
+    "date_local": "2019-11-11T09:56:00",
+    "success": true,
+    "rocket": {
+        "id": "falcon1",
+        "name": "Falcon 1"
+    },
+    "mission": {
+        "name": "Starlink 1",
+        "details": "First operational launch of SpaceX's Starlink constellation, a satellite internet constellation."
+    },
+    "launchpad": {
+        "id": "ccafs_slc_40",
+        "name": "CCAFS SLC 40",
+        "location": {
+            "name": "Cape Canaveral",
+            "region": "Florida",
+            "latitude": 28.56230196744665,
+            "longitude": -80.5773564750473
+        }
+    },
+    "details": "First operational launch of SpaceX's Starlink constellation, a satellite internet constellation.",
+    "upcoming": false
+}
+Explanation: This response provides information about the Starlink 1 launch, including its name, date, success status, rocket used, mission details, launchpad details, and additional information.
+INFO:     127.0.0.1:58716 - "GET /SpaceX/launch?id=starlink-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50446 - "GET /__simulator_cache__/clear/SpaceX HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.25s/it]1it [00:01,  1.25s/it]
+Status Code: 200
+Response: 
+{
+    "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+}
+Explanation: The response contains the text of John 3:16 which is a well-known verse from the Bible emphasizing God's love for the world and the gift of eternal life through belief in His Son.
+INFO:     127.0.0.1:50452 - "GET /Bible-api/getVerse?book=John&chapter=3&verse=16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53128 - "GET /__simulator_cache__/clear/Bible-api HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.34s/it]1it [00:02,  2.34s/it]
+Status Code: 200
+Response: 
+{
+  "versions": [
+    {
+      "name": "Nova Versão Internacional",
+      "language": "Portuguese",
+      "publication_date": "2011-06-01",
+      "publisher": "Editora Vida"
+    },
+    {
+      "name": "Almeida Revista e Atualizada",
+      "language": "Portuguese",
+      "publication_date": "1959-01-01",
+      "publisher": "Sociedade Bíblica do Brasil"
+    },
+    {
+      "name": "Bíblia Ave Maria",
+      "language": "Portuguese",
+      "publication_date": "2000-07-01",
+      "publisher": "Editora Ave-Maria"
+    }
+  ]
+}
+Explanation: The request to retrieve metadata for Bible versions in Portuguese has returned a JSON object containing an array of three Portuguese Bible versions, each with details such as the name, language, publication date, and publisher.
+INFO:     127.0.0.1:53138 - "GET /Bible-api/getVersions?language=Portuguese HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58260 - "GET /__simulator_cache__/clear/Bible-api HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.17s/it]1it [00:01,  1.17s/it]
+Status Code: 200
+Response: 
+{
+    "provinces": [
+        {
+            "name": "Rome",
+            "code": "RM",
+            "population": 2873494
+        },
+        {
+            "name": "Latina",
+            "code": "LT",
+            "population": 561189
+        },
+        {
+            "name": "Frosinone",
+            "code": "FR",
+            "population": 493797
+        }
+    ]
+}
+Explanation: The response contains information on provinces in the specified region with their names, codes, and populations.
+INFO:     127.0.0.1:58272 - "GET /Open%20Government%2C%20Italy/provinces/LAZ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37576 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Italy HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.35s/it]1it [00:01,  1.35s/it]
+Status Code: 200
+Response: 
+{
+  "totalSpending": 1250000000,
+  "categorySpending": {
+    "education": 350000000,
+    "healthcare": 500000000,
+    "transportation": 400000000
+  },
+  "regionSpending": {
+    "region1": 300000000,
+    "region2": 400000000,
+    "region3": 550000000
+  }
+}
+Explanation: This response provides information on public spending in Italy for the year 2019. The total spending is 1,250,000,000 units. The spending is further broken down into categories such as education, healthcare, and transportation. Additionally, the spending is also categorized by region, with region1 receiving 300,000,000 units, region2 receiving 400,000,000 units, and region3 receiving 550,000,000 units.
+INFO:     127.0.0.1:37586 - "GET /Open%20Government%2C%20Italy/public-spending/2019 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56388 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Italy HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.31s/it]1it [00:02,  2.31s/it]
+Status Code: 200
+Response: 
+{
+    "currencies": [
+        {
+            "code": "USD",
+            "name": "US Dollar",
+            "country": "United States"
+        },
+        {
+            "code": "EUR",
+            "name": "Euro",
+            "country": "Eurozone"
+        },
+        {
+            "code": "GBP",
+            "name": "British Pound",
+            "country": "United Kingdom"
+        },
+        {
+            "code": "JPY",
+            "name": "Japanese Yen",
+            "country": "Japan"
+        },
+        {
+            "code": "CHF",
+            "name": "Swiss Franc",
+            "country": "Switzerland"
+        },
+        {
+            "code": "CAD",
+            "name": "Canadian Dollar",
+            "country": "Canada"
+        },
+        {
+            "code": "AUD",
+            "name": "Australian Dollar",
+            "country": "Australia"
+        },
+        {
+            "code": "NZD",
+            "name": "New Zealand Dollar",
+            "country": "New Zealand"
+        },
+        {
+            "code": "PLN",
+            "name": "Polish Zloty",
+            "country": "Poland"
+        },
+        {
+            "code": "HUF",
+            "name": "Hungarian Forint",
+            "country": "Hungary"
+        }
+    ]
+}
+Explanation: The response contains a list of all available currencies supported by the Czech National Bank API with their respective codes, names, and countries. This aligns with the OpenAPI Spec format for listing available currencies.
+INFO:     127.0.0.1:47322 - "GET /Czech%20National%20Bank/available-currencies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44444 - "GET /__simulator_cache__/clear/Czech%20National%20Bank HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.37s/it]1it [00:02,  2.37s/it]
+Status Code: 200
+Response: 
+{
+    "USD": [
+        {
+            "date": "2020-06-01",
+            "rate": 23.45
+        },
+        {
+            "date": "2020-06-02",
+            "rate": 23.50
+        },
+        {
+            "date": "2020-06-03",
+            "rate": 23.55
+        }
+    ],
+    "EUR": [
+        {
+            "date": "2020-06-01",
+            "rate": 27.80
+        },
+        {
+            "date": "2020-06-02",
+            "rate": 27.85
+        },
+        {
+            "date": "2020-06-03",
+            "rate": 27.90
+        }
+    ],
+    "GBP": [
+        {
+            "date": "2020-06-01",
+            "rate": 31.20
+        },
+        {
+            "date": "2020-06-02",
+            "rate": 31.25
+        },
+        {
+            "date": "2020-06-03",
+            "rate": 31.30
+        }
+    ]
+}
+Explanation: The response contains historical exchange rates for USD, EUR, and GBP from June 1, 2020, to June 3, 2020. Realistic exchange rates are provided for each currency on different dates within the specified range.
+INFO:     127.0.0.1:44450 - "GET /Czech%20National%20Bank/historical-exchange-rates?currencies=USD&currencies=EUR&currencies=GBP&startDate=2020-06-01&endDate=2020-06-30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59904 - "GET /__simulator_cache__/clear/Czech%20National%20Bank HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.63s/it]1it [00:01,  1.63s/it]
+Status Code: 200
+Response: 
+{
+    "code": "C0020538",
+    "description": "Hypertension",
+    "synonyms": ["High blood pressure"],
+    "related_concepts": [
+        {
+            "code": "C0008031",
+            "description": "Blood Pressure"
+        },
+        {
+            "code": "C0020542",
+            "description": "Hypotension"
+        }
+    ]
+}
+Explanation: The response provides detailed information about the clinical concept "Hypertension", including its code, description, synonyms ("High blood pressure"), and related medical concepts such as "Blood Pressure" and "Hypotension".
+INFO:     127.0.0.1:42526 - "GET /Lexigram/getClinicalConceptDetails?conceptId=hypertension HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42528 - "GET /__simulator_cache__/clear/Lexigram HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.42s/it]1it [00:01,  1.42s/it]
+Status Code: 200
+Response: 
+{
+    "clinical_mentions": [
+        {
+            "start": 4,
+            "end": 24,
+            "code": "CM123",
+            "description": "Unstructured medical data"
+        },
+        {
+            "start": 38,
+            "end": 61,
+            "code": "CM456",
+            "description": "needs to be normalized"
+        }
+    ]
+}
+Explanation: The request to normalize unstructured medical data has been processed successfully. Two clinical mentions have been extracted from the input data with their corresponding medical concept codes and descriptions.
+INFO:     127.0.0.1:41230 - "POST /Lexigram/normalizeClinicalData HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41240 - "GET /__simulator_cache__/clear/Lexigram HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.58it/s]1it [00:00,  1.58it/s]
+Status Code: 200
+Response: 
+{
+    "message": "Renders the specified plugin on the website."
+}
+Explanation: The request is to render a social plugin on the website with the specified parameters. The response confirms that the plugin will be rendered successfully.
+INFO:     127.0.0.1:58796 - "POST /Line/line/plugins HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42034 - "GET /__simulator_cache__/clear/Line HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.10s/it]1it [00:01,  1.10s/it]
+Status Code: 200
+Response: 
+{
+    "description": "Opens the Line app with the shared content pre-filled in a message."
+}
+Explanation: The request to share content on Line was successful, and the Line app will open with the shared content pre-filled in a message for the user to share.
+INFO:     127.0.0.1:56352 - "POST /Line/line/share HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57138 - "GET /__simulator_cache__/clear/Line HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.21s/it]1it [00:02,  2.21s/it]
+Status Code: 200
+Response: 
+{
+    "jobs": [
+        {
+            "jobTitle": "Data Scientist",
+            "jobDescription": "Join our team as a Data Scientist and work on cutting-edge projects in the field of machine learning and data analysis.",
+            "companyName": "Tech Innovations Inc.",
+            "location": "Chicago, IL",
+            "jobUrl": "https://www.example.com/job1"
+        },
+        {
+            "jobTitle": "Data Analyst",
+            "jobDescription": "Looking for a Data Analyst to support our data-driven decision-making process. Must have strong analytical skills.",
+            "companyName": "Data Solutions Co.",
+            "location": "Chicago, IL",
+            "jobUrl": "https://www.example.com/job2"
+        },
+        {
+            "jobTitle": "Senior Data Engineer",
+            "jobDescription": "Seeking a Senior Data Engineer to design and develop scalable data pipelines for our growing data infrastructure.",
+            "companyName": "Big Data Corp.",
+            "location": "Chicago, IL",
+            "jobUrl": "https://www.example.com/job3"
+        }
+    ]
+}
+Explanation: The response provides a list of job opportunities related to data science in Chicago, IL. Each job entry includes details such as job title, job description, company name, location, and a link to the job posting.
+INFO:     127.0.0.1:57142 - "GET /ZipRecruiter/jobs/search?keywords=data+science&location=Chicago%2C+IL&industry=&page=1&perPage=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37722 - "GET /__simulator_cache__/clear/ZipRecruiter HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.69s/it]1it [00:02,  2.69s/it]
+Status Code: 200
+Response: 
+{
+    "jobs": [
+        {
+            "jobTitle": "Software Engineer",
+            "jobDescription": "Seeking a skilled software engineer to join our dynamic team.",
+            "companyName": "Tech Solutions Inc.",
+            "location": "San Francisco, CA",
+            "jobUrl": "https://www.example.com/job123"
+        },
+        {
+            "jobTitle": "Marketing Specialist",
+            "jobDescription": "Looking for a creative marketing specialist to drive our campaigns.",
+            "companyName": "Digital Marketing Agency",
+            "location": "New York, NY",
+            "jobUrl": "https://www.example.com/job456"
+        },
+        {
+            "jobTitle": "Sales Associate",
+            "jobDescription": "Join our sales team and help us grow our customer base.",
+            "companyName": "Sales Solutions Co.",
+            "location": "Chicago, IL",
+            "jobUrl": "https://www.example.com/job789"
+        }
+    ]
+}
+Explanation: This response provides a list of 3 sample job listings with realistic job titles, descriptions, company names, locations, and job URLs based on the search criteria provided in the request.
+INFO:     127.0.0.1:37738 - "GET /ZipRecruiter/jobs/search?keywords=&location=&industry=&page=1&perPage=10 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.37s/it]1it [00:01,  1.37s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Job not found",
+    "message": "The job with ID 'XYZ' does not exist."
+}
+Explanation: This response indicates that the requested job with the ID 'XYZ' was not found in the system, resulting in a 404 error. The message provides information that the job does not exist.
+0it [00:00, ?it/s]1it [00:01,  1.25s/it]1it [00:01,  1.25s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Job not found",
+    "message": "The job with ID XYZ does not exist."
+}
+Explanation: The response indicates that the requested job with the specified ID (XYZ) was not found, resulting in a 404 error.
+INFO:     127.0.0.1:49972 - "GET /ZipRecruiter/jobs/XYZ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49982 - "GET /__simulator_cache__/clear/ZipRecruiter HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.14s/it]1it [00:02,  2.14s/it]
+Status Code: 200
+Response: 
+{
+    "results": [
+        {
+            "name": "SportsDB API",
+            "description": "Provides access to a database of sports information.",
+            "category": "Sports",
+            "link": "https://sportsdbapi.com"
+        },
+        {
+            "name": "Sportradar API",
+            "description": "Delivers sports data and content.",
+            "category": "Sports",
+            "link": "https://developer.sportradar.com"
+        },
+        {
+            "name": "ESPN API",
+            "description": "Offers sports news, scores, and analysis.",
+            "category": "Sports",
+            "link": "https://developer.espn.com"
+        }
+    ]
+}
+Explanation: The response contains information about 3 APIs related to sports that match the search query "sports". Each API entry includes its name, description, category, and a link to access more details.
+INFO:     127.0.0.1:46058 - "GET /APIs.guru/search?query=sports&limit=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46064 - "GET /__simulator_cache__/clear/APIs.guru HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.93s/it]1it [00:01,  1.93s/it]
+Status Code: 200
+Response: 
+{
+    "results": [
+        {
+            "name": "Yahoo Finance API",
+            "description": "Provides financial data, including stock quotes, historical data, and financial news.",
+            "category": "Finance",
+            "link": "https://developer.yahoo.com/finance/"
+        },
+        {
+            "name": "Alpha Vantage API",
+            "description": "Offers real-time and historical stock market data for analysis and visualization.",
+            "category": "Finance",
+            "link": "https://www.alphavantage.co/"
+        },
+        {
+            "name": "IEX Cloud API",
+            "description": "Delivers financial data, market data, and stock quotes for developers.",
+            "category": "Finance",
+            "link": "https://iexcloud.io/"
+        }
+    ]
+}
+Explanation: The response contains a list of APIs related to finance based on the search query "finance" with a limit of 10 results. Each API object includes its name, description, category, and link to the API documentation.
+INFO:     127.0.0.1:43250 - "GET /APIs.guru/search?query=finance&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43258 - "GET /__simulator_cache__/clear/APIs.guru HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.55s/it]1it [00:02,  2.55s/it]
+Status Code: 200
+Response: 
+{
+    "total_results": 10,
+    "results": [
+        {
+            "id": "arXiv:2101.01234",
+            "title": "Quantum Computing Advancements in 2021",
+            "authors": ["Alice Smith", "Bob Johnson"],
+            "summary": "This paper discusses the recent advancements in quantum computing technology in the year 2021.",
+            "published": "2021-01-15"
+        },
+        {
+            "id": "arXiv:2102.04567",
+            "title": "Applications of Quantum Computing in Finance",
+            "authors": ["Charlie Brown", "Diana Miller"],
+            "summary": "Exploring the potential applications of quantum computing in the field of finance.",
+            "published": "2021-02-28"
+        },
+        {
+            "id": "arXiv:2103.07890",
+            "title": "Quantum Computing Algorithms for Optimization",
+            "authors": ["Eve Wilson", "Frank Adams"],
+            "summary": "Analyzing various quantum computing algorithms for optimization problems.",
+            "published": "2021-03-20"
+        }
+    ]
+}
+Explanation: The response contains 3 sample research articles related to quantum computing with realistic data such as titles, authors, summaries, and publication dates. The total number of results returned is 10 as requested in the query parameters.
+INFO:     127.0.0.1:60190 - "GET /arXiv/search?search_query=quantum+computing&start=0&max_results=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60204 - "GET /__simulator_cache__/clear/arXiv HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.06s/it]1it [00:02,  2.06s/it]
+Status Code: 200
+Response: 
+{
+    "total_results": 10,
+    "results": [
+        {
+            "id": "2101.01234",
+            "title": "The Impact of Artificial Intelligence on the Job Market",
+            "authors": ["John Smith", "Jane Doe"],
+            "summary": "This research article explores the effects of artificial intelligence on employment trends and job opportunities.",
+            "published": "2021-01-15"
+        },
+        {
+            "id": "2102.04567",
+            "title": "Future Prospects: Job Market Dynamics in the Age of AI",
+            "authors": ["Alice Johnson", "Bob Brown"],
+            "summary": "Examining the evolving job market landscape in response to advancements in artificial intelligence technology.",
+            "published": "2021-02-28"
+        },
+        {
+            "id": "2103.07890",
+            "title": "AI Disruption: Implications for Employment and Skills",
+            "authors": ["Emily White", "David Lee"],
+            "summary": "Analyzing the disruptive potential of artificial intelligence on traditional job roles and necessary skill adaptations.",
+            "published": "2021-03-20"
+        }
+    ]
+}
+Explanation: The response contains a list of 3 research articles related to the impact of artificial intelligence on the job market. Each article includes an ID, title, authors, summary, and publication date. The total number of results returned is 10.
+INFO:     127.0.0.1:51442 - "GET /arXiv/search?search_query=impact+of+artificial+intelligence+on+job+market&start=0&max_results=10 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.82s/it]1it [00:01,  1.82s/it]
+Status Code: 200
+Response: 
+{
+    "id": "2101.01234",
+    "title": "The Impact of Artificial Intelligence on the Job Market",
+    "authors": ["John Smith", "Jane Doe"],
+    "summary": "This research article explores the effects of artificial intelligence on employment trends and job opportunities.",
+    "published": "2021-01-15"
+}
+Explanation: The response provides metadata for the research article with the ID "2101.01234". It includes the title, authors, summary, and publication date of the article.
+INFO:     127.0.0.1:51454 - "GET /arXiv/retrieveMetadata?id=2101.01234 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.53s/it]1it [00:01,  1.53s/it]
+Status Code: 200
+Response: 
+"This is the full text of the research article with the ID 2101.01234. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+Explanation: The response contains the full text of the research article with the ID "2101.01234". The text is a placeholder for the actual content of the article.
+min() arg is an empty sequence
+INFO:     127.0.0.1:52070 - "GET /arXiv/retrieveFullText?id=2101.01234 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34786 - "GET /__simulator_cache__/clear/arXiv HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.10it/s]1it [00:00,  1.10it/s]
+Status Code: 200
+Response: 
+{
+    "name": "new-feature-branch",
+    "scm": "git",
+    "is_private": true,
+    "fork_policy": "no_forks",
+    "language": "JavaScript"
+}
+Explanation: The new repository "new-feature-branch" has been successfully created with the specified details.
+INFO:     127.0.0.1:47460 - "POST /Bitbucket/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47470 - "GET /__simulator_cache__/clear/Bitbucket HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.63s/it]1it [00:01,  1.63s/it]
+Status Code: 405
+Response: {"error": "Method Not Allowed", "message": "The method specified in the request is not allowed for the specified resource."}
+Explanation: The request method specified is POST, but the API endpoint only allows GET requests for retrieving a list of pull requests.
+0it [00:00, ?it/s]1it [00:01,  1.87s/it]1it [00:01,  1.87s/it]
+Status Code: 404
+Response: {"error": "Not Found", "message": "Repository 'user123/my-repo' not found."}
+Explanation: The requested repository 'user123/my-repo' does not exist in the Bitbucket API. The response provides an error message indicating that the repository was not found.
+
+Status Code: 400
+Response: {"error": "Bad Request", "message": "Invalid branch names provided."}
+Explanation: The provided branch names 'master' and 'develop' are not valid for the specified repository. The response indicates a bad request with an error message about the invalid branch names.
+
+Status Code: 401
+Response: {"error": "Unauthorized", "message": "Authentication required for creating a pull request."}
+Explanation: The request to create a pull request requires authentication. The response informs the user that authentication is required for this operation.
+0it [00:00, ?it/s]1it [00:01,  1.54s/it]1it [00:01,  1.54s/it]
+Status Code: 405
+Response: {"error": "Method Not Allowed", "message": "The method specified in the request is not allowed for the specified resource."}
+Explanation: The request method POST is not allowed for the specified endpoint to create a new pull request. The allowed methods for this endpoint are GET.
+
+Please ensure to use the correct HTTP method for creating a new pull request.
+INFO:     127.0.0.1:47780 - "POST /Bitbucket/repositories/user123/my-repo/pullrequests HTTP/1.1" 405 Method Not Allowed
+0it [00:00, ?it/s]1it [00:01,  1.62s/it]1it [00:01,  1.62s/it]
+Status Code: 404
+Response: {"error": "Not Found", "message": "The requested resource could not be found."}
+Explanation: The endpoint specified in the request URL does not exist in the Bitbucket API. Please check the API documentation for the correct endpoints for creating pull requests.
+0it [00:00, ?it/s]1it [00:00,  1.13it/s]1it [00:00,  1.13it/s]
+Status Code: 404
+Response: {"error": "Not Found", "message": "The requested resource was not found."}
+Explanation: The specified endpoint for creating a new pull request does not exist in the Bitbucket API. Please check the API documentation for the correct endpoint to use.
+INFO:     127.0.0.1:55432 - "POST /Bitbucket/repositories/user123/my-repo/pullrequests HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46206 - "GET /__simulator_cache__/clear/Bitbucket HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.34s/it]1it [00:01,  1.34s/it]
+Status Code: 200
+Response: 
+{
+    "wallpapers": [
+        {
+            "id": 1234,
+            "resolution": "1920x1080",
+            "aspect_ratio": "16:9",
+            "color": "blue",
+            "uploader": "user123"
+        },
+        {
+            "id": 5678,
+            "resolution": "2560x1440",
+            "aspect_ratio": "16:9",
+            "color": "green",
+            "uploader": "user456"
+        },
+        {
+            "id": 91011,
+            "resolution": "3840x2160",
+            "aspect_ratio": "16:9",
+            "color": "red",
+            "uploader": "user789"
+        }
+    ]
+}
+Explanation: This response contains a list of the most popular wallpapers based on the specified criteria. Each wallpaper object includes an ID, resolution, aspect ratio, color, and uploader information.
+INFO:     127.0.0.1:46220 - "GET /Wallhaven/popular?page=1 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.37s/it]1it [00:02,  2.37s/it]
+Status Code: 200
+Response: 
+{
+    "wallpapers": [
+        {
+            "id": 121314,
+            "resolution": "1920x1080",
+            "aspect_ratio": "16:9",
+            "color": "orange",
+            "uploader": "user1011"
+        },
+        {
+            "id": 151617,
+            "resolution": "2560x1440",
+            "aspect_ratio": "16:9",
+            "color": "purple",
+            "uploader": "user1213"
+        },
+        {
+            "id": 181920,
+            "resolution": "3840x2160",
+            "aspect_ratio": "16:9",
+            "color": "yellow",
+            "uploader": "user1415"
+        }
+    ]
+}
+Explanation: This response contains the next set of popular wallpapers on page 2 based on the specified criteria. Each wallpaper object includes an ID, resolution, aspect ratio, color, and uploader information.
+INFO:     127.0.0.1:57436 - "GET /Wallhaven/popular?page=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53664 - "GET /__simulator_cache__/clear/Wallhaven HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.33s/it]1it [00:02,  2.33s/it]
+Status Code: 200
+Response: 
+{
+    "wallpapers": [
+        {
+            "id": 1234,
+            "resolution": "1920x1080",
+            "aspect_ratio": "16:9",
+            "color": "blue",
+            "uploader": "user123"
+        },
+        {
+            "id": 5678,
+            "resolution": "2560x1440",
+            "aspect_ratio": "16:9",
+            "color": "green",
+            "uploader": "user456"
+        },
+        {
+            "id": 9012,
+            "resolution": "3840x2160",
+            "aspect_ratio": "16:9",
+            "color": "red",
+            "uploader": "user789"
+        }
+    ]
+}
+Explanation: The response contains a list of wallpapers that match the specified criteria with realistic data such as ID, resolution, aspect ratio, color, and uploader. This response includes three sample wallpapers.
+INFO:     127.0.0.1:36242 - "GET /Wallhaven/search?keywords=&categories=&purity=sfw&sorting=relevance&order=desc&page=1&resolutions=&ratios=&colors=&seed=&atleast=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36244 - "GET /__simulator_cache__/clear/Wallhaven HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.79s/it]1it [00:02,  2.79s/it]
+Status Code: 200
+Response: 
+{
+    "freelancers": [
+        {
+            "id": 1234,
+            "username": "audioexpert123",
+            "display_name": "Audio Expert",
+            "profile_picture_url": "https://example.com/audioexpert123.jpg",
+            "hourly_rate": 25,
+            "skills": ["audio editing", "podcast editing"],
+            "country": "United States"
+        },
+        {
+            "id": 5678,
+            "username": "podcastpro456",
+            "display_name": "Podcast Pro",
+            "profile_picture_url": "https://example.com/podcastpro456.jpg",
+            "hourly_rate": 30,
+            "skills": ["audio editing", "podcast editing"],
+            "country": "United States"
+        },
+        {
+            "id": 9012,
+            "username": "soundguru789",
+            "display_name": "Sound Guru",
+            "profile_picture_url": "https://example.com/soundguru789.jpg",
+            "hourly_rate": 40,
+            "skills": ["audio editing", "podcast editing"],
+            "country": "United States"
+        }
+    ]
+}
+Explanation: 
+The response contains a list of freelancers who specialize in podcast editing and audio editing, located in the United States, with hourly rates between $20 and $50. Each freelancer object includes their ID, username, display name, profile picture URL, hourly rate, skills, and country.
+INFO:     127.0.0.1:34644 - "GET /Freelancer/searchFreelancers?keywords=podcast+editing&skills=audio+editing%2C+podcast+editing&country=United+States&hourly_rate_min=20&hourly_rate_max=50 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.31s/it]1it [00:01,  1.31s/it]
+Status Code: 200
+Response:
+{
+    "id": 12345,
+    "title": "Edit Podcast Episodes",
+    "description": "I need someone to edit my podcast episodes.",
+    "skills": ["audio editing", "podcast editing"],
+    "budget": 500,
+    "currency": "USD",
+    "duration": 10,
+    "status": "open"
+}
+Explanation:
+The project titled "Edit Podcast Episodes" has been successfully posted with a description requesting editing for podcast episodes. The project requires skills in audio editing and podcast editing, has a budget of $500 in USD, and a duration of 10 days. The status of the project is currently open.
+INFO:     127.0.0.1:58548 - "POST /Freelancer/postProject HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.72s/it]1it [00:01,  1.72s/it]
+Status Code: 200
+Response:
+{
+    "proposals": [
+        {
+            "id": 9876,
+            "bidder_id": 54321,
+            "bidder_username": "editingpro543",
+            "bid_amount": 450,
+            "bid_duration": 7,
+            "bid_time": "2022-10-15T09:00:00Z"
+        },
+        {
+            "id": 6543,
+            "bidder_id": 98765,
+            "bidder_username": "podcastedit456",
+            "bid_amount": 480,
+            "bid_duration": 5,
+            "bid_time": "2022-10-16T10:30:00Z"
+        }
+    ]
+}
+Explanation:
+The response includes two proposals for the project with ID 12345. The first proposal is from user editingpro543 with a bid amount of $450, a bid duration of 7 days, and bid time on 15th October 2022 at 09:00:00 UTC. The second proposal is from user podcastedit456 with a bid amount of $480, a bid duration of 5 days, and bid time on 16th October 2022 at 10:30:00 UTC.
+INFO:     127.0.0.1:58556 - "GET /Freelancer/getProposals/12345 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.42s/it]1it [00:01,  1.42s/it]
+Status Code: 200
+Response:
+{
+    "id": 9876,
+    "bidder_id": 54321,
+    "bidder_username": "editingpro543",
+    "bid_amount": 450,
+    "bid_duration": 7,
+    "bid_time": "2022-10-15T09:00:00Z",
+    "status": "accepted"
+}
+Explanation:
+The proposal with ID 9876 for the project with ID 12345 has been successfully accepted. The bidder with ID 54321 and username editingpro543 submitted a bid amount of $450, a bid duration of 7 days, and bid time on 15th October 2022 at 09:00:00 UTC. The status of this proposal is now marked as accepted.
+INFO:     127.0.0.1:52518 - "POST /Freelancer/acceptProposal HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40020 - "GET /__simulator_cache__/clear/Freelancer HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.08s/it]1it [00:02,  2.08s/it]
+Status Code: 200
+Response: 
+{
+    "freelancers": [
+        {
+            "id": 1234,
+            "username": "designer123",
+            "display_name": "John Doe",
+            "profile_picture_url": "https://example.com/profile_picture.jpg",
+            "hourly_rate": 25,
+            "skills": ["web design", "graphic design", "HTML", "CSS"],
+            "country": "United States"
+        },
+        {
+            "id": 5678,
+            "username": "creative456",
+            "display_name": "Jane Smith",
+            "profile_picture_url": "https://example.com/profile_picture.jpg",
+            "hourly_rate": 30,
+            "skills": ["web design", "graphic design", "HTML", "CSS"],
+            "country": "United States"
+        },
+        {
+            "id": 9012,
+            "username": "artistic789",
+            "display_name": "Alice Johnson",
+            "profile_picture_url": "https://example.com/profile_picture.jpg",
+            "hourly_rate": 40,
+            "skills": ["web design", "graphic design", "HTML", "CSS"],
+            "country": "United States"
+        }
+    ]
+}
+Explanation: The response contains a list of freelancers matching the search criteria for website design with skills in web design, graphic design, HTML, and CSS, located in the United States with hourly rates between $20 to $50. Each freelancer object includes their ID, username, display name, profile picture URL, hourly rate, skills, and country.
+INFO:     127.0.0.1:40030 - "GET /Freelancer/searchFreelancers?keywords=website+design&skills=web+design%2C+graphic+design%2C+HTML%2C+CSS&country=United+States&hourly_rate_min=20&hourly_rate_max=50 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.01s/it]1it [00:02,  2.01s/it]
+Status Code: 200
+Response:
+{
+    "id": 12345,
+    "title": "Design a website for my online store",
+    "description": "I need a website designed for my online store. It should be modern, user-friendly, and optimized for mobile devices.",
+    "skills": ["web design", "graphic design", "HTML", "CSS"],
+    "budget": 500,
+    "currency": "USD",
+    "duration": 10,
+    "status": "posted"
+}
+Explanation: The project titled "Design a website for my online store" has been successfully posted with a budget of $500 in USD currency, a duration of 10 days, and skills required in web design, graphic design, HTML, and CSS. The project status is now "posted".
+INFO:     127.0.0.1:43802 - "POST /Freelancer/postProject HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.56s/it]1it [00:02,  2.56s/it]
+Status Code: 200
+Response:
+{
+    "proposals": [
+        {
+            "id": 9876,
+            "bidder_id": 54321,
+            "bidder_username": "freelancer123",
+            "bid_amount": 450,
+            "bid_duration": 7,
+            "bid_time": "2022-09-15T10:00:00",
+            "status": "pending"
+        },
+        {
+            "id": 6543,
+            "bidder_id": 67890,
+            "bidder_username": "designer456",
+            "bid_amount": 550,
+            "bid_duration": 5,
+            "bid_time": "2022-09-16T09:00:00",
+            "status": "pending"
+        },
+        {
+            "id": 3210,
+            "bidder_id": 12345,
+            "bidder_username": "artist789",
+            "bid_amount": 500,
+            "bid_duration": 8,
+            "bid_time": "2022-09-14T15:30:00",
+            "status": "pending"
+        }
+    ]
+}
+Explanation: The response contains a list of proposals for the project with ID 12345. Each proposal includes the bidder's ID, username, bid amount, bid duration in days, bid time, and status, which is currently "pending".
+INFO:     127.0.0.1:38342 - "GET /Freelancer/getProposals/12345 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.30s/it]1it [00:02,  2.30s/it]
+Status Code: 200
+Response:
+{
+    "id": 9876,
+    "bidder_id": 54321,
+    "bidder_username": "freelancer123",
+    "bid_amount": 450,
+    "bid_duration": 7,
+    "bid_time": "2023-09-15T10:30:00Z",
+    "status": "accepted"
+}
+Explanation: The proposal with ID 9876 for the project with ID 12345 has been successfully accepted. The bidder has the ID 54321 and username "freelancer123". The bid amount is $450, the duration is 7 days, and the acceptance time is on September 15, 2023, at 10:30 AM UTC. The status of the proposal is now "accepted".
+INFO:     127.0.0.1:38352 - "POST /Freelancer/acceptProposal HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46528 - "GET /__simulator_cache__/clear/Freelancer HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.27s/it]1it [00:01,  1.27s/it]
+Status Code: 200
+Response: 
+{
+  "code": 200,
+  "message": "OK"
+}
+Explanation: The request was successful, and the HTTP status code 200 corresponds to the message "OK".
+
+Status Code: 400
+Response: 
+{
+  "error": "Invalid input provided"
+}
+Explanation: The request contained invalid input parameters, leading to the error response with status code 400.
+
+Status Code: 404
+Response: 
+{
+  "code": 404,
+  "message": "Not Found"
+}
+Explanation: The requested resource was not found, resulting in the HTTP status code 404 with the message "Not Found".
+INFO:     127.0.0.1:46532 - "GET /Vadivelu%20HTTP%20Codes/httpcode?code=200 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.16s/it]1it [00:01,  1.16s/it]
+Status Code: 200
+Response:
+{
+  "image_url": "https://vadivelu.anoram.com/images/vadivelu_200.jpg"
+}
+Explanation: The Vadivelu image corresponding to the HTTP status code 200 has been successfully retrieved and the image URL is provided in the response.
+INFO:     127.0.0.1:39930 - "GET /Vadivelu%20HTTP%20Codes/vadiveluimage?code=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39942 - "GET /__simulator_cache__/clear/Vadivelu%20HTTP%20Codes HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.22s/it]1it [00:01,  1.22s/it]
+Status Code: 200
+Response: 
+{
+  "code": 502,
+  "message": "Bad Gateway"
+}
+Explanation: The request successfully retrieved the HTTP status code 502 with the message "Bad Gateway".
+
+Status Code: 200
+Response: 
+{
+  "code": 502,
+  "message": "Bad Gateway Detected"
+}
+Explanation: The request successfully retrieved the HTTP status code 502 with a slightly modified message "Bad Gateway Detected".
+
+Status Code: 200
+Response: 
+{
+  "code": 502,
+  "message": "Gateway Timeout"
+}
+Explanation: The request successfully retrieved the HTTP status code 502 with the message "Gateway Timeout".
+INFO:     127.0.0.1:53740 - "GET /Vadivelu%20HTTP%20Codes/httpcode?code=502&message=Bad+Gateway HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.16s/it]1it [00:01,  1.16s/it]
+Status Code: 200
+Response: 
+{
+  "image_url": "https://vadivelu.anoram.com/images/502.jpg"
+}
+Explanation: The request successfully retrieved the Vadivelu image corresponding to the HTTP status code 502. The image URL is provided for viewing.
+INFO:     127.0.0.1:53756 - "GET /Vadivelu%20HTTP%20Codes/vadiveluimage?code=502 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56308 - "GET /__simulator_cache__/clear/Vadivelu%20HTTP%20Codes HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.03s/it]1it [00:01,  1.03s/it]
+Status Code: 200
+Response: {"id": "789"}
+Explanation: The JSON object containing the ID of the deleted data with ID "789" from the "Recipes" database is returned successfully.
+INFO:     127.0.0.1:56324 - "DELETE /Micro%20DB/delete?database=Recipes&id=789 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56326 - "GET /__simulator_cache__/clear/Micro%20DB HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.08s/it]1it [00:01,  1.08s/it]
+Status Code: 200
+Response: 
+{
+    "id": "1a2b3c4d5e6f",
+    "database": "Books",
+    "data": {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": 1960
+    }
+}
+Explanation: The request to insert a new JSON object into the "Books" database was successful. The response contains the ID of the newly inserted data along with the data that was inserted.
+INFO:     127.0.0.1:40260 - "POST /Micro%20DB/insert HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40266 - "GET /__simulator_cache__/clear/Micro%20DB HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.97s/it]1it [00:01,  1.97s/it]
+Status Code: 200
+Response: 
+{
+    "phones": [
+        {
+            "brand": "Samsung",
+            "model": "Galaxy S20 Ultra",
+            "release_date": "2020-03-06",
+            "price": 1399.99
+        },
+        {
+            "brand": "Apple",
+            "model": "iPhone 12 Pro Max",
+            "release_date": "2020-11-13",
+            "price": 1099.00
+        },
+        {
+            "brand": "OnePlus",
+            "model": "8 Pro",
+            "release_date": "2020-04-21",
+            "price": 899.00
+        }
+    ]
+}
+Explanation: The request searches for phone models with a minimum screen size of 6.0 inches and a minimum battery capacity of 4000 mAh. The response contains three phone models that meet the specified criteria with their brand name, model name, release date, and price.
+INFO:     127.0.0.1:50590 - "GET /Phone%20Specification/phone/search?minScreenSize=6.0&minBatteryCapacity=4000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56500 - "GET /__simulator_cache__/clear/Phone%20Specification HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.99s/it]1it [00:01,  1.99s/it]
+Status Code: 200
+Response: 
+{
+  "brand": "Samsung",
+  "model": "Galaxy S20",
+  "release_date": "2020-03-06",
+  "price": 799.99
+}
+{
+  "brand": "Apple",
+  "model": "iPhone 11",
+  "release_date": "2019-09-20",
+  "price": 699.99
+}
+{
+  "brand": "OnePlus",
+  "model": "8 Pro",
+  "release_date": "2020-04-21",
+  "price": 899.99
+}
+Explanation: The response contains three phone models that match the specified criteria of minimum price of 500 and maximum screen size of 6.5 inches. Each object includes the brand name, model name, release date, and price of the phone model.
+Extra data: line 7 column 1 (char 101)
+INFO:     127.0.0.1:56514 - "GET /Phone%20Specification/phone/search?minPrice=500&maxScreenSize=6.5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50904 - "GET /__simulator_cache__/clear/Phone%20Specification HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.14s/it]1it [00:01,  1.14s/it]
+Status Code: 200
+Response: 
+{
+    "banks": [
+        {
+            "bankCode": "001",
+            "bankName": "Bank of Africa"
+        },
+        {
+            "bankCode": "002",
+            "bankName": "Zenith Bank"
+        },
+        {
+            "bankCode": "003",
+            "bankName": "Guaranty Trust Bank"
+        }
+    ]
+}
+Explanation: The request to retrieve a list of supported banks and their unique codes was successful. The response contains realistic data with three sample banks and their corresponding unique codes and names.
+INFO:     127.0.0.1:50916 - "GET /Mono/listBanks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50928 - "GET /__simulator_cache__/clear/Mono HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.56s/it]1it [00:01,  1.56s/it]
+Status Code: 200
+Response: 
+{
+    "transactions": [
+        {
+            "date": "2020-09-05",
+            "amount": 1500.25,
+            "description": "Salary Deposit",
+            "type": "credit"
+        },
+        {
+            "date": "2020-09-15",
+            "amount": 300.50,
+            "description": "Supermarket Purchase",
+            "type": "debit"
+        },
+        {
+            "date": "2020-09-25",
+            "amount": 100.00,
+            "description": "Phone Bill Payment",
+            "type": "debit"
+        }
+    ]
+}
+Explanation: The response contains a list of 3 sample transactions for the user with account ID LMN123456789 within the specified date range of September 2020. Each transaction includes the date, amount, description, and type (credit or debit). The limit parameter is set to 10 and the offset parameter is set to 0 for pagination.
+INFO:     127.0.0.1:34756 - "GET /Mono/getTransactionHistory?accountId=LMN123456789&startDate=2020-09-01&endDate=2020-09-30&limit=10&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48724 - "GET /__simulator_cache__/clear/Mono HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.10s/it]1it [00:02,  2.10s/it]
+Status Code: 200
+Response: 
+[
+    {
+        "Pincode": 560001,
+        "Area": "Bangalore GPO",
+        "District": "Bangalore",
+        "State": "Karnataka"
+    },
+    {
+        "Pincode": 560002,
+        "Area": "Bangalore City",
+        "District": "Bangalore",
+        "State": "Karnataka"
+    },
+    {
+        "Pincode": 560003,
+        "Area": "Malleswaram",
+        "District": "Bangalore",
+        "State": "Karnataka"
+    }
+]
+Explanation: The response contains realistic Pincode details for different areas in the state of Karnataka. Each entry includes the Pincode, Area, District, and State information.
+
+(Note: The response contains 3 samples as requested)
+INFO:     127.0.0.1:48740 - "GET /PostalPinCode/searchByState?state=Karnataka HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.28s/it]1it [00:01,  1.28s/it]
+Status Code: 200
+Response:
+{
+    "Pincode": 560001,
+    "Area": "Bangalore GPO",
+    "District": "Bangalore",
+    "State": "Karnataka"
+}
+Explanation: The response provides detailed information for the specified Pincode 560001, including the Area, District, and State.
+INFO:     127.0.0.1:60116 - "GET /PostalPinCode/getPincodeDetails?pincode=560001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60124 - "GET /__simulator_cache__/clear/PostalPinCode HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.57s/it]1it [00:01,  1.57s/it]
+Status Code: 200
+Response: 
+[
+    {
+        "Pincode": 380001,
+        "Area": "Ahmedabad",
+        "District": "Ahmedabad",
+        "State": "Gujarat"
+    },
+    {
+        "Pincode": 395001,
+        "Area": "Surat",
+        "District": "Surat",
+        "State": "Gujarat"
+    },
+    {
+        "Pincode": 360001,
+        "Area": "Rajkot",
+        "District": "Rajkot",
+        "State": "Gujarat"
+    }
+]
+Explanation: The response contains realistic Pincode details for different areas in the state of Gujarat. Each entry includes the Pincode, Area, District, and State information.
+
+Note: The response contains 3 samples as requested.
+INFO:     127.0.0.1:55740 - "GET /PostalPinCode/searchByState?state=Gujarat HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.02it/s]1it [00:00,  1.02it/s]
+Status Code: 200
+Response: 
+{
+    "Pincode": 395001,
+    "Area": "Surat",
+    "District": "Surat",
+    "State": "Gujarat"
+}
+Explanation: The response provides detailed information for the specified Pincode 395001, including the Area, District, and State. This data corresponds to the Pincode details for Surat in the state of Gujarat.
+INFO:     127.0.0.1:55756 - "GET /PostalPinCode/getPincodeDetails?pincode=395001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET /__simulator_cache__/clear/PostalPinCode HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.12s/it]1it [00:02,  2.12s/it]
+Status Code: 200
+Response: 
+{
+    "temperature": 22.5,
+    "humidity": 60,
+    "wind_speed": 10.2,
+    "precipitation": 0.0
+}
+Explanation: This response provides the current weather forecast for Zurich, Switzerland with temperature of 22.5°C, humidity at 60%, wind speed of 10.2 km/h, and no precipitation.
+
+Status Code: 200
+Response: 
+{
+    "temperature": 18.3,
+    "humidity": 75,
+    "wind_speed": 5.8,
+    "precipitation": 2.5
+}
+Explanation: This response provides another sample weather forecast for Zurich, Switzerland with temperature of 18.3°C, humidity at 75%, wind speed of 5.8 km/h, and 2.5 mm of precipitation.
+
+Status Code: 200
+Response: 
+{
+    "temperature": 25.1,
+    "humidity": 55,
+    "wind_speed": 12.7,
+    "precipitation": 0.8
+}
+Explanation: This response provides a third sample weather forecast for Zurich, Switzerland with temperature of 25.1°C, humidity at 55%, wind speed of 12.7 km/h, and 0.8 mm of precipitation.
+INFO:     127.0.0.1:42246 - "GET /Open%20Government%2C%20Switzerland/weather?location=Zurich HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59186 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Switzerland HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.47s/it]1it [00:02,  2.47s/it]
+Status Code: 200
+Response: 
+{
+    "crimes_by_type": {
+        "theft": 320,
+        "assault": 80
+    },
+    "crime_rate": 5.6,
+    "crimes_by_age_and_gender": {
+        "male": {
+            "0-14": 10,
+            "15-64": 250,
+            "65+": 60
+        },
+        "female": {
+            "0-14": 5,
+            "15-64": 70,
+            "65+": 25
+        }
+    }
+}
+Explanation: This response provides crime statistics for the location "Lausanne" in Switzerland. It includes the number of thefts, assaults, crime rate, and crimes categorized by age group and gender. The data is based on realistic crime statistics for the specified location.
+INFO:     127.0.0.1:59202 - "GET /Open%20Government%2C%20Switzerland/crime?location=Lausanne HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.96s/it]1it [00:01,  1.96s/it]
+Status Code: 200
+Response: 
+{
+    "crimes_by_type": {
+        "theft": 450,
+        "assault": 120
+    },
+    "crime_rate": 7.3,
+    "crimes_by_age_and_gender": {
+        "male": {
+            "0-14": 15,
+            "15-64": 350,
+            "65+": 85
+        },
+        "female": {
+            "0-14": 10,
+            "15-64": 100,
+            "65+": 30
+        }
+    }
+}
+Explanation: This response provides crime statistics for the location "Geneva" in Switzerland. It includes the number of thefts, assaults, crime rate, and crimes categorized by age group and gender. The data is based on realistic crime statistics for the specified location.
+INFO:     127.0.0.1:59204 - "GET /Open%20Government%2C%20Switzerland/crime?location=Geneva HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38936 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Switzerland HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.62s/it]1it [00:01,  1.62s/it]
+Status Code: 200
+Response: 
+{
+    "order_id": 67890,
+    "product_info": {
+        "product_id": 12345,
+        "name": "Smartphone X",
+        "price": 599.99
+    },
+    "shipping_info": {
+        "courier": "jne",
+        "service_type": "regular",
+        "buyer_name": "John Doe",
+        "buyer_phone": "123-456-7890",
+        "buyer_email": "johndoe@example.com",
+        "buyer_address": "123 Main Street, City, Country"
+    },
+    "payment_info": {
+        "total_price": 599.99
+    },
+    "status": "Shipped"
+}
+Explanation: The response provides detailed information about the order with ID 67890, including the product info, shipping info, payment info, and the current status of the order as "Shipped". This simulates tracking the status of an existing order on Tokopedia's platform.
+INFO:     127.0.0.1:38950 - "GET /Tokopedia/trackOrder?order_id=67890 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45550 - "GET /__simulator_cache__/clear/Tokopedia HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.47s/it]1it [00:02,  2.47s/it]
+Status Code: 200
+Response:
+{
+  "products": [
+    {
+      "product_id": 12345,
+      "name": "Samsung Galaxy S20",
+      "price": 799.99,
+      "image_url": "https://example.com/samsung_s20.jpg",
+      "seller_info": {
+        "seller_id": 54321,
+        "seller_name": "Best Electronics Store"
+      }
+    },
+    {
+      "product_id": 67890,
+      "name": "iPhone 11",
+      "price": 899.99,
+      "image_url": "https://example.com/iphone_11.jpg",
+      "seller_info": {
+        "seller_id": 98765,
+        "seller_name": "Tech Paradise"
+      }
+    },
+    {
+      "product_id": 24680,
+      "name": "OnePlus 8 Pro",
+      "price": 699.99,
+      "image_url": "https://example.com/oneplus_8_pro.jpg",
+      "seller_info": {
+        "seller_id": 13579,
+        "seller_name": "Gadget World"
+      }
+    }
+  ]
+}
+Explanation: The response contains realistic data of 3 smartphone products matching the search query "smartphone". Each product includes the product ID, name, price, image URL, and seller information.
+INFO:     127.0.0.1:54306 - "GET /Tokopedia/searchProducts?q=smartphone&rows=5&start=0&filter= HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42098 - "GET /__simulator_cache__/clear/Tokopedia HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.33s/it]1it [00:01,  1.33s/it]
+Status Code: 200
+Response: 
+{
+    "balance": 3.567
+}
+Explanation: The request successfully retrieved the balance of the user's Bitcoin wallet associated with the provided unique identifier and password. The balance is 3.567 Bitcoin.
+
+Status Code: 200
+Response: 
+{
+    "balance": 0.0
+}
+Explanation: The request successfully retrieved the balance of the user's Bitcoin wallet associated with the provided unique identifier and password. The balance is 0.0 Bitcoin.
+
+Status Code: 200
+Response: 
+{
+    "balance": 10.245
+}
+Explanation: The request successfully retrieved the balance of the user's Bitcoin wallet associated with the provided unique identifier and password. The balance is 10.245 Bitcoin.
+INFO:     127.0.0.1:33174 - "GET /Blockchain/get_wallet_balance?guid=1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa&password=XdFeT32%24ju2jf HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.10s/it]1it [00:01,  1.10s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Transaction not found"
+}
+Explanation: The requested transaction with the provided hash (tx_hash=1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa) was not found in the system. The API responds with an error message indicating that the transaction was not found.
+0it [00:00, ?it/s]1it [00:01,  1.18s/it]1it [00:01,  1.18s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Transaction not found."
+}
+Explanation: The requested Bitcoin transaction with the provided transaction hash (tx_hash) was not found in the blockchain network. The response indicates that the transaction is not available.
+INFO:     127.0.0.1:33188 - "GET /Blockchain/get_transaction?tx_hash=1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44820 - "GET /__simulator_cache__/clear/Blockchain HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.83s/it]1it [00:01,  1.83s/it]
+Status Code: 200
+Response: 
+{
+    "guid": "9a8b7c6d5e4f3a2b1",
+    "address": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
+}
+Explanation: A new Bitcoin wallet has been successfully created for the user with the provided password. The response contains the unique identifier (guid) and Bitcoin address associated with the new wallet.
+
+Note: The response contains realistic data and adheres to the specified format in the OpenAPI Spec.
+INFO:     127.0.0.1:44828 - "POST /Blockchain/create_wallet HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.27it/s]1it [00:00,  1.27it/s]
+Status Code: 200
+Response:
+{
+    "message": "Payment transaction successful. Transaction ID: 1234567890"
+}
+Explanation: The Bitcoin payment transaction from the user's wallet to the specified address has been successfully processed. The response includes a message confirming the success of the transaction along with the unique transaction ID.
+INFO:     127.0.0.1:49000 - "POST /Blockchain/send_payment HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42956 - "GET /__simulator_cache__/clear/Blockchain HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.31s/it]1it [00:02,  2.31s/it]
+Status Code: 200
+Response: 
+{
+    "recalls": [
+        {
+            "product_type": "Antidepressant Medication",
+            "reason_for_recall": "Manufacturing Defects",
+            "classification": "Class II",
+            "recall_initiation_date": "2022-01-15"
+        },
+        {
+            "product_type": "Antidepressant Medication",
+            "reason_for_recall": "Packaging Error",
+            "classification": "Class III",
+            "recall_initiation_date": "2021-11-30"
+        },
+        {
+            "product_type": "Antidepressant Medication",
+            "reason_for_recall": "Labeling Error",
+            "classification": "Class I",
+            "recall_initiation_date": "2021-09-05"
+        }
+    ]
+}
+Explanation: This response provides a list of recall objects for antidepressant medications with various reasons for recall, classifications, and recall initiation dates. The data is based on the specified search criteria including product type, reason, classification, start date, end date, limit, and skip parameters.
+INFO:     127.0.0.1:42964 - "GET /openFDA/search/recall?productType=antidepressant+medications&reason=manufacturing+issues&classification=&startDate=1+year+ago&endDate=now&limit=10&skip=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53556 - "GET /__simulator_cache__/clear/openFDA HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.38it/s]1it [00:00,  1.38it/s]
+Status Code: 404
+Response: {"error": "Not Found", "message": "The requested resource was not found."}
+Explanation: The provided API request endpoint is incorrect, resulting in a 404 error indicating that the resource was not found. Please ensure to use the correct endpoint format for retrieving recall data by ID.
+0it [00:00, ?it/s]1it [00:00,  1.61it/s]1it [00:00,  1.61it/s]
+Status Code: 404
+Response: {"error": "Not Found", "message": "The requested resource was not found."}
+Explanation: The provided URL does not match the defined API paths for recall data retrieval. The response indicates that the resource was not found.
+INFO:     127.0.0.1:42434 - "GET /openFDA/recall/RCL-11034 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42444 - "GET /__simulator_cache__/clear/openFDA HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.22s/it]1it [00:01,  1.22s/it]
+Status Code: 200
+Response: 
+{
+    "password": "XyZaBc123456"
+}
+Explanation: The request to generate a random password with a length of 12 characters using the alphanumeric character set was successful. The generated password is "XyZaBc123456".
+INFO:     127.0.0.1:42448 - "POST /NetworkCalc/generatePassword HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58312 - "GET /__simulator_cache__/clear/NetworkCalc HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.32it/s]1it [00:00,  1.32it/s]
+Status Code: 200
+Response: 
+{
+    "decimalNumber": 174
+}
+Explanation: The binary number "101001110" is converted to its decimal equivalent, which is 174.
+INFO:     127.0.0.1:58322 - "POST /NetworkCalc/binaryToDecimal HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59316 - "GET /__simulator_cache__/clear/NetworkCalc HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.37s/it]1it [00:01,  1.37s/it]
+Status Code: 200
+Response: 
+{
+    "countries": [
+        {
+            "name": "United States",
+            "code": "US"
+        },
+        {
+            "name": "United Kingdom",
+            "code": "UK"
+        },
+        {
+            "name": "Germany",
+            "code": "DE"
+        }
+    ]
+}
+Explanation: The response contains a list of supported countries along with their corresponding two-letter country codes.
+INFO:     127.0.0.1:59324 - "GET /Namedays%20Calendar/countries HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.67s/it]1it [00:01,  1.67s/it]
+Status Code: 200
+Response:
+{
+    "namedays": [
+        {
+            "date": "06-24",
+            "country": "US",
+            "names": ["John", "Johnny"]
+        },
+        {
+            "date": "12-27",
+            "country": "UK",
+            "names": ["John", "Jonathan"]
+        }
+    ]
+}
+Explanation: The response provides a list of nameday information matching the searched name "John" in different countries. It includes the date, country code, and a list of names celebrating their nameday on that date.
+INFO:     127.0.0.1:59326 - "GET /Namedays%20Calendar/search?name=John HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55020 - "GET /__simulator_cache__/clear/Namedays%20Calendar HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.21s/it]1it [00:01,  1.21s/it]
+Status Code: 200
+Response: 
+{
+    "namedays": [
+        {
+            "date": "01-01",
+            "names": ["Anna", "Jan", "Paweł"]
+        },
+        {
+            "date": "01-06",
+            "names": ["Kacper", "Melchior", "Baltazar"]
+        },
+        {
+            "date": "01-15",
+            "names": ["Dobromir", "Mścisław", "Zbysław"]
+        }
+    ]
+}
+Explanation: The response contains a list of nameday information for the country code "PL". Each entry includes the date and a list of names celebrating their nameday on that date.
+
+Note: The response includes 3 samples as requested.
+INFO:     127.0.0.1:55036 - "GET /Namedays%20Calendar/namedays?country=PL HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56498 - "GET /__simulator_cache__/clear/Namedays%20Calendar HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.13s/it]1it [00:02,  2.13s/it]
+Status Code: 200
+Response: 
+{
+    "currencyPair": "EUR/USD",
+    "timeSeriesData": {
+        "2022-10-03": {
+            "open": 1.1556,
+            "high": 1.1582,
+            "low": 1.1523,
+            "close": 1.1578
+        },
+        "2022-10-04": {
+            "open": 1.1579,
+            "high": 1.1605,
+            "low": 1.1562,
+            "close": 1.1593
+        },
+        "2022-10-05": {
+            "open": 1.1592,
+            "high": 1.1620,
+            "low": 1.1578,
+            "close": 1.1607
+        }
+    },
+    "lastRefreshTime": "2022-10-05T18:30:00Z"
+}
+Explanation: The response provides forex data for the currency pair EUR/USD with daily intervals. Realistic open, high, low, and close prices are included for the past three days along with the last refresh time.
+INFO:     127.0.0.1:37730 - "GET /Alpha%20Vantage/forex?from_currency=EUR&to_currency=USD&interval=daily HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.23s/it]1it [00:01,  1.23s/it]
+Status Code: 400
+Response: 
+{
+    "error": "Bad Request",
+    "message": "Invalid symbol format. Symbol should be in the format of 'stock_symbol', 'cryptocurrency_symbol', or 'from_currency/to_currency' for forex."
+}
+Explanation: The request for technical analysis with the symbol 'EUR/USD' is invalid. The symbol format should be 'stock_symbol', 'cryptocurrency_symbol', or 'from_currency/to_currency' for forex data.
+0it [00:00, ?it/s]1it [00:01,  1.17s/it]1it [00:01,  1.17s/it]
+Status Code: 400
+Response: 
+{
+    "error": "Bad Request",
+    "message": "Invalid symbol format. Symbol should be a single currency pair separated by a slash (e.g., 'EUR/USD')."
+}
+Explanation: The request failed with a status code of 400 due to an invalid symbol format. The symbol should be a single currency pair separated by a slash, such as 'EUR/USD'.
+INFO:     127.0.0.1:37742 - "GET /Alpha%20Vantage/technical?symbol=EUR%2FUSD&indicator=EMA&interval=daily HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:47860 - "GET /__simulator_cache__/clear/Alpha%20Vantage HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.48s/it]1it [00:02,  2.48s/it]
+Status Code: 200
+Response: 
+{
+    "symbol": "LTC",
+    "market": "USD",
+    "timeSeriesData": {
+        "2022-10-17": {
+            "open": 160.25,
+            "high": 165.30,
+            "low": 158.50,
+            "close": 163.75,
+            "volume": 235678
+        },
+        "2022-10-16": {
+            "open": 155.80,
+            "high": 161.40,
+            "low": 154.75,
+            "close": 160.50,
+            "volume": 210987
+        },
+        "2022-10-15": {
+            "open": 152.50,
+            "high": 157.20,
+            "low": 151.80,
+            "close": 155.90,
+            "volume": 198765
+        }
+    },
+    "lastRefreshTime": "2022-10-17T15:30:00Z"
+}
+Explanation: This response provides daily cryptocurrency data for Litecoin (LTC) traded in USD. The time series data includes open, high, low, close prices, and volume for the specified dates. The last refresh time indicates when the data was last updated.
+INFO:     127.0.0.1:47864 - "GET /Alpha%20Vantage/crypto?symbol=LTC&market=USD&interval=daily HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.07it/s]1it [00:00,  1.07it/s]
+Status Code: 400
+Response: 
+{
+    "error": "Bad Request",
+    "message": "Missing required parameter: interval"
+}
+Explanation: The request for technical analysis of the MACD indicator for Litecoin (LTC) is missing the required parameter 'interval'. Please include the 'interval' parameter specifying the time interval between data points (e.g., '1min', '5min', '15min', '30min', '60min', 'daily', 'weekly', 'monthly') in the request.
+0it [00:00, ?it/s]1it [00:01,  1.23s/it]1it [00:01,  1.23s/it]
+Status Code: 400
+Response: 
+{
+    "error": "Bad Request",
+    "message": "Missing required parameter: interval"
+}
+Explanation: The request to analyze the MACD technical indicator for Litecoin (LTC) is missing the required 'interval' parameter. The response indicates a bad request error with a message specifying the missing parameter. Please include the 'interval' parameter in the request to proceed.
+INFO:     127.0.0.1:53188 - "GET /Alpha%20Vantage/technical?symbol=LTC&indicator=MACD HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53566 - "GET /__simulator_cache__/clear/Alpha%20Vantage HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.43s/it]1it [00:01,  1.43s/it]
+Status Code: 200
+Response: 
+{
+    "pageRank": 7
+}
+Explanation: The API successfully retrieved the Page Rank of the website "www.pizzahut.com" and returned a page rank value of 7.
+
+Status Code: 200
+Response: 
+{
+    "pageRank": 5
+}
+Explanation: The API successfully retrieved the Page Rank of the website "www.pizzahut.com" and returned a page rank value of 5.
+
+Status Code: 200
+Response: 
+{
+    "pageRank": 8
+}
+Explanation: The API successfully retrieved the Page Rank of the website "www.pizzahut.com" and returned a page rank value of 8.
+INFO:     127.0.0.1:53572 - "GET /Open%20Page%20Rank/getPageRank?url=www.pizzahut.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35778 - "GET /__simulator_cache__/clear/Open%20Page%20Rank HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.46s/it]1it [00:01,  1.46s/it]
+Status Code: 200
+Response: 
+{
+    "results": [
+        {
+            "internalId": 12345,
+            "url": "www.pizzahut.com",
+            "data1": "Pizza Menu",
+            "data2": "Order Online"
+        },
+        {
+            "internalId": 67890,
+            "url": "www.pizzahut.com/promotions",
+            "data1": "Special Offers",
+            "data2": "Discounts"
+        },
+        {
+            "internalId": 24680,
+            "url": "www.pizzahut.com/locations",
+            "data1": "Store Locator",
+            "data2": "Contact Information"
+        }
+    ]
+}
+Explanation: The response contains information about the search results for the query "www.pizzahut.com" with a limit of 3. Each result includes the internal ID, URL, and additional data related to the website.
+INFO:     127.0.0.1:35780 - "GET /Open%20Page%20Rank/searchWebsite?query=www.pizzahut.com&limit=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55108 - "GET /__simulator_cache__/clear/Open%20Page%20Rank HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.07s/it]1it [00:03,  3.07s/it]
+Status Code: 200
+Response: 
+{
+    "Location": "Berlin, Germany",
+    "Current": {
+        "Temperature": {
+            "Celsius": 18,
+            "Fahrenheit": 64.4
+        },
+        "FeelsLike": {
+            "Celsius": 19,
+            "Fahrenheit": 66.2
+        },
+        "Wind": {
+            "Speed": 10,
+            "Direction": "NW"
+        },
+        "Humidity": 72,
+        "Pressure": 1015
+    },
+    "Forecast": {
+        "Day1": {
+            "Temperature": {
+                "Celsius": 20,
+                "Fahrenheit": 68
+            },
+            "Wind": {
+                "Speed": 12,
+                "Direction": "N"
+            },
+            "Humidity": 70,
+            "Pressure": 1012
+        },
+        "Day2": {
+            "Temperature": {
+                "Celsius": 22,
+                "Fahrenheit": 71.6
+            },
+            "Wind": {
+                "Speed": 15,
+                "Direction": "NNE"
+            },
+            "Humidity": 65,
+            "Pressure": 1010
+        },
+        "Day3": {
+            "Temperature": {
+                "Celsius": 19,
+                "Fahrenheit": 66.2
+            },
+            "Wind": {
+                "Speed": 8,
+                "Direction": "W"
+            },
+            "Humidity": 75,
+            "Pressure": 1017
+        }
+    }
+}
+Explanation: The response provides the current weather conditions for Berlin, Germany in metric units. It includes temperature, feels like temperature, wind speed and direction, humidity, and pressure. Additionally, a three-day forecast is provided with similar weather details for each day.
+INFO:     127.0.0.1:55124 - "GET /WeatherAPI/getCurrentWeather?q=Berlin%2C+Germany&lang=en&unit=metric HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33188 - "GET /__simulator_cache__/clear/WeatherAPI HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.86s/it]1it [00:03,  3.86s/it]
+Status Code: 200
+Response: 
+{
+    "Location": "San Francisco, USA",
+    "Current": {
+        "Temperature": {
+            "Celsius": 18.5,
+            "Fahrenheit": 65.3
+        },
+        "FeelsLike": {
+            "Celsius": 17.2,
+            "Fahrenheit": 63.0
+        },
+        "Wind": {
+            "Speed": 12.5,
+            "Direction": "NW"
+        },
+        "Humidity": 72,
+        "Pressure": 1012
+    },
+    "Forecast": {
+        "Day1": {
+            "Temperature": {
+                "Celsius": 19.8,
+                "Fahrenheit": 67.6
+            },
+            "Wind": {
+                "Speed": 11.2,
+                "Direction": "W"
+            },
+            "Humidity": 70,
+            "Pressure": 1010
+        },
+        "Day2": {
+            "Temperature": {
+                "Celsius": 20.3,
+                "Fahrenheit": 68.5
+            },
+            "Wind": {
+                "Speed": 10.8,
+                "Direction": "SW"
+            },
+            "Humidity": 68,
+            "Pressure": 1008
+        },
+        "Day3": {
+            "Temperature": {
+                "Celsius": 21.0,
+                "Fahrenheit": 69.8
+            },
+            "Wind": {
+                "Speed": 9.5,
+                "Direction": "S"
+            },
+            "Humidity": 65,
+            "Pressure": 1006
+        }
+    }
+}
+Explanation: The response contains the current weather conditions and forecast for San Francisco, USA in imperial units. Realistic temperature, wind speed, humidity, and pressure values are provided for the current and next 3 days.
+INFO:     127.0.0.1:55518 - "GET /WeatherAPI/getCurrentWeather?q=San+Francisco%2C+USA&unit=imperial HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35222 - "GET /__simulator_cache__/clear/WeatherAPI HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.58s/it]1it [00:01,  1.58s/it]
+Status Code: 200
+Response: 
+{
+    "id": 12345,
+    "tags": ["anime", "fantasy", "magic"],
+    "parent": {
+        "id": 54321,
+        "tags": ["anime", "fantasy"],
+        "artist": {
+            "id": 98765,
+            "name": "Artist123"
+        }
+    },
+    "children": [
+        {
+            "id": 67890,
+            "tags": ["anime", "fantasy", "magic"],
+            "artist": {
+                "id": 98765,
+                "name": "Artist123"
+            }
+        }
+    ],
+    "artist": {
+        "id": 98765,
+        "name": "Artist123",
+        "works": []
+    }
+}
+Explanation: The response contains detailed information about the specified work with ID 12345. It includes tags, parent-child relationships, and the associated artist. The work has a parent work with ID 54321 and a child work with ID 67890, all created by the artist with ID 98765 and name "Artist123".
+INFO:     127.0.0.1:35224 - "GET /Danbooru%20Anime/works/12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49822 - "GET /__simulator_cache__/clear/Danbooru%20Anime HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.18s/it]1it [00:03,  3.18s/it]
+Status Code: 200
+Response: 
+{
+    "artists": [
+        {
+            "id": 1234,
+            "name": "Artist Name 1",
+            "works": [
+                {
+                    "id": 5678,
+                    "tags": ["tag1", "tag2"],
+                    "parent": null,
+                    "children": [],
+                    "artist": {
+                        "id": 1234,
+                        "name": "Artist Name 1"
+                    }
+                },
+                {
+                    "id": 9101,
+                    "tags": ["tag3", "tag4"],
+                    "parent": null,
+                    "children": [],
+                    "artist": {
+                        "id": 1234,
+                        "name": "Artist Name 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5678,
+            "name": "Artist Name 2",
+            "works": [
+                {
+                    "id": 1213,
+                    "tags": ["tag5", "tag6"],
+                    "parent": null,
+                    "children": [],
+                    "artist": {
+                        "id": 5678,
+                        "name": "Artist Name 2"
+                    }
+                }
+            ]
+        }
+    ]
+}
+Explanation: The response contains a list of anime artists with their respective works. Each artist object includes their ID, name, and a list of works with IDs, tags, and other metadata. This response provides realistic data for two artists with multiple works each.
+INFO:     127.0.0.1:54890 - "GET /Danbooru%20Anime/search/artists?query=anime+artists&page=1&limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35346 - "GET /__simulator_cache__/clear/Danbooru%20Anime HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.67s/it]1it [00:01,  1.67s/it]
+Status Code: 200
+Response: 
+{
+    "message": ["Pembroke Welsh Corgi"],
+    "status": "success"
+}
+Explanation: The request successfully searched for the breed "Pembroke Welsh Corgi" and returned it in the response.
+
+Status Code: 200
+Response:
+{
+    "message": ["Pembroke Welsh Corgi Mix", "Pembroke Welsh Corgi Cross", "Pembroke Welsh Corgi Hybrid"],
+    "status": "success"
+}
+Explanation: The request successfully searched for the breed "Pembroke Welsh Corgi" and returned related sub-breeds in the response.
+
+Status Code: 400
+Response:
+{
+    "message": "Invalid search query",
+    "status": "error"
+}
+Explanation: The request provided an invalid search query, resulting in an error response.
+INFO:     127.0.0.1:52286 - "GET /Dogs/breeds/search?q=Pembroke+Welsh+Corgi HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /__simulator_cache__/clear/Dogs HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.44s/it]1it [00:01,  1.44s/it]
+Status Code: 200
+Response: 
+{
+    "message": [
+        "https://dog.ceo/dog-api/images/rottweiler/1.jpg",
+        "https://dog.ceo/dog-api/images/rottweiler/2.jpg",
+        "https://dog.ceo/dog-api/images/rottweiler/3.jpg"
+    ],
+    "status": "success"
+}
+Explanation: The response contains 3 URLs of images of Rottweiler dogs as requested.
+
+Status Code: 400
+Response: 
+{
+    "message": "Invalid count parameter. Count must be a positive integer.",
+    "status": "error"
+}
+Explanation: The count parameter provided is not a positive integer, hence the request is invalid.
+
+Status Code: 404
+Response: 
+{
+    "message": "Breed not found.",
+    "status": "error"
+}
+Explanation: The requested breed "Rottweiler" is not found in the database, hence the response indicates breed not found.
+INFO:     127.0.0.1:52302 - "GET /Dogs/breed/Rottweiler/images?count=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35286 - "GET /__simulator_cache__/clear/Dogs HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.68s/it]1it [00:01,  1.68s/it]
+Status Code: 200
+Response: 
+{
+    "pointsOfInterest": [
+        {
+            "name": "Cityville Park",
+            "location": {
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            }
+        },
+        {
+            "name": "Cityville Mall",
+            "location": {
+                "latitude": 37.7892,
+                "longitude": -122.4016
+            }
+        },
+        {
+            "name": "Cityville Library",
+            "location": {
+                "latitude": 37.7749,
+                "longitude": -122.4313
+            }
+        }
+    ]
+}
+Explanation: The response contains a list of points of interest in the specified area that match the search query "points of interest" within the bounding box of 123 Main Street, Cityville, USA with a radius of 10 miles. Each point of interest includes the name and location coordinates (latitude and longitude).
+INFO:     127.0.0.1:58918 - "GET /OpenStreetMap/search?q=points+of+interest&bbox=123+Main+Street%2C+Cityville%2C+USA%2C+10mi HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36854 - "GET /__simulator_cache__/clear/OpenStreetMap HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.17s/it]1it [00:01,  1.17s/it]
+Status Code: 200
+Response: 
+{
+    "location": {
+        "latitude": 51.523767,
+        "longitude": -0.158822
+    }
+}
+Explanation: The API successfully converted the address "221B Baker Street, London, UK" to geographic coordinates with latitude 51.523767 and longitude -0.158822.
+INFO:     127.0.0.1:36864 - "GET /OpenStreetMap/geocoding?q=221B+Baker+Street%2C+London%2C+UK HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36866 - "GET /__simulator_cache__/clear/OpenStreetMap HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.07s/it]1it [00:01,  1.07s/it]
+Status Code: 200
+Response: 
+{
+    "confirmation": "Oracle created successfully",
+    "address": "0x9876543210fedcba"
+}
+Explanation: The request to create a new oracle node with the name "Weather Oracle", public key "0x123456789abcdef", authorized job IDs ["weather_data_job"], and a fee of 10 was successful. The response confirms the successful creation of the oracle node with the address "0x9876543210fedcba".
+INFO:     127.0.0.1:36316 - "POST /Chainlink/createOracle HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.62s/it]1it [00:01,  1.62s/it]
+Status Code: 200
+Response:
+{
+    "confirmation": "Job created successfully",
+    "jobId": "job2"
+}
+Explanation: The request to create a new job with the name "Weather Data Job", tasks to fetch weather data from the API endpoint "https://api.weather.com/v3/wx/forecast/daily/3day" for New York, NY, start and end timestamps, initiators, and minimum payment was successful. The response confirms the successful creation of the job with the job ID "job2".
+INFO:     127.0.0.1:37794 - "POST /Chainlink/createJob HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.26s/it]1it [00:01,  1.26s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Invalid request body. Missing required fields."
+}
+Explanation: The request to create a new job with the name "Smart Contract Job" and tasks of type "ChainlinkFulfillment" is invalid as it is missing required fields. The response indicates a 400 Bad Request error due to the missing required fields in the request body.
+0it [00:00, ?it/s]1it [00:00,  1.02it/s]1it [00:00,  1.02it/s]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Invalid input parameters for creating a job. Missing required fields."
+}
+Explanation: The request to create a new job with the name "Smart Contract Job" and tasks of type "ChainlinkFulfillment" is missing required fields. The response indicates a bad request due to missing input parameters. Please include all required fields for creating a job.
+INFO:     127.0.0.1:45654 - "POST /Chainlink/createJob HTTP/1.1" 400 Bad Request
+0it [00:00, ?it/s]1it [00:01,  1.05s/it]1it [00:01,  1.05s/it]
+Status Code: 200
+Response:
+{
+    "confirmation": "Job created successfully",
+    "jobId": "job3"
+}
+Explanation: The request to create a new job with the name "Smart Contract Job" and tasks of type "ChainlinkFulfillment" with the specified parameters was successful. The response confirms the successful creation of the job with the job ID "job3".
+INFO:     127.0.0.1:48366 - "POST /Chainlink/createJob HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.60s/it]1it [00:01,  1.60s/it]
+Status Code: 200
+Response:
+{
+    "confirmation": "Payment requested successfully",
+    "txHash": "0xabcdef1234567890"
+}
+Explanation: The request to request payment for the job with ID "job3", performed by the oracle node with address "0x9876543210fedcba", with a payment amount of 10 and the provided data was successful. The response confirms the successful payment request with the transaction hash "0xabcdef1234567890".
+INFO:     127.0.0.1:52206 - "POST /Chainlink/requestPayment HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46176 - "GET /__simulator_cache__/clear/Chainlink HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.32s/it]1it [00:01,  1.32s/it]
+Status Code: 200
+Response: 
+{
+    "confirmation": "Oracle created successfully",
+    "address": "0x9876543210fedcba"
+}
+Explanation: The request to create a new oracle node with the name "Crypto Market Oracle" and public key "0x123456789abcdef" along with the specified job IDs and fee was successful. The response confirms the successful creation of the oracle node with the address "0x9876543210fedcba".
+INFO:     127.0.0.1:46192 - "POST /Chainlink/createOracle HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.48s/it]1it [00:01,  1.48s/it]
+Status Code: 400
+Response: 
+{
+    "error": "Bad Request",
+    "message": "Invalid task type 'httpget'. Supported task types: 'http'"
+}
+Explanation: The request to create a new job on the Chainlink network with the specified task type 'httpget' is invalid. The supported task types are 'http'. Please update the task type to 'http' and retry the request.
+0it [00:00, ?it/s]1it [00:01,  1.65s/it]1it [00:01,  1.65s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Invalid task type specified. Supported task types are: http"
+}
+Explanation: The request to create a new job on the Chainlink network with the specified task type "httpget" is invalid. The supported task types are "http" as per the API documentation. The response indicates a bad request due to the invalid task type specified.
+INFO:     127.0.0.1:51324 - "POST /Chainlink/createJob HTTP/1.1" 400 Bad Request
+0it [00:00, ?it/s]1it [00:01,  1.80s/it]1it [00:01,  1.80s/it]
+Status Code: 200
+Response:
+{
+    "data": {
+        "trend": "bullish"
+    },
+    "txHash": "0xabcdef1234567890"
+}
+Explanation: The request to fetch data from the specified endpoint "https://api.cryptomarketdata.com/v1/trends" using the GET method was successful. The response contains the fetched data in JSON format with the trend "bullish". Additionally, the transaction hash "0xabcdef1234567890" is provided for data integrity verification on the blockchain.
+INFO:     127.0.0.1:39262 - "POST /Chainlink/requestData HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.19it/s]1it [00:00,  1.19it/s]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Missing required parameter: dataPath"
+}
+Explanation: The request to fetch data from the specified endpoint "https://api.cryptomarketdata.com/v1/trends" using the GET method is missing the required parameter "dataPath" as per the API documentation. The response indicates a bad request due to the missing required parameter.
+0it [00:00, ?it/s]1it [00:01,  1.28s/it]1it [00:01,  1.28s/it]
+Status Code: 400
+Response:
+{
+    "error": "Bad Request",
+    "message": "Missing required parameter: dataFormat"
+}
+Explanation: The request to fetch data is missing the required parameter "dataFormat" in the request body. As per the API documentation, the "dataFormat" parameter is mandatory. The response indicates a bad request due to the missing required parameter.
+INFO:     127.0.0.1:37758 - "POST /Chainlink/requestData HTTP/1.1" 400 Bad Request
+0it [00:00, ?it/s]1it [00:01,  1.84s/it]1it [00:01,  1.84s/it]
+Status Code: 200
+Response:
+{
+    "data": {
+        "trend": "bearish"
+    },
+    "txHash": "0xfedcba0987654321"
+}
+Explanation: The request to fetch data from the specified endpoint "https://api.cryptomarketdata.com/v1/trends" using the GET method was successful. The response contains the fetched data in JSON format with the trend "bearish". Additionally, the transaction hash "0xfedcba0987654321" is provided for data integrity verification on the blockchain.
+INFO:     127.0.0.1:48196 - "POST /Chainlink/requestData HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33490 - "GET /__simulator_cache__/clear/Chainlink HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.38s/it]1it [00:01,  1.38s/it]
+Status Code: 200
+Response: 
+{
+    "collections": [
+        {
+            "id": 1,
+            "name": "Sales Dashboard",
+            "description": "Dashboard showing sales data for the current quarter."
+        },
+        {
+            "id": 2,
+            "name": "Marketing Campaigns",
+            "description": "Collection of marketing campaign reports and analysis."
+        },
+        {
+            "id": 3,
+            "name": "Product Analytics",
+            "description": "Collection of product performance metrics and insights."
+        }
+    ]
+}
+Explanation: The response contains a paginated list of collections with their IDs, names, and descriptions. In this case, it includes three sample collections with realistic names and descriptions.
+INFO:     127.0.0.1:33506 - "GET /Metabase/listCollections?search=&page=1&perPage=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45782 - "GET /__simulator_cache__/clear/Metabase HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.42it/s]1it [00:00,  1.42it/s]
+Status Code: 200
+Response: 
+{
+    "message": "Permissions updated successfully."
+}
+Explanation: The request to update permissions for user with ID 6 was successful, and the permissions for collections and data sources were updated to allow read and write access. The response confirms that the permissions have been successfully updated.
+INFO:     127.0.0.1:45792 - "PUT /Metabase/updatePermissions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56508 - "GET /__simulator_cache__/clear/Metabase HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.63s/it]1it [00:01,  1.63s/it]
+Status Code: 200
+Response: 
+{
+    "cities": [
+        {
+            "city": "New York",
+            "region": "New York",
+            "country": "United States",
+            "population": 8398748,
+            "latitude": 40.7128,
+            "longitude": -74.0060,
+            "timezone": "America/New_York"
+        },
+        {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "United States",
+            "population": 3990456,
+            "latitude": 34.0522,
+            "longitude": -118.2437,
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "United States",
+            "population": 2705994,
+            "latitude": 41.8781,
+            "longitude": -87.6298,
+            "timezone": "America/Chicago"
+        }
+    ]
+}
+Explanation: The response includes a list of cities in the United States with realistic data such as population, latitude, longitude, and timezone.
+INFO:     127.0.0.1:56522 - "GET /GeoDB%20Cities/getCitiesByCountry?country=United+States HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "GET /__simulator_cache__/clear/GeoDB%20Cities HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.75s/it]1it [00:02,  2.75s/it]
+Status Code: 200
+Response: 
+{
+    "cities": [
+        {
+            "city": "Athens",
+            "region": "Attica",
+            "country": "Greece",
+            "population": 664046,
+            "latitude": 37.9838,
+            "longitude": 23.7275,
+            "timezone": "Europe/Athens"
+        },
+        {
+            "city": "Beijing",
+            "region": "Beijing",
+            "country": "China",
+            "population": 21710000,
+            "latitude": 39.9042,
+            "longitude": 116.4074,
+            "timezone": "Asia/Shanghai"
+        },
+        {
+            "city": "London",
+            "region": "England",
+            "country": "United Kingdom",
+            "population": 9304016,
+            "latitude": 51.5074,
+            "longitude": -0.1278,
+            "timezone": "Europe/London"
+        }
+    ]
+}
+Explanation: The response provides a list of cities that have hosted the Olympics, including Athens in Greece, Beijing in China, and London in the United Kingdom. Each city entry includes details such as population size, latitude, longitude, and timezone.
+INFO:     127.0.0.1:60624 - "GET /GeoDB%20Cities/getCitiesByCountry?country=Olympic+Hosts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60640 - "GET /__simulator_cache__/clear/GeoDB%20Cities HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.24s/it]1it [00:02,  2.24s/it]
+Status Code: 200
+Response: 
+{
+    "id": 12,
+    "name": "New York Knicks",
+    "abbreviation": "NYK",
+    "leagues": ["NBA"]
+}
+Explanation: The response contains information about the New York Knicks team, including their unique identifier, name, abbreviation, and the league they compete in (NBA).
+
+Status Code: 200
+Response: 
+{
+    "id": 28,
+    "name": "New York Liberty",
+    "abbreviation": "NYL",
+    "leagues": ["WNBA"]
+}
+Explanation: The response contains information about the New York Liberty team, including their unique identifier, name, abbreviation, and the league they compete in (WNBA).
+
+Status Code: 200
+Response: 
+{
+    "id": 45,
+    "name": "New York Red Bulls",
+    "abbreviation": "NYRB",
+    "leagues": ["MLS"]
+}
+Explanation: The response contains information about the New York Red Bulls team, including their unique identifier, name, abbreviation, and the league they compete in (MLS).
+INFO:     127.0.0.1:39696 - "GET /SuredBits/team?teamName=New+York+Knicks HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.87s/it]1it [00:01,  1.87s/it]
+Status Code: 200
+Response: 
+{
+    "id": 12,
+    "name": "New York Knicks",
+    "performanceStats": {
+        "points": 2345,
+        "rebounds": 1098,
+        "assists": 567,
+        "turnovers": 432
+    }
+}
+Explanation: The response contains performance statistics for the New York Knicks team during the specified analysis period from April 1, 2020, to June 30, 2020. The statistics include the total number of points scored, rebounds, assists, and turnovers.
+INFO:     127.0.0.1:39704 - "GET /SuredBits/team/performance?teamId=12&startDate=2020-04-01&endDate=2020-06-30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53250 - "GET /__simulator_cache__/clear/SuredBits HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.04s/it]1it [00:01,  1.04s/it]
+Status Code: 200
+Response: 
+{
+    "id": 201935,
+    "name": "LeBron James",
+    "performanceStats": {
+        "points": 245,
+        "rebounds": 78,
+        "assists": 92,
+        "turnovers": 35
+    }
+}
+Explanation: The response contains the performance statistics of LeBron James for the specified analysis period from January 1, 2022, to January 15, 2022. The statistics include the total number of points scored, rebounds, assists, and turnovers.
+INFO:     127.0.0.1:60840 - "GET /SuredBits/player/performance?playerId=201935&startDate=2022-01-01&endDate=2022-01-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40306 - "GET /__simulator_cache__/clear/SuredBits HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.67s/it]1it [00:01,  1.67s/it]
+Status Code: 200
+Response: 
+{
+    "last_date": "2021-10-15",
+    "total": {
+        "jumlah_positif": 432112,
+        "jumlah_dirawat": 12345,
+        "jumlah_sembuh": 398765,
+        "jumlah_meninggal": 9876
+    }
+}
+Explanation: This response provides the cumulative number of Covid cases, recoveries, and fatalities in Indonesia as of October 15, 2021. The total number of positive cases is 432,112, with 12,345 currently being treated, 398,765 recovered, and 9,876 fatalities.
+INFO:     127.0.0.1:40320 - "GET /COVID-ID/cumulative-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38874 - "GET /__simulator_cache__/clear/COVID-ID HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.59s/it]1it [00:02,  2.59s/it]
+Status Code: 200
+Response: 
+{
+    "date": "2020-08-01",
+    "province": "East Java",
+    "positive": 1234,
+    "recovered": 567,
+    "death": 89
+}
+Explanation: This response provides the daily Covid statistics for East Java province on August 1, 2020. The number of positive cases is 1234, recovered cases are 567, and there have been 89 deaths.
+
+Status Code: 200
+Response: 
+{
+    "date": "2020-08-01",
+    "province": "East Java",
+    "positive": 1456,
+    "recovered": 678,
+    "death": 102
+}
+Explanation: Another response showing different daily Covid statistics for East Java province on August 1, 2020. The positive cases increased to 1456, recovered cases to 678, and deaths to 102.
+
+Status Code: 200
+Response: 
+{
+    "date": "2020-08-01",
+    "province": "East Java",
+    "positive": 1678,
+    "recovered": 789,
+    "death": 115
+}
+Explanation: A third response with further daily Covid statistics for East Java province on August 1, 2020. The positive cases rose to 1678, recovered cases to 789, and deaths to 115.
+INFO:     127.0.0.1:38876 - "GET /COVID-ID/daily-stats-by-province?province=East+Java&date=2020-08-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51266 - "GET /__simulator_cache__/clear/COVID-ID HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.51s/it]1it [00:01,  1.51s/it]
+Status Code: 200
+Response: 
+{
+  "carName": "Ferrari 458 Italia",
+  "carImage": "https://example.com/ferrari458.jpg",
+  "gameTitle": "Forza Horizon 4",
+  "gamePlatform": "Xbox One"
+}
+Explanation: This response provides a random image of a Ferrari 458 Italia from the Forza Horizon 4 game on Xbox One. The carName, carImage URL, gameTitle, and gamePlatform are all included as specified in the OpenAPI Spec.
+INFO:     127.0.0.1:58556 - "GET /Forza/randomCarImage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /__simulator_cache__/clear/Forza HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.08s/it]1it [00:01,  1.08s/it]
+Status Code: 200
+Response: 
+{
+    "carName": "Ferrari 458 Italia",
+    "carImage": "https://example.com/ferrari458.jpg",
+    "gameTitle": "Forza Horizon 4",
+    "gamePlatform": "Xbox One"
+}
+Explanation: The response contains a random image of a Ferrari 458 Italia from the Forza Horizon 4 game on Xbox One. The data is realistic and aligns with the OpenAPI Spec format.
+INFO:     127.0.0.1:58576 - "GET /Forza/randomCarImage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58634 - "GET /__simulator_cache__/clear/Forza HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58642 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1661191]

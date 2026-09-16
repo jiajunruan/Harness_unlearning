@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-09-09T03:46:44.636871+00:00",
+  "gpu": "NVIDIA A40",
+  "n_rows": 200,
+  "checks": [
+    "100 unique tasks per model; identical paired references",
+    "CSV means match summary",
+    "joint log probability equals reasoning plus conditional action log probability",
+    "joint arithmetic token mean equals token-count-weighted component means",
+    "table rounded values match CSV means"
+  ],
+  "files_sha256": {
+    "original_per_task.csv": "830e60cb120def395ebe1e4841331dc9cb9c0d969dcbae37fbd079306df0f930",
+    "per_task_probabilities.csv": "5f67acbf3dc94c2502458f51680df9c1f0edd923883f7e5862a9512016fe9d6f",
+    "references.json": "fa9211d8f432833e7669b89d46432b4f03cdaeb645ac748c302fb2af8005f274",
+    "summary.json": "03ba6f077df81581619680460f7669dcb202a30fc1fcc5eb2d2e3cee4fc86b11",
+    "unlearned_per_task.csv": "5680930b5105e925567b18aa5419a6ed13d45e49f2ac723a51f951bd1acd9a08"
+  }
+}

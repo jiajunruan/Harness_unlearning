@@ -1,0 +1,3 @@
+model,n_tasks,y_mean_token_probability,z_mean_token_probability,a_mean_token_probability
+original,100,0.9826590654048843,0.9699083018530635,0.9901938089007548
+unlearned,100,0.9088018449849083,0.8101547420646825,0.9641917266122558

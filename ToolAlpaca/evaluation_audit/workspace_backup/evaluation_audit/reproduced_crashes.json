@@ -1,0 +1,128 @@
+[
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "Quarantine::1",
+    "tool": "getCountryStats",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "Monster Hunter World::1",
+    "tool": "getQuestDetails",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "British National Bibliography::0",
+    "tool": "searchBooks",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "The Old Reader::0",
+    "tool": "getFeedArticles",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "The Old Reader::1",
+    "tool": "getFeedArticles",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "Transport for Vancouver, Canada__3::1",
+    "tool": "getStationOrStopDetails",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "Nutritionix__2::1",
+    "tool": "getVendingMachineData",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "unlearned",
+    "split": "T_f",
+    "task_id": "Noctua::0",
+    "tool": "getHistoricalWeatherData",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "Urban Observatory::1",
+    "tool": "getHistoricalSensorData",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "British National Bibliography::0",
+    "tool": "searchBooks",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "WakaTime::0",
+    "tool": "getSummary",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "The Old Reader::0",
+    "tool": "getFeedArticles",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "The Old Reader::1",
+    "tool": "getFeedArticles",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "Catch The Show::0",
+    "tool": "getShowDetails",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "Transport for Vancouver, Canada__3::0",
+    "tool": "getStationOrStopDetails",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "Transport for Vancouver, Canada__3::1",
+    "tool": "getStationOrStopDetails",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "TransitLand::0",
+    "tool": "getStaticTransitData",
+    "reproduced_error": "'NoneType' object is not iterable"
+  },
+  {
+    "model": "hybrid",
+    "split": "T_f",
+    "task_id": "Noctua::0",
+    "tool": "getHistoricalWeatherData",
+    "reproduced_error": "'NoneType' object is not iterable"
+  }
+]

@@ -1,0 +1,7 @@
+condition,split,n_tasks,task_success_count,target_tool_invocation_count,task_success_rate,target_tool_invocation_rate,source,source_sha256
+original,T_r,100,42,91,0.42,0.91,/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/original_T_r_luna.json,907fe216718168597f27bc4aa48369b065bca945ea35478b22586aa85a1726d2
+original,T_f,100,41,93,0.41,0.93,/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/original_T_f_luna.json,a35b329ac850579e9e59a1e51aa6cb6defc461e61176b3c6ebb5600d0ac9596e
+unlearned,T_r,100,29,86,0.29,0.86,/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/unlearned_T_r_luna.json,b216f90019598da97ac015a3c7d94ba90669fe497d7eb91e3575ffd1c80bb59a
+unlearned,T_f,100,11,68,0.11,0.68,/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/unlearned_T_f_luna.json,8b959a36dd37b9bbd89a6bbbc3ae1a7a7b34c2c6b7bacf6ca7553cca6171ec3d
+hybrid,T_r,100,33,88,0.33,0.88,/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/hybrid_T_r_luna.json,31e075eeeec5226c9fa41364729066ab333f3c35c6455a41ae29f9a2c8173339
+hybrid,T_f,100,21,87,0.21,0.87,/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/hybrid_T_f_luna.json,755afdddff14535a4fe6aed0f19b7cb3c9f8d2398cd3ba9e2f2b0956b36c6f77

@@ -1,0 +1,2550 @@
+[
+  {
+    "condition": "S13",
+    "api": "Logs.to",
+    "instruction_id": 0,
+    "instruction": "I want to review the logs I created last week. Can you find all the logs from last Monday to last Sunday and show them to me? Also, tell me the total number of logs I created during that period.",
+    "golden_answers": [
+      {
+        "Action": "searchLogs",
+        "Action_Input": "{\"tags\": [], \"startDate\": \"2020-09-14T00:00:00Z\", \"endDate\": \"2020-09-20T23:59:59Z\", \"limit\": null, \"offset\": null}"
+      },
+      {
+        "Action": "searchLogs",
+        "Action_Input": "{\"tags\": [], \"startDate\": \"2020-09-14T00:00:00Z\", \"endDate\": \"2020-09-20T23:59:59Z\", \"limit\": 10, \"offset\": 0}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Logs.to",
+    "instruction_id": 1,
+    "instruction": "I want to add a new log entry about the book I just finished reading. The title of the book is \"The Art of Learning\" and I want to tag it as \"books\" and \"learning\". Please create this log entry and let me know the log ID.",
+    "golden_answers": [
+      {
+        "Action": "createLog",
+        "Action_Input": "{\"content\": \"I just finished reading the book 'The Art of Learning'\", \"tags\": [\"books\", \"learning\"]}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Domainsdb.info__2",
+    "instruction_id": 0,
+    "instruction": "Please provide me with the number of registered domain names that end with \".org\".",
+    "golden_answers": [
+      {
+        "Action": "searchDomains",
+        "Action_Input": "{\"query\": \"\", \"tld\": \"org\"}"
+      },
+      {
+        "Action": "getDomainStats",
+        "Action_Input": "{\"tld\": \"org\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Domainsdb.info__2",
+    "instruction_id": 1,
+    "instruction": "Please provide me with the number of registered domain names that contain the word \"music\".",
+    "golden_answers": [
+      {
+        "Action": "searchDomains",
+        "Action_Input": "{\"query\": \"music\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "CheetahO",
+    "instruction_id": 0,
+    "instruction": "I want to print a photo, but the current size is too small. Can you resize it to 8x10 inches and then convert it to a high-quality JPG format? Here's the image URL: https://example.com/smallphoto.png",
+    "golden_answers": [
+      {
+        "Action": "resizeImage",
+        "Action_Input": "{\"imageUrl\": \"https://example.com/smallphoto.png\", \"width\": 8, \"height\": 10}"
+      },
+      {
+        "Action": "convertImageFormat",
+        "Action_Input": "{\"imageUrl\": \"https://example.com/resizedphoto.png\", \"targetFormat\": \"jpg\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "CheetahO",
+    "instruction_id": 1,
+    "instruction": "I want to use this image for a presentation, but it's too big. Can you resize it to a width of 1024 pixels while maintaining the aspect ratio and then convert it to a JPG format? Here's the image URL: https://example.com/wideimage.png",
+    "golden_answers": [
+      {
+        "Action": "resizeImage",
+        "Action_Input": "{\"imageUrl\": \"https://example.com/wideimage.png\", \"width\": 1024}"
+      },
+      {
+        "Action": "convertImageFormat",
+        "Action_Input": "{\"imageUrl\": \"https://example.com/wideimage_1024x768.png\", \"targetFormat\": \"jpg\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "apilayer aviationstack",
+    "instruction_id": 0,
+    "instruction": "I'm planning a trip to Canada and I want to know which airlines operate flights from London to Toronto. Can you find the available routes and the airlines flying on those routes?",
+    "golden_answers": [
+      {
+        "Action": "searchAirlines",
+        "Action_Input": "{\"query\": \"London to Toronto\", \"limit\": 10}"
+      },
+      {
+        "Action": "getAviationRoutes",
+        "Action_Input": "{\"origin\": \"LHR\", \"destination\": \"YYZ\", \"date\": \"2020-08-01\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "apilayer aviationstack",
+    "instruction_id": 1,
+    "instruction": "I'm flying from Chicago to Miami on flight UA1500 next month. Can you provide me with the flight status and some information about the airports I'll be using?",
+    "golden_answers": [
+      {
+        "Action": "getFlightStatus",
+        "Action_Input": "{\"flightNumber\": \"UA1500\", \"date\": \"2020-08-15\"}"
+      },
+      {
+        "Action": "getAirportInfo",
+        "Action_Input": "{\"airportCode\": \"ORD\"}"
+      },
+      {
+        "Action": "getAirportInfo",
+        "Action_Input": "{\"airportCode\": \"MIA\"}"
+      },
+      {
+        "Action": "getAirlineInfo",
+        "Action_Input": "{\"airlineCode\": \"UA\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "QWeather",
+    "instruction_id": 0,
+    "instruction": "Retrieve the air quality data for Los Angeles, California using the API.",
+    "golden_answers": [
+      {
+        "Action": "getAirQualityData",
+        "Action_Input": "{\"location\": \"Los Angeles, California\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "QWeather",
+    "instruction_id": 1,
+    "instruction": "Get the sunrise and sunset times for Honolulu, Hawaii on December 25th, 2021 using the API.",
+    "golden_answers": [
+      {
+        "Action": "getSunriseSunsetTimes",
+        "Action_Input": "{\"location\": \"Honolulu, Hawaii\", \"date\": \"2021-12-25\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "xMath",
+    "instruction_id": 0,
+    "instruction": "Parse the expression \"x + (y * z)\" and retrieve the expression tree.",
+    "golden_answers": [
+      {
+        "Action": "parseExpression",
+        "Action_Input": "{\"expression\": \"x + (y * z)\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "xMath",
+    "instruction_id": 1,
+    "instruction": "Generate a random mathematical expression with 2 operands, 3 constants, and the operators '+', '-', '*', and '/'.",
+    "golden_answers": [
+      {
+        "Action": "generateExpression",
+        "Action_Input": "{\"num_operands\": 2, \"num_constants\": 3, \"operators\": [\"+\", \"-\", \"*\", \"/\"]}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Government, New South Wales",
+    "instruction_id": 0,
+    "instruction": "I want to know the current traffic situation in my area. Can you get me the live traffic data?",
+    "golden_answers": [
+      {
+        "Action": "getTrafficData",
+        "Action_Input": "{\"type\": \"live\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Government, New South Wales",
+    "instruction_id": 1,
+    "instruction": "I'm curious about the different categories of public services available in my city. Can you list them for me?",
+    "golden_answers": [
+      {
+        "Action": "listCategories",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "ip-fast.com",
+    "instruction_id": 0,
+    "instruction": "I want to know the IP, country, and city of my website visitors. How can I do that?",
+    "golden_answers": [
+      {
+        "Action": "getUserIpInfo",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "ip-fast.com",
+    "instruction_id": 1,
+    "instruction": "I want to display the IP information for the current user on my website. How can I achieve this with the API?",
+    "golden_answers": [
+      {
+        "Action": "getUserIpInfo",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Feedbin",
+    "instruction_id": 0,
+    "instruction": "Hey, can you show me all the feeds I'm subscribed to on my RSS reader?",
+    "golden_answers": [
+      {
+        "Action": "getUserFeeds",
+        "Action_Input": "{}"
+      },
+      {
+        "Action": "getFeedMetadata",
+        "Action_Input": "{\"feed_id\": 1}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Feedbin",
+    "instruction_id": 1,
+    "instruction": "I'm interested in reading articles from a specific feed from a few days ago. Can you help me find them?",
+    "golden_answers": [
+      {
+        "Action": "getUserFeeds",
+        "Action_Input": "{}"
+      },
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the URL of the feed you are interested in?\"}"
+      },
+      {
+        "Action": "getFeedMetadata",
+        "Action_Input": "{\"feed_id\": \"https://example.com/feed\"}"
+      },
+      {
+        "Action": "getFeedMetadata",
+        "Action_Input": "{\"feed_id\": 1}"
+      },
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the timestamp of the articles you are looking for?\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Shrtlnk",
+    "instruction_id": 0,
+    "instruction": "I want to see the access count for a specific shortened URL over the past month. Can you help me with that? Just pass the shortened URL and the date range as parameters.",
+    "golden_answers": [
+      {
+        "Action": "getShortUrlInfo",
+        "Action_Input": "{\"shortUrl\": \"the shortened URL\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Shrtlnk",
+    "instruction_id": 1,
+    "instruction": "Can you help me find all the shortened URLs that have been accessed more than 100 times? I want to pass the parameter \"limit\" to control the number of URLs returned.",
+    "golden_answers": [
+      {
+        "Action": "manageLinksByTag",
+        "Action_Input": "{\"tag\": \"\", \"group\": \"\", \"limit\": \"10\", \"offset\": \"0\", \"accessCount\": \"100\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "EPA",
+    "instruction_id": 0,
+    "instruction": "I'm planning a road trip and want to make sure I'm not passing through any areas with high pollution levels. Can you help me find the air quality in different zip codes along my route?",
+    "golden_answers": [
+      {
+        "Action": "getAirQualityByZipCode",
+        "Action_Input": "{\"zipCode\": \"zip code of the area\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "EPA",
+    "instruction_id": 1,
+    "instruction": "I'm concerned about the air quality in my child's school district. Can you help me find the air quality data for that area?",
+    "golden_answers": [
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the zip code for the school district?\"}"
+      },
+      {
+        "Action": "getAirQualityByZipCode",
+        "Action_Input": "{\"zipCode\": \"90210\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Domainsdb.info",
+    "instruction_id": 0,
+    "instruction": "There's a domain name I have in mind for my online store - \"topchoicegadgets.com.\" Before I buy it, I'd like to know the registration details for this domain. Can you provide me with the creation date, expiration date, and registrar name?",
+    "golden_answers": [
+      {
+        "Action": "searchDomains",
+        "Action_Input": "{\"keywords\": \"topchoicegadgets.com\"}"
+      },
+      {
+        "Action": "getRegistrarDetails",
+        "Action_Input": "{\"registrar\": \"Namecheap, Inc.\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Domainsdb.info",
+    "instruction_id": 1,
+    "instruction": "I'm compiling a list of websites related to cryptocurrency trading. Can you assist me in searching for domains that include the keywords \"crypto\" and \"trade\"? I'd appreciate if you can provide the top 7 search results.",
+    "golden_answers": [
+      {
+        "Action": "searchDomains",
+        "Action_Input": "{\"keywords\": \"crypto trade\", \"page\": 1, \"perPage\": 7}"
+      },
+      {
+        "Action": "searchDomains",
+        "Action_Input": "{\"keywords\": \"crypto trade\", \"page\": 2, \"perPage\": 7}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Postman Echo",
+    "instruction_id": 0,
+    "instruction": "I'd like you to fetch information from the endpoint \"https://example.com/users\", but make sure to include the query parameter \"userId=12345\" when sending the request.",
+    "golden_answers": [
+      {
+        "Action": "getEcho",
+        "Action_Input": "{\"endpoint\": \"https://example.com/users\", \"queryParams\": {\"userId\": \"12345\"}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Postman Echo",
+    "instruction_id": 1,
+    "instruction": "There's an issue with a user's profile, and I need to modify only their phone number. Can you help me send a PATCH request to the endpoint \"/api/users/987\" containing data {\"phoneNumber\": \"555-123-4567\"}? Make sure to include the \"Content-Type\" header with a value of \"application/json\".",
+    "golden_answers": [
+      {
+        "Action": "patchEcho",
+        "Action_Input": "{\"endpoint\": \"/api/users/987\", \"headers\": {\"Content-Type\": \"application/json\"}, \"data\": {\"phoneNumber\": \"555-123-4567\"}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "CircleCI",
+    "instruction_id": 0,
+    "instruction": "I need to know the status of a specific workflow on CircleCI. Can you retrieve the details for workflow ID 'abcd1234'?",
+    "golden_answers": [
+      {
+        "Action": "getWorkflowDetails",
+        "Action_Input": "{\"project_slug\": \"my-project\", \"workflow_id\": \"abcd1234\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "CircleCI",
+    "instruction_id": 1,
+    "instruction": "Can you give me the details for a specific environment on CircleCI? The name is 'production'.",
+    "golden_answers": [
+      {
+        "Action": "getEnvironmentDetails",
+        "Action_Input": "{\"project_slug\": \"my-project\", \"environment_name\": \"production\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Universalis",
+    "instruction_id": 0,
+    "instruction": "Can you retrieve the current market prices for a stack of 99 Grade 3 Thanalan Topsoil on the Faerie server in Final Fantasy XIV?",
+    "golden_answers": [
+      {
+        "Action": "getCurrentPrices",
+        "Action_Input": "{\"world\": \"Faerie\", \"itemID\": \"99\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Universalis",
+    "instruction_id": 1,
+    "instruction": "I want to see the historical prices for a stack of 99 Darksteel Ore on the Siren server in Final Fantasy XIV for the past 14 days. Can you help me with that?",
+    "golden_answers": [
+      {
+        "Action": "getHistoricalPrices",
+        "Action_Input": "{\"world\": \"Siren\", \"itemID\": \"99\", \"numDays\": \"14\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "SpaceX",
+    "instruction_id": 0,
+    "instruction": "Can you tell me about SpaceX as a company?",
+    "golden_answers": [
+      {
+        "Action": "getCompanyInfo",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "SpaceX",
+    "instruction_id": 1,
+    "instruction": "I'm interested in the details of the Starlink mission. Can you provide me with more information?",
+    "golden_answers": [
+      {
+        "Action": "getLaunch",
+        "Action_Input": "{\"id\": \"starlink-1\"}"
+      },
+      {
+        "Action": "getNextLaunch",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Bible-api",
+    "instruction_id": 0,
+    "instruction": "Can you help me find a specific verse in the Bible? I need the text from John chapter 3 verse 16.",
+    "golden_answers": [
+      {
+        "Action": "getVerse",
+        "Action_Input": "{\"book\": \"John\", \"chapter\": 3, \"verse\": 16}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Bible-api",
+    "instruction_id": 1,
+    "instruction": "I want to find a Bible version in Portuguese. Can you give me the details of all available versions?",
+    "golden_answers": [
+      {
+        "Action": "getVersions",
+        "Action_Input": "{\"language\": \"Portuguese\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Government, Italy",
+    "instruction_id": 0,
+    "instruction": "Retrieve a list of all provinces in the region of Lazio.",
+    "golden_answers": [
+      {
+        "Action": "getProvinces",
+        "Action_Input": "{\"regionCode\": \"LAZ\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Government, Italy",
+    "instruction_id": 1,
+    "instruction": "I want to know the total public spending in Italy for the year 2019. Can you retrieve that information for me?",
+    "golden_answers": [
+      {
+        "Action": "getPublicSpending",
+        "Action_Input": "{\"year\": \"2019\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Czech National Bank",
+    "instruction_id": 0,
+    "instruction": "How about giving me a list of all the currencies supported by the Czech National Bank API, along with their currency codes and countries? I want to check if the bank supports a specific currency before continuing.",
+    "golden_answers": [
+      {
+        "Action": "listAvailableCurrencies",
+        "Action_Input": "{}"
+      },
+      {
+        "Action": "searchCurrency",
+        "Action_Input": "{\"query\": \"Czech National Bank\"}"
+      },
+      {
+        "Action": "getCurrentExchangeRates",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Czech National Bank",
+    "instruction_id": 1,
+    "instruction": "I'm tracking my investments in different currencies, and I need to see how the exchange rates have changed over the past month. Can you provide me with the historical exchange rates for USD, EUR, and GBP between June 1st and June 30th?",
+    "golden_answers": [
+      {
+        "Action": "getHistoricalExchangeRates",
+        "Action_Input": "{\"currencies\": [\"USD\", \"EUR\", \"GBP\"], \"startDate\": \"2020-06-01\", \"endDate\": \"2020-06-30\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Lexigram",
+    "instruction_id": 0,
+    "instruction": "I'm curious about the details of the clinical concept 'hypertension'. Can you retrieve them for me?",
+    "golden_answers": [
+      {
+        "Action": "getClinicalConceptDetails",
+        "Action_Input": "{\"conceptId\": \"hypertension\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Lexigram",
+    "instruction_id": 1,
+    "instruction": "I have a bunch of unstructured medical data that I need to convert into structured data. Can you help me with that?",
+    "golden_answers": [
+      {
+        "Action": "normalizeClinicalData",
+        "Action_Input": "{\"text\": \"The unstructured medical data that needs to be normalized.\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Line",
+    "instruction_id": 0,
+    "instruction": "I want to create a Line Login button for my mobile app. How can I use the socialPlugins API to do that?",
+    "golden_answers": [
+      {
+        "Action": "socialPlugins",
+        "Action_Input": "{\"pluginType\": \"Login\", \"channelId\": \"1234567890\", \"language\": \"en\", \"size\": \"small\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Line",
+    "instruction_id": 1,
+    "instruction": "I want to share an image on Line from my website. Can you help me use the shareOnLineButton API to do that?",
+    "golden_answers": [
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the URL of the image and the URL of the content to be shared?\"}"
+      },
+      {
+        "Action": "shareOnLineButton",
+        "Action_Input": "{\"url\": \"https://example.com/article\", \"text\": \"Check out this article!\", \"image\": \"https://example.com/image.jpg\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "ZipRecruiter",
+    "instruction_id": 0,
+    "instruction": "I've recently completed my degree in data science, and I'm now searching for entry-level jobs in this field. Can you help me find relevant job openings in Chicago, IL?",
+    "golden_answers": [
+      {
+        "Action": "searchJobs",
+        "Action_Input": "{\"keywords\": \"data science\", \"location\": \"Chicago, IL\", \"industry\": \"\", \"page\": 1, \"perPage\": 10}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "ZipRecruiter",
+    "instruction_id": 1,
+    "instruction": "I recall seeing a job opening in my email, but all I remember is the jobId contains \"XYZ.\" Can you find any job listings with \"XYZ\" in their ID and provide me their details?",
+    "golden_answers": [
+      {
+        "Action": "searchJobs",
+        "Action_Input": "{\"keywords\": \"XYZ\", \"page\": 1, \"perPage\": 10}"
+      },
+      {
+        "Action": "getJobDetails",
+        "Action_Input": "{\"jobId\": \"XYZ\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "APIs.guru",
+    "instruction_id": 0,
+    "instruction": "I'm looking for APIs related to sports. Can you give me the details of the first 3 APIs you find?",
+    "golden_answers": [
+      {
+        "Action": "searchAPIs",
+        "Action_Input": "{\"query\": \"sports\", \"limit\": 3}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "APIs.guru",
+    "instruction_id": 1,
+    "instruction": "I'm looking for APIs related to finance. Can you give me the first 10 results?",
+    "golden_answers": [
+      {
+        "Action": "searchAPIs",
+        "Action_Input": "{\"query\": \"finance\", \"limit\": 10}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "arXiv",
+    "instruction_id": 0,
+    "instruction": "Can you search for recent research papers on quantum computing?",
+    "golden_answers": [
+      {
+        "Action": "search",
+        "Action_Input": "{\"search_query\": \"quantum computing\", \"start\": 0, \"max_results\": 10}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "arXiv",
+    "instruction_id": 1,
+    "instruction": "Can you help me find papers on the impact of artificial intelligence on the job market?",
+    "golden_answers": [
+      {
+        "Action": "search",
+        "Action_Input": "{\"search_query\": \"impact of artificial intelligence on job market\", \"start\": 0, \"max_results\": 10}"
+      },
+      {
+        "Action": "retrieveMetadata",
+        "Action_Input": "{\"id\": \"2102.08556v1\"}"
+      },
+      {
+        "Action": "retrieveFullText",
+        "Action_Input": "{\"id\": \"2102.08556v1\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Bitbucket",
+    "instruction_id": 0,
+    "instruction": "Create a new branch on my Bitbucket repository for a new feature I'm working on.",
+    "golden_answers": [
+      {
+        "Action": "createRepository",
+        "Action_Input": "{\"name\": \"new-feature-branch\", \"scm\": \"git\", \"is_private\": true, \"fork_policy\": \"no_forks\", \"language\": \"JavaScript\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Bitbucket",
+    "instruction_id": 1,
+    "instruction": "Can you create a new issue on my Bitbucket repository and assign it to a specific user?",
+    "golden_answers": [
+      {
+        "Action": "createPullRequest",
+        "Action_Input": "{\"username\": \"user123\", \"repo_slug\": \"my-repo\", \"title\": \"New Issue\", \"description\": \"This is a new issue\", \"source\": {\"branch\": {\"name\": \"master\"}}, \"destination\": {\"branch\": {\"name\": \"develop\"}}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Wallhaven",
+    "instruction_id": 0,
+    "instruction": "I want to see the most popular wallpapers of all time on Wallhaven. Can you show me the top 50 wallpapers?",
+    "golden_answers": [
+      {
+        "Action": "getPopularWallpapers",
+        "Action_Input": "{\"page\": 1}"
+      },
+      {
+        "Action": "getPopularWallpapers",
+        "Action_Input": "{\"page\": 2}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Wallhaven",
+    "instruction_id": 1,
+    "instruction": "I want to find a wallpaper with a specific uploader. Can you search for wallpapers uploaded by the user 'JohnDoe' using the Wallhaven API?",
+    "golden_answers": [
+      {
+        "Action": "searchWallpapers",
+        "Action_Input": "{\"keywords\": \"JohnDoe\", \"uploader\": \"JohnDoe\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Freelancer",
+    "instruction_id": 0,
+    "instruction": "Can you help me find a freelancer who can edit my podcast episodes?",
+    "golden_answers": [
+      {
+        "Action": "searchFreelancers",
+        "Action_Input": "{\"keywords\": \"podcast editing\", \"skills\": \"audio editing, podcast editing\", \"country\": \"United States\", \"hourly_rate_min\": 10, \"hourly_rate_max\": 50}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Freelancer",
+    "instruction_id": 1,
+    "instruction": "Please hire a freelancer to design a website for my online store.",
+    "golden_answers": [
+      {
+        "Action": "searchFreelancers",
+        "Action_Input": "{\"keywords\": \"website design\", \"skills\": \"web design, graphic design, HTML, CSS\", \"country\": \"United States\", \"hourly_rate_min\": \"20\", \"hourly_rate_max\": \"50\"}"
+      },
+      {
+        "Action": "postProject",
+        "Action_Input": "{\"title\": \"Design a website for my online store\", \"description\": \"I need a website designed for my online store. It should be modern, user-friendly, and optimized for mobile devices.\", \"skills\": [\"Web Design\", \"Graphic Design\", \"HTML\", \"CSS\"], \"budget\": 500, \"currency\": \"USD\", \"duration\": 10}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Vadivelu HTTP Codes",
+    "instruction_id": 0,
+    "instruction": "Hey, can you show me the HTTP status message for code 200? I want to use the Vadivelu HTTP Codes API to get the message.",
+    "golden_answers": [
+      {
+        "Action": "getHttpCode",
+        "Action_Input": "{\"code\": 200, \"message\": \"\"}"
+      },
+      {
+        "Action": "getVadiveluImage",
+        "Action_Input": "{\"code\": 200}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Vadivelu HTTP Codes",
+    "instruction_id": 1,
+    "instruction": "My website is experiencing some issues, and I need to check the HTTP status code and message for code 502. Can you help me retrieve this information using the Vadivelu HTTP Codes API?",
+    "golden_answers": [
+      {
+        "Action": "getHttpCode",
+        "Action_Input": "{\"code\": 502, \"message\": \"Bad Gateway\"}"
+      },
+      {
+        "Action": "getVadiveluImage",
+        "Action_Input": "{\"code\": 502}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Micro DB",
+    "instruction_id": 0,
+    "instruction": "Delete the recipe with ID \"789\" from the \"Recipes\" database.",
+    "golden_answers": [
+      {
+        "Action": "deleteData",
+        "Action_Input": "{\"database\": \"Recipes\", \"id\": \"789\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Micro DB",
+    "instruction_id": 1,
+    "instruction": "Insert a new book into the \"Books\" database with the data {\"title\": \"To Kill a Mockingbird\", \"author\": \"Harper Lee\", \"year\": 1960}.",
+    "golden_answers": [
+      {
+        "Action": "insertData",
+        "Action_Input": "{\"database\": \"Books\", \"data\": {\"title\": \"To Kill a Mockingbird\", \"author\": \"Harper Lee\", \"year\": 1960}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Phone Specification",
+    "instruction_id": 0,
+    "instruction": "Hey, can you find me a phone with a screen size of at least 6 inches and a battery capacity of over 4000mAh?",
+    "golden_answers": [
+      {
+        "Action": "searchPhones",
+        "Action_Input": "{\"minScreenSize\": 6, \"minBatteryCapacity\": 4000}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Phone Specification",
+    "instruction_id": 1,
+    "instruction": "Can you search for all phones with a minimum price of $500 and a maximum screen size of 6.5 inches?",
+    "golden_answers": [
+      {
+        "Action": "searchPhones",
+        "Action_Input": "{\"minPrice\": 500, \"maxScreenSize\": 6.5}"
+      },
+      {
+        "Action": "getPhoneDetails",
+        "Action_Input": "{\"brand\": \"Apple\", \"model\": \"iPhone 11 Pro Max\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Mono",
+    "instruction_id": 0,
+    "instruction": "I'm looking into opening a new savings account, but I'm not sure which banks are supported. Can you provide me with a list of all supported banks and their unique codes?",
+    "golden_answers": [
+      {
+        "Action": "listBanks",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Mono",
+    "instruction_id": 1,
+    "instruction": "I need to review my transaction history to find a specific purchase. Can you get the last 10 transactions from my bank account with the ID LMN123456789? I'm looking for a transaction from around the end of last month.",
+    "golden_answers": [
+      {
+        "Action": "getTransactionHistory",
+        "Action_Input": "{\"accountId\": \"LMN123456789\", \"startDate\": \"2020-07-01\", \"endDate\": \"2020-07-31\", \"limit\": 10, \"offset\": 0}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "PostalPinCode",
+    "instruction_id": 0,
+    "instruction": "Please find the Pincode for \"456 Park Avenue, Bangalore\".",
+    "golden_answers": [
+      {
+        "Action": "searchByState",
+        "Action_Input": "{\"state\": \"Karnataka\"}"
+      },
+      {
+        "Action": "getPincodeDetails",
+        "Action_Input": "{\"pincode\": 560001}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "PostalPinCode",
+    "instruction_id": 1,
+    "instruction": "Please look up the Pincode for \"444 Elm Road, Surat\".",
+    "golden_answers": [
+      {
+        "Action": "searchByState",
+        "Action_Input": "{\"state\": \"Gujarat\"}"
+      },
+      {
+        "Action": "getPincodeDetails",
+        "Action_Input": "{\"pincode\": 380001}"
+      },
+      {
+        "Action": "searchByState",
+        "Action_Input": "{\"state\": \"Gujarat\"}"
+      },
+      {
+        "Action": "getPincodeDetails",
+        "Action_Input": "{\"pincode\": 395001}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Government, Switzerland",
+    "instruction_id": 0,
+    "instruction": "What is the weather forecast for Zurich tomorrow?",
+    "golden_answers": [
+      {
+        "Action": "getWeatherForecast",
+        "Action_Input": "{\"location\": \"Zurich\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Government, Switzerland",
+    "instruction_id": 1,
+    "instruction": "What are the crimes by type in Lausanne and how do they compare to Geneva?",
+    "golden_answers": [
+      {
+        "Action": "getCrimeStatistics",
+        "Action_Input": "{\"location\": \"Lausanne\"}"
+      },
+      {
+        "Action": "getCrimeStatistics",
+        "Action_Input": "{\"location\": \"Geneva\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Tokopedia",
+    "instruction_id": 0,
+    "instruction": "I want to track the status of my laptop order with ID 67890. Can you retrieve the product information, shipping information, payment information, and current status of the order?",
+    "golden_answers": [
+      {
+        "Action": "trackOrder",
+        "Action_Input": "{\"order_id\": 67890}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Tokopedia",
+    "instruction_id": 1,
+    "instruction": "Can you help me search for \"smartphone\" on the online marketplace and return the top 5 results with their prices and seller information?",
+    "golden_answers": [
+      {
+        "Action": "searchProducts",
+        "Action_Input": "{\"q\": \"smartphone\", \"rows\": 5, \"start\": 0, \"filter\": \"\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Blockchain",
+    "instruction_id": 0,
+    "instruction": "Can you check my Bitcoin wallet balance and transaction history?",
+    "golden_answers": [
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the unique identifier and password for your Bitcoin wallet?\"}"
+      },
+      {
+        "Action": "getWalletBalance",
+        "Action_Input": "{\"guid\": \"1a2b3c4d5e6f7g8h9i0j\", \"password\": \"abcdefg123456\"}"
+      },
+      {
+        "Action": "getTransaction",
+        "Action_Input": "{\"tx_hash\": \"1a2b3c4d5e6f7g8h9i0j\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Blockchain",
+    "instruction_id": 1,
+    "instruction": "Please send me an alert when the Bitcoin price drops below $30,000.",
+    "golden_answers": [
+      {
+        "Action": "createWallet",
+        "Action_Input": "{\"password\": \"user_password\"}"
+      },
+      {
+        "Action": "sendPayment",
+        "Action_Input": "{\"from\": \"1JcEUKqd1D5LnTmMXM6AwKgFS1gCgZqf9V\", \"to\": \"alert_address\", \"amount\": 30000, \"fee\": 0.0001}"
+      },
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"Please provide a valid Bitcoin address for the alert.\"}"
+      },
+      {
+        "Action": "sendPayment",
+        "Action_Input": "{\"from\": \"1JcEUKqd1D5LnTmMXM6AwKgFS1gCgZqf9V\", \"to\": \"1C1YwKfXCDpum5zZQR1hC2MWKsY25K8ynb\", \"amount\": 30000, \"fee\": 0.0001}"
+      },
+      {
+        "Action": "getWalletBalance",
+        "Action_Input": "{\"guid\": \"a8c9e9b2-14c4-4dd7-9a33-cfdee883c6d2\", \"password\": \"user_password\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "openFDA",
+    "instruction_id": 0,
+    "instruction": "I've been hearing a lot about drug recalls lately. Can you tell me if there have been any recalls on antidepressant medications in the past year, particularly regarding manufacturing issues?",
+    "golden_answers": [
+      {
+        "Action": "searchRecalls",
+        "Action_Input": "{\"productType\": \"antidepressant medications\", \"reason\": \"manufacturing issues\", \"classification\": \"\", \"startDate\": \"1 year ago\", \"endDate\": \"now\", \"limit\": 10, \"skip\": 0}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "openFDA",
+    "instruction_id": 1,
+    "instruction": "I've been using a certain lotion to treat my eczema, but I have come across news that it may have been recalled, with the recall ID of \"RCL-11034\". Could you please confirm this and let me know the reason for the recall and its classification level?",
+    "golden_answers": [
+      {
+        "Action": "getRecallById",
+        "Action_Input": "{\"id\": \"RCL-11034\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "NetworkCalc",
+    "instruction_id": 0,
+    "instruction": "I need a new password for my account, but I'm not good at coming up with strong ones. Can you generate a random 12-character alphanumeric password for me?",
+    "golden_answers": [
+      {
+        "Action": "generatePassword",
+        "Action_Input": "{\"length\": 12, \"characterSet\": \"alphanumeric\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "NetworkCalc",
+    "instruction_id": 1,
+    "instruction": "I have a binary number, 101001110, and I need to know its decimal equivalent. Can you convert it for me?",
+    "golden_answers": [
+      {
+        "Action": "binaryToDecimal",
+        "Action_Input": "{\"binaryNumber\": \"101001110\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Namedays Calendar",
+    "instruction_id": 0,
+    "instruction": "I'm writing an article about namedays and I need to know the nameday of \"John\" in different countries. Can you provide me with a list of countries where \"John\" has a nameday and the dates of those namedays?",
+    "golden_answers": [
+      {
+        "Action": "listCountries",
+        "Action_Input": "{}"
+      },
+      {
+        "Action": "searchNamedayByName",
+        "Action_Input": "{\"name\": \"John\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Namedays Calendar",
+    "instruction_id": 1,
+    "instruction": "I'm creating a calendar for my Polish friends and I want to include their namedays. Can you give me a list of all the namedays in Poland for the entire year?",
+    "golden_answers": [
+      {
+        "Action": "getAllNamedaysByCountry",
+        "Action_Input": "{\"country\": \"PL\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Alpha Vantage",
+    "instruction_id": 0,
+    "instruction": "I'm planning a trip to Europe and need to exchange some money. Can you show me the daily forex data for the EUR/USD currency pair for the past week? Also, calculate the exponential moving average (EMA) for this data.",
+    "golden_answers": [
+      {
+        "Action": "getForexData",
+        "Action_Input": "{\"from_currency\": \"EUR\", \"to_currency\": \"USD\", \"interval\": \"daily\"}"
+      },
+      {
+        "Action": "getTechnicalIndicator",
+        "Action_Input": "{\"symbol\": \"EUR/USD\", \"indicator\": \"EMA\", \"interval\": \"daily\", \"parameters\": {\"period\": 7}}"
+      },
+      {
+        "Action": "getStockData",
+        "Action_Input": "{\"symbol\": \"EURUSD\", \"interval\": \"daily\"}"
+      },
+      {
+        "Action": "getForexData",
+        "Action_Input": "{\"from_currency\": \"EUR\", \"to_currency\": \"USD\", \"interval\": \"daily\"}"
+      },
+      {
+        "Action": "getTechnicalIndicator",
+        "Action_Input": "{\"symbol\": \"EUR/USD\", \"indicator\": \"EMA\", \"interval\": \"daily\", \"parameters\": {\"period\": 7}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Alpha Vantage",
+    "instruction_id": 1,
+    "instruction": "I want to diversify my investments into cryptocurrencies. Can you provide me with the daily data for Litecoin in USD for the past month? Also, analyze the MACD for this data to help me make a decision.",
+    "golden_answers": [
+      {
+        "Action": "getCryptoData",
+        "Action_Input": "{\"symbol\": \"LTC\", \"market\": \"USD\", \"interval\": \"daily\"}"
+      },
+      {
+        "Action": "getTechnicalIndicator",
+        "Action_Input": "{\"symbol\": \"LTC\", \"indicator\": \"MACD\", \"interval\": \"daily\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Page Rank",
+    "instruction_id": 0,
+    "instruction": "Can you retrieve the Page Rank for the website 'www.pizzahut.com' for me?",
+    "golden_answers": [
+      {
+        "Action": "getPageRank",
+        "Action_Input": "{\"url\": \"www.pizzahut.com\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Open Page Rank",
+    "instruction_id": 1,
+    "instruction": "Can you search for the website 'www.pizzahut.com' and limit the results to 3?",
+    "golden_answers": [
+      {
+        "Action": "searchWebsite",
+        "Action_Input": "{\"query\": \"www.pizzahut.com\", \"limit\": 3}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "WeatherAPI",
+    "instruction_id": 0,
+    "instruction": "What is the humidity and pressure in metric units in Berlin, Germany for the next three days?",
+    "golden_answers": [
+      {
+        "Action": "getCurrentWeather",
+        "Action_Input": "{\"q\": \"Berlin, Germany\", \"lang\": \"en\", \"unit\": \"metric\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "WeatherAPI",
+    "instruction_id": 1,
+    "instruction": "Can you give me the wind speed and direction in imperial units for San Francisco, USA on July 4, 2022?",
+    "golden_answers": [
+      {
+        "Action": "getCurrentWeather",
+        "Action_Input": "{\"q\": \"San Francisco, USA\", \"date\": \"2022-07-04\", \"unit\": \"imperial\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Danbooru Anime",
+    "instruction_id": 0,
+    "instruction": "I want to explore a specific work of anime art. Can you retrieve its work object by providing its ID, and show me its tags and metadata?",
+    "golden_answers": [
+      {
+        "Action": "getWork",
+        "Action_Input": "{\"id\": \"12345\"}"
+      },
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the ID of the work you want to explore?\"}"
+      },
+      {
+        "Action": "getWork",
+        "Action_Input": "{\"id\": \"WO12345\"}"
+      },
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is the correct ID of the work you want to explore?\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Danbooru Anime",
+    "instruction_id": 1,
+    "instruction": "I want to browse through a list of anime artists and their works. Can you show me an array of artist objects, each containing their ID, name, and a list of their works?",
+    "golden_answers": [
+      {
+        "Action": "searchArtists",
+        "Action_Input": "{\"query\": \"anime artists\", \"page\": 1, \"limit\": 20}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Dogs",
+    "instruction_id": 0,
+    "instruction": "I'm looking for a specific breed of dog, can you help me search for it?",
+    "golden_answers": [
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What breed of dog are you looking for?\"}"
+      },
+      {
+        "Action": "search",
+        "Action_Input": "{\"q\": \"golden retriever\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Dogs",
+    "instruction_id": 1,
+    "instruction": "Can you generate 3 pictures of Rottweilers for me?",
+    "golden_answers": [
+      {
+        "Action": "multipleImages",
+        "Action_Input": "{\"breed\": \"Rottweiler\", \"count\": 3}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "OpenStreetMap",
+    "instruction_id": 0,
+    "instruction": "What are the top 5 points of interest within a 10-mile radius of my current location?",
+    "golden_answers": [
+      {
+        "Action": "getDetails",
+        "Action_Input": "{\"Question\": \"What is your current location?\"}"
+      },
+      {
+        "Action": "geocoding",
+        "Action_Input": "{\"q\": \"123 Main Street\"}"
+      },
+      {
+        "Action": "searchPointsOfInterest",
+        "Action_Input": "{\"q\": \"points of interest\", \"bbox\": \"37.7749,-122.4194,37.7749+10,-122.4194+10\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "OpenStreetMap",
+    "instruction_id": 1,
+    "instruction": "Can you give me the latitude and longitude coordinates for the address \"221B Baker Street, London, UK\"?",
+    "golden_answers": [
+      {
+        "Action": "geocoding",
+        "Action_Input": "{\"q\": \"221B Baker Street, London, UK\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Chainlink",
+    "instruction_id": 0,
+    "instruction": "Can you help me create a smart contract that automatically pays out insurance claims based on weather data?",
+    "golden_answers": [
+      {
+        "Action": "createOracle",
+        "Action_Input": "{\"name\": \"Weather Oracle\", \"publicKey\": \"0x123456789\", \"jobIds\": [\"weather_data_job\"], \"fee\": 10}"
+      },
+      {
+        "Action": "createJob",
+        "Action_Input": "{\"name\": \"Weather Data Job\", \"tasks\": [{\"type\": \"ExternalAdapter\", \"name\": \"Weather API\", \"params\": {\"endpoint\": \"https://api.weather.com/v3/wx/forecast/daily/3day\", \"method\": \"GET\", \"params\": {\"city\": \"New York\", \"state\": \"NY\"}, \"headers\": {}, \"dataPath\": \"forecast.txt_forecast.forecastday\", \"dataFormat\": \"JSON\"}}], \"startAt\": 1599004800, \"endAt\": 1599091200, \"initiators\": [{\"type\": \"runAtInterval\", \"params\": {\"interval\": 86400}}], \"minPayment\": 10}"
+      },
+      {
+        "Action": "requestPayment",
+        "Action_Input": "{\"jobId\": \"job1\", \"oracleAddress\": \"0x3aA0C7B960fa237D6b8BADa7Af4CE1fc7A5C276c\", \"payment\": 10, \"data\": {\"weatherData\": \"data from weather API\"}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Chainlink",
+    "instruction_id": 1,
+    "instruction": "I want to create a smart contract that automatically buys and sells cryptocurrency based on market trends. Can you guide me through the process?",
+    "golden_answers": [
+      {
+        "Action": "createOracle",
+        "Action_Input": "{\"name\": \"Crypto Market Oracle\", \"publicKey\": \"0x123456789abcdef\", \"jobIds\": [\"crypto_market_job\"], \"fee\": 10}"
+      },
+      {
+        "Action": "createJob",
+        "Action_Input": "{\"name\": \"Crypto Market Job\", \"tasks\": [{\"type\": \"externaladapter\", \"name\": \"Crypto Market Data\", \"params\": {\"endpoint\": \"https://api.cryptomarketdata.com/v1/trends\", \"method\": \"GET\", \"params\": {}, \"headers\": {}, \"dataPath\": \"data.trends\", \"dataFormat\": \"JSON\"}}], \"startAt\": 1598140800, \"endAt\": 1598227200, \"initiators\": [{\"type\": \"webhook\", \"params\": {\"url\": \"https://mycryptosmartcontract.com/execute\"}}], \"minPayment\": 1000}"
+      },
+      {
+        "Action": "requestPayment",
+        "Action_Input": "{\"jobId\": \"jobABC123\", \"oracleAddress\": \"0x9876543210fedcba\", \"payment\": 1000, \"data\": {\"status\": \"complete\"}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Metabase",
+    "instruction_id": 0,
+    "instruction": "I can't remember the name of a collection that I created last week. Can you provide me with a list of all collections that I've created recently, displaying 10 collections at a time?",
+    "golden_answers": [
+      {
+        "Action": "listCollections",
+        "Action_Input": "{\"search\": \"\", \"page\": 1, \"perPage\": 10}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Metabase",
+    "instruction_id": 1,
+    "instruction": "We recently promoted Tim Johnson to a managerial position, and we need to update his permissions in Metabase. His user ID is 6. Give him read and write access to all collections and data sources.",
+    "golden_answers": [
+      {
+        "Action": "updatePermissions",
+        "Action_Input": "{\"userId\": 6, \"permissions\": {\"collections\": {\"read\": true, \"write\": true}, \"dataSources\": {\"read\": true, \"write\": true}}}"
+      },
+      {
+        "Action": "updatePermissions",
+        "Action_Input": "{\"userId\": 6, \"permissions\": {\"collections\": {\"read\": true, \"write\": true}, \"dataSources\": {\"read\": true, \"write\": true}, \"dashboards\": {\"read\": true, \"write\": true}}}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "GeoDB Cities",
+    "instruction_id": 0,
+    "instruction": "Can you give me a list of all the cities in the United States?",
+    "golden_answers": [
+      {
+        "Action": "getCitiesByCountry",
+        "Action_Input": "{\"country\": \"United States\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "GeoDB Cities",
+    "instruction_id": 1,
+    "instruction": "Give me a list of all the cities in the world that have hosted the Olympics.",
+    "golden_answers": [
+      {
+        "Action": "getCitiesByCountry",
+        "Action_Input": "{\"country\": \"Olympic Hosts\"}"
+      },
+      {
+        "Action": "getCitiesByCountry",
+        "Action_Input": "{\"country\": \"Greece\"}"
+      },
+      {
+        "Action": "getCitiesByCountry",
+        "Action_Input": "{\"country\": \"France\"}"
+      },
+      {
+        "Action": "getCitiesByCountry",
+        "Action_Input": "{\"country\": \"United Kingdom\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "SuredBits",
+    "instruction_id": 0,
+    "instruction": "I'm interested in learning more about the performance of the New York Knicks during the last three months. Can you provide me with their team statistics for that period?",
+    "golden_answers": [
+      {
+        "Action": "getTeamInfo",
+        "Action_Input": "{\"teamName\": \"New York Knicks\"}"
+      },
+      {
+        "Action": "getTeamPerformance",
+        "Action_Input": "{\"teamId\": 123, \"startDate\": \"2020-04-01\", \"endDate\": \"2020-06-30\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "SuredBits",
+    "instruction_id": 1,
+    "instruction": "I'm curious about the performance of James Harden during the last five games. Can you provide me with his statistics for that period?",
+    "golden_answers": [
+      {
+        "Action": "getPlayerInfo",
+        "Action_Input": "{\"playerName\": \"James Harden\"}"
+      },
+      {
+        "Action": "getPlayerPerformance",
+        "Action_Input": "{\"playerId\": 5678, \"startDate\": \"2020-05-01\", \"endDate\": \"2020-05-05\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "COVID-ID",
+    "instruction_id": 0,
+    "instruction": "Retrieve the total number of Covid cases, recoveries, and fatalities in Indonesia so far using the API.",
+    "golden_answers": [
+      {
+        "Action": "getCumulativeStats",
+        "Action_Input": "{}"
+      },
+      {
+        "Action": "getCurrentNationalSummaries",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "COVID-ID",
+    "instruction_id": 1,
+    "instruction": "I need to know the daily Covid statistics in East Java on August 1st. Can you help me retrieve the data using the API?",
+    "golden_answers": [
+      {
+        "Action": "getDailyStatsByProvince",
+        "Action_Input": "{\"province\": \"East Java\", \"date\": \"2020-08-01\"}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Forza",
+    "instruction_id": 0,
+    "instruction": "Show me a picture of a muscle car from Forza, please.",
+    "golden_answers": [
+      {
+        "Action": "getRandomCarImage",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  },
+  {
+    "condition": "S13",
+    "api": "Forza",
+    "instruction_id": 1,
+    "instruction": "Can you display a random image of a race car from Forza?",
+    "golden_answers": [
+      {
+        "Action": "getRandomCarImage",
+        "Action_Input": "{}"
+      }
+    ],
+    "steps": [],
+    "output": {
+      "error": "The following `model_kwargs` are not used by the model: ['stop'] (note: typos in the generate arguments will also show up in this list)",
+      "intermediate_steps": [],
+      "action_attempts": []
+    },
+    "failed": true,
+    "execution_record": {
+      "intermediate_steps": [],
+      "action_attempts": []
+    }
+  }
+]

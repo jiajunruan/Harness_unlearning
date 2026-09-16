@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "original": {
+      "n_tasks": 100,
+      "y_mean_token_probability": 0.9826590654048843,
+      "z_mean_token_probability": 0.9699083018530635,
+      "a_mean_token_probability": 0.9901938089007548
+    },
+    "unlearned": {
+      "n_tasks": 100,
+      "y_mean_token_probability": 0.9088018449849083,
+      "z_mean_token_probability": 0.8101547420646825,
+      "a_mean_token_probability": 0.9641917266122558
+    }
+  },
+  "models": {
+    "original": "/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B",
+    "unlearned": "/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5"
+  },
+  "torch_version": "2.1.2+cu121",
+  "dtype": "float16",
+  "probability_reduction": "float32 log-softmax; float64 arithmetic means",
+  "reference_unit": "first gold thought and first gold tool call including arguments and action markers",
+  "aggregate": "arithmetic mean over tokens within each term, then equal mean over 100 tasks",
+  "source_sha256": "2ce8d4f8d54888a51c106c024206ec72442f77f0424af660ffd22d51f12b471d",
+  "benchmark_sha256": "2f6573e567978797032fe94af4e68c4dee497ebba064f2be6133cbdddff35d03",
+  "script_sha256": "062f3d820777f77fe1c72a09644a8a3abf3e477672baee5c54aa774c245876a9"
+}

@@ -1,0 +1,895 @@
+INFO:     Started server process [2756978]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5721 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50126 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34170 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43024 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54040 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60778 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58010 - "GET /__simulator_cache__/open HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.37s/it]1it [00:01,  1.37s/it]
+Status Code: 200
+Response: 
+{
+    "age": 32
+}
+Explanation: The estimated age of the individual with the first name "Michael" is 32.
+
+Status Code: 200
+Response: 
+{
+    "age": 28
+}
+Explanation: The estimated age of the individual with the first name "Michael" is 28.
+
+Status Code: 200
+Response: 
+{
+    "age": 35
+}
+Explanation: The estimated age of the individual with the first name "Michael" is 35.
+INFO:     127.0.0.1:58026 - "GET /Agify.io/getAge?name=Michael HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58038 - "GET /__simulator_cache__/clear/Agify.io HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.01it/s]1it [00:00,  1.01it/s]
+Status Code: 200
+Response: 
+{
+    "age": 35
+}
+Explanation: The estimated age of the individual with the first name "John" is 35.
+
+Status Code: 200
+Response: 
+{
+    "age": 28
+}
+Explanation: The estimated age of the individual with the first name "John" is 28.
+
+Status Code: 200
+Response: 
+{
+    "age": 42
+}
+Explanation: The estimated age of the individual with the first name "John" is 42.
+INFO:     127.0.0.1:34110 - "GET /Agify.io/getAge?name=John HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34112 - "GET /__simulator_cache__/clear/Agify.io HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.34s/it]1it [00:01,  1.34s/it]
+Status Code: 200
+Response: 
+{
+    "data": [
+        {
+            "name": "Python",
+            "total_seconds": 3600,
+            "digital": true
+        },
+        {
+            "name": "JavaScript",
+            "total_seconds": 1800,
+            "digital": true
+        },
+        {
+            "name": "Java",
+            "total_seconds": 1200,
+            "digital": true
+        }
+    ]
+}
+Explanation: The request to retrieve time metrics for programming languages, editors, and projects between 2020-01-01 and 2020-01-08 was successful. The response contains realistic data for the top programming languages worked on during that time period.
+INFO:     127.0.0.1:53268 - "GET /WakaTime/stats?api_key=12345&start=2020-01-01&end=2020-01-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56452 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39100 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60888 - "GET /__simulator_cache__/clear/WakaTime HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60904 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.19s/it]1it [00:01,  1.19s/it]
+Status Code: 200
+Response: 
+{
+    "data": [
+        {
+            "name": "Python",
+            "total_seconds": 5000,
+            "digital": true
+        },
+        {
+            "name": "JavaScript",
+            "total_seconds": 3000,
+            "digital": true
+        },
+        {
+            "name": "Java",
+            "total_seconds": 2000,
+            "digital": true
+        }
+    ]
+}
+Explanation: The request to retrieve time metrics on programming languages, editors, and projects being worked on for the specified date range was successful. The response contains realistic data for the top programming languages with their total time spent in seconds and whether it's digital time tracking.
+INFO:     127.0.0.1:51374 - "GET /WakaTime/stats?api_key=ABC123&start=2022-02-01&end=2022-02-28 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.60s/it]1it [00:02,  2.60s/it]
+Status Code: 200
+Response:
+{
+    "data": {
+        "categories": [
+            {
+                "name": "Coding",
+                "total_seconds": 10000
+            },
+            {
+                "name": "Meetings",
+                "total_seconds": 2000
+            }
+        ],
+        "dependencies": [
+            {
+                "name": "React",
+                "total_seconds": 3000
+            },
+            {
+                "name": "Spring Boot",
+                "total_seconds": 2000
+            }
+        ],
+        "editors": [
+            {
+                "name": "VS Code",
+                "total_seconds": 5000
+            },
+            {
+                "name": "IntelliJ IDEA",
+                "total_seconds": 3000
+            }
+        ],
+        "languages": [
+            {
+                "name": "Python",
+                "total_seconds": 4000
+            },
+            {
+                "name": "JavaScript",
+                "total_seconds": 3000
+            }
+        ],
+        "operating_systems": [
+            {
+                "name": "Windows",
+                "total_seconds": 6000
+            },
+            {
+                "name": "MacOS",
+                "total_seconds": 4000
+            }
+        ],
+        "projects": [
+            {
+                "name": "Project A",
+                "total_seconds": 5000
+            },
+            {
+                "name": "Project B",
+                "total_seconds": 4000
+            }
+        ],
+        "range": {
+            "start": "2022-02-28T00:00:00",
+            "end": "2022-02-28T23:59:59"
+        },
+        "timezone": "UTC"
+    }
+}
+Explanation: The request to retrieve a summary of time metrics for the specified day was successful. The response contains realistic data for different categories, dependencies, editors, languages, operating systems, projects, and the time range for the summary.
+INFO:     127.0.0.1:38278 - "GET /WakaTime/summary?api_key=ABC123&date=2022-02-28 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47048 - "GET /__simulator_cache__/clear/WakaTime HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47058 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.58s/it]1it [00:01,  1.58s/it]
+Status Code: 200
+Response: 
+{
+    "feeds": [
+        {
+            "feed_id": "feed123",
+            "title": "TechCrunch",
+            "url": "https://techcrunch.com/rss",
+            "subscribers": 10000
+        },
+        {
+            "feed_id": "feed456",
+            "title": "BBC News",
+            "url": "https://www.bbc.co.uk/news/rss.xml",
+            "subscribers": 15000
+        },
+        {
+            "feed_id": "feed789",
+            "title": "National Geographic",
+            "url": "https://www.nationalgeographic.com/rss",
+            "subscribers": 8000
+        }
+    ]
+}
+Explanation: The response contains a list of RSS feeds subscribed to by the user, including their feed ID, title, URL, and number of subscribers. This simulates a successful request to retrieve user feeds based on the provided authentication token.
+INFO:     127.0.0.1:47062 - "GET /The%20Old%20Reader/user_feeds?authToken=12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38726 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35050 - "GET /__simulator_cache__/clear/The%20Old%20Reader HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35064 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.34s/it]1it [00:01,  1.34s/it]
+Status Code: 200
+Response: 
+{
+    "feeds": [
+        {
+            "feed_id": "feed123",
+            "title": "TechCrunch",
+            "url": "https://techcrunch.com/rss",
+            "subscribers": 5000
+        },
+        {
+            "feed_id": "feed456",
+            "title": "BBC News",
+            "url": "http://feeds.bbci.co.uk/news/rss.xml",
+            "subscribers": 8000
+        },
+        {
+            "feed_id": "feed789",
+            "title": "National Geographic",
+            "url": "https://www.nationalgeographic.com/rss",
+            "subscribers": 3000
+        }
+    ]
+}
+Explanation: The response contains a list of RSS feeds subscribed to by the user, including the feed ID, title, URL, and number of subscribers. This simulates a successful retrieval of user feeds based on the provided authentication token.
+INFO:     127.0.0.1:35068 - "GET /The%20Old%20Reader/user_feeds?authToken=12345 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.70s/it]1it [00:01,  1.70s/it]
+Status Code: 405
+Response:
+{
+    "error": "Method Not Allowed"
+}
+Explanation: The HTTP method used in the request is not allowed for the specified endpoint. The API only allows the GET method for retrieving user feeds.
+0it [00:00, ?it/s]INFO:     127.0.0.1:50224 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+1it [00:00,  1.20it/s]1it [00:00,  1.20it/s]
+Status Code: 405
+Response: 
+{
+    "error": "Method Not Allowed"
+}
+Explanation: The request method used is not allowed for the specified endpoint. The endpoint only allows the GET method for retrieving user feeds.
+INFO:     127.0.0.1:50218 - "GET /The%20Old%20Reader/user_feeds?authToken=12345 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:33098 - "GET /__simulator_cache__/clear/The%20Old%20Reader HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.14s/it]1it [00:02,  2.14s/it]
+Status Code: 200
+Response: 
+[
+    {
+        "programTitle": "News Report",
+        "channel": "CT1",
+        "startTime": "2020-09-01T18:00:00",
+        "endTime": "2020-09-01T19:00:00",
+        "description": "Daily news report covering national and international events."
+    },
+    {
+        "programTitle": "Cooking Show",
+        "channel": "CT2",
+        "startTime": "2020-09-01T19:30:00",
+        "endTime": "2020-09-01T20:30:00",
+        "description": "Learn new recipes and cooking techniques from professional chefs."
+    },
+    {
+        "programTitle": "Documentary: Wildlife of Africa",
+        "channel": "CT3",
+        "startTime": "2020-09-01T20:00:00",
+        "endTime": "2020-09-01T21:00:00",
+        "description": "Explore the diverse wildlife of Africa in this captivating documentary."
+    }
+]
+Explanation: The response contains a list of TV programs for the week starting from September 1, 2020. Each program includes details such as program title, channel, start time, end time, and a brief description. The data provided is realistic and aligns with the OpenAPI Spec format.
+INFO:     127.0.0.1:33108 - "GET /Czech%20Television/weekly-tv-program?startDate=2020-09-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41198 - "GET /__simulator_cache__/clear/Czech%20Television HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.35s/it]1it [00:02,  2.35s/it]
+Status Code: 200
+Response: 
+{
+    "tvPrograms": [
+        {
+            "programTitle": "Late Night Talk Show",
+            "channel": "CT1",
+            "startTime": "2022-10-10T23:00:00",
+            "endTime": "2022-10-11T00:00:00",
+            "description": "Entertaining talk show with celebrity guests."
+        },
+        {
+            "programTitle": "Morning Interview Special",
+            "channel": "CT2",
+            "startTime": "2022-10-11T08:00:00",
+            "endTime": "2022-10-11T09:00:00",
+            "description": "In-depth interviews with experts in various fields."
+        },
+        {
+            "programTitle": "Political Discussion Panel",
+            "channel": "CT24",
+            "startTime": "2022-10-12T18:00:00",
+            "endTime": "2022-10-12T19:00:00",
+            "description": "Debate on current political issues."
+        }
+    ]
+}
+Explanation: The request searched for TV programs related to talk shows, interviews, and discussions. The response includes three sample programs matching the search criteria with realistic titles, channels, start and end times, and descriptions.
+INFO:     127.0.0.1:41200 - "GET /Czech%20Television/tv-programs/search?keywords=talk+show%2C+interview%2C+discussion HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55290 - "GET /__simulator_cache__/clear/Czech%20Television HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.33s/it]1it [00:01,  1.33s/it]
+Status Code: 200
+Response: 
+{
+  "tv_shows": [
+    {
+      "id": 1,
+      "name": "Stranger Things",
+      "genre": "Science Fiction, Horror, Drama",
+      "network": "Netflix"
+    },
+    {
+      "id": 2,
+      "name": "Game of Thrones",
+      "genre": "Fantasy, Drama, Action",
+      "network": "HBO"
+    },
+    {
+      "id": 3,
+      "name": "Breaking Bad",
+      "genre": "Crime, Drama, Thriller",
+      "network": "AMC"
+    }
+  ]
+}
+Explanation: The response contains a list of TV shows with their basic information, including show ID, name, genre, and network. This is in accordance with the OpenAPI Spec for retrieving all TV shows available on Next Episode.
+INFO:     127.0.0.1:38828 - "GET /Catch%20The%20Show/tvshows?page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38844 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36606 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35070 - "GET /__simulator_cache__/clear/Catch%20The%20Show HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.08s/it]1it [00:02,  2.08s/it]
+Status Code: 200
+Response: 
+{
+    "results": [
+        {
+            "id": 1234,
+            "name": "Ted Lasso",
+            "genre": "Comedy",
+            "network": "Apple TV+"
+        },
+        {
+            "id": 5678,
+            "name": "Ted Lasso: The Animated Series",
+            "genre": "Animation",
+            "network": "Apple TV+"
+        },
+        {
+            "id": 9012,
+            "name": "Ted Lasso: The Musical",
+            "genre": "Musical",
+            "network": "Apple TV+"
+        }
+    ]
+}
+Explanation: The response contains a list of TV shows that match the search query for "Ted Lasso". Each entry includes the show's ID, name, genre, and network. In this case, three different variations of "Ted Lasso" shows are provided as sample results.
+INFO:     127.0.0.1:59008 - "GET /Catch%20The%20Show/tvshows/search?showName=Ted+Lasso HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52458 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41192 - "GET /__simulator_cache__/clear/Catch%20The%20Show HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46528 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.18it/s]1it [00:00,  1.18it/s]
+Status Code: 404
+Response: {"error": "Book not found"}
+Explanation: The requested book with the identifier 9780452284234 was not found in the Google Books database. Therefore, a 404 error response is returned indicating that the book was not found.
+0it [00:00, ?it/s]1it [00:01,  1.40s/it]1it [00:01,  1.40s/it]
+Status Code: 200
+Response: 
+{
+    "message": "Reading status updated to finished for book with ID 9780452284234"
+}
+Explanation: The reading status of the book with ID 9780452284234 has been successfully updated to "finished".
+INFO:     127.0.0.1:42136 - "PUT /Google%20Books/books/9780452284234/readingStatus?status=finished HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58582 - "GET /__simulator_cache__/clear/Google%20Books HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.20s/it]1it [00:04,  4.20s/it]
+Status Code: 200
+Response: 
+{
+    "items": [
+        {
+            "title": "The Great Gatsby",
+            "author": ["F. Scott Fitzgerald"],
+            "publisher": "Scribner",
+            "publishedDate": "1925-04-10",
+            "description": "The Great Gatsby is a novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional town of West Egg on prosperous Long Island in the summer of 1922.",
+            "imageLinks": {
+                "thumbnail": "https://books.google.com/books/content?id=yo1xGfFbq5UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "industryIdentifiers": [
+                {
+                    "type": "ISBN_13",
+                    "identifier": "9780743273565"
+                },
+                {
+                    "type": "ISBN_10",
+                    "identifier": "0743273567"
+                }
+            ]
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": ["Harper Lee"],
+            "publisher": "J.B. Lippincott & Co.",
+            "publishedDate": "1960-07-11",
+            "description": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. It was immediately successful, winning the Pulitzer Prize, and has become a classic of modern American literature.",
+            "imageLinks": {
+                "thumbnail": "https://books.google.com/books/content?id=k5m6l1a8mUAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "industryIdentifiers": [
+                {
+                    "type": "ISBN_13",
+                    "identifier": "9780060935467"
+                },
+                {
+                    "type": "ISBN_10",
+                    "identifier": "0060935464"
+                }
+            ]
+        },
+        {
+            "title": "1984",
+            "author": ["George Orwell"],
+            "publisher": "Secker & Warburg",
+            "publishedDate": "1949-06-08",
+            "description": "1984 is a dystopian novel by George Orwell published in 1949. The novel is set in Airstrip One, formerly Great Britain, a province of the superstate Oceania.",
+            "imageLinks": {
+                "thumbnail": "https://books.google.com/books/content?id=kotPc4Fj5VMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "industryIdentifiers": [
+                {
+                    "type": "ISBN_13",
+                    "identifier": "9780451524935"
+                },
+                {
+                    "type": "ISBN_10",
+                    "identifier": "0451524934"
+                }
+            ]
+        }
+    ]
+}
+Explanation: The response contains a list of 3 featured books with their titles, authors, publishers, publication dates, descriptions, image links, and industry identifiers (ISBN numbers). The data provided is based on realistic information about popular books.
+INFO:     127.0.0.1:58586 - "GET /Google%20Books/books/featured?maxResults=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48730 - "GET /__simulator_cache__/clear/Google%20Books HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.24s/it]1it [00:01,  1.24s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Kalphite Queen",
+    "id": 963,
+    "examine": "A huge and very dangerous insect.",
+    "combatlevel": 333,
+    "hitpoints": 255,
+    "maxhit": 31,
+    "attack": 255,
+    "strength": 255,
+    "defence": 255,
+    "magic": 255,
+    "ranged": 255
+}
+Explanation: The response provides detailed information about the Kalphite Queen enemy in RuneScape, including its combat level, hitpoints, max hit, attack, strength, defence, magic, and ranged stats.
+INFO:     127.0.0.1:48738 - "GET /RuneScape/enemy?enemy=Kalphite+Queen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60776 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60786 - "GET /__simulator_cache__/clear/RuneScape HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  3.00s/it]1it [00:02,  3.00s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Fishing",
+    "id": 10,
+    "members": true,
+    "rank": 12345,
+    "level": 99,
+    "experience": 20000000
+}
+Explanation: This response provides information on the Fishing skill, including the skill name, ID, membership status, rank, level, and experience points.
+
+Status Code: 200
+Response: 
+{
+    "name": "Fishing",
+    "id": 10,
+    "members": false,
+    "rank": 54321,
+    "level": 70,
+    "experience": 5000000
+}
+Explanation: Another sample response for the Fishing skill with different data, showcasing the skill name, ID, non-membership status, rank, level, and experience points.
+
+Status Code: 200
+Response: 
+{
+    "name": "Fishing",
+    "id": 10,
+    "members": true,
+    "rank": 67890,
+    "level": 85,
+    "experience": 10000000
+}
+Explanation: A third example response for the Fishing skill, displaying the skill name, ID, membership status, rank, level, and experience points.
+INFO:     127.0.0.1:60790 - "GET /RuneScape/skill?skill=Fishing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42168 - "GET /__simulator_cache__/clear/RuneScape HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.97s/it]1it [00:01,  1.97s/it]
+Status Code: 200
+Response: 
+{
+  "vehicle_positions": [
+    {
+      "vehicle_id": "V123",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "bearing": 45,
+      "timestamp": "2022-10-15T08:30:00Z"
+    },
+    {
+      "vehicle_id": "V456",
+      "latitude": 37.7833,
+      "longitude": -122.4167,
+      "bearing": 90,
+      "timestamp": "2022-10-15T08:32:00Z"
+    },
+    {
+      "vehicle_id": "V789",
+      "latitude": 37.7917,
+      "longitude": -122.4131,
+      "bearing": 135,
+      "timestamp": "2022-10-15T08:35:00Z"
+    }
+  ]
+}
+Explanation: The response contains the real-time vehicle positions for the transit agency with ID 12345. Each position includes the vehicle ID, latitude, longitude, bearing, and timestamp.
+INFO:     127.0.0.1:52470 - "GET /TransitLand/realtime/vehicle_positions/12345 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.21it/s]1it [00:00,  1.21it/s]
+Status Code: 404
+Response: 
+{
+  "error": "Not Found",
+  "message": "The stop with ID AIRPORT does not exist for the specified transit agency."
+}
+Explanation: The requested stop with ID AIRPORT does not exist for the transit agency with ID 12345, hence a 404 error response is returned.
+0it [00:00, ?it/s]1it [00:01,  1.35s/it]1it [00:01,  1.35s/it]
+Status Code: 404
+Response: 
+{
+  "error": "Not Found",
+  "message": "The stop with ID 'AIRPORT' does not exist for the transit agency with ID '12345'."
+}
+Explanation: The requested stop with ID 'AIRPORT' does not exist for the transit agency with ID '12345'. The API responds with a 404 error indicating that the resource was not found.
+INFO:     127.0.0.1:60714 - "GET /TransitLand/realtime/arrival_predictions/12345/AIRPORT HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49786 - "GET /__simulator_cache__/clear/TransitLand HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.56s/it]1it [00:03,  3.56s/it]
+Status Code: 200
+Response: 
+{
+    "stop_id": "12345",
+    "stop_name": "Central Station",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "agency_id": "XYZ",
+    "route_id": "ABC"
+}
+Explanation: The response contains information about a stop named Central Station with a specific stop ID, latitude, longitude, associated agency ID, and route ID.
+
+Status Code: 200
+Response: 
+{
+    "stop_id": "54321",
+    "stop_name": "Main Street",
+    "latitude": 37.7833,
+    "longitude": -122.4064,
+    "agency_id": "XYZ",
+    "route_id": "DEF"
+}
+Explanation: The response provides details of another stop named Main Street with its unique stop ID, geographical coordinates, related agency ID, and route ID.
+
+Status Code: 200
+Response: 
+{
+    "stop_id": "98765",
+    "stop_name": "Park Avenue",
+    "latitude": 37.7915,
+    "longitude": -122.4101,
+    "agency_id": "XYZ",
+    "route_id": "GHI"
+}
+Explanation: This response includes information about a stop called Park Avenue, including its stop ID, location coordinates, agency ID, and route ID.
+INFO:     127.0.0.1:49794 - "GET /TransitLand/search/stops?query=stop&filters=agency HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33924 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46670 - "GET /__simulator_cache__/clear/TransitLand HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.27it/s]1it [00:00,  1.27it/s]
+Status Code: 200
+Response: 
+{
+    "latitude": 51.5074,
+    "longitude": -0.1278
+}
+Explanation: The provided British OSGB36 easting and northing values (478630, 125300) have been successfully converted to WGS84 latitude and longitude (51.5074, -0.1278).
+INFO:     127.0.0.1:46682 - "POST /bng2latlong/convertEastingNorthingToLatLong HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49560 - "GET /__simulator_cache__/clear/bng2latlong HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.21it/s]1it [00:00,  1.21it/s]
+Status Code: 200
+Response: 
+{
+    "easting": 540000,
+    "northing": 220000
+}
+Explanation: The provided WGS84 latitude (52.2053) and longitude (0.1218) have been successfully reverse geocoded to British Easting (540000) and Northing (220000) values in the OSGB36 format.
+INFO:     127.0.0.1:49568 - "POST /bng2latlong/reverseGeocodeLatLongToEastingNorthing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33506 - "GET /__simulator_cache__/clear/bng2latlong HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.72s/it]1it [00:02,  2.72s/it]
+Status Code: 200
+Response: 
+{
+    "datasets": [
+        {
+            "datasetId": 1234,
+            "title": "Renewable Energy Production in Poland",
+            "description": "This dataset contains information about renewable energy production in Poland.",
+            "category": "Poland",
+            "format": "CSV"
+        },
+        {
+            "datasetId": 5678,
+            "title": "Renewable Energy Consumption in Poland",
+            "description": "Data on renewable energy consumption in Poland over the past decade.",
+            "category": "Poland",
+            "format": "JSON"
+        },
+        {
+            "datasetId": 9012,
+            "title": "Renewable Energy Sources Mapping in Poland",
+            "description": "Geospatial data mapping renewable energy sources across Poland.",
+            "category": "Poland",
+            "format": "XML"
+        }
+    ]
+}
+Explanation: The response contains a list of datasets related to renewable energy in Poland. Each dataset includes a unique ID, title, description, category, and format. The response adheres to the OpenAPI Spec format and provides realistic data samples.
+INFO:     127.0.0.1:33520 - "GET /Open%20Government%2C%20Poland/datasets/search?keyword=renewable&category=Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48906 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Poland HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.09s/it]1it [00:02,  2.09s/it]
+Status Code: 200
+Response:
+{
+    "datasets": [
+        {
+            "datasetId": 1234,
+            "title": "Healthcare Data in Poland",
+            "description": "Dataset containing healthcare statistics in Poland",
+            "category": "Healthcare",
+            "format": "CSV"
+        },
+        {
+            "datasetId": 5678,
+            "title": "Public Health Records",
+            "description": "Records of public health data in Poland",
+            "category": "Healthcare",
+            "format": "JSON"
+        },
+        {
+            "datasetId": 9012,
+            "title": "Medical Facilities Database",
+            "description": "Database of medical facilities in Poland",
+            "category": "Healthcare",
+            "format": "XML"
+        }
+    ]
+}
+Explanation: The response contains a list of datasets related to healthcare in Poland. Each dataset has a unique ID, title, description, category, and format. The datasets are in CSV, JSON, and XML formats.
+INFO:     127.0.0.1:48908 - "GET /Open%20Government%2C%20Poland/datasets/search?keyword=healthcare&category=Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49338 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53860 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.76s/it]1it [00:01,  1.76s/it]
+Status Code: 200
+Response: 
+{
+    "calories": 320,
+    "protein": 12,
+    "fat": 8,
+    "carbohydrates": 52,
+    "micronutrients": {
+        "vitaminA": 250,
+        "vitaminC": 15,
+        "calcium": 100,
+        "iron": 3
+    }
+}
+Explanation: The request calculates the nutritional value of a custom recipe consisting of whole wheat pasta, marinara sauce, chopped vegetables, and parmesan cheese for 4 servings. The response provides the total calories, protein, fat, carbohydrates, and micronutrients such as vitamin A, vitamin C, calcium, and iron in the recipe.
+INFO:     127.0.0.1:56602 - "POST /Nutritionix__2/calculateNutritionForRecipe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60984 - "GET /__simulator_cache__/clear/Nutritionix__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60990 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.35s/it]1it [00:02,  2.35s/it]
+Status Code: 200
+Response: 
+{
+    "products": [
+        {
+            "name": "Granola Bar",
+            "servingSize": "1 bar",
+            "calories": 150,
+            "nutrients": {
+                "protein": 4,
+                "fat": 6,
+                "carbohydrates": 22
+            }
+        },
+        {
+            "name": "Almonds",
+            "servingSize": "1 oz",
+            "calories": 160,
+            "nutrients": {
+                "protein": 6,
+                "fat": 14,
+                "carbohydrates": 6
+            }
+        },
+        {
+            "name": "Greek Yogurt",
+            "servingSize": "1 container",
+            "calories": 100,
+            "nutrients": {
+                "protein": 10,
+                "fat": 2,
+                "carbohydrates": 15
+            }
+        }
+    ]
+}
+Explanation: The response contains real-time nutrition data for vending machine with ID 12345. It includes information about products available in the vending machine such as Granola Bar, Almonds, and Greek Yogurt, along with their serving sizes, calories, protein, fat, and carbohydrates content.
+INFO:     127.0.0.1:52338 - "GET /Nutritionix__2/vendingMachineData/12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48184 - "GET /__simulator_cache__/clear/Nutritionix__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.70s/it]1it [00:01,  1.70s/it]
+Status Code: 200
+Response: 
+{
+    "isSafe": true
+}
+Explanation: The provided URL "www.example.com" has been flagged as safe.
+
+Status Code: 200
+Response: 
+{
+    "isSafe": false,
+    "reason": "Phishing detected"
+}
+Explanation: The provided URL "www.example.com" has been flagged as unsafe due to phishing activity.
+
+Status Code: 200
+Response: 
+{
+    "isSafe": true
+}
+Explanation: The provided URL "www.example.com" has been identified as safe.
+INFO:     127.0.0.1:48186 - "POST /Google%20Safe%20Browsing/checkUrlSafety HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /__simulator_cache__/clear/Google%20Safe%20Browsing HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.96s/it]1it [00:01,  1.96s/it]
+Status Code: 200
+Response: 
+{
+    "results": [
+        {
+            "url": "example1.com",
+            "isSafe": false,
+            "reason": "Phishing detected"
+        },
+        {
+            "url": "example2.com",
+            "isSafe": true
+        },
+        {
+            "url": "example3.com",
+            "isSafe": false,
+            "reason": "Malware detected"
+        }
+    ]
+}
+Explanation: The response provides the safety status of the list of URLs provided in the request. "example1.com" is flagged as unsafe due to phishing, "example2.com" is safe, and "example3.com" is flagged as unsafe due to malware.
+INFO:     127.0.0.1:59410 - "POST /Google%20Safe%20Browsing/checkMultipleUrlsSafety HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52870 - "GET /__simulator_cache__/clear/Google%20Safe%20Browsing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52880 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.61s/it]1it [00:02,  2.61s/it]
+Status Code: 200
+Response: 
+{
+    "gifs": [
+        {
+            "url": "https://giphy.com/gifs/trending1",
+            "title": "Trending Gif 1",
+            "rating": "g",
+            "user": {
+                "avatar_url": "https://user1-avatar.com",
+                "username": "user1"
+            }
+        },
+        {
+            "url": "https://giphy.com/gifs/trending2",
+            "title": "Trending Gif 2",
+            "rating": "pg",
+            "user": {
+                "avatar_url": "https://user2-avatar.com",
+                "username": "user2"
+            }
+        },
+        {
+            "url": "https://giphy.com/gifs/trending3",
+            "title": "Trending Gif 3",
+            "rating": "g",
+            "user": {
+                "avatar_url": "https://user3-avatar.com",
+                "username": "user3"
+            }
+        }
+    ]
+}
+Explanation: This response contains a list of trending gifs with realistic data including URLs, titles, ratings, and user information. The response includes 20 gifs as requested in the limit parameter.
+INFO:     127.0.0.1:52894 - "GET /Giphy/trending?apiKey=abc123&limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33780 - "GET /__simulator_cache__/clear/Giphy HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.42s/it]1it [00:02,  2.42s/it]
+Status Code: 200
+Response: 
+{
+    "gifs": [
+        {
+            "url": "https://media.giphy.com/media/3o7aCTfyhYawd1FgA4/giphy.gif",
+            "title": "Teamwork Makes the Dream Work",
+            "rating": "g",
+            "user": {
+                "avatar_url": "https://media.giphy.com/avatars/default1.gif",
+                "username": "teamworklover123"
+            }
+        },
+        {
+            "url": "https://media.giphy.com/media/l2JhCmFv7yJQoK3KQ/giphy.gif",
+            "title": "Success Dance",
+            "rating": "pg",
+            "user": {
+                "avatar_url": "https://media.giphy.com/avatars/default2.gif",
+                "username": "successguru456"
+            }
+        },
+        {
+            "url": "https://media.giphy.com/media/3oEdv7sZc7b5Vzj5lO/giphy.gif",
+            "title": "Teamwork Celebration",
+            "rating": "g",
+            "user": {
+                "avatar_url": "https://media.giphy.com/avatars/default3.gif",
+                "username": "teamworkchamp789"
+            }
+        }
+    ]
+}
+Explanation: This response contains a list of 3 gifs related to teamwork or success with their URLs, titles, ratings, and user information. Each gif has a unique URL, title, rating, and user details.
+INFO:     127.0.0.1:41244 - "GET /Giphy/search?apiKey=abc123&query=teamwork+OR+success&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49060 - "GET /__simulator_cache__/clear/Giphy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60778 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.83s/it]1it [00:01,  1.83s/it]
+Status Code: 201
+Response: 
+{
+    "record": {
+        "id": "5f3c2e3e4f2f4f4d11a1b2c3",
+        "name": "My Favorite Quotes",
+        "content": {
+            "quotes": ["This is my favorite quote."]
+        }
+    }
+}
+Explanation: The new JSON bin "My Favorite Quotes" with the provided content has been successfully created with the ID "5f3c2e3e4f2f4f4d11a1b2c3".
+
+Note: The response contains realistic data based on the request provided.
+INFO:     127.0.0.1:60786 - "POST /JSONbin.io/b HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56232 - "GET /__simulator_cache__/clear/JSONbin.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56248 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2756978]

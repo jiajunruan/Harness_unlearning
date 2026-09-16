@@ -1,0 +1,201 @@
+model,model_path,task_id,target_tool,y_tokens,y_log_probability,z_tokens,z_log_probability,a_tokens,a_log_probability,chain_rule_residual
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Wikidata::0,searchItems,66,-1.5515632629394531,27,-1.501688003540039,39,-0.04987525939941406,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Wikidata::1,getItemDetails,55,-0.6538429260253906,21,-0.6495761871337891,34,-0.0042667388916015625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Time Door::0,PredictionAlgorithmForMachineLearningModels,124,-1.1008434295654297,20,-0.12891197204589844,104,-0.9719314575195312,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,ipapi.com::0,geolocationLookup,49,-1.2033977508544922,19,-0.42626953125,30,-0.7771282196044922,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,ipapi.com::1,geolocationLookup,57,-0.1824493408203125,21,-0.1822357177734375,36,-0.000213623046875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Quarantine::0,getCountryTimeline,48,-0.05988121032714844,22,-0.059146881103515625,26,-0.0007343292236328125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Quarantine::1,getCountryStats,37,-1.2071418762207031,13,-1.199563980102539,24,-0.0075778961181640625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Tradier::0,getHistoricalData,76,-0.35674476623535156,16,-0.3513469696044922,60,-0.005397796630859375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Tradier::1,getMarketCalendar,48,-0.17156982421875,15,-0.16743850708007812,33,-0.004131317138671875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Final Fantasy XIV::0,getItem,49,-0.8761577606201172,23,-0.7034683227539062,26,-0.17268943786621094,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Final Fantasy XIV::1,getAchievement,47,-1.0057716369628906,16,-0.7561302185058594,31,-0.24964141845703125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Monster Hunter World::0,searchWeapons,67,-0.2636394500732422,36,-0.11328125,31,-0.1503582000732422,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Monster Hunter World::1,searchQuests,62,-0.4142284393310547,30,-0.15165328979492188,32,-0.2625751495361328,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,RSS feed to JSON::0,getFeedItemsByTag,66,-0.20264816284179688,21,-0.20046615600585938,45,-0.0021820068359375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,RSS feed to JSON::1,sortFeedItems,68,-0.18917274475097656,22,-0.18865585327148438,46,-0.0005168914794921875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,PandaDoc::0,createTemplate,76,-1.644735336303711,16,-0.2490386962890625,60,-1.3956966400146484,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,PandaDoc::1,getDetails,45,-26.983182907104492,15,-1.4304389953613281,30,-25.552743911743164,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Urban Observatory::0,getSensorLocations,33,-0.5771541595458984,14,-0.5768642425537109,19,-0.0002899169921875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Urban Observatory::1,getHistoricalSensorData,104,-1.1046810150146484,16,-0.40212440490722656,88,-0.7025566101074219,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,GrünstromIndex::0,getHistoricalGreenPowerIndex,75,-1.2272911071777344,21,-0.9234447479248047,54,-0.3038463592529297,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,GrünstromIndex::1,getGreenPowerIndexCalculation,39,-0.46409034729003906,19,-0.4639015197753906,20,-0.0001888275146484375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Dangerous Discord Database::0,searchMaliciousAccounts,50,-1.0963401794433594,22,-1.093496322631836,28,-0.0028438568115234375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Dangerous Discord Database::1,searchMaliciousAccounts,59,-3.2415218353271484,28,-3.239238739013672,31,-0.0022830963134765625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,GraphHopper::0,getDetails,51,-16.360843658447266,18,-3.170869827270508,33,-13.189973831176758,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,GraphHopper::1,routeOptimization,167,-11.829944610595703,19,-1.6685523986816406,148,-10.161392211914062,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,isEven (humor)::0,checkNumber,37,-0.027444839477539062,13,-0.025135040283203125,24,-0.0023097991943359375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,isEven (humor)::1,checkNumber,36,-0.020563125610351562,13,-0.020383834838867188,23,-0.000179290771484375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,The Muse::0,searchJobs,70,-0.44431304931640625,25,-0.3467750549316406,45,-0.09753799438476562,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,The Muse::1,getJobApplications,48,-0.07772254943847656,17,-0.07131385803222656,31,-0.00640869140625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Dictum::0,getRandomQuote,33,-1.6968154907226562,15,-1.6966571807861328,18,-0.0001583099365234375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Dictum::1,searchExpressions,54,-1.0819053649902344,17,-0.8905525207519531,37,-0.19135284423828125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,British National Bibliography::0,searchBooks,40,-0.6852130889892578,14,-0.6289558410644531,26,-0.05625724792480469,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,British National Bibliography::1,searchBooks,42,-1.7142295837402344,14,-1.7071685791015625,28,-0.007061004638671875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Pastebin::0,getUserPastes,62,-1.2249374389648438,23,-1.2220382690429688,39,-0.002899169921875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Pastebin::1,getTrendingPastes,44,-1.375640869140625,24,-1.362945556640625,20,-0.0126953125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Coinlib::0,getCoinData,40,-4.87428092956543,16,-4.838710784912109,24,-0.03557014465332031,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Coinlib::1,getCoinData,41,-1.1478710174560547,17,-0.8142242431640625,24,-0.3336467742919922,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,NovaDax::0,getDepth,58,-0.101898193359375,25,-0.0424957275390625,33,-0.0594024658203125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,NovaDax::1,getTrades,61,-0.19260406494140625,26,-0.1268768310546875,35,-0.06572723388671875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,PUBG::0,getPlayer,51,-1.2128925323486328,26,-0.8220424652099609,25,-0.3908500671386719,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,PUBG::1,getPlayer,42,-0.7472019195556641,15,-0.3031883239746094,27,-0.4440135955810547,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Rick and Morty::0,getAllLocations,46,-1.413604736328125,23,-1.3638992309570312,23,-0.04970550537109375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Rick and Morty::1,getCharacterById,40,-1.0499839782714844,18,-0.6827144622802734,22,-0.36726951599121094,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,News::0,getTopHeadlines,63,-5.991064071655273,19,-4.39324951171875,44,-1.5978145599365234,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,News::1,getEverything,122,-6.302671432495117,44,-2.658658981323242,78,-3.644012451171875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Mixcloud::0,search,52,-0.44402313232421875,19,-0.4342365264892578,33,-0.009786605834960938,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Mixcloud::1,search,53,-1.368356704711914,16,-1.260599136352539,37,-0.107757568359375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Agify.io::0,getAge,36,-0.1537933349609375,15,-0.15371131896972656,21,-8.20159912109375e-05,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Agify.io::1,getAge,36,-0.07994651794433594,15,-0.07988739013671875,21,-5.91278076171875e-05,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,StackExchange__2::0,get-user,49,-3.1815452575683594,14,-2.491018295288086,35,-0.6905269622802734,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,StackExchange__2::1,get-user,52,-0.7102584838867188,17,-0.08034706115722656,35,-0.6299114227294922,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,WakaTime::0,getStats,74,-2.9378604888916016,17,-0.04468345642089844,57,-2.893177032470703,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,WakaTime::1,getDetails,66,-19.551715850830078,21,-1.4236011505126953,45,-18.128114700317383,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Movie Quote::0,getRandomMovieQuote,36,-0.4691753387451172,17,-0.46893310546875,19,-0.0002422332763671875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Movie Quote::1,getFilteredQuote,48,-0.6869297027587891,22,-0.6822242736816406,26,-0.0047054290771484375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,The Old Reader::0,getUserFeeds,58,-2.4461307525634766,31,-1.5994434356689453,27,-0.8466873168945312,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,The Old Reader::1,getUserFeeds,49,-4.7514801025390625,22,-4.1387786865234375,27,-0.612701416015625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Doge-Meme::0,getMemeDetails,47,-0.9971427917480469,20,-0.9969234466552734,27,-0.0002193450927734375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Doge-Meme::1,getTopMemes,48,-0.024114608764648438,24,-0.016401290893554688,24,-0.00771331787109375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Czech Television::0,getWeeklyTVProgram,58,-1.1922016143798828,24,-0.047161102294921875,34,-1.145040512084961,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Czech Television::1,searchTVPrograms,66,-5.6610870361328125,20,-1.3547077178955078,46,-4.306379318237305,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Geokeo::0,batchGeocode,76,-0.3535480499267578,17,-0.35239410400390625,59,-0.0011539459228515625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Geokeo::1,geocode,47,-2.14813232421875,19,-2.1473217010498047,28,-0.0008106231689453125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Catch The Show::0,searchTvShow,49,-0.8699607849121094,23,-0.5116119384765625,26,-0.3583488464355469,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Catch The Show::1,searchTvShow,39,-0.39868927001953125,12,-0.3965873718261719,27,-0.002101898193359375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,"Transport for Vancouver, Canada__3::0",findStationsOrStops,82,-0.35798072814941406,28,-0.14345550537109375,54,-0.2145252227783203,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,"Transport for Vancouver, Canada__3::1",findStationsOrStops,74,-0.4067058563232422,20,-0.06690788269042969,54,-0.3397979736328125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Google Books::0,updateReadingStatus,62,-0.027210235595703125,19,-0.026838302612304688,43,-0.0003719329833984375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Google Books::1,getFeaturedBooks,43,-1.6048450469970703,18,-1.596597671508789,25,-0.00824737548828125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,PhishStats::0,searchPhishingDatabase,49,-0.3129920959472656,24,-0.3077545166015625,25,-0.005237579345703125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,PhishStats::1,getPhishingDomainInfo,48,-0.6837520599365234,22,-0.6832370758056641,26,-0.000514984130859375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,RuneScape::0,getEnemyInfo,47,-0.09291648864746094,20,-0.09138107299804688,27,-0.0015354156494140625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,RuneScape::1,getSkillInfo,46,-0.1412982940673828,21,-0.1412372589111328,25,-6.103515625e-05,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,"Transport for Vancouver, Canada::0",getStaticSchedules,43,-0.6111392974853516,18,-0.5825538635253906,25,-0.028585433959960938,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,"Transport for Vancouver, Canada::1",getStopsAndRoutesByLocation,70,-1.4660453796386719,14,-0.2580585479736328,56,-1.207986831665039,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,TransitLand::0,searchStops,57,-2.373889923095703,22,-0.5611648559570312,35,-1.8127250671386719,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,TransitLand::1,searchStops,56,-2.674936294555664,13,-0.1656169891357422,43,-2.509319305419922,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Giphy__2::0,searchGifs,39,-1.7006855010986328,15,-0.5400733947753906,24,-1.1606121063232422,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Giphy__2::1,searchGifs,49,-1.8485755920410156,19,-0.24164390563964844,30,-1.6069316864013672,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,bng2latlong::0,convertEastingNorthingToLatLong,65,-0.270904541015625,18,-0.2697620391845703,47,-0.0011425018310546875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,bng2latlong::1,reverseGeocodeLatLongToEastingNorthing,85,-0.3060741424560547,34,-0.30446434020996094,51,-0.00160980224609375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,CO2 Offset::0,calculateCarbonEmissions,68,-8.725784301757812,26,-8.711143493652344,42,-0.01464080810546875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,CO2 Offset::1,calculateCarbonEmissions,73,-0.9570865631103516,26,-0.9274120330810547,47,-0.029674530029296875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,"Open Government, Poland::0",searchDatasets,47,-0.28839874267578125,14,-0.2823314666748047,33,-0.0060672760009765625,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,"Open Government, Poland::1",searchDatasets,45,-0.04668998718261719,13,-0.03472900390625,32,-0.011960983276367188,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,TheMealDB::0,searchMealByIngredient,41,-1.9744338989257812,12,-1.9357833862304688,29,-0.0386505126953125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,TheMealDB::1,searchMealByName,48,-1.380615234375,21,-0.9950580596923828,27,-0.3855571746826172,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Nutritionix__2::0,calculateNutritionForRecipe,91,-0.3421192169189453,14,-0.3220081329345703,77,-0.020111083984375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Nutritionix__2::1,getVendingMachineData,57,-0.06904220581054688,27,-0.06625938415527344,30,-0.0027828216552734375,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Forismatic::0,searchQuote,50,-0.6739158630371094,21,-0.29810333251953125,29,-0.3758125305175781,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Forismatic::1,searchQuote,54,-1.0955352783203125,20,-0.6093540191650391,34,-0.48618125915527344,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Google Safe Browsing::0,checkUrlSafety,37,-0.9715938568115234,9,-0.9713306427001953,28,-0.000263214111328125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Google Safe Browsing::1,checkMultipleUrlsSafety,67,-0.6945552825927734,24,-0.6935195922851562,43,-0.0010356903076171875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Noctua::0,getHistoricalWeatherData,79,-3.3755760192871094,19,-3.3744049072265625,60,-0.001171112060546875,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Noctua::1,getHistoricalWeatherData,82,-1.4140625,19,-1.1771125793457031,63,-0.23694992065429688,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Giphy::0,getTrendingGifs,61,-3.0531749725341797,19,-1.650686264038086,42,-1.4024887084960938,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Giphy::1,searchGifs,81,-1.0015544891357422,21,-0.23031234741210938,60,-0.7712421417236328,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Yo Momma Jokes::0,getRandomJoke,34,-2.2312469482421875,16,-0.4516124725341797,18,-1.7796344757080078,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,Yo Momma Jokes::1,getCustomJoke,56,-1.7560043334960938,31,-1.7557430267333984,25,-0.0002613067626953125,0.0
+original,/projects/standard/mhong/shared/jiajunr/ToolAlpaca-7B,JSONbin.io::0,createBin,43,-0.5529842376708984,12,-0.24770164489746094,31,-0.3052825927734375,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Wikidata::0,searchItems,66,-28.775615692138672,27,-19.53145408630371,39,-9.244161605834961,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Wikidata::1,getItemDetails,55,-10.652746200561523,21,-10.542482376098633,34,-0.11026382446289062,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Time Door::0,PredictionAlgorithmForMachineLearningModels,124,-41.50039291381836,20,-9.705371856689453,104,-31.795021057128906,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,ipapi.com::0,geolocationLookup,49,-56.27920722961426,19,-52.89011001586914,30,-3.389097213745117,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,ipapi.com::1,geolocationLookup,57,-52.931209564208984,21,-52.914642333984375,36,-0.016567230224609375,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Quarantine::0,getCountryTimeline,48,-14.77407455444336,22,-14.76641845703125,26,-0.007656097412109375,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Quarantine::1,getCountryStats,37,-8.715105056762695,13,-8.218181610107422,24,-0.49692344665527344,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Tradier::0,getHistoricalData,76,-11.202333450317383,16,-11.193357467651367,60,-0.008975982666015625,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Tradier::1,getMarketCalendar,48,-13.779508590698242,15,-13.761728286743164,33,-0.017780303955078125,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Final Fantasy XIV::0,getItem,49,-13.200508117675781,23,-13.029121398925781,26,-0.17138671875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Final Fantasy XIV::1,getAchievement,47,-13.368356704711914,16,-12.339672088623047,31,-1.0286846160888672,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Monster Hunter World::0,searchWeapons,67,-18.433616638183594,36,-16.693675994873047,31,-1.7399406433105469,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Monster Hunter World::1,searchQuests,62,-41.74264717102051,30,-39.91302490234375,32,-1.8296222686767578,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,RSS feed to JSON::0,getFeedItemsByTag,66,-32.19512367248535,21,-32.14387130737305,45,-0.05125236511230469,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,RSS feed to JSON::1,sortFeedItems,68,-42.384727478027344,22,-42.31880569458008,46,-0.06592178344726562,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,PandaDoc::0,createTemplate,76,-16.86503791809082,16,-6.61195182800293,60,-10.25308609008789,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,PandaDoc::1,getDetails,45,-29.551172256469727,15,-6.616416931152344,30,-22.934755325317383,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Urban Observatory::0,getSensorLocations,33,-23.576412200927734,14,-23.412025451660156,19,-0.16438674926757812,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Urban Observatory::1,getHistoricalSensorData,104,-39.09589958190918,16,-19.72352409362793,88,-19.37237548828125,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,GrünstromIndex::0,getHistoricalGreenPowerIndex,75,-20.967254638671875,21,-15.814395904541016,54,-5.152858734130859,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,GrünstromIndex::1,getGreenPowerIndexCalculation,39,-12.313606262207031,19,-11.91140365600586,20,-0.4022026062011719,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Dangerous Discord Database::0,searchMaliciousAccounts,50,-14.92996597290039,22,-14.833440780639648,28,-0.09652519226074219,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Dangerous Discord Database::1,searchMaliciousAccounts,59,-41.411203384399414,28,-41.3935432434082,31,-0.017660140991210938,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,GraphHopper::0,getDetails,51,-34.908748626708984,18,-22.169538497924805,33,-12.73921012878418,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,GraphHopper::1,routeOptimization,167,-50.171810150146484,19,-12.077123641967773,148,-38.09468650817871,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,isEven (humor)::0,checkNumber,37,-32.4215202331543,13,-32.254249572753906,24,-0.16727066040039062,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,isEven (humor)::1,checkNumber,36,-37.346906661987305,13,-37.1322078704834,23,-0.21469879150390625,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,The Muse::0,searchJobs,70,-12.215066909790039,25,-9.842805862426758,45,-2.3722610473632812,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,The Muse::1,getJobApplications,48,-5.84950065612793,17,-5.784156799316406,31,-0.06534385681152344,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Dictum::0,getRandomQuote,33,-41.68377113342285,15,-36.91535949707031,18,-4.768411636352539,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Dictum::1,searchExpressions,54,-54.68947410583496,17,-36.08367156982422,37,-18.605802536010742,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,British National Bibliography::0,searchBooks,40,-8.980697631835938,14,-8.140640258789062,26,-0.840057373046875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,British National Bibliography::1,searchBooks,42,-9.35038948059082,14,-6.371511459350586,28,-2.9788780212402344,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Pastebin::0,getUserPastes,62,-55.445838928222656,23,-48.61079978942871,39,-6.835039138793945,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Pastebin::1,getTrendingPastes,44,-31.84251594543457,24,-18.576196670532227,20,-13.266319274902344,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Coinlib::0,getCoinData,40,-15.503673553466797,16,-14.041738510131836,24,-1.461935043334961,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Coinlib::1,getCoinData,41,-9.733976364135742,17,-8.9512939453125,24,-0.7826824188232422,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,NovaDax::0,getDepth,58,-1.9485149383544922,25,-1.5425186157226562,33,-0.40599632263183594,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,NovaDax::1,getTrades,61,-4.363002777099609,26,-3.8835277557373047,35,-0.4794750213623047,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,PUBG::0,getPlayer,51,-33.15732765197754,26,-19.83635711669922,25,-13.32097053527832,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,PUBG::1,getPlayer,42,-32.83854866027832,15,-18.63869857788086,27,-14.199850082397461,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Rick and Morty::0,getAllLocations,46,-9.161481857299805,23,-8.686872482299805,23,-0.474609375,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Rick and Morty::1,getCharacterById,40,-2.840057373046875,18,-2.5629634857177734,22,-0.27709388732910156,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,News::0,getTopHeadlines,63,-82.31803894042969,19,-47.59725379943848,44,-34.72078514099121,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,News::1,getEverything,122,-87.84261703491211,44,-21.46381187438965,78,-66.37880516052246,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Mixcloud::0,search,52,-28.438701629638672,19,-12.030733108520508,33,-16.407968521118164,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Mixcloud::1,search,53,-40.0842227935791,16,-20.555498123168945,37,-19.528724670410156,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Agify.io::0,getAge,36,-31.237207412719727,15,-30.64674186706543,21,-0.5904655456542969,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Agify.io::1,getAge,36,-37.532230377197266,15,-37.15750694274902,21,-0.3747234344482422,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,StackExchange__2::0,get-user,49,-8.402338027954102,14,-7.231998443603516,35,-1.170339584350586,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,StackExchange__2::1,get-user,52,-12.570316314697266,17,-11.96279525756836,35,-0.6075210571289062,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,WakaTime::0,getStats,74,-45.09515380859375,17,-24.063919067382812,57,-21.031234741210938,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,WakaTime::1,getDetails,66,-37.52322769165039,21,-20.390871047973633,45,-17.132356643676758,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Movie Quote::0,getRandomMovieQuote,36,-56.95956802368164,17,-49.426109313964844,19,-7.533458709716797,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Movie Quote::1,getFilteredQuote,48,-17.78014373779297,22,-10.882381439208984,26,-6.897762298583984,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,The Old Reader::0,getUserFeeds,58,-26.944921493530273,31,-16.07533073425293,27,-10.869590759277344,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,The Old Reader::1,getUserFeeds,49,-29.307918548583984,22,-19.02361488342285,27,-10.284303665161133,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Doge-Meme::0,getMemeDetails,47,-2.478208541870117,20,-2.4067516326904297,27,-0.0714569091796875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Doge-Meme::1,getTopMemes,48,-15.81480598449707,24,-1.3772144317626953,24,-14.437591552734375,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Czech Television::0,getWeeklyTVProgram,58,-6.024908065795898,24,-0.6246547698974609,34,-5.4002532958984375,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Czech Television::1,searchTVPrograms,66,-12.142684936523438,20,-4.99976921081543,46,-7.142915725708008,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Geokeo::0,batchGeocode,76,-4.299051284790039,17,-4.048971176147461,59,-0.2500801086425781,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Geokeo::1,geocode,47,-18.777587890625,19,-18.709972381591797,28,-0.06761550903320312,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Catch The Show::0,searchTvShow,49,-25.15015411376953,23,-23.745378494262695,26,-1.404775619506836,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Catch The Show::1,searchTvShow,39,-5.008899688720703,12,-4.968507766723633,27,-0.04039192199707031,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,"Transport for Vancouver, Canada__3::0",findStationsOrStops,82,-13.534772872924805,28,-12.632780075073242,54,-0.9019927978515625,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,"Transport for Vancouver, Canada__3::1",findStationsOrStops,74,-14.169858932495117,20,-12.162046432495117,54,-2.0078125,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Google Books::0,updateReadingStatus,62,-1.3323135375976562,19,-0.4299030303955078,43,-0.9024105072021484,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Google Books::1,getFeaturedBooks,43,-10.100320816040039,18,-6.935127258300781,25,-3.165193557739258,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,PhishStats::0,searchPhishingDatabase,49,-2.674661636352539,24,-2.277402877807617,25,-0.3972587585449219,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,PhishStats::1,getPhishingDomainInfo,48,-43.52729606628418,22,-43.52309799194336,26,-0.0041980743408203125,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,RuneScape::0,getEnemyInfo,47,-6.782770156860352,20,-6.399272918701172,27,-0.3834972381591797,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,RuneScape::1,getSkillInfo,46,-27.83864974975586,21,-27.73880386352539,25,-0.09984588623046875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,"Transport for Vancouver, Canada::0",getStaticSchedules,43,-4.398519515991211,18,-4.177824020385742,25,-0.22069549560546875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,"Transport for Vancouver, Canada::1",getStopsAndRoutesByLocation,70,-5.721246719360352,14,-3.0505027770996094,56,-2.670743942260742,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,TransitLand::0,searchStops,57,-15.049736022949219,22,-9.077499389648438,35,-5.972236633300781,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,TransitLand::1,searchStops,56,-20.355012893676758,13,-5.964178085327148,43,-14.39083480834961,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Giphy__2::0,searchGifs,39,-42.03615188598633,15,-26.62812614440918,24,-15.408025741577148,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Giphy__2::1,searchGifs,49,-60.77823257446289,19,-35.82416534423828,30,-24.95406723022461,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,bng2latlong::0,convertEastingNorthingToLatLong,65,-43.15743637084961,18,-43.018659591674805,47,-0.1387767791748047,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,bng2latlong::1,reverseGeocodeLatLongToEastingNorthing,85,-33.439260482788086,34,-33.38118362426758,51,-0.05807685852050781,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,CO2 Offset::0,calculateCarbonEmissions,68,-40.751739501953125,26,-37.017818450927734,42,-3.7339210510253906,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,CO2 Offset::1,calculateCarbonEmissions,73,-14.140064239501953,26,-14.031787872314453,47,-0.1082763671875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,"Open Government, Poland::0",searchDatasets,47,-2.938508987426758,14,-0.13758468627929688,33,-2.800924301147461,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,"Open Government, Poland::1",searchDatasets,45,-0.257354736328125,13,-0.20420074462890625,32,-0.05315399169921875,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,TheMealDB::0,searchMealByIngredient,41,-60.71084785461426,12,-60.100486755371094,29,-0.6103610992431641,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,TheMealDB::1,searchMealByName,48,-56.41619300842285,21,-36.10774612426758,27,-20.308446884155273,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Nutritionix__2::0,calculateNutritionForRecipe,91,-4.493144989013672,14,-3.1746559143066406,77,-1.3184890747070312,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Nutritionix__2::1,getVendingMachineData,57,-52.77624320983887,27,-48.49850273132324,30,-4.277740478515625,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Forismatic::0,searchQuote,50,-11.440292358398438,21,-3.1097774505615234,29,-8.330514907836914,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Forismatic::1,searchQuote,54,-31.109872817993164,20,-10.602373123168945,34,-20.50749969482422,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Google Safe Browsing::0,checkUrlSafety,37,-46.18805694580078,9,-39.61634826660156,28,-6.571708679199219,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Google Safe Browsing::1,checkMultipleUrlsSafety,67,-22.107240676879883,24,-22.048202514648438,43,-0.05903816223144531,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Noctua::0,getHistoricalWeatherData,79,-36.90434646606445,19,-15.07038688659668,60,-21.833959579467773,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Noctua::1,getHistoricalWeatherData,82,-21.248245239257812,19,-20.161060333251953,63,-1.0871849060058594,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Giphy::0,getTrendingGifs,61,-25.73632049560547,19,-7.467412948608398,42,-18.26890754699707,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Giphy::1,searchGifs,81,-61.10078239440918,21,-34.51878547668457,60,-26.58199691772461,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Yo Momma Jokes::0,getRandomJoke,34,-14.100370407104492,16,-6.9806976318359375,18,-7.119672775268555,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,Yo Momma Jokes::1,getCustomJoke,56,-21.55984115600586,31,-21.45430564880371,25,-0.10553550720214844,0.0
+unlearned,/projects/standard/mhong/shared/jiajunr/npo_gdr_ckpt/npo_gdr_ep5,JSONbin.io::0,createBin,43,-39.78417205810547,12,-28.144084930419922,31,-11.640087127685547,0.0

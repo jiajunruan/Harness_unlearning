@@ -1,0 +1,514 @@
+{
+  "seed": 42,
+  "target": 100,
+  "forget": [
+    {
+      "api": "Wikidata",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Time Door",
+      "n_instructions": 1,
+      "truncated": false
+    },
+    {
+      "api": "ipapi.com",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Quarantine",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Tradier",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Final Fantasy XIV",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Monster Hunter World",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "RSS feed to JSON",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "PandaDoc",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Urban Observatory",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "GrünstromIndex",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Dangerous Discord Database",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "GraphHopper",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "isEven (humor)",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "The Muse",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Dictum",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "British National Bibliography",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Pastebin",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Coinlib",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "NovaDax",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "PUBG",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Rick and Morty",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "News",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Mixcloud",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Agify.io",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "StackExchange__2",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "WakaTime",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Movie Quote",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "The Old Reader",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Doge-Meme",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Czech Television",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Geokeo",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Catch The Show",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Transport for Vancouver, Canada__3",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Google Books",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "PhishStats",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "RuneScape",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Transport for Vancouver, Canada",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "TransitLand",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Giphy__2",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "bng2latlong",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "CO2 Offset",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Open Government, Poland",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "TheMealDB",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Nutritionix__2",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Forismatic",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Google Safe Browsing",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Noctua",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Giphy",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Yo Momma Jokes",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "JSONbin.io",
+      "n_instructions": 2,
+      "truncated": true,
+      "kept": 1
+    }
+  ],
+  "retain": [
+    {
+      "api": "Logs.to",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Domainsdb.info__2",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "CheetahO",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "apilayer aviationstack",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "QWeather",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "xMath",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Open Government, New South Wales",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "ip-fast.com",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Feedbin",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Shrtlnk",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "EPA",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Domainsdb.info",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Postman Echo",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "CircleCI",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Universalis",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "SpaceX",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Bible-api",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Open Government, Italy",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Czech National Bank",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Lexigram",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Line",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "ZipRecruiter",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "APIs.guru",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "arXiv",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Bitbucket",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Wallhaven",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Freelancer",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Vadivelu HTTP Codes",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Micro DB",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Phone Specification",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Mono",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "PostalPinCode",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Open Government, Switzerland",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Tokopedia",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Blockchain",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "openFDA",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "NetworkCalc",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Namedays Calendar",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Alpha Vantage",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Open Page Rank",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "WeatherAPI",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Danbooru Anime",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Dogs",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "OpenStreetMap",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Chainlink",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Metabase",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "GeoDB Cities",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "SuredBits",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "COVID-ID",
+      "n_instructions": 2,
+      "truncated": false
+    },
+    {
+      "api": "Forza",
+      "n_instructions": 2,
+      "truncated": false
+    }
+  ]
+}

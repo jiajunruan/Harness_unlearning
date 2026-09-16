@@ -1,0 +1,32 @@
+# Python bytecode / notebook checkpoints
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Chinese-language documents: kept locally, not published
+/README_ZH.md
+/ToolAlpaca_指标与复现说明.md
+/ToolAlpaca/REPORT_FOR_ADVISOR.md
+/ToolBench/README_ZH.md
+/ToolBench/toolbench/tooleval/README_ZH.md
+
+# LaTeX manuscript sources
+*.tex
+
+# Local-only reproduction artifacts
+/reproduction/
+
+# Run logs
+/ToolAlpaca/logs/
+
+# Superseded results: only the GPT-35 forget/recall run is tracked
+/ToolAlpaca/outputs/*
+!/ToolAlpaca/outputs/paper_aligned_gpt35_gpt4_20260913_key2/
+!/ToolAlpaca/outputs/requested_comparators_gpt35_gpt4_20260913/
+/ToolAlpaca/collab/
+/ToolAlpaca/probability_results/

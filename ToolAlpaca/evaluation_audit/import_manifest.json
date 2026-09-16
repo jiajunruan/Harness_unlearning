@@ -1,0 +1,270 @@
+{
+  "note": "Hashes at import, before adapting executable paths; historical numerical artifacts remain unchanged.",
+  "files": [
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/main.tex",
+      "destination": "/users/2/jruan/Stable_evolving/main.tex",
+      "sha256": "914545087d7afb8163e4e37241d0c3d853fd138b45cda8dbc96f3b5749441336"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/math_commands.tex",
+      "destination": "/users/2/jruan/Stable_evolving/math_commands.tex",
+      "sha256": "cda93b6e3d63638ec7fcac9fa88dca3eea71dbdf8abd0073a748dd097721c608"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/score_gold_probabilities.py",
+      "destination": "/users/2/jruan/Stable_evolving/score_gold_probabilities.py",
+      "sha256": "062f3d820777f77fe1c72a09644a8a3abf3e477672baee5c54aa774c245876a9"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/summarize_log_probabilities.py",
+      "destination": "/users/2/jruan/Stable_evolving/summarize_log_probabilities.py",
+      "sha256": "924ed2eb1f982e80bfaf14a1a7c65227409f8974a3f53540eca18800286a8bfd"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/score_gold_probabilities.sbatch",
+      "destination": "/users/2/jruan/Stable_evolving/score_gold_probabilities.sbatch",
+      "sha256": "704e4e95a516d3e1e389dfa0afa60887bc478df6b4b30993f23492d465ebdb07"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/README.md",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/README.md",
+      "sha256": "db54866fdf0c17b1fd4660891fa4f9763b09a93c07cb0c21f938e89aa507b8a6"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified.log",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified.log",
+      "sha256": "7b701cae1c58847633dac965eb85dcfd42906574e83bfb0b17eefbee2a43abc0"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/original_per_task.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/original_per_task.csv",
+      "sha256": "3b07949c4a807b96b3289a0583f10fa9010934c42518ad131f93d69e8f2ce4a2"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/per_task_probabilities.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/per_task_probabilities.csv",
+      "sha256": "71d3b1bd353f3066dc45102ff2b2fc438055599962776a273012166d6d294a1e"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/references.json",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/references.json",
+      "sha256": "fa9211d8f432833e7669b89d46432b4f03cdaeb645ac748c302fb2af8005f274"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/scoring_75090.log",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/scoring_75090.log",
+      "sha256": "c83a1220458ec51855d8a18952027590c34bd26e6552c3651d25b7297ea06472"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/summary.json",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/summary.json",
+      "sha256": "eb9a193b718e59734bee26f57a713a634a20ea64cb3360ad3f5487a8bfac11c5"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/task_success_verified.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/task_success_verified.csv",
+      "sha256": "5d7bd0389cc42ca8b04f275233e28ed16b441cd2b5df8ed08be889ffa3a338c7"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/unlearned_per_task.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/unlearned_per_task.csv",
+      "sha256": "4c0cc1a7b88e72600ca8feb6d07271192e4431d6fe14d426c7f04c9e138f6a98"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/log_probability_summary.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/log_probability_summary.csv",
+      "sha256": "a690bacd7bcb0d1175088eb2afe11ce8d2aa48f9790290747ca0c48916463b65"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/log_probability_summary.json",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/log_probability_summary.json",
+      "sha256": "a70cfd97c16ff0ed65722ac0bac05affa7d3a8d4471be8793b46dd3973423cdd"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/original_per_task.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/original_per_task.csv",
+      "sha256": "830e60cb120def395ebe1e4841331dc9cb9c0d969dcbae37fbd079306df0f930"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/per_task_log_probabilities.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/per_task_log_probabilities.csv",
+      "sha256": "9accb836f755e3911218e93b896998910d216e4c48ce75d088f597157fc05a03"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/per_task_probabilities.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/per_task_probabilities.csv",
+      "sha256": "5f67acbf3dc94c2502458f51680df9c1f0edd923883f7e5862a9512016fe9d6f"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/references.json",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/references.json",
+      "sha256": "fa9211d8f432833e7669b89d46432b4f03cdaeb645ac748c302fb2af8005f274"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/summary.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/summary.csv",
+      "sha256": "9ca81150b19e896cdfc6a1b847e29a0e3cc821c5bbf089648e80d617f8edddaa"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/summary.json",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/summary.json",
+      "sha256": "03ba6f077df81581619680460f7669dcb202a30fc1fcc5eb2d2e3cee4fc86b11"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/unlearned_per_task.csv",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/unlearned_per_task.csv",
+      "sha256": "5680930b5105e925567b18aa5419a6ed13d45e49f2ac723a51f951bd1acd9a08"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/probability_results/local_gpu_verified/verification.json",
+      "destination": "/users/2/jruan/Stable_evolving/probability_results/local_gpu_verified/verification.json",
+      "sha256": "e107424871efad01149426abcd28da34d95cb9db99ed495d7be3519d1804a405"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/FIXES.md",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/FIXES.md",
+      "sha256": "1590d166a15b9b493c754232f067ca7a4fba7b01cc71680c95fc1d8c64428dcb"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/REPORT.md",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/REPORT.md",
+      "sha256": "1c514694054c799f8600fbb28a095bc1342fc20d1ea4d4b45dd1425fec2f294d"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/audit_rates.py",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/audit_rates.py",
+      "sha256": "807141e44c43e9bfc9556ca71a19ce19a0810a8bdec2a839ec2a9761f12648b0"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/fix_tests.log",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/fix_tests.log",
+      "sha256": "3387040aabcb1026bf30cfb78ea4fec4b4facca8e8015c41499164b725bbee52"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/per_task_audit.csv",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/per_task_audit.csv",
+      "sha256": "c4ccdfe1da52e5c4697c57331dd1d8f07a424f6ea8c681220b9d4ec4886ca792"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/reproduce_missing_parameter_crashes.py",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/reproduce_missing_parameter_crashes.py",
+      "sha256": "e3f0ba714c8241c033a61cad61cf86ab86946d5bc619a7a792aa8e1450dfef97"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/reproduced_crashes.json",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/reproduced_crashes.json",
+      "sha256": "ffc1aa5d8984f1671ef25490d2f61acc55fa5bfb9ea6251eb23fafdcc7e0f14e"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/summary.csv",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/summary.csv",
+      "sha256": "1434cc67740edf9521d74b4ac5c5dac5dfac2b7abfac6cd10a6340612df656d7"
+    },
+    {
+      "source": "/users/2/jruan/6a99eb6ee4c4a85262c878e0/evaluation_audit/summary.json",
+      "destination": "/users/2/jruan/Stable_evolving/evaluation_audit/summary.json",
+      "sha256": "dd1cc9b0a56b3dac537a3e8225d20fd8bb15c897c8b917b6aaa863097847d008"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/final_tables.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/final_tables.json",
+      "sha256": "2793313c32e2e505bb07490d85493d9cb6c8f40ea8db707e84a8022290370bde"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/final_tables.md",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/final_tables.md",
+      "sha256": "7bfdce55a40ab744adfade5811e0b8c04d58490d5643f334f97ef6802018c589"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/hybrid_T_f_luna.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/luna/hybrid_T_f_luna.json",
+      "sha256": "755afdddff14535a4fe6aed0f19b7cb3c9f8d2398cd3ba9e2f2b0956b36c6f77"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/hybrid_T_r_luna.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/luna/hybrid_T_r_luna.json",
+      "sha256": "31e075eeeec5226c9fa41364729066ab333f3c35c6455a41ae29f9a2c8173339"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/original_T_f_luna.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/luna/original_T_f_luna.json",
+      "sha256": "a35b329ac850579e9e59a1e51aa6cb6defc461e61176b3c6ebb5600d0ac9596e"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/original_T_r_luna.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/luna/original_T_r_luna.json",
+      "sha256": "907fe216718168597f27bc4aa48369b065bca945ea35478b22586aa85a1726d2"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/unlearned_T_f_luna.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/luna/unlearned_T_f_luna.json",
+      "sha256": "8b959a36dd37b9bbd89a6bbbc3ae1a7a7b34c2c6b7bacf6ca7553cca6171ec3d"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/luna/unlearned_T_r_luna.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/luna/unlearned_T_r_luna.json",
+      "sha256": "b216f90019598da97ac015a3c7d94ba90669fe497d7eb91e3575ffd1c80bb59a"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/unlearned/T_f/B0.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/unlearned/T_f/B0.json",
+      "sha256": "b2e101c77039915e9aa8723a9a7ac42878390822eb2d6b756da33c6634964c9d"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/unlearned/T_f/B0_trace.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/unlearned/T_f/B0_trace.json",
+      "sha256": "fcace9b5b3054a56439f52f2481f8dba8d1e931685d5ead6b02a104d7416601a"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/unlearned/T_r/B0.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/unlearned/T_r/B0.json",
+      "sha256": "8299775b216cb5514fd204df80819981c10e803ca040ca962ddb42436d681833"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/unlearned/T_r/B0_trace.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/unlearned/T_r/B0_trace.json",
+      "sha256": "2eb64e77a251496c348d05580ea4691892b274efc0e833657f11c9c1bee36d2a"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/original/T_f/B0.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/original/T_f/B0.json",
+      "sha256": "2f5b7955d535377423fbada44d3742e1754da8c1614d8b61ae16b410d700204b"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/original/T_f/B0_trace.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/original/T_f/B0_trace.json",
+      "sha256": "79b86eaa33ce44404de261a551d574651a62de42b002e451ce17a693f0f88483"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/original/T_r/B0.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/original/T_r/B0.json",
+      "sha256": "2e9b89296fbc79884f7f977008e278eb683e575b50d4e84acba743fb8c4fb780"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/original/T_r/B0_trace.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/original/T_r/B0_trace.json",
+      "sha256": "014036a4e959452c4b255da9d097d6c2c6d667ae77b4dbe3ddef91382137c72b"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/hybrid/T_f/H1.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/hybrid/T_f/H1.json",
+      "sha256": "a525e75271a9b9fea45a1b97c0b701471f0157e4a35bf76118dd8bc67e50b771"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/hybrid/T_f/H1_trace.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/hybrid/T_f/H1_trace.json",
+      "sha256": "55c9dffdc1da3a27e4131855d580f1d28abbd6d27b8c004bc78af5b35bfdf3a7"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/hybrid/T_r/H1.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/hybrid/T_r/H1.json",
+      "sha256": "e0fa827d0adb6704d3d0208f6492691f9c974694f23329671f01a888aee604dc"
+    },
+    {
+      "source": "/projects/standard/mhong/shared/jiajunr/full_react_3way_luna_p0/hybrid/T_r/H1_trace.json",
+      "destination": "/users/2/jruan/Stable_evolving/outputs/full_react_3way_luna_p0/hybrid/T_r/H1_trace.json",
+      "sha256": "ac7a11f394c27af5b3c3436e373ff0ac83b55b22e14986f70a03180d064dc60a"
+    }
+  ]
+}

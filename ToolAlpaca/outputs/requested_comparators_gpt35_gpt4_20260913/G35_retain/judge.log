@@ -1,0 +1,14 @@
+[judge] 91 items to judge, 8 at a time
+[judge] 8/91
+[judge] 16/91
+[judge] 24/91
+[judge] 32/91
+[judge] 40/91
+[judge] 48/91
+[judge] 56/91
+[judge] 64/91
+[judge] 72/91
+[judge] 80/91
+[judge] 88/91
+[judge] 91/91
+[judge] done: process_accuracy=0.42 (42/100); overall_accuracy=0.4

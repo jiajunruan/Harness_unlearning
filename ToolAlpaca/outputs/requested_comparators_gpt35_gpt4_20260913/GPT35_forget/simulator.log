@@ -1,0 +1,1723 @@
+INFO:     Started server process [1633840]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5724 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60274 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60290 - "GET /__simulator_cache__/open HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60300 - "GET /__simulator_cache__/clear/Wikidata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60312 - "GET /__simulator_cache__/clear/Wikidata HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.36s/it]1it [00:01,  1.36s/it]
+Status Code: 200
+Response: 
+{
+  "predictions": [
+    {"timestamp": "2022-05-01", "value": 150},
+    {"timestamp": "2022-06-01", "value": 160},
+    {"timestamp": "2022-07-01", "value": 170}
+  ]
+}
+Explanation: The input data points were used to predict future values using the linear regression model. The response contains the predicted values for the next three months.
+INFO:     127.0.0.1:60324 - "POST /Time%20Door/prediction-algorithm-for-machine-learning-models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45676 - "GET /__simulator_cache__/clear/Time%20Door HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.71s/it]1it [00:01,  1.71s/it]
+Status Code: 200
+Response: 
+{
+  "ip": "192.168.1.1",
+  "city": "Localhost",
+  "region": "Local",
+  "region_code": "LCL",
+  "country": "Localand",
+  "country_code": "LCL",
+  "continent": "Localica",
+  "continent_code": "LCL",
+  "latitude": 0.0,
+  "longitude": 0.0,
+  "timezone": "UTC",
+  "utc_offset": "+00:00",
+  "country_calling_code": "+000",
+  "currency": "Localcoin",
+  "languages": ["Localish"],
+  "asn": "AS000",
+  "org": "Localhost ISP"
+}
+Explanation: This response provides geolocation data for the user's current IP address with realistic but placeholder values for demonstration purposes.
+INFO:     127.0.0.1:45688 - "GET /ipapi.com/geolocate/user%27s%20current%20IP%20address HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45696 - "GET /__simulator_cache__/clear/ipapi.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45712 - "GET /__simulator_cache__/clear/ipapi.com HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.75s/it]1it [00:02,  2.75s/it]
+Status Code: 200
+Response: 
+{
+  "timeline": [
+    {
+      "date": "2022-01-01",
+      "new_cases": 1000,
+      "new_deaths": 50,
+      "new_recovered": 500,
+      "total_cases": 10000,
+      "total_deaths": 500,
+      "total_recovered": 5000
+    },
+    {
+      "date": "2022-01-02",
+      "new_cases": 1200,
+      "new_deaths": 60,
+      "new_recovered": 600,
+      "total_cases": 11200,
+      "total_deaths": 560,
+      "total_recovered": 5600
+    },
+    {
+      "date": "2022-01-03",
+      "new_cases": 800,
+      "new_deaths": 40,
+      "new_recovered": 400,
+      "total_cases": 12000,
+      "total_deaths": 600,
+      "total_recovered": 6000
+    }
+  ]
+}
+Explanation: This response provides a timeline of COVID-19 cases, deaths, and recoveries for Brazil on three consecutive days. The data is realistic and aligns with the OpenAPI Spec format.
+INFO:     127.0.0.1:45722 - "GET /Quarantine/country/timeline/Brazil HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55542 - "GET /__simulator_cache__/clear/Quarantine HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55552 - "GET /__simulator_cache__/clear/Quarantine HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.81s/it]1it [00:02,  2.81s/it]
+Status Code: 200
+Response: 
+{
+    "historical_data": [
+        {
+            "date": "2020-01-01",
+            "open_price": 296.24,
+            "high_price": 298.92,
+            "low_price": 295.25,
+            "close_price": 297.43,
+            "volume": 13564700
+        },
+        {
+            "date": "2020-01-02",
+            "open_price": 296.24,
+            "high_price": 298.92,
+            "low_price": 295.25,
+            "close_price": 297.43,
+            "volume": 15461800
+        },
+        {
+            "date": "2020-01-03",
+            "open_price": 297.15,
+            "high_price": 299.98,
+            "low_price": 296.06,
+            "close_price": 299.80,
+            "volume": 23456400
+        }
+    ]
+}
+Explanation: The response contains historical pricing data for the stock symbol AAPL from January 1, 2020, to December 31, 2020. Each entry includes the date, open price, high price, low price, closing price, and volume traded for that day.
+INFO:     127.0.0.1:55554 - "GET /Tradier/historical_data?symbol=AAPL&start_date=2020-01-01&end_date=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55564 - "GET /__simulator_cache__/clear/Tradier HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55572 - "GET /__simulator_cache__/clear/Tradier HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55588 - "GET /__simulator_cache__/clear/Final%20Fantasy%20XIV HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.02s/it]1it [00:02,  2.03s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Legendary Explorer",
+    "description": "Achieve the status of Legendary Explorer by completing all quests and collecting rare items.",
+    "requirements": [
+        {"type": "level", "value": "80"},
+        {"type": "quest", "value": "The Ultimate Challenge"},
+        {"type": "item", "value": "Excalibur"}
+    ],
+    "rewards": [
+        {"name": "Title: Legendary Explorer", "quantity": 1},
+        {"name": "Mount: Legendary Dragon", "quantity": 1}
+    ]
+}
+Explanation: This response provides information about the achievement "Legendary Explorer", including its description, requirements (level, quest, item), and rewards (title, mount).
+INFO:     127.0.0.1:55598 - "GET /Final%20Fantasy%20XIV/achievement/12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49512 - "GET /__simulator_cache__/clear/Final%20Fantasy%20XIV HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49522 - "GET /__simulator_cache__/clear/Monster%20Hunter%20World HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.70s/it]1it [00:01,  1.70s/it]
+Status Code: 200
+Response: 
+{
+    "quests": [
+        {
+            "id": 1234,
+            "name": "Elder Dragon Slaying",
+            "description": "Hunt down the powerful Elder Dragons threatening the ecosystem.",
+            "type": "Assigned",
+            "difficulty": 9
+        },
+        {
+            "id": 5678,
+            "name": "Tempered Nergigante Investigation",
+            "description": "Investigate the tempered Nergigante's behavior and eliminate the threat.",
+            "type": "Investigation",
+            "difficulty": 9
+        },
+        {
+            "id": 9012,
+            "name": "Arch-Tempered Kirin Event",
+            "description": "Face the mighty Arch-Tempered Kirin in a special event quest.",
+            "type": "Event",
+            "difficulty": 9
+        }
+    ]
+}
+Explanation: The response contains a list of quests with difficulty level 9, including their IDs, names, descriptions, types, and difficulty levels. These quests are high-level challenges in Monster Hunter World.
+INFO:     127.0.0.1:49526 - "GET /Monster%20Hunter%20World/quests?difficulty=9 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.19s/it]1it [00:02,  2.19s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Elder Dragon Slaying",
+    "objectives": [
+        "Hunt down Nergigante",
+        "Collect Nergigante materials",
+        "Survive Nergigante's attacks"
+    ],
+    "rewards": [
+        "Nergigante materials",
+        "High-level armor spheres",
+        "Elder Dragon Blood"
+    ]
+}
+Explanation: The response provides details of the quest with ID 1234, including its name, objectives to complete the quest, and rewards upon successful completion. This quest involves hunting down the powerful Elder Dragon, Nergigante.
+INFO:     127.0.0.1:49534 - "GET /Monster%20Hunter%20World/quests/1234 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.23it/s]1it [00:00,  1.23it/s]
+Status Code: 404
+Response: 
+{
+    "error": "Quest not found."
+}
+Explanation: The requested quest with ID 5678 was not found in the database. The response indicates that the quest does not exist or the ID is invalid.
+0it [00:00, ?it/s]1it [00:00,  1.18it/s]1it [00:00,  1.18it/s]
+Status Code: 404
+Response: 
+{
+    "error": "Quest not found",
+    "message": "The quest with ID 5678 does not exist in the database."
+}
+Explanation: The response indicates that the quest with ID 5678 was not found in the database. The provided quest ID does not correspond to any existing quest in the system.
+INFO:     127.0.0.1:42452 - "GET /Monster%20Hunter%20World/quests/5678 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42460 - "GET /__simulator_cache__/clear/Monster%20Hunter%20World HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.57s/it]1it [00:02,  2.57s/it]
+Status Code: 200
+Response: 
+{
+  "items": [
+    {
+      "title": "Artificial Intelligence and Machine Learning in Healthcare",
+      "link": "https://scienceblog.com/article123",
+      "description": "Exploring the impact of AI and ML in the healthcare industry.",
+      "pubDate": "2022-09-15T10:30:00Z",
+      "guid": "123456789"
+    },
+    {
+      "title": "Advancements in AI Algorithms for Machine Learning Applications",
+      "link": "https://scienceblog.com/article456",
+      "description": "Discover the latest developments in AI algorithms for ML applications.",
+      "pubDate": "2022-09-17T14:45:00Z",
+      "guid": "987654321"
+    },
+    {
+      "title": "Ethical Considerations in AI and Machine Learning Technologies",
+      "link": "https://scienceblog.com/article789",
+      "description": "Examining the ethical implications of AI and ML technologies.",
+      "pubDate": "2022-09-20T09:00:00Z",
+      "guid": "456123789"
+    }
+  ]
+}
+Explanation: The response contains a JSON object with an array of feed items filtered by the specified tags "AI" and "Machine Learning" from the provided RSS feed URL. Each item includes the title, link, description, publication date, and unique identifier (guid).
+INFO:     127.0.0.1:42476 - "GET /RSS%20feed%20to%20JSON/getFeedItemsByTag?feedUrl=https%3A%2F%2Fscienceblog.com%2Frss&tags=AI&tags=Machine+Learning HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42492 - "GET /__simulator_cache__/clear/RSS%20feed%20to%20JSON HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42508 - "GET /__simulator_cache__/clear/RSS%20feed%20to%20JSON HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50436 - "GET /__simulator_cache__/clear/PandaDoc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50440 - "GET /__simulator_cache__/clear/PandaDoc HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.19it/s]1it [00:00,  1.19it/s]
+Status Code: 200
+Response: 
+{
+    "sensorLocations": ["Newcastle City Centre", "Gateshead Quays", "Jesmond", "Heaton", "Sunderland City Centre"]
+}
+Explanation: The response contains a JSON array of available sensor locations including Newcastle City Centre, Gateshead Quays, Jesmond, Heaton, and Sunderland City Centre.
+INFO:     127.0.0.1:50448 - "GET /Urban%20Observatory/sensor-locations HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.21s/it]1it [00:01,  1.21s/it]
+Status Code: 200
+Response:
+{
+    "sensorTypes": ["Air Quality", "Traffic", "Weather", "Noise"]
+}
+Explanation: The response provides a JSON array of available sensor types including Air Quality, Traffic, Weather, and Noise.
+INFO:     127.0.0.1:50450 - "GET /Urban%20Observatory/sensor-types HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50464 - "GET /__simulator_cache__/clear/Urban%20Observatory HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.99s/it]1it [00:01,  1.99s/it]
+Status Code: 200
+Response: {"sensorLocations": ["City Centre", "University Campus", "Industrial Zone", "Residential Area", "Park"]}
+Explanation: The response contains a JSON array with the names of available sensor locations in the urban observatory, including City Centre, University Campus, Industrial Zone, Residential Area, and Park.
+
+Status Code: 200
+Response: {"sensorLocations": ["Shopping Mall", "Hospital", "Train Station", "Airport", "Sports Stadium"]}
+Explanation: The response provides a JSON array listing additional sensor locations available in the urban observatory, such as Shopping Mall, Hospital, Train Station, Airport, and Sports Stadium.
+
+Status Code: 200
+Response: {"sensorLocations": ["Highway", "Riverbank", "Mountain Area", "Coastal Region", "Historic Site"]}
+Explanation: The JSON array in the response showcases more sensor locations within the urban observatory, including Highway, Riverbank, Mountain Area, Coastal Region, and Historic Site.
+INFO:     127.0.0.1:50472 - "GET /Urban%20Observatory/sensor-locations HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.37s/it]1it [00:02,  2.37s/it]
+Status Code: 200
+Response: {"sensorTypes": ["Air Quality", "Traffic", "Weather", "Noise Level", "Temperature"]}
+Explanation: The response includes a JSON array listing the available sensor types in the urban observatory, such as Air Quality, Traffic, Weather, Noise Level, and Temperature.
+
+Status Code: 200
+Response: {"sensorTypes": ["Humidity", "Light Intensity", "Carbon Monoxide", "Wind Speed", "Rainfall"]}
+Explanation: The JSON array in the response showcases additional sensor types present in the urban observatory, including Humidity, Light Intensity, Carbon Monoxide, Wind Speed, and Rainfall.
+
+Status Code: 200
+Response: {"sensorTypes": ["UV Index", "Barometric Pressure", "Ozone Level", "Particulate Matter", "Visibility"]}
+Explanation: The response provides a JSON array highlighting more sensor types available in the urban observatory, such as UV Index, Barometric Pressure, Ozone Level, Particulate Matter, and Visibility.
+INFO:     127.0.0.1:52924 - "GET /Urban%20Observatory/sensor-types HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.91s/it]1it [00:01,  1.91s/it]
+Status Code: 200
+Response: {"visualizations": [{"visualizationType": "Graph", "url": "https://urbanobservatory.ac.uk/visualizations/graphs/weather-edinburgh", "description": "Graphical representation of weather data in Edinburgh for various parameters."}, {"visualizationType": "Map", "url": "https://urbanobservatory.ac.uk/visualizations/maps/weather-edinburgh", "description": "Interactive map displaying weather information in Edinburgh with geospatial visualization."}, {"visualizationType": "Chart", "url": "https://urbanobservatory.ac.uk/visualizations/charts/weather-edinburgh", "description": "Chart representation of weather data trends in Edinburgh over time."}]
+Explanation: The response contains a JSON object with built-in visualizations for the specified location (Edinburgh) and sensor type (Weather). It includes visualizations like Graph, Map, and Chart with corresponding URLs and descriptions for weather data in Edinburgh.
+Expecting ',' delimiter: line 1 column 646 (char 645)
+INFO:     127.0.0.1:52932 - "GET /Urban%20Observatory/visualizations?location=Edinburgh&sensorType=Weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52942 - "GET /__simulator_cache__/clear/Urban%20Observatory HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52956 - "GET /__simulator_cache__/clear/Gr%C3%BCnstromIndex HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.06s/it]1it [00:01,  1.06s/it]
+Status Code: 200
+Response: 
+{
+    "calculation": "The Green Power Index (Grünstromindex/GSI) is calculated based on the renewable energy production and consumption data across various regions in Germany. The calculation takes into account the source of the data, the proportion of renewable energy used, and the environmental impact of the energy sources.",
+    "source": "Renewable energy production and consumption data from official sources and energy providers in Germany."
+}
+Explanation: The response provides a description of how the Green Power Index (Grünstromindex/GSI) is calculated, including the factors considered and the source of the data used for the calculation.
+INFO:     127.0.0.1:52966 - "GET /Gr%C3%BCnstromIndex/gsi_calculation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51358 - "GET /__simulator_cache__/clear/Gr%C3%BCnstromIndex HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51374 - "GET /__simulator_cache__/clear/Dangerous%20Discord%20Database HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51384 - "GET /__simulator_cache__/clear/Dangerous%20Discord%20Database HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50254 - "GET /__simulator_cache__/clear/GraphHopper HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.36s/it]1it [00:03,  3.36s/it]
+Status Code: 200
+Response: 
+{
+    "distance": 2500,
+    "time": 1200,
+    "instructions": [
+        {
+            "text": "Start walking on Market St",
+            "distance": 500,
+            "time": 240,
+            "interval": [0, 1],
+            "sign": 0,
+            "exit_number": 0,
+            "street_name": "Market St",
+            "last_street_name": "Market St"
+        },
+        {
+            "text": "Turn left on 5th St",
+            "distance": 800,
+            "time": 360,
+            "interval": [1, 2],
+            "sign": 1,
+            "exit_number": 0,
+            "street_name": "5th St",
+            "last_street_name": "5th St"
+        },
+        {
+            "text": "Turn right on Mission St",
+            "distance": 1200,
+            "time": 600,
+            "interval": [2, 3],
+            "sign": 2,
+            "exit_number": 0,
+            "street_name": "Mission St",
+            "last_street_name": "Mission St"
+        }
+    ]
+}
+Explanation: 
+The request calculates the optimal walking route between three points in San Francisco based on the shortest distance algorithm. The response provides the total distance of 2500 meters and the total time of 1200 seconds. It includes turn-by-turn instructions with realistic data for each segment of the route.
+INFO:     127.0.0.1:50262 - "POST /GraphHopper/route HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50266 - "GET /__simulator_cache__/clear/GraphHopper HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50274 - "GET /__simulator_cache__/clear/isEven%20%28humor%29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50286 - "GET /__simulator_cache__/clear/isEven%20%28humor%29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50292 - "GET /__simulator_cache__/clear/The%20Muse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50306 - "GET /__simulator_cache__/clear/The%20Muse HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.46s/it]1it [00:01,  1.46s/it]
+Status Code: 200
+Response: 
+{
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "source": "Speech at Stanford University, 2005"
+}
+Explanation: This response provides a random inspiring quote by Steve Jobs with the source being his famous speech at Stanford University in 2005. The quote emphasizes the importance of loving one's work to achieve greatness.
+INFO:     127.0.0.1:40550 - "GET /Dictum/random-quote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40560 - "GET /__simulator_cache__/clear/Dictum HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40564 - "GET /__simulator_cache__/clear/Dictum HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.26s/it]1it [00:02,  2.26s/it]
+Status Code: 200
+Response: 
+{
+    "books": [
+        {
+            "author": "Jane Smith",
+            "title": "A History of British Fashion",
+            "publicationDate": "2020-05-15",
+            "publisher": "Fashion Press",
+            "isbn": "978-1-234567-89-0"
+        },
+        {
+            "author": "John Doe",
+            "title": "Fashion Through the Ages",
+            "publicationDate": "2018-09-20",
+            "publisher": "Style Books",
+            "isbn": "978-0-987654-32-1"
+        },
+        {
+            "author": "Emily Brown",
+            "title": "The Evolution of Fashion",
+            "publicationDate": "2017-03-10",
+            "publisher": "Trend Publications",
+            "isbn": "978-6-543210-98-7"
+        }
+    ]
+}
+Explanation: The API responded with a list of books related to the query "history of British fashion" and subject "history". Each book entry contains details such as author, title, publication date, publisher, and ISBN.
+
+(Note: The response contains 3 sample book entries as requested.)
+INFO:     127.0.0.1:40576 - "GET /British%20National%20Bibliography/searchBooks?query=history+of+British+fashion&subject=history HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.83s/it]1it [00:01,  1.83s/it]
+Status Code: 200
+Response:
+{
+    "author": "Jane Smith",
+    "title": "A History of British Fashion",
+    "publicationDate": "2020-05-15",
+    "publisher": "Fashion Press",
+    "isbn": "978-1-234567-89-0",
+    "description": "Explore the rich history of British fashion from the Victorian era to modern trends.",
+    "language": "English",
+    "format": "Hardcover",
+    "pages": 256,
+    "dimensions": "6 x 9 inches",
+    "subjects": ["Fashion History", "British Fashion", "Historical Clothing"],
+    "contributors": ["Sarah Johnson", "Michael Williams"]
+}
+Explanation: The API provided detailed information about the book with ISBN "978-1-234567-89-0". The response includes the author, title, publication date, publisher, description, language, format, number of pages, dimensions, subjects, and contributors.
+INFO:     127.0.0.1:40578 - "GET /British%20National%20Bibliography/getBookDetails?bookId=978-1-234567-89-0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55202 - "GET /__simulator_cache__/clear/British%20National%20Bibliography HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55216 - "GET /__simulator_cache__/clear/British%20National%20Bibliography HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.49s/it]1it [00:02,  2.49s/it]
+Status Code: 200
+Response: 
+{
+    "pastes": [
+        {
+            "pasteKey": "abc123",
+            "title": "Sample Paste 1",
+            "created": "2022-10-15T08:00:00Z",
+            "access": "public"
+        },
+        {
+            "pasteKey": "def456",
+            "title": "Sample Paste 2",
+            "created": "2022-10-16T10:30:00Z",
+            "access": "private"
+        },
+        {
+            "pasteKey": "ghi789",
+            "title": "Sample Paste 3",
+            "created": "2022-10-17T15:45:00Z",
+            "access": "unlisted"
+        }
+    ]
+}
+Explanation: This response simulates the retrieval of a list of pastes created by the specified user with the user key "xYz098Usr". The response includes paste keys, titles, creation dates, and access levels for a maximum of 10 pastes.
+INFO:     127.0.0.1:55218 - "GET /Pastebin/getUserPastes?userKey=xYz098Usr&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55228 - "GET /__simulator_cache__/clear/Pastebin HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.40s/it]1it [00:02,  2.40s/it]
+Status Code: 200
+Response: 
+{
+  "trendingPastes": [
+    {
+      "pasteKey": "abcd1234",
+      "title": "Sample Trending Paste 1",
+      "created": "2022-09-15T10:30:00Z",
+      "access": "public"
+    },
+    {
+      "pasteKey": "efgh5678",
+      "title": "Sample Trending Paste 2",
+      "created": "2022-09-16T15:45:00Z",
+      "access": "unlisted"
+    },
+    {
+      "pasteKey": "ijkl9012",
+      "title": "Sample Trending Paste 3",
+      "created": "2022-09-17T12:00:00Z",
+      "access": "private"
+    }
+  ]
+}
+Explanation: This response provides a list of the current trending pastes on Pastebin, including their paste keys, titles, creation dates, and access levels. Each paste has a unique identifier, title, creation date, and access level (public, unlisted, or private).
+INFO:     127.0.0.1:55230 - "GET /Pastebin/getTrendingPastes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50030 - "GET /__simulator_cache__/clear/Pastebin HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50044 - "GET /__simulator_cache__/clear/Coinlib HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50052 - "GET /__simulator_cache__/clear/Coinlib HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.50s/it]1it [00:01,  1.50s/it]
+Status Code: 200
+Response: 
+{
+    "bids": [
+        ["3500.25", "10.5"],
+        ["3499.75", "12.2"],
+        ["3499.50", "8.7"],
+        ["3499.00", "15.3"],
+        ["3498.75", "9.8"]
+    ],
+    "asks": [
+        ["3501.00", "5.6"],
+        ["3501.50", "7.3"],
+        ["3502.00", "9.1"],
+        ["3502.50", "6.4"],
+        ["3503.00", "8.9"]
+    ]
+}
+Explanation: 
+The response contains the trading depth for the trading pair ETH_USDT with a depth of 50 levels. The "bids" array represents the buy orders with price and amount, while the "asks" array represents the sell orders with price and amount. Each array contains 5 sample levels of market depth.
+INFO:     127.0.0.1:50058 - "GET /NovaDax/depth?symbol=ETH_USDT&depth=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50064 - "GET /__simulator_cache__/clear/NovaDax HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.57s/it]1it [00:02,  2.57s/it]
+Status Code: 200
+Response: 
+{
+  "trades": [
+    {
+      "id": 123456789,
+      "price": "1.25",
+      "amount": "100.00",
+      "side": "buy",
+      "timestamp": 1633632000
+    },
+    {
+      "id": 123456790,
+      "price": "1.30",
+      "amount": "75.50",
+      "side": "sell",
+      "timestamp": 1633632100
+    },
+    {
+      "id": 123456791,
+      "price": "1.28",
+      "amount": "50.25",
+      "side": "buy",
+      "timestamp": 1633632200
+    }
+  ]
+}
+Explanation: This response contains the trade history for the XRP_USDT trading pair with a limit of 200 trades. The trades include details such as trade ID, price, amount, side (buy/sell), and timestamp.
+INFO:     127.0.0.1:50078 - "GET /NovaDax/trades?symbol=XRP_USDT&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59076 - "GET /__simulator_cache__/clear/NovaDax HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.92s/it]1it [00:01,  1.92s/it]
+Status Code: 200
+Response: 
+{
+    "match_id": "latest",
+    "game_mode": "squad",
+    "duration": 1800,
+    "events": [
+        {
+            "event_type": "kill",
+            "event_data": {
+                "killer": "Player1",
+                "victim": "Player2",
+                "weapon": "AKM"
+            }
+        },
+        {
+            "event_type": "revive",
+            "event_data": {
+                "reviver": "Player3",
+                "revived_player": "Player4"
+            }
+        }
+    ],
+    "telemetry": {
+        "player_locations": [
+            {
+                "player_id": "Player1",
+                "location": {
+                    "x": 100.25,
+                    "y": 75.50
+                }
+            },
+            {
+                "player_id": "Player2",
+                "location": {
+                    "x": 150.75,
+                    "y": 200.00
+                }
+            }
+        ],
+        "vehicle_movements": [
+            {
+                "vehicle_id": "Car1",
+                "movement_data": {
+                    "speed": 60,
+                    "direction": "North"
+                }
+            }
+        ]
+    }
+}
+Explanation: This response simulates information about the latest match in squad mode with events like kills and revives, along with telemetry data such as player locations and vehicle movements.
+INFO:     127.0.0.1:59092 - "GET /PUBG/getMatch?match_id=latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59108 - "GET /__simulator_cache__/clear/PUBG HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59110 - "GET /__simulator_cache__/clear/PUBG HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59120 - "GET /__simulator_cache__/clear/Rick%20and%20Morty HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:11, 11.15s/it]1it [00:11, 11.15s/it]
+Status Code: 200
+Response: 
+{
+  "id": 52794,
+  "name": "Rick Sanchez",
+  "status": "Alive",
+  "species": "Human",
+  "type": "Mad Scientist",
+  "gender": "Male",
+  "origin": {
+    "id": 20,
+    "name": "Earth (C-137)",
+    "type": "Planet",
+    "dimension": {
+      "id": 3,
+      "name": "Dimension C-137",
+      "dimension": "Dimension C-137",
+      "residents": [
+        {
+          "id": 52794,
+          "name": "Rick Sanchez",
+          "status": "Alive",
+          "species": "Human",
+          "type": "Mad Scientist",
+          "gender": "Male",
+          "origin": {
+            "id": 20,
+            "name": "Earth (C-137)",
+            "type": "Planet",
+            "dimension": {
+              "id": 3,
+              "name": "Dimension C-137",
+              "dimension": "Dimension C-137",
+              "residents": []
+            },
+            "residents": [],
+            "url": "https://rickandmortyapi.com/api/location/20",
+            "created": "2017-11-10T12:42:04.162Z"
+          },
+          "location": {
+            "id": 20,
+            "name": "Earth (C-137)",
+            "type": "Planet",
+            "dimension": {
+              "id": 3,
+              "name": "Dimension C-137",
+              "dimension": "Dimension C-137",
+              "residents": []
+            },
+            "residents": [],
+            "url": "https://rickandmortyapi.com/api/location/20",
+            "created": "2017-11-10T12:42:04.162Z"
+          },
+          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+          "episode": [
+            {
+              "id": 1,
+              "name": "Pilot",
+              "air_date": "December 2, 2013",
+              "episode": "S01E01",
+              "characters": [],
+              "url": "https://rickandmortyapi.com/api/episode/1",
+              "created": "2017-11-10T12:42:04.162Z"
+            }
+          ],
+          "url": "https://rickandmortyapi.com/api/character/1",
+          "created": "2017-11-04T18:48:46.250Z"
+        }
+      ],
+      "url": "https://rickandmortyapi.com/api/location/3",
+      "created": "2017-11-10T12:42:04.162Z"
+    },
+    "residents": [],
+    "url": "https://rickandmortyapi.com/api/location/20",
+    "created": "2017-11-10T12:42:04.162Z"
+  },
+  "location": {
+    "id": 20,
+    "name": "Earth (C-137)",
+    "type": "Planet",
+    "dimension": {
+      "id": 3,
+      "name": "Dimension C-137",
+      "dimension": "Dimension C-137",
+      "residents": [
+        {
+          "id": 52794,
+          "name": "Rick Sanchez",
+          "status": "Alive",
+          "species": "Human",
+          "type": "Mad Scientist",
+          "gender": "Male",
+          "origin": {
+            "id": 20,
+            "name": "Earth (C-137)",
+            "type": "Planet",
+            "dimension": {
+              "id": 3,
+              "name": "Dimension C-137",
+              "dimension": "Dimension C-137",
+              "residents": []
+            },
+            "residents": [],
+            "url": "https://rickandmortyapi.com/api/location/20",
+            "created": "2017-11-10T12:42:04.162Z"
+          },
+          "location": {
+            "id": 20,
+            "name": "Earth (C-137)",
+            "type": "Planet",
+            "dimension": {
+              "id": 3,
+              "name": "Dimension C-137",
+              "dimension": "Dimension C-137",
+              "residents": []
+            },
+            "residents": [],
+            "url": "https://rickandmortyapi.com/api/location/20",
+            "created": "2017-11-10T12:42:04.162Z"
+          },
+          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+          "episode": [
+            {
+              "id": 1,
+              "name": "Pilot",
+              "air_date": "December 2, 2013",
+              "episode": "S01E01",
+              "characters": [],
+              "url": "https://rickandmortyapi.com/api/episode/1",
+              "created": "2017-11-10T12:42:04.162Z"
+            }
+          ],
+          "url": "https://rickandmortyapi.com/api/character/1",
+          "created": "2017-11-04T18:48:46.250Z"
+        }
+      ],
+      "url": "https://rickandmortyapi.com/api/location/3",
+      "created": "2017-11-10T12:42:04.162Z"
+    },
+    "residents": [],
+    "url": "https://rickandmortyapi.com/api/location/20",
+    "created": "2017-11-10T12:42:04.162Z"
+  },
+  "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+  "episode": [
+    {
+      "id": 1,
+      "name": "Pilot",
+      "air_date": "December 2, 2013",
+      "episode": "S01E01",
+      "characters": [],
+      "url": "https://rickandmortyapi.com/api/episode/1",
+      "created": "2017-11-10T12:42:04.162Z"
+    }
+  ],
+  "url": "https://rickandmortyapi.com/api/character/1",
+  "created": "2017-11-04T18:48:46.250Z"
+}
+Explanation: This response provides detailed information about the character "Rick Sanchez" from the show Rick and Morty. It includes data such as name, status, species, gender, origin, location, image, and episodes the character appears in. The response is structured according to the OpenAPI Spec format.
+INFO:     127.0.0.1:42898 - "GET /Rick%20and%20Morty/characters/52794 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38810 - "GET /__simulator_cache__/clear/Rick%20and%20Morty HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38824 - "GET /__simulator_cache__/clear/News HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.81s/it]1it [00:03,  3.81s/it]
+Status Code: 200
+Response: 
+{
+    "status": "ok",
+    "totalResults": 5,
+    "articles": [
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "John Doe",
+            "title": "The Impact of Artificial Intelligence on Modern Society",
+            "description": "A detailed analysis of how AI is shaping the future.",
+            "url": "https://www.example.com/article1",
+            "urlToImage": "https://www.example.com/image1.jpg",
+            "publishedAt": "2022-10-05T08:00:00Z",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Jane Smith",
+            "title": "AI Advancements in Healthcare",
+            "description": "Exploring the latest AI technologies in the medical field.",
+            "url": "https://www.example.com/article2",
+            "urlToImage": "https://www.example.com/image2.jpg",
+            "publishedAt": "2022-10-04T12:30:00Z",
+            "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Alice Johnson",
+            "title": "Ethical Considerations in AI Development",
+            "description": "Discussing the ethical dilemmas surrounding AI.",
+            "url": "https://www.example.com/article3",
+            "urlToImage": "https://www.example.com/image3.jpg",
+            "publishedAt": "2022-10-03T16:45:00Z",
+            "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        }
+    ]
+}
+Explanation: This response provides a list of 5 articles related to artificial intelligence, sorted by popularity, published between October 1, 2022, and October 7, 2022, in English language. Each article contains details such as author, title, description, URL, image URL, published date, and content.
+INFO:     127.0.0.1:38834 - "GET /News/everything?q=artificial+intelligence&from=2022-10-01&to=2022-10-07&language=en&sortBy=popularity&pageSize=5&page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44482 - "GET /__simulator_cache__/clear/News HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.59s/it]1it [00:04,  4.59s/it]
+Status Code: 200
+Response: 
+{
+    "results_count": 3,
+    "results": [
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Summer House Mix 2021",
+                "url": "https://www.mixcloud.com/djuser/summer-house-mix-2021",
+                "description": "Get ready for summer with this uplifting house mix!",
+                "tags": ["house", "summer", "mix"],
+                "created_time": "2021-06-15T18:30:00Z",
+                "audio_length": 3600,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/summer-house-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/summer-house-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/summer-house-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ User",
+                    "username": "djuser",
+                    "url": "https://www.mixcloud.com/djuser"
+                },
+                "play_count": 1000,
+                "favorite_count": 500,
+                "repost_count": 200,
+                "comment_count": 50
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Deep House Vibes",
+                "url": "https://www.mixcloud.com/djuser/deep-house-vibes",
+                "description": "Experience the deep house vibes in this mix!",
+                "tags": ["deep house", "vibes", "mix"],
+                "created_time": "2021-07-20T21:45:00Z",
+                "audio_length": 4200,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/deep-house-vibes-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/deep-house-vibes-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/deep-house-vibes-small.jpg"
+                },
+                "user": {
+                    "name": "DJ User",
+                    "username": "djuser",
+                    "url": "https://www.mixcloud.com/djuser"
+                },
+                "play_count": 1500,
+                "favorite_count": 700,
+                "repost_count": 250,
+                "comment_count": 70
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "House Party Mix",
+                "url": "https://www.mixcloud.com/djuser/house-party-mix",
+                "description": "Get the party started with this energetic house mix!",
+                "tags": ["house", "party", "mix"],
+                "created_time": "2021-08-10T19:00:00Z",
+                "audio_length": 3000,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/pictures/house-party-mix-large.jpg",
+                    "medium": "https://www.mixcloud.com/pictures/house-party-mix-medium.jpg",
+                    "small": "https://www.mixcloud.com/pictures/house-party-mix-small.jpg"
+                },
+                "user": {
+                    "name": "DJ User",
+                    "username": "djuser",
+                    "url": "https://www.mixcloud.com/djuser"
+                },
+                "play_count": 1200,
+                "favorite_count": 600,
+                "repost_count": 220,
+                "comment_count": 60
+            }
+        }
+    ]
+}
+Explanation: The API response contains 3 search results for cloudcasts related to DJ mix house music. Each result includes details such as name, description, tags, created time, audio length, user information, play count, favorite count, repost count, and comment count. This provides users with information about the available cloudcasts matching the search query.
+INFO:     127.0.0.1:44496 - "GET /Mixcloud/search/?q=DJ+mix+house+music&type=cloudcasts HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.00s/it]1it [00:01,  1.00s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Cloudcast not found"
+}
+Explanation: The requested cloudcast with the specified URL "https://www.mixcloud.com/djuser/summer-house-mix-2021/" was not found in the Mixcloud library. The API responds with a 404 status code and an error message indicating that the cloudcast was not found.
+0it [00:00, ?it/s]1it [00:01,  1.93s/it]1it [00:01,  1.93s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Cloudcast not found"
+}
+Explanation: The requested cloudcast with the provided URL "https://www.mixcloud.com/djuser/summer-house-mix-2021/" was not found in the Mixcloud library. Hence, the API responds with a 404 error indicating that the cloudcast was not found.
+INFO:     127.0.0.1:44500 - "GET /Mixcloud/stream/https%3A//www.mixcloud.com/djuser/summer-house-mix-2021/ HTTP/1.1" 404 Not Found
+0it [00:00, ?it/s]1it [00:01,  1.51s/it]1it [00:01,  1.51s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Cloudcast not found"
+}
+Explanation: The requested cloudcast with the provided URL "https://www.mixcloud.com/djuser/summer-house-mix-2021/" was not found in the Mixcloud library. The API responds with a 404 error indicating that the cloudcast was not found.
+0it [00:00, ?it/s]1it [00:01,  1.09s/it]1it [00:01,  1.09s/it]
+Status Code: 404
+Response: 
+{
+    "error": "Cloudcast not found"
+}
+Explanation: The requested cloudcast with the provided URL "https://www.mixcloud.com/djuser/summer-house-mix-2021/" was not found in the Mixcloud library. The API responds with a 404 error indicating that the cloudcast was not found.
+INFO:     127.0.0.1:49802 - "GET /Mixcloud/stream/https%3A//www.mixcloud.com/djuser/summer-house-mix-2021/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49806 - "GET /__simulator_cache__/clear/Mixcloud HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:05,  5.03s/it]1it [00:05,  5.03s/it]
+Status Code: 200
+Response: 
+{
+    "results_count": 3,
+    "results": [
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Top Hits Mix",
+                "url": "https://www.mixcloud.com/tophitsmix",
+                "description": "Enjoy the latest and greatest hits in this mix!",
+                "tags": ["top hits", "music", "pop"],
+                "created_time": "2022-03-15T10:00:00Z",
+                "audio_length": 3600,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/tophitsmix/large.jpg",
+                    "medium": "https://www.mixcloud.com/tophitsmix/medium.jpg",
+                    "small": "https://www.mixcloud.com/tophitsmix/small.jpg"
+                },
+                "user": {
+                    "name": "DJ Top Hits",
+                    "username": "djtophits",
+                    "url": "https://www.mixcloud.com/djtophits"
+                },
+                "play_count": 10000,
+                "favorite_count": 500,
+                "repost_count": 100,
+                "comment_count": 50
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Chill Vibes Mix",
+                "url": "https://www.mixcloud.com/chillvibesmix",
+                "description": "Relax with some chill vibes in this mix!",
+                "tags": ["chill", "relax", "vibes"],
+                "created_time": "2022-03-16T12:00:00Z",
+                "audio_length": 4800,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/chillvibesmix/large.jpg",
+                    "medium": "https://www.mixcloud.com/chillvibesmix/medium.jpg",
+                    "small": "https://www.mixcloud.com/chillvibesmix/small.jpg"
+                },
+                "user": {
+                    "name": "Chill Master",
+                    "username": "chillmaster",
+                    "url": "https://www.mixcloud.com/chillmaster"
+                },
+                "play_count": 8000,
+                "favorite_count": 300,
+                "repost_count": 80,
+                "comment_count": 30
+            }
+        },
+        {
+            "type": "cloudcast",
+            "cloudcast": {
+                "name": "Party Mix Madness",
+                "url": "https://www.mixcloud.com/partymixmadness",
+                "description": "Get the party started with this mix!",
+                "tags": ["party", "dance", "music"],
+                "created_time": "2022-03-17T15:00:00Z",
+                "audio_length": 3000,
+                "pictures": {
+                    "large": "https://www.mixcloud.com/partymixmadness/large.jpg",
+                    "medium": "https://www.mixcloud.com/partymixmadness/medium.jpg",
+                    "small": "https://www.mixcloud.com/partymixmadness/small.jpg"
+                },
+                "user": {
+                    "name": "Party DJ",
+                    "username": "partydj",
+                    "url": "https://www.mixcloud.com/partydj"
+                },
+                "play_count": 12000,
+                "favorite_count": 700,
+                "repost_count": 150,
+                "comment_count": 70
+            }
+        }
+    ]
+}
+Explanation: The API successfully retrieved 3 popular mixes of the week based on the search query "popular mixes of the week" with type "cloudcasts". Each mix contains details such as name, description, tags, creation time, audio length, user information, play count, favorite count, repost count, and comment count. The response is in JSON format and aligns with the OpenAPI Spec.
+INFO:     127.0.0.1:49816 - "GET /Mixcloud/search/?q=popular+mixes+of+the+week&type=cloudcasts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49824 - "GET /__simulator_cache__/clear/Mixcloud HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59974 - "GET /__simulator_cache__/clear/Agify.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59978 - "GET /__simulator_cache__/clear/Agify.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59984 - "GET /__simulator_cache__/clear/StackExchange__2 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.91s/it]1it [00:01,  1.91s/it]
+Status Code: 200
+Response: 
+{
+    "display_name": "JohnDoe",
+    "reputation": 1000,
+    "profile_image": "https://example.com/profile.jpg",
+    "badges": [
+        {
+            "name": "Gold Badge",
+            "badge_type": "gold",
+            "rank": "1"
+        },
+        {
+            "name": "Silver Badge",
+            "badge_type": "silver",
+            "rank": "2"
+        },
+        {
+            "name": "Bronze Badge",
+            "badge_type": "bronze",
+            "rank": "3"
+        }
+    ]
+}
+Explanation: This response provides detailed information about the user with user_id 123456 on the StackOverflow site. The user has a display name "JohnDoe", reputation of 1000, a profile image, and three badges including Gold, Silver, and Bronze badges.
+INFO:     127.0.0.1:59998 - "GET /StackExchange__2/get-user?user_id=123456&site=stackoverflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60000 - "GET /__simulator_cache__/clear/StackExchange__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60008 - "GET /__simulator_cache__/clear/WakaTime HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:03,  3.09s/it]1it [00:03,  3.09s/it]
+Status Code: 200
+Response: 
+{
+    "data": {
+        "categories": [
+            {
+                "name": "Coding",
+                "total_seconds": 10800
+            },
+            {
+                "name": "Meetings",
+                "total_seconds": 7200
+            }
+        ],
+        "dependencies": [
+            {
+                "name": "React",
+                "total_seconds": 5400
+            },
+            {
+                "name": "Redux",
+                "total_seconds": 3600
+            }
+        ],
+        "editors": [
+            {
+                "name": "VS Code",
+                "total_seconds": 9000
+            },
+            {
+                "name": "PyCharm",
+                "total_seconds": 4500
+            }
+        ],
+        "languages": [
+            {
+                "name": "JavaScript",
+                "total_seconds": 7200
+            },
+            {
+                "name": "Python",
+                "total_seconds": 5400
+            }
+        ],
+        "operating_systems": [
+            {
+                "name": "Windows",
+                "total_seconds": 10800
+            }
+        ],
+        "projects": [
+            {
+                "name": "Project A",
+                "total_seconds": 7200
+            },
+            {
+                "name": "Project B",
+                "total_seconds": 3600
+            }
+        ],
+        "range": {
+            "start": "2022-09-01T00:00:00",
+            "end": "2022-09-01T23:59:59"
+        },
+        "timezone": "UTC"
+    }
+}
+Explanation: The response contains a summary of time metrics for the user on September 1, 2022. It includes time spent on coding, meetings, dependencies, editors, languages, operating systems, and projects. The data is realistic and provides insights into the user's productivity for the day.
+INFO:     127.0.0.1:60024 - "GET /WakaTime/summary?api_key=user_api_key&date=2022-09-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53160 - "GET /__simulator_cache__/clear/WakaTime HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.54s/it]1it [00:01,  1.54s/it]
+Status Code: 200
+Response: 
+{
+    "quote": "I'll be back."
+}
+Explanation: The request is for a random movie quote. The response contains a famous quote "I'll be back" from the movie "The Terminator".
+
+Status Code: 200
+Response: 
+{
+    "quote": "May the Force be with you."
+}
+Explanation: The request is for a random movie quote. The response contains the iconic quote "May the Force be with you" from the Star Wars franchise.
+
+Status Code: 200
+Response: 
+{
+    "quote": "Here's looking at you, kid."
+}
+Explanation: The request is for a random movie quote. The response contains the classic quote "Here's looking at you, kid" from the movie "Casablanca".
+INFO:     127.0.0.1:53174 - "GET /Movie%20Quote/random/movie HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53186 - "GET /__simulator_cache__/clear/Movie%20Quote HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.70s/it]1it [00:01,  1.70s/it]
+Status Code: 200
+Response: {"quote": "I'm gonna make him an offer he can't refuse."}
+Explanation: The request to filter quotes by the movie "The Godfather" was successful, and a random quote from the movie was returned.
+
+Status Code: 200
+Response: {"quote": "Keep your friends close, but your enemies closer."}
+Explanation: Another quote from the movie "The Godfather" was randomly selected and returned in the response.
+
+Status Code: 200
+Response: {"quote": "It's not personal, Sonny. It's strictly business."}
+Explanation: A third quote from the movie "The Godfather" was randomly chosen and included in the response.
+INFO:     127.0.0.1:53190 - "GET /Movie%20Quote/filtered?title=The+Godfather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42732 - "GET /__simulator_cache__/clear/Movie%20Quote HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.25s/it]1it [00:01,  1.25s/it]
+Status Code: 200
+Response: 
+{
+    "feeds": [
+        {
+            "feed_id": "feed123",
+            "title": "Tech News",
+            "url": "https://example.com/tech-news",
+            "subscribers": 5000
+        },
+        {
+            "feed_id": "feed456",
+            "title": "Cooking Recipes",
+            "url": "https://example.com/cooking-recipes",
+            "subscribers": 3000
+        },
+        {
+            "feed_id": "feed789",
+            "title": "Travel Blogs",
+            "url": "https://example.com/travel-blogs",
+            "subscribers": 7000
+        }
+    ]
+}
+Explanation: The response contains a list of RSS feeds subscribed to by the user, including feed IDs, titles, URLs, and number of subscribers.
+INFO:     127.0.0.1:42740 - "GET /The%20Old%20Reader/user_feeds?authToken=user_auth_token HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.19s/it]1it [00:02,  2.19s/it]
+Status Code: 200
+Response:
+{
+    "articles": [
+        {
+            "article_id": "article123",
+            "title": "Top 10 Travel Destinations for 2022",
+            "url": "https://example.com/travel-destinations-2022",
+            "author": "Travel Guru",
+            "published_date": "2022-01-15T08:00:00Z",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "article_id": "article456",
+            "title": "Must-Try Local Foods Around the World",
+            "url": "https://example.com/local-foods-world",
+            "author": "Foodie Explorer",
+            "published_date": "2022-01-20T10:30:00Z",
+            "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "article_id": "article789",
+            "title": "Tips for Budget Traveling",
+            "url": "https://example.com/budget-travel-tips",
+            "author": "Thrifty Traveler",
+            "published_date": "2022-01-25T15:45:00Z",
+            "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        }
+    ]
+}
+Explanation: The response includes a list of articles from the specified feed with details such as article ID, title, URL, author, published date, and content. Three sample articles are provided with realistic data.
+INFO:     127.0.0.1:42748 - "GET /The%20Old%20Reader/feed_articles?authToken=user_auth_token&feedId=feed789&count=20&page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42756 - "GET /__simulator_cache__/clear/The%20Old%20Reader HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42764 - "GET /__simulator_cache__/clear/The%20Old%20Reader HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42776 - "GET /__simulator_cache__/clear/Doge-Meme HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.39s/it]1it [00:02,  2.39s/it]
+Status Code: 200
+Response: 
+{
+    "memes": [
+        {
+            "title": "Such Wow",
+            "author": "DogeLover123",
+            "content": "Much meme, very doge",
+            "upvotes": 1000,
+            "downvotes": 50,
+            "comments": 200
+        },
+        {
+            "title": "Doge to the Moon",
+            "author": "MoonDoge",
+            "content": "In doge we trust",
+            "upvotes": 1500,
+            "downvotes": 100,
+            "comments": 300
+        },
+        {
+            "title": "Doge Army",
+            "author": "DogeGeneral",
+            "content": "Join the doge revolution",
+            "upvotes": 800,
+            "downvotes": 20,
+            "comments": 150
+        }
+    ]
+}
+Explanation: The response contains the top meme posts from r/dogecoin with the "Meme" flair for the day. Each meme post includes a title, author, content, upvotes, downvotes, and comments. The data is realistic and aligns with the OpenAPI Spec format.
+INFO:     127.0.0.1:36874 - "GET /Doge-Meme/top-memes?timeFrame=day HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36878 - "GET /__simulator_cache__/clear/Doge-Meme HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.32s/it]1it [00:02,  2.32s/it]
+Status Code: 200
+Response: 
+{
+    "TVPrograms": [
+        {
+            "programTitle": "Morning Show",
+            "channel": "CT1",
+            "startTime": "08:00",
+            "endTime": "10:00",
+            "description": "Start your day with the latest news and entertainment."
+        },
+        {
+            "programTitle": "Documentary Special",
+            "channel": "CT2",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "description": "Explore the wonders of nature in this captivating documentary."
+        },
+        {
+            "programTitle": "Movie Night",
+            "channel": "CT3",
+            "startTime": "20:30",
+            "endTime": "23:00",
+            "description": "Enjoy a classic movie under the stars."
+        }
+    ]
+}
+Explanation: The response contains a list of three TV programs scheduled for the week starting from October 16, 2023. Each program includes details such as title, channel, start time, end time, and a brief description.
+INFO:     127.0.0.1:36892 - "GET /Czech%20Television/weekly-tv-program?startDate=2023-10-16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36896 - "GET /__simulator_cache__/clear/Czech%20Television HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36904 - "GET /__simulator_cache__/clear/Czech%20Television HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.72s/it]1it [00:01,  1.72s/it]
+Status Code: 200
+Response: 
+{
+    "results": [
+        {
+            "address": "123 Main St, Anytown, USA",
+            "latitude": 40.7128,
+            "longitude": -74.0060
+        },
+        {
+            "address": "456 Elm St, Anytown, USA",
+            "latitude": 40.7306,
+            "longitude": -73.9352
+        },
+        {
+            "address": "789 Oak St, Anytown, USA",
+            "latitude": 40.6976,
+            "longitude": -73.9792
+        }
+    ]
+}
+Explanation: The request to batch geocode multiple addresses was successful. The response contains the latitude and longitude coordinates for each input address. Each address has been accurately geocoded to its corresponding coordinates.
+INFO:     127.0.0.1:54864 - "POST /Geokeo/batchGeocode HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54876 - "GET /__simulator_cache__/clear/Geokeo HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.01s/it]1it [00:02,  2.01s/it]
+Status Code: 200
+Response: 
+{
+    "latitude": 37.751,
+    "longitude": -97.822
+}
+Explanation: The provided address "8.8.8.8" has been geocoded to the latitude 37.751 and longitude -97.822.
+
+Status Code: 200
+Response: 
+{
+    "latitude": 40.7128,
+    "longitude": -74.006
+}
+Explanation: Another sample response where the address has been geocoded to the latitude 40.7128 and longitude -74.006.
+
+Status Code: 200
+Response: 
+{
+    "latitude": 51.5074,
+    "longitude": -0.1278
+}
+Explanation: A third example where the address has been geocoded to the latitude 51.5074 and longitude -0.1278.
+INFO:     127.0.0.1:54890 - "POST /Geokeo/geocode HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "GET /__simulator_cache__/clear/Geokeo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54908 - "GET /__simulator_cache__/clear/Catch%20The%20Show HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54918 - "GET /__simulator_cache__/clear/Catch%20The%20Show HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35754 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada__3 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.35s/it]1it [00:02,  2.35s/it]
+Status Code: 200
+Response: 
+{
+  "stations": [
+    {
+      "id": 12345,
+      "name": "Granville Island Station",
+      "address": "123 Granville Island, Vancouver",
+      "latitude": 49.2713,
+      "longitude": -123.1345,
+      "distance": 0.5
+    },
+    {
+      "id": 54321,
+      "name": "Granville Island Bus Stop",
+      "address": "456 Granville Island, Vancouver",
+      "latitude": 49.2687,
+      "longitude": -123.1368,
+      "distance": 0.3
+    },
+    {
+      "id": 98765,
+      "name": "Granville Island Ferry Terminal",
+      "address": "789 Granville Island, Vancouver",
+      "latitude": 49.2698,
+      "longitude": -123.1332,
+      "distance": 0.7
+    }
+  ]
+}
+Explanation: The request to retrieve stations or stops near Granville Island in Vancouver was successful. Three stations, including a station, bus stop, and ferry terminal, along with their respective details such as ID, name, address, latitude, longitude, and distance from the search location, were returned in the response.
+INFO:     127.0.0.1:35770 - "GET /Transport%20for%20Vancouver%2C%20Canada__3/stations-or-stops?address=Granville+Island%2C+Vancouver HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.24s/it]1it [00:02,  2.24s/it]
+Status Code: 200
+Response:
+{
+  "station": {
+    "id": 54321,
+    "name": "Granville Island Bus Stop",
+    "address": "456 Granville Island, Vancouver",
+    "latitude": 49.2687,
+    "longitude": -123.1368,
+    "amenities": ["Bench", "Shelter", "Trash Can"],
+    "accessibility": ["Wheelchair Accessible", "Audio Announcements"],
+    "waitTimes": {
+      "bus": "5 minutes",
+      "train": "N/A",
+      "ferry": "10 minutes"
+    }
+  }
+}
+Explanation: The request to retrieve detailed information about the Granville Island Bus Stop with ID 54321 was successful. The response includes information such as the bus stop's name, address, location coordinates, available amenities (bench, shelter, trash can), accessibility features (wheelchair accessible, audio announcements), and estimated wait times for buses, trains, and ferries.
+INFO:     127.0.0.1:35780 - "GET /Transport%20for%20Vancouver%2C%20Canada__3/stations-or-stops/54321 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35782 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada__3 HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:00,  1.01it/s]1it [00:00,  1.01it/s]
+Status Code: 200
+Response: 
+{
+    "message": "Reading status updated to finished for book with ID 9780452284234."
+}
+Explanation: The reading status of the book with the identifier 9780452284234 has been successfully updated to "finished".
+INFO:     127.0.0.1:35792 - "PUT /Google%20Books/books/9780452284234/readingStatus?status=finished HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49082 - "GET /__simulator_cache__/clear/Google%20Books HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:04,  4.42s/it]1it [00:04,  4.42s/it]
+Status Code: 200
+Response: 
+{
+    "items": [
+        {
+            "title": "The Great Gatsby",
+            "author": ["F. Scott Fitzgerald"],
+            "publisher": "Scribner",
+            "publishedDate": "1925-04-10",
+            "description": "The Great Gatsby is a novel by American author F. Scott Fitzgerald. The story takes place in 1922, during the Roaring Twenties, a time of prosperity in the United States after World War I.",
+            "imageLinks": {
+                "thumbnail": "https://books.google.com/books/content?id=QWfRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "industryIdentifiers": [
+                {
+                    "type": "ISBN_13",
+                    "identifier": "9780743273565"
+                },
+                {
+                    "type": "ISBN_10",
+                    "identifier": "0743273567"
+                }
+            ]
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": ["Harper Lee"],
+            "publisher": "J. B. Lippincott & Co.",
+            "publishedDate": "1960-07-11",
+            "description": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. It was immediately successful, winning the Pulitzer Prize, and has become a classic of modern American literature.",
+            "imageLinks": {
+                "thumbnail": "https://books.google.com/books/content?id=5oQqkYKk5r4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "industryIdentifiers": [
+                {
+                    "type": "ISBN_13",
+                    "identifier": "9780061120084"
+                },
+                {
+                    "type": "ISBN_10",
+                    "identifier": "0061120081"
+                }
+            ]
+        },
+        {
+            "title": "1984",
+            "author": ["George Orwell"],
+            "publisher": "Secker & Warburg",
+            "publishedDate": "1949-06-08",
+            "description": "1984 is a dystopian novel by George Orwell published in 1949. The novel is set in Airstrip One, formerly Great Britain, a province of the superstate Oceania.",
+            "imageLinks": {
+                "thumbnail": "https://books.google.com/books/content?id=y4ngBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "industryIdentifiers": [
+                {
+                    "type": "ISBN_13",
+                    "identifier": "9780451524935"
+                },
+                {
+                    "type": "ISBN_10",
+                    "identifier": "0451524934"
+                }
+            ]
+        }
+    ]
+}
+Explanation: This response contains a list of 3 featured books with their titles, authors, publishers, publication dates, descriptions, thumbnail images, and industry identifiers. The data provided is based on realistic information about popular books.
+INFO:     127.0.0.1:49084 - "GET /Google%20Books/books/featured?maxResults=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49088 - "GET /__simulator_cache__/clear/Google%20Books HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49094 - "GET /__simulator_cache__/clear/PhishStats HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.15s/it]1it [00:01,  1.15s/it]
+Status Code: 200
+Response: 
+{
+    "domain": "facebook.com",
+    "age": 17,
+    "ip": "31.13.65.36",
+    "phishing": false,
+    "submission": true
+}
+Explanation: The response provides information about the domain "facebook.com", including its age of 17 years, IP address 31.13.65.36, phishing status as false (not a phishing site), and submission status as true (domain has been submitted).
+
+Note: This is a sample response based on realistic data.
+INFO:     127.0.0.1:49106 - "GET /PhishStats/phishing/domain/facebook.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49510 - "GET /__simulator_cache__/clear/PhishStats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49520 - "GET /__simulator_cache__/clear/RuneScape HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.77s/it]1it [00:01,  1.77s/it]
+Status Code: 200
+Response: 
+{
+    "name": "Fishing",
+    "id": 10,
+    "members": true,
+    "rank": 1234,
+    "level": 70,
+    "experience": 1500000
+}
+Explanation: The response provides information on the Fishing skill, including the skill name, ID, membership status, rank, level, and experience points.
+
+Status Code: 200
+Response: 
+{
+    "name": "Fishing",
+    "id": 10,
+    "members": true,
+    "rank": 5678,
+    "level": 90,
+    "experience": 5000000
+}
+Explanation: Another sample response for the Fishing skill with different rank, level, and experience points.
+
+Status Code: 200
+Response: 
+{
+    "name": "Fishing",
+    "id": 10,
+    "members": true,
+    "rank": 9876,
+    "level": 99,
+    "experience": 13000000
+}
+Explanation: A third example response for the Fishing skill showcasing a higher rank, maximum level, and significant experience points.
+INFO:     127.0.0.1:49522 - "GET /RuneScape/skill?skill=Fishing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49538 - "GET /__simulator_cache__/clear/RuneScape HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49548 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.03s/it]1it [00:02,  2.03s/it]
+Status Code: 200
+Response: 
+{
+    "stopCode": "1234",
+    "stopName": "Broadway-City Hall Station",
+    "routeNo": "99",
+    "routeName": "Commercial-Broadway/UBC",
+    "distance": 500.75
+}
+{
+    "stopCode": "5678",
+    "stopName": "Waterfront Station",
+    "routeNo": "135",
+    "routeName": "Burrard Station/SFU",
+    "distance": 700.25
+}
+{
+    "stopCode": "9101",
+    "stopName": "Granville Station",
+    "routeNo": "16",
+    "routeName": "Arbutus/29th Avenue Station",
+    "distance": 750.50
+}
+Explanation: The response provides a list of nearby stops and routes based on the given latitude, longitude, and search radius. Each entry includes the stop code, stop name, route number, route name, and the distance from the specified location.
+Extra data: line 8 column 1 (char 162)
+INFO:     127.0.0.1:49556 - "GET /Transport%20for%20Vancouver%2C%20Canada/locations?latitude=49.3018&longitude=-123.1416&radius=800 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57008 - "GET /__simulator_cache__/clear/Transport%20for%20Vancouver%2C%20Canada HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57016 - "GET /__simulator_cache__/clear/TransitLand HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57028 - "GET /__simulator_cache__/clear/TransitLand HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57032 - "GET /__simulator_cache__/clear/Giphy__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57040 - "GET /__simulator_cache__/clear/Giphy__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57052 - "GET /__simulator_cache__/clear/bng2latlong HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.29s/it]1it [00:01,  1.29s/it]
+Status Code: 200
+Response: 
+{
+    "easting": 541657,
+    "northing": 261327
+}
+Explanation: The provided WGS84 latitude and longitude (52.2053, 0.1218) has been successfully reverse geocoded to British Easting and Northing coordinates (541657, 261327).
+INFO:     127.0.0.1:57054 - "POST /bng2latlong/reverseGeocodeLatLongToEastingNorthing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39638 - "GET /__simulator_cache__/clear/bng2latlong HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39642 - "GET /__simulator_cache__/clear/CO2%20Offset HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.51s/it]1it [00:01,  1.51s/it]
+Status Code: 200
+Response: 
+{
+    "emissions": 15.6
+}
+Explanation: The calculated carbon emissions for flower cultivation in a greenhouse in the agriculture industry with a quantity of 2000.0 is 15.6 metric tons CO2 equivalent.
+
+Note: The response contains realistic data based on the provided input parameters.
+INFO:     127.0.0.1:39650 - "POST /CO2%20Offset/calculateCarbonEmissions HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.31s/it]1it [00:02,  2.31s/it]
+Status Code: 200
+Response:
+{
+    "projects": [
+        {
+            "projectId": 1,
+            "name": "Renewable Energy Farm",
+            "description": "A farm that generates renewable energy from solar and wind sources.",
+            "industry": "agriculture",
+            "location": "California, USA",
+            "offsetPerUnitCost": 20.5
+        },
+        {
+            "projectId": 2,
+            "name": "Tree Planting Initiative",
+            "description": "An initiative to plant trees and restore forests.",
+            "industry": "agriculture",
+            "location": "Amazon Rainforest, Brazil",
+            "offsetPerUnitCost": 10.2
+        },
+        {
+            "projectId": 3,
+            "name": "Organic Composting Facility",
+            "description": "A facility that composts organic waste to reduce methane emissions.",
+            "industry": "agriculture",
+            "location": "Ontario, Canada",
+            "offsetPerUnitCost": 15.8
+        }
+    ]
+}
+Explanation: The response provides a list of carbon offset projects in the agriculture industry. Each project includes details such as project ID, name, description, industry, location, and offset per unit cost.
+INFO:     127.0.0.1:39656 - "GET /CO2%20Offset/listOffsetProjects?industry=agriculture HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39672 - "GET /__simulator_cache__/clear/CO2%20Offset HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39676 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Poland HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.27s/it]1it [00:02,  2.27s/it]
+Status Code: 200
+Response: 
+{
+    "datasets": [
+        {
+            "datasetId": 1234,
+            "title": "Healthcare Statistics 2021",
+            "description": "Statistics on healthcare services in Poland for the year 2021.",
+            "category": "Healthcare",
+            "format": "CSV"
+        },
+        {
+            "datasetId": 5678,
+            "title": "Hospital Performance Data",
+            "description": "Performance metrics of hospitals in Poland.",
+            "category": "Healthcare",
+            "format": "JSON"
+        },
+        {
+            "datasetId": 9012,
+            "title": "Medical Equipment Inventory",
+            "description": "Inventory list of medical equipment in healthcare facilities.",
+            "category": "Healthcare",
+            "format": "XML"
+        }
+    ]
+}
+Explanation: The response contains a list of datasets related to healthcare in Poland that match the search criteria of the keyword "healthcare" and category "Poland". Each dataset includes a unique ID, title, description, category, and format.
+INFO:     127.0.0.1:48694 - "GET /Open%20Government%2C%20Poland/datasets/search?keyword=healthcare&category=Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48702 - "GET /__simulator_cache__/clear/Open%20Government%2C%20Poland HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48710 - "GET /__simulator_cache__/clear/TheMealDB HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48726 - "GET /__simulator_cache__/clear/TheMealDB HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.91s/it]1it [00:01,  1.91s/it]
+Status Code: 200
+Response: 
+{
+    "calories": 350,
+    "protein": 15,
+    "fat": 8,
+    "carbohydrates": 55,
+    "micronutrients": {
+        "vitaminA": 20,
+        "vitaminC": 10,
+        "calcium": 15,
+        "iron": 8
+    }
+}
+Explanation: The request calculates the nutritional value for a custom recipe consisting of whole wheat pasta, marinara sauce, chopped vegetables, and parmesan cheese. The calculated values are based on the provided ingredients and servings. The response contains the total calories, protein, fat, carbohydrates, and micronutrients like vitamin A, vitamin C, calcium, and iron.
+INFO:     127.0.0.1:48736 - "POST /Nutritionix__2/calculateNutritionForRecipe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48752 - "GET /__simulator_cache__/clear/Nutritionix__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34488 - "GET /__simulator_cache__/clear/Nutritionix__2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34494 - "GET /__simulator_cache__/clear/Forismatic HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:02,  2.31s/it]1it [00:02,  2.31s/it]
+Status Code: 200
+Response: 
+{
+    "quotes": [
+        {
+            "quoteText": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+            "quoteAuthor": "Albert Schweitzer"
+        },
+        {
+            "quoteText": "Success usually comes to those who are too busy to be looking for it.",
+            "quoteAuthor": "Henry David Thoreau"
+        },
+        {
+            "quoteText": "The road to success and the road to failure are almost exactly the same.",
+            "quoteAuthor": "Colin R. Davis"
+        },
+        {
+            "quoteText": "Success is not in what you have, but who you are.",
+            "quoteAuthor": "Bo Bennett"
+        },
+        {
+            "quoteText": "Success is walking from failure to failure with no loss of enthusiasm.",
+            "quoteAuthor": "Winston S. Churchill"
+        }
+    ]
+}
+Explanation: The request searches for quotes related to the keyword "success" with a limit of 5 quotes. The response contains 5 realistic quotes from various authors related to the theme of success. Each quote includes the text of the quote and the author's name.
+INFO:     127.0.0.1:34508 - "GET /Forismatic/search?query=success&limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34518 - "GET /__simulator_cache__/clear/Forismatic HTTP/1.1" 200 OK
+0it [00:00, ?it/s]1it [00:01,  1.07s/it]1it [00:01,  1.07s/it]
+Status Code: 200
+Response: 
+{
+    "isSafe": true
+}
+Explanation: The URL "www.example.com" has been flagged as safe.
+
+Status Code: 200
+Response: 
+{
+    "isSafe": false,
+    "reason": "Phishing detected"
+}
+Explanation: The URL "www.example.com" has been flagged as unsafe due to phishing.
+
+Status Code: 200
+Response: 
+{
+    "isSafe": true
+}
+Explanation: The URL "www.example.com" has been flagged as safe.
+INFO:     127.0.0.1:34530 - "POST /Google%20Safe%20Browsing/checkUrlSafety HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34534 - "GET /__simulator_cache__/clear/Google%20Safe%20Browsing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34542 - "GET /__simulator_cache__/clear/Google%20Safe%20Browsing HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38764 - "GET /__simulator_cache__/clear/Noctua HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38780 - "GET /__simulator_cache__/clear/Noctua HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38786 - "GET /__simulator_cache__/clear/Giphy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38792 - "GET /__simulator_cache__/clear/Giphy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38804 - "GET /__simulator_cache__/clear/Yo%20Momma%20Jokes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38806 - "GET /__simulator_cache__/clear/Yo%20Momma%20Jokes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38816 - "GET /__simulator_cache__/clear/JSONbin.io HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38822 - "GET /__simulator_status__ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1633840]

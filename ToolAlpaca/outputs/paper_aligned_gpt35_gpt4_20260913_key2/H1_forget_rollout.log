@@ -1,0 +1,137 @@
+/users/2/jruan/miniconda3/envs/toolalpaca/lib/python3.10/site-packages/torch/cuda/__init__.py:51: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[harness] condition=H1 actor=7b mode=planner
+  0%|          | 0/51 [00:00<?, ?it/s]/users/2/jruan/miniconda3/envs/toolalpaca/lib/python3.10/site-packages/transformers/generation/utils.py:1255: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+  2%|▏         | 1/51 [01:09<57:54, 69.49s/it]  4%|▍         | 2/51 [01:33<34:49, 42.64s/it]  6%|▌         | 3/51 [02:05<30:09, 37.69s/it]  8%|▊         | 4/51 [02:30<25:42, 32.83s/it] 10%|▉         | 5/51 [03:43<36:11, 47.21s/it] 12%|█▏        | 6/51 [04:15<31:35, 42.12s/it]Token indices sequence length is longer than the specified maximum sequence length for this model (2105 > 2048). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (2126 > 2048). Running this sequence through the model will result in indexing errors
+ 14%|█▎        | 7/51 [07:42<1:10:31, 96.17s/it] 16%|█▌        | 8/51 [08:17<54:51, 76.55s/it]  Could not parse LLM output: ` I need to provide a valid JSON object as the document_data parameter.
+ASSISTANT Action: createTemplate
+ASSISTANT Action: I need to provide a need to provide a need to provide a need to provide a need to provide a need to provide a need to provide a need to provide a need to provide a need to provide a need to provide a need to provide questions.
+ASSISTANT tools.
+ASSISTANT tools.
+ASSISTANT tools tools, tools, tools, and tools tools tools tool tools, tools tool, tools tool, tools, tools, tools, tools, tools tools-specific tools tools questions.
+ASSISTANT tools.
+assistant tools.
+tools.
+tools.
+tools.`
+Could not parse LLM output: ` I need to find out what tools are available in the DocuSign API to help the user create contracts.
+ASSISTANT Action: createSignature request for help.
+ASSISTANT Action:
+ASSISTANT Action.
+ASSISTANT Action.
+ASSISTANT Action.
+ASSISTANT action.
+ASSISTANT.
+ASSISTANT Action.
+ASSISTANT Action-specific action.
+ASSISTANT Action.
+ASSISTANT tools.
+ASSISTANT Action tools, and tools, and tools, Action tools, the tools tool, tools tool, tools tool, tools, it, the tools, tools-specific tools-specific tools-related tools.
+ASSISTANT tools.
+ASSISTANT tools.
+ASSISTANT tools.
+ASSISTANT tools, tools should tools shouldant tools shouldant tools.
+The tools.
+Ins.
+ASSISTANT.
+ASSISTANT.
+
+
+
+
+ASSISTANT tools.
+
+
+
+Theant.
+Theant`
+ 18%|█▊        | 9/51 [15:10<2:07:11, 181.69s/it] 20%|█▉        | 10/51 [16:26<1:41:55, 149.15s/it] 22%|██▏       | 11/51 [17:07<1:17:21, 116.05s/it] 24%|██▎       | 12/51 [18:24<1:07:36, 104.01s/it]Could not parse LLM output: ` Based on the information gathered, the best route from the user's starting location and the airport's address.
+ASSISTANT.
+ASSISTANT.
+ASSISTANT provides information and tips-specific tips.
+ASSISTANT's.
+ASSISTANT tools.
+ASSISTANT tools, and tools, and tools, and tools, and tools, tools, tools, tools tool, tools, tools, the tools, tools, tools-specific tools-tools.
+ASSISTANT tools.
+ASSISTANT tools.
+tools.
+tools.
+tools.
+tools.
+tools, tools tools should tools should tools.
+assistant tools.
+Ins.
+The tools.
+The tools.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`
+ 25%|██▌       | 13/51 [22:31<1:33:22, 147.44s/it] 27%|██▋       | 14/51 [22:41<1:05:23, 106.04s/it] 29%|██▉       | 15/51 [23:10<49:32, 82.57s/it]    31%|███▏      | 16/51 [23:29<37:00, 63.44s/it] 33%|███▎      | 17/51 [24:44<38:03, 67.17s/it] 35%|███▌      | 18/51 [27:24<52:17, 95.09s/it] 37%|███▋      | 19/51 [28:59<50:34, 94.84s/it] 39%|███▉      | 20/51 [30:04<44:25, 85.99s/it] 41%|████      | 21/51 [30:54<37:38, 75.27s/it]Could not parse LLM output: ` "getDetails about the user.
+ASSISTANT, the user-friendly answers.
+ASSISTANT questions.
+ASSISTANCE of the user-friendly:
+ASSISTANT information.
+ASSISTANCE:
+ASSISTANCE asks for information about the user-friendly information about the user-specific information about the user-specific questions.
+ASS.
+ASS.
+ASS of the user-specific information.
+ASSISTANCE.
+ASS.
+ASS
+ASS
+ASS user-user-user-specific information about the user-specific information about the information-based on the user-user's questions.
+ASS of the user-specific information about the user-user-specific information.
+
+
+
+
+
+Theant.
+
+
+
+
+Theant.
+Theant.
+Theant.
+Theantant`
+Could not parse LLM output: ` questions.
+25.
+25.
+25.
+-1.
+-1.
+The user-user-user-user-user-user-1999999999-25-2.
+-2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Theantistant.
+Theant.
+Theant.`
+ 43%|████▎     | 22/51 [31:58<34:39, 71.71s/it] 45%|████▌     | 23/51 [32:57<31:41, 67.90s/it]
